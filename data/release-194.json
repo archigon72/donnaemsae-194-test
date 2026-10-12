@@ -1,0 +1,14 @@
+{
+ "release": "release194-20261012-v1",
+ "built_from_baseline_sha256": "339cc81b690af7b2e7e8f348a54262b47a701e6a97010eda5df08d6e17b91bab",
+ "runtime_source_zip_sha256": "86550063cb17086b52bb3accd7f71d5df4ecfdabc11fd1c16c33249fdcf056da",
+ "funds": 194,
+ "existing112": 112,
+ "new82": 82,
+ "data_cutoff": {
+  "existing112": "2026-10-02",
+  "new82": "2026-10-08 (per-fund last_date in each manifest)"
+ },
+ "snapshot_note": "Single release snapshot_id for catalog/inputs/data/references/runtime-manifest. It does NOT mean one common data date; each fund keeps its own data_cutoff.",
+ "pay_date_policy": "funetf-payDt-else-gijunYmd-plus-3-krx-business-days-v1"
+}
