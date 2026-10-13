@@ -3,7 +3,7 @@
 
 ## 실배포 https://archigon72.github.io/donnaemsae-194-test/
 - 실행 완료 시각(로그 파일 기록 시각, KST): 2026-10-13T21:11:34+09:00 · 대상 base: https://archigon72.github.io/donnaemsae-194-test/ · 결과: PASS 39 / FAIL 0 / 총 39
-- 원본 로그: [raw/reg_live.log.txt](raw/reg_live.log.txt) · 원본 JSON: [raw/reg_live/reg_live_regression.json](raw/reg_live/reg_live_regression.json)
+- 원본 로그: [raw/reg_live.log.txt](../raw/reg_live.log.txt) · 원본 JSON: [raw/reg_live/reg_live_regression.json](../raw/reg_live/reg_live_regression.json)
 
 | # | 항목 (입력 조건·기대 기준이 항목명에 포함) | 판정 | 실측 상세(기대·실제 값) |
 |---|---|---|---|
@@ -53,7 +53,7 @@
 
 ## 로컬 http://127.0.0.1 (같은 커밋 파일)
 - 실행 완료 시각(로그 파일 기록 시각, KST): 2026-10-13T21:08:33+09:00 · 대상 base: http://127.0.0.1:8922/ · 결과: PASS 39 / FAIL 0 / 총 39
-- 원본 로그: [raw/reg_local.log.txt](raw/reg_local.log.txt) · 원본 JSON: [raw/reg_local/reg_regression.json](raw/reg_local/reg_regression.json)
+- 원본 로그: [raw/reg_local.log.txt](../raw/reg_local.log.txt) · 원본 JSON: [raw/reg_local/reg_regression.json](../raw/reg_local/reg_regression.json)
 
 | # | 항목 (입력 조건·기대 기준이 항목명에 포함) | 판정 | 실측 상세(기대·실제 값) |
 |---|---|---|---|

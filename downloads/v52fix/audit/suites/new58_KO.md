@@ -3,7 +3,7 @@
 
 ## 실배포 https://archigon72.github.io/donnaemsae-194-test/
 - 실행 완료 시각(로그 파일 기록 시각, KST): 2026-10-13T21:12:54+09:00 · 대상 base: https://archigon72.github.io/donnaemsae-194-test/ · 결과: PASS 58 / FAIL 0 / 총 58
-- 원본 로그: [raw/after_live.log.txt](raw/after_live.log.txt) · 원본 JSON: [raw/after_live/after_live_qa.json](raw/after_live/after_live_qa.json)
+- 원본 로그: [raw/after_live.log.txt](../raw/after_live.log.txt) · 원본 JSON: [raw/after_live/after_live_qa.json](../raw/after_live/after_live_qa.json)
 
 | # | 항목 (입력 조건·기대 기준이 항목명에 포함) | 판정 | 실측 상세(기대·실제 값) |
 |---|---|---|---|
@@ -73,7 +73,7 @@
 
 ## 로컬 http://127.0.0.1 (같은 커밋 파일)
 - 실행 완료 시각(로그 파일 기록 시각, KST): 2026-10-13T21:07:23+09:00 · 대상 base: http://127.0.0.1:8922/ · 결과: PASS 58 / FAIL 0 / 총 58
-- 원본 로그: [raw/after_local.log.txt](raw/after_local.log.txt) · 원본 JSON: [raw/after_local/after_qa.json](raw/after_local/after_qa.json)
+- 원본 로그: [raw/after_local.log.txt](../raw/after_local.log.txt) · 원본 JSON: [raw/after_local/after_qa.json](../raw/after_local/after_qa.json)
 
 | # | 항목 (입력 조건·기대 기준이 항목명에 포함) | 판정 | 실측 상세(기대·실제 값) |
 |---|---|---|---|

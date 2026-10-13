@@ -3,7 +3,7 @@
 
 ## 로컬 http://127.0.0.1 (수정 전 40ba21c 파일)
 - 실행 완료 시각(로그 파일 기록 시각, KST): 2026-10-13T21:07:23+09:00 · 대상 base: http://127.0.0.1:8921/ · 결과: PASS 54 / FAIL 4 / 총 58
-- 원본 로그: [raw/before_local.log.txt](raw/before_local.log.txt) · 원본 JSON: [raw/before_local/before_qa.json](raw/before_local/before_qa.json)
+- 원본 로그: [raw/before_local.log.txt](../raw/before_local.log.txt) · 원본 JSON: [raw/before_local/before_qa.json](../raw/before_local/before_qa.json)
 
 | # | 항목 (입력 조건·기대 기준이 항목명에 포함) | 판정 | 실측 상세(기대·실제 값) |
 |---|---|---|---|

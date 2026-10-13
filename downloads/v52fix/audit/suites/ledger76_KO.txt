@@ -3,7 +3,7 @@
 
 ## 실배포 https://archigon72.github.io/donnaemsae-194-test/
 - 실행 완료 시각(로그 파일 기록 시각, KST): 2026-10-13T21:12:51+09:00 · 대상 base: https://archigon72.github.io/donnaemsae-194-test/ · 결과: PASS 76 / FAIL 0 / 총 76
-- 원본 로그: [raw/audit_live.log.txt](raw/audit_live.log.txt) · 원본 JSON: [raw/audit_live/audit_live_audit.json](raw/audit_live/audit_live_audit.json)
+- 원본 로그: [raw/audit_live.log.txt](../raw/audit_live.log.txt) · 원본 JSON: [raw/audit_live/audit_live_audit.json](../raw/audit_live/audit_live_audit.json)
 
 | ID | 항목 | 입력 조건 | 기대값 | 실제값 | 판정 |
 |---|---|---|---|---|---|
@@ -90,7 +90,7 @@
 
 ## 로컬 http://127.0.0.1 (같은 커밋 파일)
 - 실행 완료 시각(로그 파일 기록 시각, KST): 2026-10-13T21:09:50+09:00 · 대상 base: http://127.0.0.1:8922/ · 결과: PASS 76 / FAIL 0 / 총 76
-- 원본 로그: [raw/audit_local.log.txt](raw/audit_local.log.txt) · 원본 JSON: [raw/audit_local/audit_audit.json](raw/audit_local/audit_audit.json)
+- 원본 로그: [raw/audit_local.log.txt](../raw/audit_local.log.txt) · 원본 JSON: [raw/audit_local/audit_audit.json](../raw/audit_local/audit_audit.json)
 
 | ID | 항목 | 입력 조건 | 기대값 | 실제값 | 판정 |
 |---|---|---|---|---|---|
