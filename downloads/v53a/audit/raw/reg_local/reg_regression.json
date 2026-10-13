@@ -1,0 +1,308 @@
+{
+ "base": "http://127.0.0.1:8132/",
+ "started": "2026-10-13T21:43:40Z",
+ "checks": [
+  {
+   "check": "fresh throwaway profile: no stored facts",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "497880 검색 노출",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "register=497880 → 거래 등록 시트에 497880 선택",
+   "pass": true,
+   "detail": "497880"
+  },
+  {
+   "check": "FAB opens trade sheet & FAB hidden while open",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "8px slider kept (all dialog track rules 8px, input bg transparent/no border)",
+   "pass": true,
+   "detail": {
+    "rules": [
+     ".garden #ledger-dialog input[type=\"range\"]::-webkit-slider-runnable-track => 8px",
+     "body.mu #ledger-dialog input[type=\"range\"]::-webkit-slider-runnable-track => 8px"
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "0px"
+   }
+  },
+  {
+   "check": "최초매수 497880 10주",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "최초매수 472150 10주 (새 계좌 ISA)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "매도 시 해당 계좌 보유종목만 표시",
+   "pass": true,
+   "detail": [
+    "472150"
+   ]
+  },
+  {
+   "check": "추가매수 시 보유종목만 표시",
+   "pass": true,
+   "detail": [
+    "472150"
+   ]
+  },
+  {
+   "check": "최초매수 시 194종 전체 표시",
+   "pass": true,
+   "detail": 194
+  },
+  {
+   "check": "자동금액 = 수량×가격 (7×12,345=86,415)",
+   "pass": true,
+   "detail": [
+    "86,415 원",
+    "7주 × 12,345원"
+   ]
+  },
+  {
+   "check": "추가매수 497880 5주",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "같은 날짜 복수 거래 (2026-03-03 두번째)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "같은 날 order_key 0,1 순서",
+   "pass": true,
+   "detail": [
+    0,
+    1
+   ]
+  },
+  {
+   "check": "부분 매도 497880 3주",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "매도 비율 50% → floor(27×0.5)=13주, 잔여 14주",
+   "pass": true,
+   "detail": [
+    "27주",
+    "13",
+    "13주",
+    "14주",
+    "50"
+   ]
+  },
+  {
+   "check": "비율 매도 저장",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "슬라이더 100% → 보유 전량 14주",
+   "pass": true,
+   "detail": "14"
+  },
+  {
+   "check": "전량 매도 저장",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "보유 초과 매도 차단",
+   "pass": true,
+   "detail": [
+    "매도 수량이 보유수량 12주를 초과했습니다."
+   ]
+  },
+  {
+   "check": "전량매도 종목은 매도 목록에서 제외",
+   "pass": true,
+   "detail": [
+    "497880"
+   ]
+  },
+  {
+   "check": "전량매도 후 최초매수로 새 사이클",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "0018C0 사이클 2개",
+   "pass": true,
+   "detail": 2
+  },
+  {
+   "check": "신규 ETF 배당재투자 (보유 없던 0005A0, 50%)",
+   "pass": true,
+   "detail": {
+    "calc": "사용 가능한 배당금: 35,444원\n이번에 재투자할 금액: 17,722원\n매수 가능 수량: 1주\n실제 매수금액: 9,090원\n재투자 후 남는 배당금: 26,354원",
+    "qty": "1",
+    "price": "9090",
+    "amount": "9,090 원",
+    "err": []
+   }
+  },
+  {
+   "check": "잔여 배당현금 재투자 (0005A0, 100%)",
+   "pass": true,
+   "detail": {
+    "calc": "사용 가능한 배당금: 26,354원\n이번에 재투자할 금액: 26,354원\n매수 가능 수량: 2주\n실제 매수금액: 18,180원\n재투자 후 남는 배당금: 8,174원",
+    "qty": "2",
+    "price": "9090",
+    "amount": "18,180 원",
+    "err": []
+   }
+  },
+  {
+   "check": "잔여 현금 대조: 2차 사용가능 = 1차 사용가능 − 1차 매수금액",
+   "pass": true,
+   "detail": {
+    "a1": 35444.0,
+    "used1": 9090.0,
+    "a2": 26354.0
+   }
+  },
+  {
+   "check": "거래 수정 (추가매수 5→6주)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "거래 날짜 변경 (03-03→03-04)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "거래 삭제",
+   "pass": true,
+   "detail": 9
+  },
+  {
+   "check": "새로고침 후 원장·화면 동일",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "거래 레코드 스키마 키 불변",
+   "pass": true,
+   "detail": [
+    "account_id",
+    "code",
+    "cycle_id",
+    "order_key",
+    "quantity",
+    "trade_date",
+    "trade_price",
+    "transaction_id",
+    "type"
+   ]
+  },
+  {
+   "check": "백업 파일 = 저장 원장",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "기록 초기화",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "백업 복원 → 원장 동일",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "복원 후 성과 화면 숫자 동일",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "SW scope=사이트 경로, 새 캐시명, mobile-ui-v1.css 캐시",
+   "pass": true,
+   "detail": {
+    "scope": "http://127.0.0.1:8132/",
+    "keys": [
+     "donnaemsae-asset-hub-20261013-mobileui-v53a"
+    ],
+    "count": 365,
+    "css": true
+   }
+  },
+  {
+   "check": "오프라인 새로고침 (SW 캐시)",
+   "pass": true,
+   "detail": "연구소 대문\n돈냄새연구소\n정밀하게 분석하고, 천천히 키운다.\n계좌·거래 관리\n\n계좌와 거래 기록을 관리하고 백업해요.\n\n배당 성과 분석으로 →\n"
+  },
+  {
+   "check": "가상 데이터 정리 (localStorage 비움)",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "콘솔/페이지 오류 0건",
+   "pass": true,
+   "detail": []
+  }
+ ],
+ "errors": [],
+ "http_errors": [],
+ "form_order": [
+  "계좌",
+  "종목",
+  "종목 검색",
+  "거래유형",
+  "거래일",
+  "수량",
+  "1주당 가격 (",
+  "예상 거래 금액",
+  "매도는 직접매수",
+  "",
+  "거래 저장"
+ ],
+ "reinvest_new_etf": {
+  "calc": "사용 가능한 배당금: 35,444원\n이번에 재투자할 금액: 17,722원\n매수 가능 수량: 1주\n실제 매수금액: 9,090원\n재투자 후 남는 배당금: 26,354원",
+  "qty": "1",
+  "price": "9090",
+  "amount": "9,090 원",
+  "err": []
+ },
+ "reinvest_residual": {
+  "calc": "사용 가능한 배당금: 26,354원\n이번에 재투자할 금액: 26,354원\n매수 가능 수량: 2주\n실제 매수금액: 18,180원\n재투자 후 남는 배당금: 8,174원",
+  "qty": "2",
+  "price": "9090",
+  "amount": "18,180 원",
+  "err": []
+ },
+ "facts_after_trades": {
+  "accounts": 2,
+  "transactions": 10,
+  "types": [
+   "initial_buy",
+   "initial_buy",
+   "add_buy",
+   "initial_buy",
+   "sell",
+   "sell",
+   "sell",
+   "initial_buy",
+   "reinvest",
+   "reinvest"
+  ]
+ },
+ "home_text": "돈냄새연구소\n정밀하게 분석하고, 천천히 키운다.\n조회 범위\n전체\n[일반] 가상-일반\n[일반] 가상-ISA\nSOL CD금리&머니마켓액티브\nTIGER 배당커버드콜액티브\nPLUS 고배당주위클리고정커버드콜\nKODEX 미국S&P500데일리커버드콜OTM\n지금 내 배당투자는?\n10.08 종가 기준\n확인 필요 알림\n현재 자산가치\n905,425원\n\nETF 평가액 + 남은 배당현금\n\n배당이 키운 자산\n59,285원\n배당재투자로 늘어난 수량 합계 3주\n내가 넣은 돈\n900,048.75원\n직접투자 취득원가 · 별도 비교 기준\n현재가치 분해\n직접매수\n846,140원\n재투자\n27,270원\n배당현금\n32,015원\n합계\n905,425원\n배당은 이렇게 흘렀어요\n받은 배당\n63,550원\n누적 · 세전\n다시 투자한 배당\n27,270원\n재투자 누적\n사용한 배당\n0원\n출금·사용 누적\n남아 있는 배당\n32,015원\n계좌 내 현금\n다음으로 보기\n미래 날씨 →\n배당 성과 분석\n월별 배당 기록과 누적 배당을 봐요.\n계좌·거래 관리\n보유 종목과 거래 내역을 관리해요.\n\n배당 지급일 정보가 없는 경우, 분배 기준일 +3영업일을 예상 지급일로 적용합니다.\n\n홈\n분석\n관리",
+ "finished": "2026-10-13T21:44:38Z"
+}

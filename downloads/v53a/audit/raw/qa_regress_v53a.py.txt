@@ -1,0 +1,172 @@
+"""Virtual-ledger regression in a fresh throwaway context. Virtual trades only."""
+import asyncio,json,sys,os,time
+from playwright.async_api import async_playwright
+BASE=sys.argv[1];OUT=sys.argv[2];TAG=sys.argv[3];os.makedirs(OUT,exist_ok=True)
+KEY='donnaemsae.management.facts.v1'
+R={'base':BASE,'started':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'checks':[],'errors':[]}
+def check(n,ok,d=None):
+    R['checks'].append({'check':n,'pass':bool(ok),'detail':d});print(('PASS ' if ok else 'FAIL ')+n,json.dumps(d,ensure_ascii=False)[:300] if d is not None else '',flush=True)
+F='#trade-form '
+async def openform(pg):
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(500);await pg.click('.mu-fab');await pg.wait_for_timeout(250)
+async def fill(pg,code,typ,date,qty=None,price=None,account=None,new_account=None):
+    if new_account: await pg.select_option(F+'select[name=account]','new');await pg.fill(F+'input[name=new_account]',new_account)
+    elif account: await pg.select_option(F+'select[name=account]',label=account)
+    await pg.fill(F+'input[name=date]',date);await pg.dispatch_event(F+'input[name=date]','change')
+    await pg.click(F+f'[data-type-btn={typ}]');await pg.wait_for_timeout(100)
+    await pg.select_option(F+'select[name=code]',code)
+    if qty is not None: await pg.fill(F+'input[name=quantity]',qty)
+    if price is not None: await pg.fill(F+'input[name=price]',price)
+async def submit(pg):
+    await pg.click(F+'button[type=submit]');await pg.wait_for_timeout(600)
+    if not await pg.locator('#trade-form').count() or not await pg.locator('#ledger-dialog[open]').count(): return []
+    return [e for e in await pg.locator(F+'.form-error').all_inner_texts() if e.strip()]
+async def trade(pg,*a,**k):
+    await openform(pg);await fill(pg,*a,**k);return await submit(pg)
+async def facts(pg): 
+    t=await pg.evaluate(f"localStorage.getItem('{KEY}')");return json.loads(t) if t else None
+def holding(f,acc_name,code):
+    return None
+async def main():
+  async with async_playwright() as p:
+    b=await p.chromium.launch(executable_path='/usr/bin/google-chrome',args=['--no-sandbox'])
+    ctx=await b.new_context(viewport={'width':390,'height':844},device_scale_factor=2,is_mobile=True,has_touch=True,accept_downloads=True,locale='ko-KR',timezone_id='Asia/Seoul')
+    pg=await ctx.new_page()
+    pg.on('console',lambda m:R['errors'].append({'type':'console.error','text':m.text,'loc':m.location,'page':pg.url}) if m.type=='error' else None)
+    pg.on('pageerror',lambda x:R['errors'].append({'type':'pageerror','text':str(x)}))
+    pg.on('requestfailed',lambda r:R['errors'].append({'type':'requestfailed','text':r.url+' '+str(r.failure)}) if not r.url.startswith('blob:') else None);R['http_errors']=[];pg.on('response',lambda r:R['http_errors'].append([r.status,r.url]) if r.status>=400 else None)
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle')
+    check('fresh throwaway profile: no stored facts',await facts(pg) is None)
+    await pg.goto(BASE+'analysis-search.html',wait_until='networkidle');await pg.click('#entry-search');await pg.fill('#entry-search','497880');await pg.wait_for_timeout(300)
+    check('497880 검색 노출',await pg.locator('#entry-results a[href="detail.html?code=497880"]').count()==1)
+    await pg.goto(BASE+'management.html?mode=ledger&register=497880',wait_until='networkidle');await pg.wait_for_timeout(800)
+    sel=await pg.eval_on_selector('#trade-form select[name=code]','e=>e.value') if await pg.locator('#trade-form').count() else None
+    check('register=497880 → 거래 등록 시트에 497880 선택',sel=='497880',sel);await pg.screenshot(path=f'{OUT}/{TAG}_register_497880.png')
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle')
+    # FAB / dialog
+    await pg.click('.mu-fab');await pg.wait_for_timeout(250)
+    check('FAB opens trade sheet & FAB hidden while open',await pg.locator('#ledger-dialog[open] #trade-form').count()==1 and not await pg.locator('.mu-fab').is_visible())
+    order=await pg.evaluate("[...document.querySelectorAll('#trade-form > *')].map(e=>(e.querySelector('.mu-f-label span:last-child')||e).textContent.trim().slice(0,8))")
+    R['form_order']=order
+    tr=await pg.evaluate("""(()=>{const out=[];for(const sh of document.styleSheets){let rs;try{rs=sh.cssRules}catch{continue}for(const r of rs){if(r.selectorText&&r.selectorText.includes('#ledger-dialog')&&r.selectorText.includes('slider-runnable-track')&&r.style.height)out.push(r.selectorText+' => '+r.style.height)}}const i=document.querySelector('[name=reinvest_ratio]');return {rules:out,bg:getComputedStyle(i).backgroundColor,border:getComputedStyle(i).borderTopWidth}})()""")
+    check('8px slider kept (all dialog track rules 8px, input bg transparent/no border)',tr['rules'] and all(r.endswith('8px') for r in tr['rules']) and tr['bg'] in ('rgba(0, 0, 0, 0)','transparent') and tr['border']=='0px',tr)
+    await pg.evaluate("document.querySelector('#reinvest-ratio-box').hidden=false");await pg.locator('#reinvest-ratio-box').screenshot(path=f'{OUT}/{TAG}_slider_8px_reinvest.png');await pg.evaluate("document.querySelector('#reinvest-ratio-box').hidden=true")
+    await pg.keyboard.press('Escape')
+    # 1 initial buy
+    e=await trade(pg,'497880','initial_buy','2025-12-01','10','50000',new_account='가상-일반');check('최초매수 497880 10주',not e,e)
+    # holdings-only for add/sell on another account
+    e=await trade(pg,'472150','initial_buy','2026-05-20','10','25000',new_account='가상-ISA');check('최초매수 472150 10주 (새 계좌 ISA)',not e,e)
+    await openform(pg);await pg.select_option(F+'select[name=account]',label='[일반] 가상-ISA');await pg.dispatch_event(F+'select[name=account]','change');await pg.click(F+'[data-type-btn=sell]')
+    codes=await pg.eval_on_selector(F+'select[name=code]','s=>[...s.options].map(o=>o.value)')
+    check('매도 시 해당 계좌 보유종목만 표시',codes==['472150'],codes)
+    await pg.click(F+'[data-type-btn=add_buy]');codes=await pg.eval_on_selector(F+'select[name=code]','s=>[...s.options].map(o=>o.value)');check('추가매수 시 보유종목만 표시',codes==['472150'],codes)
+    await pg.click(F+'[data-type-btn=initial_buy]');n=await pg.eval_on_selector(F+'select[name=code]','s=>s.options.length');check('최초매수 시 194종 전체 표시',n==194,n)
+    # auto amount
+    await pg.fill(F+'input[name=quantity]','7');await pg.fill(F+'input[name=price]','12345');await pg.wait_for_timeout(100)
+    amt=await pg.inner_text('#trade-amount');fm=await pg.inner_text('#mu-formula');check('자동금액 = 수량×가격 (7×12,345=86,415)',amt.replace(' ','')=='86,415원' and '7주' in fm and '12,345원' in fm,[amt,fm])
+    await pg.keyboard.press('Escape')
+    # 2 add buy
+    e=await trade(pg,'497880','add_buy','2026-03-03','5','50010',account='[일반] 가상-일반');check('추가매수 497880 5주',not e,e)
+    # same-day multiple trades
+    e=await trade(pg,'0018C0','initial_buy','2026-03-03','27','13000',account='[일반] 가상-일반');check('같은 날짜 복수 거래 (2026-03-03 두번째)',not e,e)
+    f=await facts(pg);same=[t for t in f['transactions'] if t['trade_date']=='2026-03-03'];check('같은 날 order_key 0,1 순서',sorted(t['order_key'] for t in same)==[0,1],[t['order_key'] for t in same])
+    # 3 partial sell via quantity
+    e=await trade(pg,'497880','sell','2026-07-01','3','50030',account='[일반] 가상-일반');check('부분 매도 497880 3주',not e,e)
+    # 4 ratio sell 50% on 0018C0 via quick button
+    await openform(pg);await fill(pg,'0018C0','sell','2026-08-03',account='[일반] 가상-일반');await pg.dispatch_event(F+'select[name=code]','change')
+    held=await pg.inner_text('#mu-held-val');await pg.click(F+'.sell-quick-ratio button[data-r="50"]');await pg.wait_for_timeout(100)
+    q=await pg.input_value(F+'input[name=quantity]');now=await pg.inner_text('#mu-sell-now');left=await pg.inner_text('#mu-sell-left');rv=await pg.inner_text('#sell-ratio-val')
+    check('매도 비율 50% → floor(27×0.5)=13주, 잔여 14주',held=='27주' and q=='13' and now=='13주' and left=='14주' and rv=='50',[held,q,now,left,rv])
+    await pg.fill(F+'input[name=price]','13100');e=await submit(pg);check('비율 매도 저장',not e,e)
+    # slider drag 100% → full sell
+    await openform(pg);await fill(pg,'0018C0','sell','2026-09-01',account='[일반] 가상-일반');await pg.dispatch_event(F+'select[name=code]','change')
+    await pg.eval_on_selector(F+'input[name=sell_ratio]',"s=>{s.value='100';s.dispatchEvent(new Event('input',{bubbles:true}))}")
+    q=await pg.input_value(F+'input[name=quantity]');check('슬라이더 100% → 보유 전량 14주',q=='14',q)
+    await pg.fill(F+'input[name=price]','13200');e=await submit(pg);check('전량 매도 저장',not e,e)
+    # over-sell blocked
+    await openform(pg);await fill(pg,'497880','sell','2026-09-02','999','50000',account='[일반] 가상-일반');e=await submit(pg);check('보유 초과 매도 차단',bool(e) and '초과' in ' '.join(e),e);await pg.keyboard.press('Escape')
+    # new cycle after full sell
+    await openform(pg);await pg.select_option(F+'select[name=account]',label='[일반] 가상-일반');await pg.fill(F+'input[name=date]','2026-09-20');await pg.dispatch_event(F+'input[name=date]','change');await pg.click(F+'[data-type-btn=sell]')
+    codes=await pg.eval_on_selector(F+'select[name=code]','s=>[...s.options].map(o=>o.value)');check('전량매도 종목은 매도 목록에서 제외',('0018C0' not in codes) and '497880' in codes,codes);await pg.keyboard.press('Escape')
+    e=await trade(pg,'0018C0','initial_buy','2026-09-20','5','13300',account='[일반] 가상-일반');check('전량매도 후 최초매수로 새 사이클',not e,e)
+    f=await facts(pg);cyc={t['cycle_id'] for t in f['transactions'] if t['code']=='0018C0'};check('0018C0 사이클 2개',len(cyc)==2,len(cyc))
+    # new ETF reinvest (0005A0 not held) at 50% ratio, ref price
+    async def reinv(code,date,ratio):
+        await openform(pg);await fill(pg,code,'reinvest',date,account='[일반] 가상-일반');await pg.dispatch_event(F+'select[name=code]','change')
+        await pg.click('#apply-ref-price');await pg.wait_for_timeout(100)
+        await pg.eval_on_selector(F+'input[name=reinvest_ratio]',"(s,r)=>{s.value=r;s.dispatchEvent(new Event('input',{bubbles:true}))}",str(ratio));await pg.wait_for_timeout(100)
+        calc=await pg.inner_text('#reinvest-calc');await pg.click('#confirm-reinvest');await pg.wait_for_timeout(100)
+        q=await pg.input_value(F+'input[name=quantity]');pr=await pg.input_value(F+'input[name=price]');amt=await pg.inner_text('#trade-amount')
+        e=await submit(pg);return {'calc':calc,'qty':q,'price':pr,'amount':amt,'err':e}
+    r1=await reinv('0005A0','2026-10-07',50);R['reinvest_new_etf']=r1
+    check('신규 ETF 배당재투자 (보유 없던 0005A0, 50%)',not r1['err'] and r1['qty'] not in ('','0'),r1)
+    r2=await reinv('0005A0','2026-10-08',100);R['reinvest_residual']=r2
+    check('잔여 배당현금 재투자 (0005A0, 100%)',not r2['err'] and r2['qty'] not in ('','0'),r2)
+    import re as _re
+    def num(t,lab):
+        m=_re.search(lab+r': ([\d,\.]+)원',t);return float(m.group(1).replace(',','')) if m else None
+    a1=num(r1['calc'],'사용 가능한 배당금');u1=int(r1['qty'])*float(r1['price']);a2=num(r2['calc'],'사용 가능한 배당금')
+    check('잔여 현금 대조: 2차 사용가능 = 1차 사용가능 − 1차 매수금액',a2 is not None and abs(a2-(a1-u1))<0.01,{'a1':a1,'used1':u1,'a2':a2})
+    if await pg.locator('#ledger-dialog[open]').count(): await pg.keyboard.press('Escape')
+    f=await facts(pg);R['facts_after_trades']={'accounts':len(f['accounts']),'transactions':len(f['transactions']),'types':[t['type'] for t in f['transactions']]}
+    async def more(i,k='edit'):
+        for _ in range(10):
+            if await pg.locator(f'[data-{k}="{i}"]').count() or not await pg.locator('[data-action=more-records]').count(): break
+            await pg.click('[data-action=more-records]');await pg.wait_for_timeout(150)
+    # edit: change the first add_buy quantity 5 -> 6
+    tid=[t for t in f['transactions'] if t['type']=='add_buy'][0]['transaction_id']
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(500)
+    await pg.click('[data-action=rec-edit]');await pg.wait_for_timeout(200)
+    for _ in range(10):
+        if await pg.locator(f'[data-edit="{tid}"]').count() or not await pg.locator('[data-action=more-records]').count(): break
+        await pg.click('[data-action=more-records]');await pg.wait_for_timeout(150)
+    await pg.click(f'[data-edit="{tid}"]');await pg.wait_for_timeout(300)
+    await pg.fill(F+'input[name=quantity]','6');await pg.check(F+'.edit-confirm input');e=await submit(pg)
+    f2=await facts(pg);t2=[t for t in f2['transactions'] if t['transaction_id']==tid][0];check('거래 수정 (추가매수 5→6주)',not e and t2['quantity']=='6',e)
+    # date change on edit
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(400);await pg.click('[data-action=rec-edit]')
+    await more(tid)
+    await pg.click(f'[data-edit="{tid}"]');await pg.wait_for_timeout(300);await pg.fill(F+'input[name=date]','2026-03-04');await pg.dispatch_event(F+'input[name=date]','change');await pg.check(F+'.edit-confirm input');e=await submit(pg)
+    f3=await facts(pg);t3=[t for t in f3['transactions'] if t['transaction_id']==tid][0];check('거래 날짜 변경 (03-03→03-04)',not e and t3['trade_date']=='2026-03-04',e)
+    # delete: last 0018C0 initial buy (new cycle)
+    did=[t for t in f3['transactions'] if t['code']=='0018C0' and t['trade_date']=='2026-09-20'][0]['transaction_id']
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(400);await pg.click('[data-action=rec-edit]')
+    await more(did,'delete')
+    await pg.click(f'[data-delete="{did}"]');await pg.wait_for_timeout(200)
+    if await pg.locator('#delete-confirm').count(): await pg.click('#delete-confirm');await pg.wait_for_timeout(500)
+    f4=await facts(pg);check('거래 삭제',not any(t['transaction_id']==did for t in f4['transactions']),len(f4['transactions']))
+    # rollback restores
+    # reload persistence
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(800);txt1=await pg.inner_text('#app')
+    await pg.reload(wait_until='networkidle');await pg.wait_for_timeout(1000);txt2=await pg.inner_text('#app');f5=await facts(pg)
+    check('새로고침 후 원장·화면 동일',f5==f4 and txt1==txt2)
+    await pg.screenshot(path=f'{OUT}/{TAG}_after_trades_overview.png',full_page=True)
+    await pg.goto(BASE+'asset-hub.html',wait_until='networkidle');await pg.wait_for_timeout(800);R['home_text']=await pg.inner_text('#app')
+    await pg.screenshot(path=f'{OUT}/{TAG}_after_trades_home.png',full_page=True)
+    # schema unchanged keys
+    keys=sorted(set(k for t in f5['transactions'] for k in t));check('거래 레코드 스키마 키 불변',keys==sorted(['transaction_id','account_id','code','cycle_id','type','trade_date','order_key','quantity','trade_price']),keys)
+    # backup/reset/restore
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(600)
+    async with pg.expect_download() as dl: await pg.click('[data-action="backup"]')
+    d=await dl.value;bp=f'{OUT}/{TAG}_virtual_backup.json';await d.save_as(bp);check('백업 파일 = 저장 원장',json.load(open(bp,encoding='utf-8'))==f5)
+    perf_before=None
+    await pg.goto(BASE+'management.html?mode=performance',wait_until='networkidle');await pg.wait_for_timeout(800);perf_before=await pg.inner_text('#app')
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(500)
+    await pg.click('details.mu-danger summary');await pg.click('[data-action="reset"]');await pg.wait_for_timeout(200);await pg.click('#reset-confirm');await pg.wait_for_timeout(500)
+    a=await facts(pg);check('기록 초기화',a is None or len(a['transactions'])==0)
+    await pg.click('[data-action="restore"]');await pg.wait_for_timeout(200);await pg.set_input_files('#restore-file',bp);await pg.click('#restore-submit');await pg.wait_for_timeout(1200)
+    check('백업 복원 → 원장 동일',await facts(pg)==f5)
+    await pg.goto(BASE+'management.html?mode=performance',wait_until='networkidle');await pg.wait_for_timeout(800);check('복원 후 성과 화면 숫자 동일',await pg.inner_text('#app')==perf_before)
+    await pg.screenshot(path=f'{OUT}/{TAG}_performance.png',full_page=True)
+    # SW
+    try:
+        await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_function("navigator.serviceWorker&&navigator.serviceWorker.controller",timeout=20000)
+        sw=await pg.evaluate("(async()=>{const r=await navigator.serviceWorker.getRegistration();const ks=await caches.keys();const c=await caches.open('donnaemsae-asset-hub-20261013-mobileui-v53a');return {scope:r.scope,keys:ks,count:(await c.keys()).length,css:!!(await c.match('mobile-ui-v1.css'))}})()")
+        check('SW scope=사이트 경로, 새 캐시명, mobile-ui-v1.css 캐시',sw['scope']==BASE and 'donnaemsae-asset-hub-20261013-mobileui-v53a' in sw['keys'] and sw['css'],sw)
+        await ctx.set_offline(True);await pg.reload(wait_until='load');await pg.wait_for_timeout(1500);t=await pg.inner_text('body');check('오프라인 새로고침 (SW 캐시)','가상-일반' in t,t[:80]);await ctx.set_offline(False)
+    except Exception as ex: check('SW',False,str(ex)[:200])
+    await pg.evaluate("localStorage.clear()");check('가상 데이터 정리 (localStorage 비움)',await pg.evaluate("localStorage.length")==0)
+    check('콘솔/페이지 오류 0건',not R['errors'],R['errors'][:5])
+    R['finished']=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime());json.dump(R,open(f'{OUT}/{TAG}_regression.json','w'),ensure_ascii=False,indent=1)
+    await ctx.close();await b.close()
+asyncio.run(main())

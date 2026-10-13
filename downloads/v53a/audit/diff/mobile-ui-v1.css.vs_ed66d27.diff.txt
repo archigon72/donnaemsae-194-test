@@ -1,0 +1,16 @@
+--- ed66d27/mobile-ui-v1.css
++++ 16ecc2d/mobile-ui-v1.css
+@@ -337,3 +337,13 @@
+ .mu-tax-top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}.mu-tax-top b{overflow-wrap:anywhere}
+ .mu-tax-sub{display:block;opacity:.75;overflow-wrap:anywhere}
+ .mu-tax-dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:6px 0}.mu-tax-dl dt{font-size:.75em;opacity:.7}.mu-tax-dl dd{margin:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
++/* v5.3a 계좌 유형 라벨: [유형]은 항상 표시, 이름만 말줄임 */
++.acct-lab{display:inline-flex;align-items:baseline;gap:.3em;max-width:100%;min-width:0;vertical-align:bottom}
++.acct-type{flex:0 0 auto;white-space:nowrap;font-weight:700}
++.acct-nm{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:inherit}
++.account-name,.mu-comp-name,.plot-label{min-width:0}.account-name>b,.mu-comp-name>b{display:block;min-width:0;max-width:100%}
++.acct-type-row{display:grid;gap:4px;margin:8px 0;min-width:0}.acct-type-row .acct-lab{font-weight:600}
++.acct-type-notice .mu-sub-link{margin-top:4px}
++.mc-rec-sub.mc-rec-acct{display:flex;min-width:0;align-items:baseline}
++.mc-rec-acct .acct-lab{flex:0 1 auto;min-width:0;font-weight:inherit}.mc-rec-acct .acct-type{font-weight:600}
++.mc-rec-acct .mc-rec-code{flex:0 4 auto;min-width:2.5em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}

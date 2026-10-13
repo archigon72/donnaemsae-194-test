@@ -1,0 +1,114 @@
+[
+ [
+  "v5.3a 계좌유형 표시·무결성 (qa_v53a.py, 신규)",
+  "실배포",
+  29,
+  0,
+  29,
+  "raw/live_v53a.log.txt"
+ ],
+ [
+  "v5.3a 계좌유형 표시·무결성 (qa_v53a.py, 신규)",
+  "로컬(같은 파일)",
+  29,
+  0,
+  29,
+  "raw/local_v53a.log.txt"
+ ],
+ [
+  "v5.3 세전/세후 (qa_v53.py, 라벨 형식만 조정)",
+  "실배포",
+  50,
+  0,
+  50,
+  "raw/v53_live.log.txt"
+ ],
+ [
+  "v5.3 세전/세후 (qa_v53.py, 라벨 형식만 조정)",
+  "로컬(같은 파일)",
+  50,
+  0,
+  50,
+  "raw/v53_local.log.txt"
+ ],
+ [
+  "v5.2 (qa_v52.py)",
+  "실배포",
+  65,
+  0,
+  65,
+  "raw/v52_live.log.txt"
+ ],
+ [
+  "v5.2 (qa_v52.py)",
+  "로컬(같은 파일)",
+  65,
+  0,
+  65,
+  "raw/v52_local.log.txt"
+ ],
+ [
+  "v5.2fix A~G (qa_v52a.py)",
+  "실배포",
+  58,
+  0,
+  58,
+  "raw/after_live.log.txt"
+ ],
+ [
+  "v5.2fix A~G (qa_v52a.py)",
+  "로컬(같은 파일)",
+  58,
+  0,
+  58,
+  "raw/after_local.log.txt"
+ ],
+ [
+  "원장 정밀검수 (audit.py) — v5.3 미해결 8 FAIL 유지",
+  "실배포",
+  68,
+  8,
+  76,
+  "raw/audit_live.log.txt"
+ ],
+ [
+  "원장 정밀검수 (audit.py) — v5.3 미해결 8 FAIL 유지",
+  "로컬(같은 파일)",
+  68,
+  8,
+  76,
+  "raw/audit_local.log.txt"
+ ],
+ [
+  "회귀·백업→초기화→복원 (qa_regress_v53a.py)",
+  "실배포",
+  39,
+  0,
+  39,
+  "raw/reg_live.log.txt"
+ ],
+ [
+  "회귀·백업→초기화→복원 (qa_regress_v53a.py)",
+  "로컬(같은 파일)",
+  39,
+  0,
+  39,
+  "raw/reg_local.log.txt"
+ ],
+ [
+  "v5.1 도넛 색·순서 (qa_v51.py)",
+  "실배포",
+  22,
+  0,
+  22,
+  "raw/v51_live.log.txt"
+ ],
+ [
+  "v5.1 도넛 색·순서 (qa_v51.py)",
+  "로컬(같은 파일)",
+  22,
+  0,
+  22,
+  "raw/v51_local.log.txt"
+ ]
+]
