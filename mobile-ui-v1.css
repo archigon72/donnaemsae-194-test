@@ -284,3 +284,25 @@ html body.mu .mc-m-hero .mc-m-tree{position:absolute!important;right:8px!importa
 html body.mu .mc-m-hero>*:not(.mc-m-tree){position:relative;z-index:1}
 html body.mu .mc-m-hero .hero-basis,html body.mu .mc-m-hero .big-value{padding-right:80px}
 body.mu .mu-tool small{white-space:normal!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+/* v4 */
+body.mu .mu-comp-hero .mu-comp-amt{font-size:clamp(24px,7.6vw,32px)}
+body.mu .mu-comp-ref{margin:6px 0 0;font-size:12.5px;color:var(--mu-muted);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+body.mu .mu-comp-ref b{color:var(--mu-text);white-space:nowrap}
+body.mu .mu-donut-wrap{position:relative;width:min(220px,70%);margin:4px auto 12px;aspect-ratio:1}
+body.mu .mu-donut{width:100%;height:100%;display:block}
+body.mu .mu-donut-c{position:absolute;inset:22%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+body.mu .mu-donut-c small{font-size:11px;color:var(--mu-muted)}
+body.mu .mu-donut-c b{font-size:clamp(13px,4vw,16px);white-space:nowrap}
+body.mu .mu-donut-c b.mu-long{font-size:clamp(10.5px,3.2vw,13px)}
+body.mu .mu-comp-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+body.mu .mu-comp-row{display:grid;grid-template-columns:10px minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px;background:#0a1824;border:1px solid var(--mu-line);border-radius:12px;min-height:56px;overflow:hidden}
+body.mu .mu-dot2{width:10px;height:10px;border-radius:50%}
+body.mu .mu-comp-name{display:flex;flex-direction:column;min-width:0}
+body.mu .mu-comp-name b{font-size:14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+body.mu .mu-comp-name small{font-size:11.5px;color:var(--mu-muted);overflow-wrap:anywhere}
+body.mu .mu-comp-val{display:flex;flex-direction:column;align-items:flex-end}
+body.mu .mu-comp-val b{font-size:clamp(13px,3.9vw,15px);white-space:nowrap}
+body.mu .mu-comp-val small{font-size:12px;color:var(--mu-green)}
+body.mu .mu-empty h2{font-size:17px;margin-bottom:6px}
+body.mu .mu-tile-sub{font-style:normal;font-size:11px;color:var(--mu-muted)}
+body.mu .mu-tabs button[data-comp]{min-height:44px}
