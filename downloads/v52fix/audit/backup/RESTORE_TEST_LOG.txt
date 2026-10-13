@@ -1,0 +1,3 @@
+donnaemsae-194-test_v5.2fix_c7d938d.zip: OK
+Done testing
+ALL 528 FILES OK

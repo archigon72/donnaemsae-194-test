@@ -1,0 +1,9 @@
+$ (게시본 downloads/v52fix/ 의 조각 3개 + restore 도구로 재검증, 실행 2026-10-13T21:53:51+09:00)
+d1882689ad3becccd89d335e8d13daeea0bbf8858519957b698819ff0242e832  donnaemsae-194-test_v5.2fix_c7d938d.zip.part00
+d09727128d85ff33bfdeef20ad38b22d8c4e1b709f9bb443d15597adb1237dff  donnaemsae-194-test_v5.2fix_c7d938d.zip.part01
+885dd58bf8e084ce9558a78ea1f50458e566c867971c669f755b3d76db71f6f2  donnaemsae-194-test_v5.2fix_c7d938d.zip.part02
+donnaemsae-194-test_v5.2fix_c7d938d.zip: OK
+Done testing
+ALL 528 FILES OK
+528
+exit_code=0

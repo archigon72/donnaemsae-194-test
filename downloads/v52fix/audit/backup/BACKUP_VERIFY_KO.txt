@@ -1,0 +1,23 @@
+# 백업 소스 분할 ZIP · SHA-256 · 검증 명령/로그
+> 확인 주체: GrokBot 자체 검증(self-verification). 비서실장 독립 검수 결과가 아님. 모든 수치는 아래 링크한 원본 로그/JSON에서 자동 추출.
+
+| 파일 | 크기(bytes) | SHA-256 | 다운로드 |
+|---|---|---|---|
+| donnaemsae-194-test_v5.2fix_c7d938d.zip.part00 | 15000000 | d1882689ad3becccd89d335e8d13daeea0bbf8858519957b698819ff0242e832 | [../donnaemsae-194-test_v5.2fix_c7d938d.zip.part00](../donnaemsae-194-test_v5.2fix_c7d938d.zip.part00) |
+| donnaemsae-194-test_v5.2fix_c7d938d.zip.part01 | 15000000 | d09727128d85ff33bfdeef20ad38b22d8c4e1b709f9bb443d15597adb1237dff | [../donnaemsae-194-test_v5.2fix_c7d938d.zip.part01](../donnaemsae-194-test_v5.2fix_c7d938d.zip.part01) |
+| donnaemsae-194-test_v5.2fix_c7d938d.zip.part02 | 222188 | 885dd58bf8e084ce9558a78ea1f50458e566c867971c669f755b3d76db71f6f2 | [../donnaemsae-194-test_v5.2fix_c7d938d.zip.part02](../donnaemsae-194-test_v5.2fix_c7d938d.zip.part02) |
+
+- 결합 ZIP SHA-256: `93786475b4263ac8ba7a8d87837559d1675b12a3462fba42bfd0bae31c9bfd5e  donnaemsae-194-test_v5.2fix_c7d938d.zip`
+- 소스 파일 수: 528 (FILES_SHA256.txt 줄 수 528) · 파일별 SHA: [backup/FILES_SHA256.txt](FILES_SHA256.txt)
+- 검증 명령(Linux/macOS):
+```
+cat donnaemsae-194-test_v5.2fix_c7d938d.zip.part* > donnaemsae-194-test_v5.2fix_c7d938d.zip
+sha256sum -c FULL_ZIP_SHA256.txt
+python3 -m zipfile -t donnaemsae-194-test_v5.2fix_c7d938d.zip
+python3 -m zipfile -e donnaemsae-194-test_v5.2fix_c7d938d.zip .
+cd donnaemsae-194-test_v5.2fix_c7d938d && sha256sum --quiet -c ../FILES_SHA256.txt
+```
+- 스크립트: [restore.sh.txt](restore.sh.txt) · 안내: [RESTORE_KO.txt](RESTORE_KO.txt)
+- 납품 시 복원 시험 로그: [RESTORE_TEST_LOG.txt](RESTORE_TEST_LOG.txt)
+- 게시본으로 다시 돌린 검증 로그: [VERIFY_LOG_REPUBLISHED.txt](VERIFY_LOG_REPUBLISHED.txt)
+- 앱 파일 대조: 게시 저장소 HEAD의 앱 파일 528개 SHA가 FILES_SHA256.txt와 같음(INDEX의 "앱 파일 불변 확인" 참조).

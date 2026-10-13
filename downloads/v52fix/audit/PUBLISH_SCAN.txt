@@ -1,0 +1,9 @@
+게시 전 비밀정보·개인정보 점검 (GrokBot 자체 점검, 2026-10-13 KST)
+대상: downloads/v52fix/audit/ 아래 PNG를 뺀 모든 텍스트 파일
+패턴: GitHub 토큰(ghp_/gho_/ghu_/ghs_/ghr_/github_pat_), Bearer 헤더, GH_TOKEN_194 값 대입, AWS 키, 개인키 블록, password 대입, 이메일 주소, 휴대전화 번호, 주민등록번호, 계좌번호 형태 숫자
+결과: 실제 비밀정보 0건
+ - 토큰·키·비밀번호·이메일·주민번호: 0건
+ - 휴대전화 형태 3건: 모두 SHA-256 해시 문자열의 일부(ALL_FILES_SHA_COMPARE.txt, FILES_SHA256.txt). 오탐
+ - 계좌번호 형태 18건: 모두 가상 원장의 무작위 UUID(transaction_id/account_id) 일부. 오탐
+원장 데이터: 원본 JSON에 들어 있는 원장은 QA용 가상 계좌('가상-*', '감사-*')와 가상 거래뿐이며 실제 사용자 원장은 없음.
+제외한 것: git 작성자 정보, 토큰 환경변수, 로컬 머신 경로 외 개인 식별 정보는 넣지 않음.

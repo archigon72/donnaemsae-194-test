@@ -1,0 +1,32 @@
+()=>{
+const vw=document.documentElement.clientWidth,over=[],small=[],esc=[],clip=[],deco=[];
+const cs=e=>getComputedStyle(e);
+const isBox=e=>{const c=cs(e);return parseFloat(c.borderTopWidth)>0||parseFloat(c.borderLeftWidth)>0||(c.backgroundColor!=='rgba(0, 0, 0, 0)'&&c.backgroundColor!=='transparent')||c.backgroundImage!=='none'};
+const boxOf=e=>{let x=e.parentElement;while(x&&x!==document.body&&!x.matches('main,dialog')){if(isBox(x))return x;x=x.parentElement}return null};
+const vis=e=>{for(let x=e;x&&x!==document;x=x.parentElement){const c=cs(x);if(c.display==='none'||c.visibility==='hidden')return false;if(x.matches&&x.matches('.sr-only,[hidden]'))return false;if(x.tagName==='DETAILS'&&!x.open&&e!==x&&!e.closest('summary'))return false}return true};
+const root=document.querySelector('dialog[open]')||document.body;
+const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n;const texts=[];
+while(n=w.nextNode()){
+ const t=n.textContent.trim();if(!t)continue;const e=n.parentElement;
+ if(!e||e.closest('svg,script,style,option,select,.sr-only')||!vis(e))continue;
+ let cl=null;for(let x=e;x&&x!==document.body;x=x.parentElement){if(cs(x).overflow!=='visible'&&!x.matches('dialog')){cl=x;break}}
+ const ell=cl&&(cs(cl).textOverflow==='ellipsis'||cs(e).textOverflow==='ellipsis'||cs(cl).webkitLineClamp!=='none');
+ const r=document.createRange();r.selectNodeContents(n);
+ for(const q0 of r.getClientRects()){
+  if(!q0.width)continue;let q={left:q0.left,right:q0.right,top:q0.top,bottom:q0.bottom};
+  if(cl){const a=cl.getBoundingClientRect();if((q.right>a.right+1||q.bottom>a.bottom+1)&&!ell)clip.push('cut:'+t.slice(0,24));q={left:Math.max(q.left,a.left),right:Math.min(q.right,a.right),top:Math.max(q.top,a.top),bottom:Math.min(q.bottom,a.bottom)}}
+  if(q.right<=q.left)continue;
+  texts.push({e,q,t:t.slice(0,24)});
+  const b=boxOf(e);if(b){const br=b.getBoundingClientRect();if(q.right>br.right+1||q.left<br.left-1||q.bottom>br.bottom+1||q.top<br.top-1)esc.push(t.slice(0,24)+' @'+(b.className||b.tagName))}
+  if(q.right>vw+1||q.left<-1)over.push('text:'+t.slice(0,20));
+ }}
+for(const e of root.querySelectorAll('*')){if(!vis(e))continue;const r=e.getBoundingClientRect();if(!r.width||!r.height)continue;
+ let clipped=false;for(let x=e.parentElement;x&&x!==document.body;x=x.parentElement){if(cs(x).overflow!=='visible'){const a=x.getBoundingClientRect();if(a.right<=vw+1&&a.left>=-1)clipped=true;break}}
+ if(!clipped&&(r.right>vw+1||r.left<-1))over.push(String(e.className&&e.className.baseVal===undefined?e.className:e.tagName)+':'+Math.round(r.left)+'-'+Math.round(r.right));
+ if(e.matches('a,button,select,input:not([type=checkbox]):not([type=range]),summary')&&(r.height<43.5||r.width<43.5))small.push((e.className||e.tagName)+' '+(e.textContent||e.name||'').trim().slice(0,16)+' '+Math.round(r.width)+'x'+Math.round(r.height))}
+for(const im of root.querySelectorAll('img')){if(!vis(im))continue;const r=im.getBoundingClientRect();if(!r.width)continue;const b=boxOf(im);if(!b)continue;const br=b.getBoundingClientRect();
+ if(r.left<br.left-0.5||r.right>br.right+0.5||r.top<br.top-0.5||r.bottom>br.bottom+0.5)deco.push('outside:'+im.className+' in '+b.className);
+ if(im.matches('.mc-i'))continue;for(const x of texts){if(!b.contains(x.e))continue;const q=x.q;if(q.left<r.right-1&&q.right>r.left+1&&q.top<r.bottom-1&&q.bottom>r.top+1){deco.push('overlap:'+im.className+' x '+x.t);break}}}
+let fab=null;const f=document.querySelector('.mu-fab');
+if(f&&vis(f)&&!document.querySelector('dialog[open]')){const y=scrollY;scrollTo(0,1e7);const fr=f.getBoundingClientRect();const kids=[...document.querySelectorAll('.lab-main>*')].filter(x=>x!==f&&vis(x));const last=kids[kids.length-1].getBoundingClientRect();fab={fabTop:Math.round(fr.top),lastBottom:Math.round(last.bottom),ok:last.bottom<=fr.top};scrollTo(0,y)}
+return {vw,docW:document.documentElement.scrollWidth,over:[...new Set(over)].slice(0,15),small:small.slice(0,15),esc:[...new Set(esc)].slice(0,20),clip:[...new Set(clip)].slice(0,15),deco:deco.slice(0,15),fab}}
