@@ -1,16 +1,6 @@
 {
   "items": [
     {
-      "code": "0000D0",
-      "price": "8435",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0004G0",
       "price": "8315",
       "trade_date": "2026-10-08",
@@ -51,36 +41,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0013R0",
-      "price": "7355",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0015E0",
-      "price": "10210",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0015F0",
-      "price": "10280",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0018C0",
       "price": "10140",
       "trade_date": "2026-10-08",
@@ -101,36 +61,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0040X0",
-      "price": "8945",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0040Y0",
-      "price": "7880",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0046A0",
-      "price": "9255",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0046Y0",
       "price": "12150",
       "trade_date": "2026-10-08",
@@ -139,26 +69,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:03:25.425477+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "0048J0",
-      "price": "13335",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0049K0",
-      "price": "10930",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "0049M0",
@@ -181,36 +91,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0057H0",
-      "price": "11375",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0073X0",
-      "price": "8145",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0080X0",
-      "price": "10515",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0084D0",
       "price": "11200",
       "trade_date": "2026-10-08",
@@ -231,56 +111,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0085N0",
-      "price": "9385",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0085P0",
-      "price": "9165",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0086B0",
-      "price": "9510",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0086C0",
-      "price": "9845",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0089B0",
-      "price": "11160",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0089C0",
       "price": "11180",
       "trade_date": "2026-10-08",
@@ -299,16 +129,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:03:32.336311+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "0091C0",
-      "price": "9220",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "0094L0",
@@ -441,16 +261,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0132K0",
-      "price": "8010",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0138T0",
       "price": "9260",
       "trade_date": "2026-10-08",
@@ -501,16 +311,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0153P0",
-      "price": "9495",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0153X0",
       "price": "10225",
       "trade_date": "2026-10-08",
@@ -531,16 +331,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0174J0",
-      "price": "8775",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0176P0",
       "price": "14695",
       "trade_date": "2026-10-08",
@@ -551,16 +341,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0177N0",
-      "price": "14250",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0177R0",
       "price": "11625",
       "trade_date": "2026-10-08",
@@ -569,16 +349,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:03:54.771904+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "0183V0",
-      "price": "11725",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "0189Z0",
@@ -601,36 +371,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0192S0",
-      "price": "9340",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0194N0",
-      "price": "11230",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0194R0",
-      "price": "8030",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0198A0",
       "price": "8870",
       "trade_date": "2026-10-08",
@@ -651,16 +391,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0203D0",
-      "price": "8820",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0210E0",
       "price": "7020",
       "trade_date": "2026-10-08",
@@ -671,16 +401,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0216K0",
-      "price": "8945",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "0219E0",
       "price": "8090",
       "trade_date": "2026-10-08",
@@ -689,16 +409,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:00.922266+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "0220A0",
-      "price": "8475",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "0222D0",
@@ -721,46 +431,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "0224X0",
-      "price": "9690",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0233A0",
-      "price": "10580",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0233J0",
-      "price": "10305",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "0238P0",
-      "price": "10025",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "091170",
       "price": "15300",
       "trade_date": "2026-10-08",
@@ -779,26 +449,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:08.090637+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "136340",
-      "price": "104090",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "153130",
-      "price": "113345",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "161510",
@@ -821,26 +471,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "181480",
-      "price": "77840",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "182480",
-      "price": "12610",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "211900",
       "price": "26960",
       "trade_date": "2026-10-08",
@@ -849,26 +479,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:08.250779+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "214980",
-      "price": "114645",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "237370",
-      "price": "15480",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "245340",
@@ -881,26 +491,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "251600",
-      "price": "15035",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "273140",
-      "price": "114755",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "279530",
       "price": "17110",
       "trade_date": "2026-10-08",
@@ -909,16 +499,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:16.028277+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "284430",
-      "price": "20030",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "289480",
@@ -941,16 +521,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "316300",
-      "price": "11835",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "322410",
       "price": "21780",
       "trade_date": "2026-10-08",
@@ -961,66 +531,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "329200",
-      "price": "4035",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "329650",
-      "price": "13975",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "329660",
-      "price": "17605",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "329670",
-      "price": "21560",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "332610",
-      "price": "121300",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "332620",
-      "price": "81005",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "336160",
       "price": "99985",
       "trade_date": "2026-10-08",
@@ -1029,36 +539,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:15.844524+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "341850",
-      "price": "4565",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "352540",
-      "price": "10420",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "352560",
-      "price": "11200",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "373790",
@@ -1081,16 +561,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "423160",
-      "price": "110770",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "429000",
       "price": "12260",
       "trade_date": "2026-10-08",
@@ -1099,16 +569,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:23.622848+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "429740",
-      "price": "6060",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "432840",
@@ -1129,46 +589,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:24.301736+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "437070",
-      "price": "55765",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "437080",
-      "price": "93960",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "438330",
-      "price": "115780",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "440340",
-      "price": "11265",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "441640",
@@ -1221,16 +641,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "448330",
-      "price": "17545",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "452360",
       "price": "12760",
       "trade_date": "2026-10-08",
@@ -1251,26 +661,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "453850",
-      "price": "6690",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "455030",
-      "price": "11485",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "455660",
       "price": "9150",
       "trade_date": "2026-10-08",
@@ -1279,16 +669,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:37.440751+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "458260",
-      "price": "44515",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "458730",
@@ -1321,16 +701,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "459580",
-      "price": "1074340",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "460660",
       "price": "10865",
       "trade_date": "2026-10-08",
@@ -1349,16 +719,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:37.595017+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "464470",
-      "price": "43435",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "465670",
@@ -1381,16 +741,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "468370",
-      "price": "10030",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "468380",
       "price": "10310",
       "trade_date": "2026-10-08",
@@ -1399,26 +749,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:44.874276+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "468630",
-      "price": "10135",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "471460",
-      "price": "46340",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "472150",
@@ -1431,36 +761,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "472830",
-      "price": "7110",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "472870",
-      "price": "6245",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "473330",
-      "price": "7240",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "474220",
       "price": "15080",
       "trade_date": "2026-10-08",
@@ -1469,16 +769,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:44.695716+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "475080",
-      "price": "7815",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "475380",
@@ -1501,16 +791,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "476550",
-      "price": "6300",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "476690",
       "price": "9750",
       "trade_date": "2026-10-08",
@@ -1519,36 +799,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:04:53.587828+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "476750",
-      "price": "6725",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "476760",
-      "price": "8080",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "476800",
-      "price": "4200",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "476850",
@@ -1591,16 +841,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "480460",
-      "price": "9100",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "481050",
       "price": "1022565",
       "trade_date": "2026-10-08",
@@ -1609,26 +849,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:05:00.821188+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "481060",
-      "price": "6970",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
-      "code": "481340",
-      "price": "7665",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "482730",
@@ -1659,16 +879,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:05:01.180637+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "484790",
-      "price": "7710",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "484880",
@@ -1719,16 +929,6 @@
       "price_type": "close",
       "fetched_at": "2026-10-09T06:05:09.339597+00:00",
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
-    },
-    {
-      "code": "490490",
-      "price": "10305",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
     },
     {
       "code": "490590",
@@ -1881,16 +1081,6 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "497880",
-      "price": "50080",
-      "trade_date": "2026-10-08",
-      "as_of": null,
-      "market_status": "closed",
-      "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
-    },
-    {
       "code": "498400",
       "price": "19805",
       "trade_date": "2026-10-08",
@@ -1931,14 +1121,824 @@
       "source": "NAVER_POLLING_DAILY_CLOSE_V1"
     },
     {
-      "code": "499660",
-      "price": "1001025",
+      "code": "0000D0",
+      "price": "8435.0",
       "trade_date": "2026-10-08",
       "as_of": null,
       "market_status": "closed",
       "price_type": "close",
-      "fetched_at": null,
-      "source": "FUNETF_ETFNAV_CLSP_SUPPLIED_20261011"
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0013R0",
+      "price": "7355.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0015E0",
+      "price": "10210.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0015F0",
+      "price": "10280.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0040X0",
+      "price": "8945.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0040Y0",
+      "price": "7880.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0046A0",
+      "price": "9255.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0048J0",
+      "price": "13335.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0049K0",
+      "price": "10930.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0057H0",
+      "price": "11375.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0073X0",
+      "price": "8145.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0080X0",
+      "price": "10515.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0085N0",
+      "price": "9385.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0085P0",
+      "price": "9165.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0086B0",
+      "price": "9510.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0086C0",
+      "price": "9845.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0089B0",
+      "price": "11160.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0091C0",
+      "price": "9220.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0132K0",
+      "price": "8010.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0153P0",
+      "price": "9495.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0174J0",
+      "price": "8775.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0177N0",
+      "price": "14250.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0183V0",
+      "price": "11725.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0192S0",
+      "price": "9340.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0194N0",
+      "price": "11230.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0194R0",
+      "price": "8030.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0203D0",
+      "price": "8820.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0216K0",
+      "price": "8945.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0220A0",
+      "price": "8475.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0224X0",
+      "price": "9690.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0233A0",
+      "price": "10580.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0233J0",
+      "price": "10305.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "0238P0",
+      "price": "10025.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "136340",
+      "price": "104090.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "153130",
+      "price": "113345.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "181480",
+      "price": "77840.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "182480",
+      "price": "12610.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "214980",
+      "price": "114645.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "237370",
+      "price": "15480.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "251600",
+      "price": "15035.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "273140",
+      "price": "114755.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "284430",
+      "price": "20030.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "316300",
+      "price": "11835.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "329200",
+      "price": "4035.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "329650",
+      "price": "13975.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "329660",
+      "price": "17605.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "329670",
+      "price": "21560.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "332610",
+      "price": "121300.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "332620",
+      "price": "81005.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "341850",
+      "price": "4565.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "352540",
+      "price": "10420.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "352560",
+      "price": "11200.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "423160",
+      "price": "110770.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "429740",
+      "price": "6060.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "437070",
+      "price": "55765.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "437080",
+      "price": "93960.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "438330",
+      "price": "115780.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "440340",
+      "price": "11265.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "448330",
+      "price": "17545.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "453850",
+      "price": "6690.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "455030",
+      "price": "11485.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "458260",
+      "price": "44515.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "459580",
+      "price": "1074340.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "464470",
+      "price": "43435.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "468370",
+      "price": "10030.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "468630",
+      "price": "10135.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "471460",
+      "price": "46340.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "472830",
+      "price": "7110.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "472870",
+      "price": "6245.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "473330",
+      "price": "7240.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "475080",
+      "price": "7815.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "476550",
+      "price": "6300.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "476750",
+      "price": "6725.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "476760",
+      "price": "8080.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "476800",
+      "price": "4200.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "480460",
+      "price": "9100.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "481060",
+      "price": "6970.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "481340",
+      "price": "7665.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "484790",
+      "price": "7710.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "490490",
+      "price": "10305.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "497880",
+      "price": "50080.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
+    },
+    {
+      "code": "499660",
+      "price": "1001025.0",
+      "trade_date": "2026-10-08",
+      "as_of": null,
+      "market_status": "closed",
+      "price_type": "close",
+      "fetched_at": "2026-10-12T00:00:00+00:00",
+      "source": "FunETF_clsp_from_ETF82_inputs"
     }
   ]
 }

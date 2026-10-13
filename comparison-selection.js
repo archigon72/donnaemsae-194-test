@@ -13,7 +13,7 @@
     results.replaceChildren(); selected.replaceChildren();
     const q = normalize(input.value.trim());
     results.hidden = !open;
-    if (!open) $('compare-search-status').textContent = '검색창을 누르면 194개 ETF가 펼쳐집니다.';
+    if (!open) $('compare-search-status').textContent = '검색창을 누르면 112개 ETF가 펼쳐집니다.';
     else if (failed) $('compare-search-status').textContent = '종목 목록을 읽지 못했습니다. 새로고침해 주세요.';
     else if (!catalog) $('compare-search-status').textContent = '종목 목록을 읽는 중…';
     else {
