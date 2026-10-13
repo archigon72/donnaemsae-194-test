@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-13T22:54:23.028Z",
+  "accounts": [
+    {
+      "account_id": "918d3cc6-bbd6-4580-ad94-445eebab621d",
+      "name": "가상-일반계좌",
+      "type": "일반"
+    },
+    {
+      "account_id": "014e0395-dc9c-4639-bbdf-c0753f648ac7",
+      "name": "가상-ISA계좌",
+      "type": "ISA"
+    },
+    {
+      "account_id": "161f7b46-1de8-4b2c-b446-4edd280f01e7",
+      "name": "가상-IRP계좌",
+      "type": "IRP"
+    },
+    {
+      "account_id": "dd329521-d80e-4cd5-a006-ebcaef68044e",
+      "name": "가상-연금계좌",
+      "type": "연금저축"
+    }
+  ],
+  "dividend_confirmations": [
+    {
+      "account_id": "918d3cc6-bbd6-4580-ad94-445eebab621d",
+      "distribution_id": "0004G0-20260929",
+      "amount": "586",
+      "confirmed_at": "2026-10-13T22:54:59.885Z"
+    },
+    {
+      "account_id": "014e0395-dc9c-4639-bbdf-c0753f648ac7",
+      "distribution_id": "0004G0-20260929",
+      "amount": "137",
+      "confirmed_at": "2026-10-13T22:55:02.519Z"
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "077717d3-8cb8-4fe9-895e-77761ddbec5b",
+      "account_id": "918d3cc6-bbd6-4580-ad94-445eebab621d",
+      "code": "0018C0",
+      "cycle_id": "31cd066b-c514-47a5-afe8-2e094db94f16",
+      "type": "initial_buy",
+      "trade_date": "2026-03-02",
+      "order_key": 0,
+      "quantity": "30",
+      "trade_price": "10000"
+    },
+    {
+      "transaction_id": "7ce9c428-e30d-4203-ae4f-7864a229e420",
+      "account_id": "918d3cc6-bbd6-4580-ad94-445eebab621d",
+      "code": "0094M0",
+      "cycle_id": "84ee7fcb-5868-46bf-afab-e1c07d0d8c2f",
+      "type": "initial_buy",
+      "trade_date": "2026-03-02",
+      "order_key": 1,
+      "quantity": "100",
+      "trade_price": "10000"
+    },
+    {
+      "transaction_id": "c7ed9d39-8846-4285-8da9-384a400c4eba",
+      "account_id": "918d3cc6-bbd6-4580-ad94-445eebab621d",
+      "code": "0004G0",
+      "cycle_id": "57835d54-4bbe-4a31-b557-85982b460e0b",
+      "type": "initial_buy",
+      "trade_date": "2026-03-02",
+      "order_key": 2,
+      "quantity": "50",
+      "trade_price": "10000"
+    },
+    {
+      "transaction_id": "17037739-ed71-4572-b70e-375aceaf7649",
+      "account_id": "918d3cc6-bbd6-4580-ad94-445eebab621d",
+      "code": "0022T0",
+      "cycle_id": "ba381abf-fabd-446a-a3ee-039f18584716",
+      "type": "initial_buy",
+      "trade_date": "2026-03-02",
+      "order_key": 3,
+      "quantity": "20",
+      "trade_price": "10000"
+    },
+    {
+      "transaction_id": "e0d3bc76-9c3e-4a66-84b9-fa307edcc69a",
+      "account_id": "918d3cc6-bbd6-4580-ad94-445eebab621d",
+      "code": "0089D0",
+      "cycle_id": "06e59858-3802-4409-b299-07b34e3af246",
+      "type": "initial_buy",
+      "trade_date": "2026-03-02",
+      "order_key": 4,
+      "quantity": "20",
+      "trade_price": "10000"
+    },
+    {
+      "transaction_id": "c58578cf-385f-4b46-99cb-f1fe8451d56c",
+      "account_id": "014e0395-dc9c-4639-bbdf-c0753f648ac7",
+      "code": "0018C0",
+      "cycle_id": "98c15e74-832c-4b69-92ae-0615518da4aa",
+      "type": "initial_buy",
+      "trade_date": "2026-03-02",
+      "order_key": 5,
+      "quantity": "10",
+      "trade_price": "10000"
+    },
+    {
+      "transaction_id": "5ef2c62f-9607-4c44-8489-035d72bc6a63",
+      "account_id": "014e0395-dc9c-4639-bbdf-c0753f648ac7",
+      "code": "0004G0",
+      "cycle_id": "6e9d4919-480f-40ad-b5c3-7836b9f083cc",
+      "type": "initial_buy",
+      "trade_date": "2026-03-02",
+      "order_key": 6,
+      "quantity": "10",
+      "trade_price": "10000"
+    },
+    {
+      "transaction_id": "3bc2ef8b-4b24-4fb0-9baa-9da70b70f8fb",
+      "account_id": "161f7b46-1de8-4b2c-b446-4edd280f01e7",
+      "code": "0005A0",
+      "cycle_id": "43453a8c-9d12-4d79-b166-08c7751b1dda",
+      "type": "initial_buy",
+      "trade_date": "2026-03-02",
+      "order_key": 7,
+      "quantity": "5",
+      "trade_price": "10000"
+    },
+    {
+      "transaction_id": "0761f54d-ed8a-48c2-958e-a902e6d0d611",
+      "account_id": "dd329521-d80e-4cd5-a006-ebcaef68044e",
+      "code": "0094M0",
+      "cycle_id": "322ec049-08df-454a-af12-7077f0278367",
+      "type": "initial_buy",
+      "trade_date": "2026-03-02",
+      "order_key": 8,
+      "quantity": "5",
+      "trade_price": "10000"
+    }
+  ],
+  "dividend_uses": [
+    {
+      "use_id": "b8d9d7b3-4df8-468f-8b4d-e8de94d4b6dc",
+      "account_id": "918d3cc6-bbd6-4580-ad94-445eebab621d",
+      "use_date": "2026-10-14",
+      "order_key": 0,
+      "amount": "183241"
+    }
+  ],
+  "metadata": {
+    "app": "donnaemsae-lab",
+    "scope": "user-facts"
+  }
+}

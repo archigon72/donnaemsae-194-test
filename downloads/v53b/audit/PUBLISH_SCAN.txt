@@ -1,0 +1,6 @@
+공개 전 비밀정보 점검 (GrokBot 자체 검증, 2026-10-13T23:36:10Z)
+- 대상: downloads/v53b 전체 + 백업 ZIP 해제본 530개
+- 자격증명 패턴(ghp_/gho_/ghs_/github_pat_, AWS 키, PRIVATE KEY): 0건
+- 배포 토큰 값 일치(값 미출력): 0건
+- 일반 단어 패턴(token/secret/주민번호 형식) downloads/v53b: 144건 — 모두 분배금 ID(예: 472150-20260129) 형식 오탐. ZIP 해제본의 pyodide 라이브러리 단어도 오탐(v53a와 동일)
+- 데이터: 가상 계좌·가상 거래만

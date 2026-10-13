@@ -1,0 +1,3 @@
+donnaemsae-194-test_v5.3b_8da64ac.zip: OK
+Done testing
+ALL 530 FILES OK

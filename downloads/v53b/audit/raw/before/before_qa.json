@@ -1,0 +1,14 @@
+{
+ "base": "http://127.0.0.1:8133/",
+ "checks": [],
+ "errors": [],
+ "entries": {},
+ "numbers": {},
+ "requestfailed": [],
+ "http_errors": [],
+ "snap": {},
+ "read_before": {
+  "pre": null,
+  "net": null
+ }
+}

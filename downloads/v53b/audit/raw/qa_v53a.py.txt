@@ -1,0 +1,135 @@
+import sys
+src=open('/workspace/mobileui/v53b/tools/qa_v53.py').read()
+exec(src.split('\nACC=[')[0])
+LONG='가상-일반계좌-아주아주아주긴이름-말줄임확인용-테스트'
+ACC=[(LONG,'일반'),('가상-ISA계좌','ISA'),('가상-IRP계좌','IRP'),('가상-연금계좌','연금저축')]
+TL=lambda t:'연금' if t=='연금저축' else (t or '미확인')
+T=[('0004G0','50',0),('0018C0','10',1),('0004G0','10',1),('0005A0','5',2),('0094M0','5',3)]
+LABELS="""()=>{const q=s=>[...document.querySelectorAll(s)];return {cards:q('.account-name .acct-lab').map(x=>x.textContent),comp:q('.mu-comp-name .acct-lab').map(x=>x.textContent),plots:q('.plot-label .acct-lab').map(x=>x.textContent),opts:q('#mc-scope-select option,#scope-value option').map(o=>o.textContent),tax:q('.mu-tax-sub').map(x=>x.textContent.split(' · ')[0]),recent:q('.mc-rec-sub,.mu-rec small').map(x=>x.textContent),notice:q('.acct-type-notice').map(x=>x.textContent).join(' '),scopeBtns:q('[data-scope]').filter(b=>b.tagName==='BUTTON').map(b=>b.textContent)}}"""
+CLIP="""()=>{const out=[];for(const l of document.querySelectorAll('.acct-lab')){const t=l.querySelector('.acct-type'),n=l.querySelector('.acct-nm'),r=t.getBoundingClientRect(),lr=l.getBoundingClientRect();if(!r.width||l.closest('[hidden]')||getComputedStyle(l).display==='none')continue;const vis=r.left>=0&&r.right<=document.documentElement.clientWidth+0.5&&t.scrollWidth<=t.clientWidth+1&&r.right<=lr.right+0.5;out.push({type:t.textContent,name:n.textContent.slice(0,14),typeVisible:vis,nameEllipsis:n.scrollWidth>n.clientWidth+1,to:getComputedStyle(n).textOverflow,overflowX:document.documentElement.scrollWidth>document.documentElement.clientWidth})}return out}"""
+def lab(n,t):return f'[{TL(t)}] {n}'
+async def labels(pg,url):
+    await pg.goto(BASE+url,wait_until='networkidle');await pg.wait_for_timeout(600);return await pg.evaluate(LABELS)
+async def optlabels(pg,form):
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(400)
+    await pg.click('.mu-fab' if form=='trade' else '[data-action=use]');await pg.wait_for_timeout(250)
+    o=await pg.evaluate(f"[...document.querySelectorAll('#{form}-form select[name=account] option')].map(o=>o.textContent)");await pg.keyboard.press('Escape');return o
+async def settype(pg,aid,typ):
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(400);await pg.click('[data-action=acctype]');await pg.wait_for_timeout(250)
+    await pg.select_option(f'#acctype-form select[data-acc="{aid}"]',typ);await pg.click('#acctype-form button[type=submit]');await pg.wait_for_timeout(500)
+    e=await pg.inner_text('#acctype-form .form-error') if await pg.locator('#ledger-dialog[open] #acctype-form').count() else ''
+    if e:await pg.keyboard.press('Escape')
+    return e
+async def alllabels(pg,f):
+    out={}
+    out['home']=await labels(pg,'asset-home.html')
+    out['ledger']=await labels(pg,'management.html?mode=ledger')
+    await pg.goto(BASE+'management.html?mode=composition',wait_until='networkidle');await pg.wait_for_timeout(500);await pg.click('[data-comp=account]');await pg.wait_for_timeout(200);out['comp']=await pg.evaluate(LABELS)
+    out['div']=await divview(pg,'net');out['divlab']=await pg.evaluate(LABELS)
+    out['trade_opts']=await optlabels(pg,'trade');out['use_opts']=await optlabels(pg,'use')
+    return out
+def expect_labels(tag,L,f):
+    exp=[lab(a['name'],a.get('type')) for a in f['accounts']];names={a['account_id']:a for a in f['accounts']}
+    ok={'홈 내 계좌 현황':sorted(L['home']['cards'] or L['ledger']['cards'])==sorted(exp),'계좌별 구성':sorted(L['comp']['comp'])==sorted(exp),
+        '거래 등록 계좌 목록':[o for o in L['trade_opts'] if o!='+ 새 계좌']==exp,'배당 사용 계좌 목록':L['use_opts']==exp,
+        '조회 범위 선택(전체 접두어 없음)':'전체' in L['home']['opts']+L['ledger']['opts'] and all(o in exp for o in L['ledger']['opts']+L['home']['opts'] if o.startswith('[')) and not any(o.startswith('[') and '전체' in o for o in L['home']['opts']),
+        '지급 건별 세후 목록':set(L['divlab']['tax'])<=set(exp) and len(L['divlab']['tax'])>0,
+        '최근 기록 계좌 표기':all(any(e in r for e in exp) for r in L['divlab']['recent'] if ' · ' in r),
+        '전체 탭 버튼 접두어 없음':'전체' in L['home']['scopeBtns']+L['ledger']['scopeBtns']+L['divlab']['scopeBtns']}
+    check(tag+': [종류] 계좌명 표기 — '+', '.join(k for k in ok),all(ok.values()),{'fail':[k for k,v in ok.items() if not v],'exp':exp,'cards':L['ledger']['cards'],'opts':L['trade_opts'],'scope':L['home']['opts'],'tax':sorted(set(L['divlab']['tax']))})
+async def main():
+  async with async_playwright() as p:
+    b=await p.chromium.launch(executable_path='/usr/bin/google-chrome',args=['--no-sandbox'])
+    mk=lambda **k:b.new_context(viewport={'width':390,'height':844},device_scale_factor=2,is_mobile=True,has_touch=True,locale='ko-KR',timezone_id='Asia/Seoul',accept_downloads=True,**k)
+    ctx=await mk();pg=await ctx.new_page();logs(pg)
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');check('격리 프로필: 저장 원장 없음',await facts(pg) is None)
+    seen=set();errs=[]
+    for code,q,ai in T:
+        nm,ty=ACC[ai]
+        errs.append(await ntrade(pg,code,'2026-03-02',q,'10000',account=lab(nm,ty)) if nm in seen else await ntrade(pg,code,'2026-03-02',q,'10000',new_account=nm,typ=ty));seen.add(nm)
+    f=await facts(pg);R['facts0']=f
+    check('생성: 4유형 계좌(일반·ISA·IRP·연금저축) 저장, 유형이 메타데이터 type에 명시 저장(일반 포함)',not any(errs) and [(a['name'],a.get('type')) for a in f['accounts']]==ACC,{'errs':errs,'acc':[(a['name'],a.get('type')) for a in f['accounts']]})
+    check('저장 계좌명에 [유형] 접두어 중복 저장 없음',all(not a['name'].startswith('[') for a in f['accounts']),[a['name'] for a in f['accounts']])
+    L0=await alllabels(pg,f);R['labels_create']=L0;expect_labels('생성 직후',L0,f)
+    await pg.reload(wait_until='networkidle');L1=await alllabels(pg,f);expect_labels('새로고침·화면 이동 후',L1,f)
+    check('새로고침 후 저장 type 동일',await facts(pg)==f,None)
+    # edit
+    aid={a['name']:a['account_id'] for a in f['accounts']};irp=aid['가상-IRP계좌'];isa=aid['가상-ISA계좌']
+    n0=await divview(pg,'net');rows0={r['key']:r for r in n0['rows']}
+    e=await settype(pg,irp,'일반');f1=await facts(pg)
+    same=lambda x,y,k:x.get(k)==y.get(k)
+    check('유형 수정 IRP→일반: type만 변경, 거래·사용·확정 기록 불변',not e and [a.get('type') for a in f1['accounts']]==['일반','ISA','일반','연금저축'] and all(same(f,f1,k) for k in('transactions','dividend_uses','dividend_confirmations','created_at')) and [a['name'] for a in f1['accounts']]==[a['name'] for a in f['accounts']],e)
+    n1=await divview(pg,'net');rows1={r['key']:r for r in n1['rows']};ir=[k for k in rows1 if k.startswith(irp)]
+    ex=expect(f1,n1['rows'])
+    check('유형 수정 후 해당 계좌 세금 규칙이 새 유형으로 적용(deferred→과세), 세전 금액 불변, 다른 계좌 불변',ir and all(rows0[k]['rule']=='deferred' and rows1[k]['rule']!='deferred' and rows1[k]['pretax']==rows0[k]['pretax'] for k in ir) and all(rows1[k]['net']==rows0[k]['net'] for k in rows1 if not k.startswith(irp)) and all(Dm(r['net'])==ex[r['key']][1] for r in n1['rows']),{k[-16:]:(rows0[k]['rule'],rows0[k]['net'],rows1[k]['rule'],rows1[k]['net']) for k in ir})
+    pc0=await precash(pg)
+    L2=await alllabels(pg,f1);expect_labels('유형 수정 후',L2,f1)
+    e=await settype(pg,irp,'IRP');f2=await facts(pg);check('유형 되돌림 IRP: 원장 기록 원상, 세전 현금 불변',not e and f2==f and await precash(pg)==pc0,e)
+    # confirmation on ISA + full use then ISA→일반 blocked
+    ik=[r for r in n0['rows'] if r['key'].startswith(isa)][0]['key']
+    e1=await taxedit(pg,ik,str(Dm(rows0[ik]['pretax'])-1))
+    pcs=await precash(pg);uopts=await optlabels(pg,'use');IL=[o for o in uopts if o.endswith('가상-ISA계좌')][0]
+    n2=await divview(pg,'net');rem=Dm(pcs[isa])-sum(Dm(r['pretax'])-Dm(r['net']) for r in n2['rows'] if r['key'].startswith(isa))
+    e2=await douse(pg,IL,str(rem));f3=await facts(pg)
+    e=await settype(pg,isa,'일반')
+    check('ISA 세후현금 전액 사용 후 ISA→일반 변경은 "세후 배당현금 부족"으로 차단, 원장 불변',not e1 and not e2 and '세후 배당현금 부족' in e and await facts(pg)==f3,{'e':e,'e1':e1,'e2':e2})
+    f3c=f3.get('dividend_confirmations')
+    # backup reset restore
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(400)
+    async with pg.expect_download() as dl:await pg.click('[data-action=backup]')
+    d=await dl.value;bp=f'{OUT}/{TAG}_backup.json';await d.save_as(bp);bj=json.load(open(bp))
+    check('백업: 4유형 type·확정값 포함',[a.get('type') for a in bj['accounts']]==[t for _,t in ACC] and bj.get('dividend_confirmations')==f3c,[a.get('type') for a in bj['accounts']])
+    await pg.click('.mu-danger summary');await pg.click('[data-action=reset]');await pg.click('#reset-confirm');await pg.wait_for_timeout(300)
+    fr=await facts(pg);check('초기화: 계좌 0',fr is None or not fr['accounts'],None)
+    await pg.click('[data-action=restore]');await pg.set_input_files('#restore-file',bp);await pg.click('#restore-submit');await pg.wait_for_timeout(700)
+    f4=await facts(pg);check('복원: 원장 = 백업 직전(유형 포함)',f4==f3,None)
+    L4=await alllabels(pg,f4);expect_labels('복원 후',L4,f4)
+    # toggle
+    pre=await divview(pg,'pre');net=await divview(pg,'net',nav=False)
+    check('세전/세후 토글 회귀: 버튼 상태·타일 기준 표기',pre['basis']==[['pre','true'],['net','false']] and net['basis']==[['pre','false'],['net','true']] and '세전' in pre['tiles'][0][0] and '세후' in net['tiles'][0][0],[pre['tiles'][0],net['tiles'][0]])
+    rowscheck('복원 후 세후',net,f4);consist('복원 후',pre,net,f4)
+    # layout & captures
+    lay={};clip={}
+    pages=[('home','asset-home.html',None),('ledger','management.html?mode=ledger',None),('comp','management.html?mode=composition','comp'),('div','management.html?mode=dividends','div'),('typedlg','management.html?mode=ledger','dlg')]
+    for wd in (360,390,412,430):
+        await pg.set_viewport_size({'width':wd,'height':844})
+        for nm,url,act in pages:
+            await pg.goto(BASE+url,wait_until='networkidle');await pg.wait_for_timeout(500)
+            if act=='comp':await pg.click('[data-comp=account]');await pg.wait_for_timeout(200)
+            if act=='div':await pg.click('button[data-divbasis=net]');await pg.wait_for_timeout(200)
+            if act=='dlg':await pg.click('[data-action=acctype]');await pg.wait_for_timeout(250)
+            if act!='dlg':
+                h=await pg.evaluate('document.documentElement.scrollHeight');await pg.set_viewport_size({'width':wd,'height':min(h,12000)});await pg.wait_for_timeout(150)
+            r=await pg.evaluate(LAYOUT);c=await pg.evaluate(CLIP);await pg.screenshot(path=f'{OUT}/{TAG}_{nm}_{wd}.png')
+            if act=='dlg':await pg.keyboard.press('Escape')
+            await pg.set_viewport_size({'width':wd,'height':844})
+            lay[f'{nm}_{wd}']={k:v for k,v in r.items() if k in('over','esc','clip') and v};clip[f'{nm}_{wd}']=c
+    R['layout']=lay;R['clip']=clip
+    allc=[x for v in clip.values() for x in v]
+    check('360/390/412/430: [유형] 잘림 0 · 가로 넘침 0 · 겹침/이탈 0',allc and all(x['typeVisible'] and not x['overflowX'] for x in allc) and all(not v for v in lay.values()),{'bad':[(k,x) for k,v in clip.items() for x in v if not x['typeVisible'] or x['overflowX']][:5],'layout':{k:v for k,v in lay.items() if v},'n':len(allc)})
+    longs=[x for k,v in clip.items() if k.endswith('_360') for x in v if x['name'].startswith('가상-일반계좌-아주')]
+    check('360px 긴 계좌명: 이름만 말줄임(…), [일반] 접두어는 표시',longs and any(x['nameEllipsis'] for x in longs) and all(x['to']=='ellipsis' and x['typeVisible'] for x in longs),longs[:4])
+    await ctx.close()
+    # old ledger without type
+    cx=await mk(service_workers='block');pg=await cx.new_page();logs(pg)
+    old=json.load(open('/workspace/mobileui/v52a/qa/after_local/after_qa.json'))['facts'];ot=json.dumps(old)
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.evaluate("t=>localStorage.setItem('%s',t)"%KEY,ot)
+    Lo=await labels(pg,'management.html?mode=ledger');st=await pg.evaluate("localStorage.getItem('%s')"%KEY)
+    check('구 원장(type 없음) 재진입: [미확인] 표기·확인 안내, 일반으로 단정·자동 기록 없음',all(c.startswith('[미확인]') for c in Lo['cards']) and len(Lo['cards'])==3 and '종류가 저장되지 않은' in Lo['notice'] and st==ot,{'cards':Lo['cards'],'notice':Lo['notice'][:120]})
+    no=await divview(pg,'net')
+    check('구 원장(type 없음): 세금은 기존 정책(일반 기준 추정) 유지, 과세이연으로 바꾸지 않음',no['rows'] and all(r['rule']!='deferred' for r in no['rows']),sorted({r['rule'] for r in no['rows']}))
+    oa=old['accounts'][0]['account_id'];e=await settype(pg,oa,'연금저축');fo=await facts(pg)
+    check('사용자 경로(관리>계좌 종류)로 미확인 계좌 유형 지정: 해당 계좌만 type 저장, 나머지 미확인 유지, 거래 불변',not e and fo['accounts'][0].get('type')=='연금저축' and all('type' not in a for a in fo['accounts'][1:]) and fo['transactions']==old['transactions'],{'e':e,'acc':[(a['name'],a.get('type')) for a in fo['accounts']]})
+    await cx.close()
+    # old ledger with valid type kept
+    cx=await mk(service_workers='block');pg=await cx.new_page();logs(pg)
+    o2=json.loads(ot);o2['accounts'][1]['type']='ISA';o2t=json.dumps(o2)
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.evaluate("t=>localStorage.setItem('%s',t)"%KEY,o2t)
+    Lv=await labels(pg,'management.html?mode=ledger')
+    check('구 원장에 유효 type(ISA) 기록 시 그대로 유지·표시',lab(o2['accounts'][1]['name'],'ISA') in Lv['cards'] and json.loads(await pg.evaluate("localStorage.getItem('%s')"%KEY))==o2,Lv['cards'])
+    await cx.close();await b.close()
+  check('콘솔/페이지 오류 0',not R['errors'],R['errors'][:5])
+  check('요청 실패·HTTP 오류 0 (blob 제외)',not [x for x in R['requestfailed'] if not x[0].startswith('blob:')] and not R['http_errors'],{'rf':R['requestfailed'][:3],'http':R['http_errors'][:3]})
+  json.dump(R,open(f'{OUT}/{TAG}_qa.json','w'),ensure_ascii=False,indent=1,default=str)
+  print('TOTAL',sum(c['pass'] for c in R['checks']),'/',len(R['checks']))
+asyncio.run(main())

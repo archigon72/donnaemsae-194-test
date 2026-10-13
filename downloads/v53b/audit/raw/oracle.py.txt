@@ -1,0 +1,58 @@
+"""Independent oracle (Fraction) — written from the business rules, not from app output.
+Rules: avg-cost; sell consumes direct qty first then reinvest, removing proportional cost;
+dividend = entitled qty (trades dated before ex_date, same account+code) * per_share, credited on pay_date<=asOf,
+only status=='confirmed'; dividend cash is per account; reinvest/use spend that cash.
+total assets = (direct+reinvest qty)*close + remaining cash; grown = reinvest qty*close + cash."""
+from fractions import Fraction as F
+import json
+DIST=json.load(open('/workspace/mobileui/build/source/data/management-distributions.json'))['items']
+PR={p['code']:F(p['price']) for p in json.load(open('/workspace/mobileui/build/source/data/prices.json'))['items']}
+def run(accounts,txs,uses,asof='2026-10-13'):
+    # txs: dict(acc,code,type,date,qty,price) in entry order; uses: dict(acc,date,amount)
+    ev=[]
+    seq=0
+    for t in txs: ev.append(('t',t['date'],seq,t));seq+=1
+    for u in uses: ev.append(('u',u['date'],seq,u));seq+=1
+    codes={t['code'] for t in txs}
+    for d in DIST:
+        if d['code'] not in codes or d['status']!='confirmed' or d['pay_date']>asof:continue
+        for a in accounts:
+            q=sum((F(t['qty']) if t['type']!='sell' else -F(t['qty'])) for t in txs if t['acc']==a and t['code']==d['code'] and t['date']<d['ex_date'])
+            if q>0: ev.append(('d',d['pay_date'],-1,{'acc':a,'code':d['code'],'amount':q*F(d['per_share']),'date':d['pay_date']}))
+    # same date: dividends first, then by entry order (= same-day order_key)
+    ev.sort(key=lambda e:(e[1],e[2]))
+    cash={a:F(0) for a in accounts};rec=dict(cash);used=dict(cash);spent=dict(cash);H={};divs=[]
+    for k,dt,_,x in ev:
+        a=x['acc']
+        if k=='d':cash[a]+=x['amount'];rec[a]+=x['amount'];divs.append(x);continue
+        if k=='u':
+            amt=F(x['amount'])
+            if cash[a]<amt:raise ValueError('cash')
+            cash[a]-=amt;used[a]+=amt;continue
+        h=H.setdefault((a,x['code']),{'d':F(0),'r':F(0),'dc':F(0),'rc':F(0)});q=F(x['qty']);p=F(x['price'])
+        if x['type'] in('initial_buy','add_buy'):h['d']+=q;h['dc']+=q*p
+        elif x['type']=='reinvest':
+            if cash[a]<q*p:raise ValueError('cash')
+            h['r']+=q;h['rc']+=q*p;cash[a]-=q*p;spent[a]+=q*p
+        elif x['type']=='sell':
+            if h['d']+h['r']<q:raise ValueError('oversell')
+            dq=min(q,h['d']);rq=q-dq
+            if dq:h['dc']-=h['dc']/h['d']*dq;h['d']-=dq
+            if rq:h['rc']-=h['rc']/h['r']*rq;h['r']-=rq
+    H={k:v for k,v in H.items() if v['d']+v['r']>0}
+    val=sum((v['d']+v['r'])*PR[k[1]] for k,v in H.items());rv=sum(v['r']*PR[k[1]] for k,v in H.items())
+    C=sum(cash.values())
+    return {'holdings':H,'cash':cash,'received':rec,'used':used,'spent':spent,'divs':divs,
+            'direct_cost':sum(v['dc'] for v in H.values()),'reinvest_cost':sum(v['rc'] for v in H.values()),
+            'total':val+C,'grown':rv+C,'cash_total':C,'received_total':sum(rec.values()),'spent_total':sum(spent.values()),'used_total':sum(used.values())}
+def won(x):
+    # round half-even to integer won, formatted like the app shows
+    q=round(F(x));return f'{q:,}원'
+def cash_at(accounts,txs,uses,acc,date):
+    r=run(accounts,[t for t in txs if t['date']<=date],[u for u in uses if u['date']<=date],asof=date);return r['cash'][acc]
+def won(x):
+    x=F(x);neg=x<0;x=abs(x);q,r=divmod(x*100,1)
+    q=int(q)
+    if r>F(1,2) or (r==F(1,2) and q%2):q+=1
+    a,b=divmod(q,100);s=f'{a:,}'+('.'+f'{b:02d}'.rstrip('0') if b else '')
+    return ('-' if neg else '')+s+'원'

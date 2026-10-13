@@ -1,0 +1,197 @@
+import asyncio,json,sys,os,re,time,math
+sys.path.insert(0,'/workspace/mobileui/audit');import oracle as O
+sys.path.insert(0,'/workspace/mobileui/v53b/tools');import oracle_tax as OT
+TYPES={}
+async def load_types(pg):
+    f=await facts(pg);TYPES.clear();TYPES.update({a['name']:a.get('type','일반') for a in (f or {}).get('accounts',[])})
+from fractions import Fraction as Fr
+exec(open('/workspace/mobileui/v53b/tools/qa_regress.py').read().split('def holding')[0])  # helpers: openform,fill,submit,trade,facts,check,R,BASE,OUT,TAG,F,KEY
+ROWS=[];CNT={'n':0}
+def rec(sid,item,inp,exp,act,ok,ev=None):
+    ROWS.append({'id':sid,'item':item,'input':inp,'expected':exp,'actual':act,'result':'PASS' if ok else 'FAIL','evidence':ev});print(('PASS ' if ok else 'FAIL ')+sid+' '+item,'| exp',json.dumps(exp,ensure_ascii=False)[:200],'| act',json.dumps(act,ensure_ascii=False)[:200],flush=True)
+A,B='감사-일반','감사-ISA'
+TX=[];US=[]  # oracle inputs, appended only for steps expected to be accepted
+def T(acc,code,typ,date,qty,price):TX.append(dict(acc=acc,code=code,type=typ,date=date,qty=str(qty),price=str(price)))
+w2=lambda s:Fr(s.replace(',','').replace('원','').strip()) if s and re.search(r'\d',s) else None
+async def shot(pg,name):
+    p=f'{OUT}/{TAG}_{name}.png';await pg.screenshot(path=p,full_page=True);return os.path.basename(p)
+async def held(pg,acc,code):
+    await openform(pg);await pg.select_option(F+'select[name=account]',label='[일반] '+acc);await pg.dispatch_event(F+'select[name=account]','change');await pg.click(F+'[data-type-btn=sell]');await pg.wait_for_timeout(100)
+    opts=await pg.eval_on_selector(F+'select[name=code]','s=>[...s.options].map(o=>o.value)')
+    v=None
+    if code in opts:
+        await pg.select_option(F+'select[name=code]',code);await pg.dispatch_event(F+'select[name=code]','change');await pg.wait_for_timeout(100);v=await pg.inner_text('#mu-held-val')
+    await pg.keyboard.press('Escape');return v,opts
+async def usecash(pg,acc):
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(400);await pg.click('[data-action=use]');await pg.wait_for_timeout(200)
+    await pg.select_option('#use-form select[name=account]',label='[일반] '+acc);await pg.dispatch_event('#use-form select[name=account]','change');await pg.wait_for_timeout(150)
+    t=await pg.inner_text('#available-cash');await pg.keyboard.press('Escape');return t
+async def useit(pg,acc,date,amount):
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(400);await pg.click('[data-action=use]');await pg.wait_for_timeout(200)
+    await pg.select_option('#use-form select[name=account]',label='[일반] '+acc);await pg.fill('#use-form input[name=date]',date);await pg.dispatch_event('#use-form input[name=date]','change');await pg.fill('#use-form input[name=amount]',str(amount));await pg.dispatch_event('#use-form input[name=amount]','input')
+    await pg.click('#use-form button[type=submit]');await pg.wait_for_timeout(600)
+    if await pg.locator('#ledger-dialog[open] #use-form').count():
+        e=[x for x in await pg.locator('#use-form .form-error').all_inner_texts() if x.strip()];await pg.keyboard.press('Escape');return e or ['(dialog still open)']
+    return []
+async def reinv(pg,acc,code,date,ratio):
+    await openform(pg);await fill(pg,code,'reinvest',date,account='[일반] '+acc);await pg.dispatch_event(F+'select[name=code]','change')
+    await pg.click('#apply-ref-price');await pg.wait_for_timeout(100)
+    await pg.eval_on_selector(F+'input[name=reinvest_ratio]',"(s,r)=>{s.value=r;s.dispatchEvent(new Event('input',{bubbles:true}))}",str(ratio));await pg.wait_for_timeout(100)
+    calc=await pg.inner_text('#reinvest-calc');await pg.click('#confirm-reinvest');await pg.wait_for_timeout(100)
+    q=await pg.input_value(F+'input[name=quantity]');pr=await pg.input_value(F+'input[name=price]');e=await submit(pg)
+    if await pg.locator('#ledger-dialog[open]').count():await pg.keyboard.press('Escape')
+    return {'calc':calc,'qty':q,'price':pr,'err':e}
+async def comp_read(pg,tab):
+    await pg.goto(BASE+'management.html?mode=composition',wait_until='networkidle');await pg.wait_for_timeout(500);await pg.click(f'[data-comp={tab}]');await pg.wait_for_timeout(200)
+    if await pg.locator('[data-action=comp-all]').count() and '전체' in await pg.inner_text('[data-action=comp-all]'):await pg.click('[data-action=comp-all]');await pg.wait_for_timeout(150)
+    return await pg.evaluate("""()=>({total:document.querySelector('.mu-comp-amt')?.textContent,ref:document.querySelector('.mu-comp-ref b')?.textContent,rows:[...document.querySelectorAll('.mu-comp-row')].map(r=>({key:r.dataset.key,name:r.querySelector('.mu-comp-name b').textContent,cost:r.dataset.cost,shown:r.querySelector('.mu-comp-val b').textContent})),arcs:[...document.querySelectorAll('.mu-donut [data-seg]')].map(c=>{const [a,b]=c.getAttribute('stroke-dasharray').split(' ').map(Number);return {seg:c.dataset.seg,frac:a/(a+b)}}),center:document.querySelector('.mu-donut-c b')?.textContent})""")
+async def home_read(pg):
+    await pg.goto(BASE+'asset-hub.html',wait_until='networkidle');await pg.wait_for_timeout(700)
+    return await pg.evaluate("""()=>({total:document.querySelector('.mu-hero .mu-amt')?.textContent,grown:document.querySelector('.mu-stat.mu-grown b')?.textContent,cost:document.querySelector('.mu-stat.mu-cost b')?.textContent,text:document.querySelector('#app').innerText})""")
+async def div_read(pg):
+    await pg.goto(BASE+'management.html?mode=dividends',wait_until='networkidle');await pg.wait_for_timeout(500)
+    if await pg.locator('[data-scope=all]').count():await pg.click('[data-scope=all]');await pg.wait_for_timeout(300)
+    return await pg.evaluate("""()=>({tiles:[...document.querySelectorAll('.mu-divsum .mu-tile')].map(t=>[t.querySelector('small').textContent,t.querySelector('b').textContent]),table:[...document.querySelectorAll('.mu-divchart .month-table tbody tr')].map(r=>[...r.cells].map(c=>c.textContent)),bars:[...document.querySelectorAll('.mu-divchart .mu-hit')].map(g=>g.dataset.read)})""")
+async def perf_read(pg):
+    await pg.goto(BASE+'management.html?mode=performance',wait_until='networkidle');await pg.wait_for_timeout(600)
+    if await pg.locator('[data-scope=all]').count():await pg.click('[data-scope=all]');await pg.wait_for_timeout(400)
+    return await pg.evaluate("""()=>({table:[...document.querySelectorAll('.reinvest-chart .month-table tbody tr')].map(r=>[...r.cells].map(c=>c.textContent)),flow:[...document.querySelectorAll('.mc-flow li')].map(l=>l.innerText.replace(/\\n/g,' ')),big:document.querySelector('.mc-m-hero .big-value')?.textContent})""")
+def monthly(r):
+    m={}
+    for d in r['divs']:m[d['date'][:7]]=m.get(d['date'][:7],Fr(0))+d['amount']
+    return m
+async def verify_all(pg,tag,accs):
+    r=O.run(accs,TX,US);R.setdefault('oracle',{})[tag]={'direct_cost':O.won(r['direct_cost']),'reinvest_cost':O.won(r['reinvest_cost']),'total':O.won(r['total']),'grown':O.won(r['grown']),'cash':{a:O.won(v) for a,v in r['cash'].items()},'received':O.won(r['received_total']),'spent':O.won(r['spent_total']),'used':O.won(r['used_total']),'holdings':{f'{a}:{c}':{k:str(v) for k,v in h.items()} for (a,c),h in r['holdings'].items()}}
+    # holdings qty & cost per code
+    ci=await comp_read(pg,'instrument');ca=await comp_read(pg,'account')
+    expc={}
+    for (a,c),h in r['holdings'].items():expc[c]=expc.get(c,Fr(0))+h['dc']
+    actc={x['key']:Fr(x['cost']) for x in ci['rows']}
+    rec(f'{tag}-C1','종목별 직접투자 원가(도넛 목록) = 원장 기대값','holdings',{k:O.won(v) for k,v in expc.items()},{k:O.won(v) for k,v in actc.items()},{k:O.won(v) for k,v in expc.items()}=={k:O.won(v) for k,v in actc.items()} and all(x['shown']==O.won(Fr(x['cost'])) for x in ci['rows']))
+    rec(f'{tag}-C2','구성 대표금액·도넛 중앙 = Σ직접원가, 재투자 원가 분리 표시','',{'total':O.won(r['direct_cost']),'ref':O.won(r['reinvest_cost'])},{'total':ci['total'],'center':ci['center'],'ref':ci['ref']},ci['total']==O.won(r['direct_cost'])==ci['center'] and ci['ref']==O.won(r['reinvest_cost']))
+    pos=sorted([x for x in ci['rows'] if Fr(x['cost'])>0],key=lambda x:-Fr(x['cost']))
+    tot=r['direct_cost'];expf=[float(Fr(x['cost'])/tot) for x in pos[:5]]+([float(sum(Fr(x['cost']) for x in pos[5:])/tot)] if len(pos)>5 else [])
+    rec(f'{tag}-C3','도넛 조각 비율 = 직접원가/합계','',[round(f,5) for f in expf],[round(a['frac'],5) for a in ci['arcs']],len(expf)==len(ci['arcs']) and all(abs(a-b['frac'])<1e-4 for a,b in zip(expf,ci['arcs'])))
+    expa={}
+    for (a,c),h in r['holdings'].items():expa[a]=expa.get(a,Fr(0))+h['dc']
+    acta={x['name'].split('] ',1)[-1]:Fr(x['cost']) for x in ca['rows']}
+    rec(f'{tag}-C4','계좌별 직접원가 = 기대값, 계좌 합 = 전체 합','',{a:O.won(expa.get(a,0)) for a in accs},{a:O.won(acta.get(a,0)) for a in accs},all(O.won(expa.get(a,0))==O.won(acta.get(a,0)) for a in accs) and sum(acta.values())==w2(ca['total'])==sum(expa.values(),Fr(0)))
+    # quantities
+    qe={};qa={}
+    for (a,c),h in r['holdings'].items():
+        qe[f'{a}:{c}']=str(h['d']+h['r'])
+        v,_=await held(pg,a,c);qa[f'{a}:{c}']=v.replace('주','').strip() if v else None
+    rec(f'{tag}-Q','보유 수량(매도 화면 보유값) = 기대값','',qe,qa,qe==qa)
+    # cash per account
+    await load_types(pg);rn=OT.run_net(accs,TX,US,TYPES);R.setdefault('net_oracle',{})[tag]={'types':dict(TYPES),'tax':{a:O.won(v) for a,v in rn['tax'].items()},'cash_pre':{a:O.won(r['cash'][a]) for a in accs},'cash_net':{a:O.won(rn['cash'][a]) for a in accs},'total_pre':O.won(r['total']),'total_net':O.won(rn['total']),'grown_pre':O.won(r['grown']),'grown_net':O.won(rn['grown']),'rows':[{k:(O.won(v) if k in('pretax','tax') else v) for k,v in x.items()} for x in rn['tax_rows']]}
+    ce={a:O.won(rn['cash'][a]) for a in accs};ca2={}
+    for a in accs:
+        t=await usecash(pg,a);m=re.search(r'([\d,\.]+)\s*원',t);ca2[a]=(m.group(1)+'원') if m else t
+    rec(f'{tag}-K','계좌별 공유 배당현금(사용 화면 가능액) = 세후 기대값(세전 현금 − 지급건별 원천징수, oracle_tax)','',ce,ca2,ce==ca2)
+    h=await home_read(pg)
+    rec(f'{tag}-H','홈 현재 자산가치=ETF평가액+남은 세후 배당현금, 배당이 키운 자산(재투자 평가+세후 현금), 내가 넣은 돈 (oracle_tax)','',{'total':O.won(rn['total']),'grown':O.won(rn['grown']),'cost':O.won(r['direct_cost'])},{k:h[k] for k in('total','grown','cost')},h['total']==O.won(rn['total']) and h['grown']==O.won(rn['grown']) and h['cost']==O.won(r['direct_cost']))
+    dbl=O.won(rn['total']+r['received_total'])
+    rec(f'{tag}-N','누적 수령 배당 중복 가산 없음(총자산 ≠ 총자산+누적배당)','',{'not':dbl,'is':O.won(rn['total'])},h['total'],h['total']!=dbl or r['received_total']==0)
+    d=await div_read(pg);tiles=dict(d['tiles'])
+    rec(f'{tag}-D1','배당 성과: 누적 수령·다시 투자·사용 = 기대값','',[O.won(r['received_total']),O.won(r['spent_total']),O.won(r['used_total'])],[tiles.get('누적 수령 배당 (세전)'),tiles.get('다시 투자한 배당'),tiles.get('사용한 배당')],[O.won(r['received_total']),O.won(r['spent_total']),O.won(r['used_total'])]==[tiles.get('누적 수령 배당 (세전)'),tiles.get('다시 투자한 배당'),tiles.get('사용한 배당')])
+    me=monthly(r);mt={row[0]:row[1] for row in d['table']}
+    rec(f'{tag}-D2','월별 받은 배당 표 = 기대 월합계','',{k:O.won(v) for k,v in sorted(me.items())},{k:mt.get(k) for k in sorted(me)},all(mt.get(k)==O.won(v) for k,v in me.items()) and all(w2(v)==0 for k,v in mt.items() if k not in me))
+    bars_ok=all(re.search(r'([\d,\.]+)원',b) and (f"{b[:4]}-{b[5:7]}" not in me and w2(re.search(r'([\d,\.]+)원',b).group(1))==0 or O.won(me.get(f"{b[:4]}-{b[5:7]}",0))==re.search(r'([\d,\.]+원)',b).group(1)) for b in d['bars'] if '미제공' not in b)
+    rec(f'{tag}-D3','월별 막대 탭 정확 금액 = 기대 월합계','',len(d['bars']),d['bars'][-3:],bars_ok)
+    p=await perf_read(pg);last=p['table'][-1] if p['table'] else None
+    rec(f'{tag}-P','원가/누적배당 차트 최종월 = 원장(직접원가, 누적 수령)','',[O.won(r['direct_cost']),O.won(r['received_total'])],last[1:] if last else None,bool(last) and last[1:]==[O.won(r['direct_cost']),O.won(r['received_total'])])
+    return r
+async def main():
+  async with async_playwright() as p:
+    b=await p.chromium.launch(executable_path='/usr/bin/google-chrome',args=['--no-sandbox'])
+    ctx=await b.new_context(viewport={'width':390,'height':844},device_scale_factor=2,is_mobile=True,has_touch=True,accept_downloads=True,locale='ko-KR',timezone_id='Asia/Seoul')
+    pg=await ctx.new_page()
+    pg.on('console',lambda m:R['errors'].append(['console',m.text,m.location.get('url')]) if m.type=='error' else None)
+    pg.on('pageerror',lambda x:R['errors'].append(['pageerror',str(x)]))
+    R['http']=[];pg.on('response',lambda r:R['http'].append([r.status,r.url]) if r.status>=400 else None)
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle')
+    rec('S0','격리 프로필: 저장 원장 없음','new context','None',str(await facts(pg)),await facts(pg) is None)
+    # S1 account create + initial buy
+    e=await trade(pg,'497880','initial_buy','2026-01-02','10','50000',new_account=A);T(A,'497880','initial_buy','2026-01-02',10,50000)
+    f=await facts(pg);rec('S1','계좌 생성 + 최초매수',f'{A} 497880 10주@50,000 2026-01-02','계좌 1, 거래 1, 오류 없음',{'err':e,'acc':[x['name'] for x in f['accounts']],'tx':len(f['transactions'])},not e and [x['name'] for x in f['accounts']]==[A] and len(f['transactions'])==1)
+    e=await trade(pg,'472150','initial_buy','2026-01-02','10','25000',new_account=B);T(B,'472150','initial_buy','2026-01-02',10,25000)
+    f=await facts(pg);bid=[x for x in f['accounts'] if x['name']==B][0]['account_id']
+    rec('S2','두 번째 계좌 생성 + 최초매수',f'{B} 472150 10주@25,000','계좌 2, 해당 거래 account_id=B',{'err':e,'acc':len(f['accounts']),'tx_acc_is_B':f['transactions'][-1]['account_id']==bid},not e and len(f['accounts'])==2 and f['transactions'][-1]['account_id']==bid)
+    await openform(pg);opts=await pg.eval_on_selector(F+'select[name=account]','s=>[...s.options].map(o=>o.textContent)');await pg.keyboard.press('Escape')
+    rec('S3','계좌 선택 목록','거래 등록 계좌 select',['[일반] '+A,'[일반] '+B],opts,'[일반] '+A in opts and '[일반] '+B in opts)
+    e=await trade(pg,'497880','add_buy','2026-03-03','5','50010',account='[일반] '+A);T(A,'497880','add_buy','2026-03-03',5,50010)
+    e2=await trade(pg,'0018C0','initial_buy','2026-03-03','27','13000',account='[일반] '+A);T(A,'0018C0','initial_buy','2026-03-03',27,13000)
+    f=await facts(pg);same=sorted((t['order_key'],t['type']) for t in f['transactions'] if t['trade_date']=='2026-03-03')
+    rec('S4','추가매수 + 같은 날 두 번째 거래(입력 순서)','497880 +5@50,010, 0018C0 27@13,000 (모두 03-03)',[[0,'add_buy'],[1,'initial_buy']],same,not e and not e2 and same==[(0,'add_buy'),(1,'initial_buy')])
+    e=await trade(pg,'497880','sell','2026-07-01','3','50030',account='[일반] '+A);T(A,'497880','sell','2026-07-01',3,50030)
+    r=O.run([A,B],TX,US);h=r['holdings'][(A,'497880')]
+    rec('S5','부분매도 후 잔여 수량·원가(평균원가 비례 차감, 손계산)','497880 3주 매도','잔여 12주, 원가 (500,000+250,050)×12/15 = 600,040원',{'oracle_qty':str(h['d']),'oracle_cost':O.won(h['dc'])},not e and h['d']==12 and h['dc']==Fr(600040))
+    e=await trade(pg,'0018C0','sell','2026-09-01','27','13200',account='[일반] '+A);T(A,'0018C0','sell','2026-09-01',27,13200)
+    v,opts=await held(pg,A,'0018C0')
+    rec('S6','전량매도 → 매도 목록에서 제외, 보유 0','0018C0 27주 전량','매도 목록에 0018C0 없음',opts,not e and '0018C0' not in opts)
+    r1=await verify_all(pg,'CP1',[A,B]);await shot(pg,'cp1_perf')
+    # blocking
+    f0=await facts(pg)
+    async def blocked(sid,item,inp,coro):
+        e=await coro;f1=await facts(pg);ok=bool(e) and f1==f0;rec(sid,item,inp,'차단(오류 표시)·원장 불변',{'err':e,'ledger_same':f1==f0},ok)
+    await blocked('X1','보유수량 초과 매도 차단','497880 999주 매도',trade(pg,'497880','sell','2026-09-02','999','50000',account='[일반] '+A))
+    await blocked('X2','수량 0 차단','497880 추가매수 0주',trade(pg,'497880','add_buy','2026-09-02','0','50000',account='[일반] '+A))
+    await blocked('X3','음수 수량 차단','-1주',trade(pg,'497880','add_buy','2026-09-02','-1','50000',account='[일반] '+A))
+    await blocked('X4','문자 가격 차단',"가격 'abc'",trade(pg,'497880','add_buy','2026-09-02','1','abc',account='[일반] '+A))
+    await blocked('X5','가격 0 차단','가격 0',trade(pg,'497880','add_buy','2026-09-02','1','0',account='[일반] '+A))
+    await openform(pg);await fill(pg,'497880','add_buy','2026-12-01','1','50000',account='[일반] '+A);await pg.click(F+'button[type=submit]');await pg.wait_for_timeout(600)
+    vm=await pg.evaluate("(()=>{const i=document.querySelector('#trade-form input[name=date]');return i?{max:i.max,valid:i.validity.valid,msg:i.validationMessage,open:!!document.querySelector('#ledger-dialog[open] #trade-form')}:null})()")
+    if await pg.locator('#ledger-dialog[open]').count():await pg.keyboard.press('Escape')
+    f1=await facts(pg);rec('X6','미래 날짜 차단(브라우저 날짜 제한 max=오늘)','2026-12-01 추가매수','저장 안 됨·원장 불변',{'native':vm,'ledger_same':f1==f0},f1==f0 and vm and (not vm['valid'] or vm['open']))
+    await blocked('X7','보유 중 종목 최초매수 차단(추가매수로 등록해야 함)','497880 최초매수',trade(pg,'497880','initial_buy','2026-09-02','1','50000',account='[일반] '+A))
+    await blocked('X8','배당현금 부족 사용 차단','A 99,999,999원 사용',useit(pg,A,'2026-09-10','99999999'))
+    await blocked('X9','사용 금액 0 차단','A 0원 사용',useit(pg,A,'2026-09-10','0'))
+    # dividend use
+    await load_types(pg);ca=OT.cash_at_net([A,B],TX,US,TYPES,A,'2026-09-10')
+    e=await useit(pg,A,'2026-09-10','5000');US.append(dict(acc=A,date='2026-09-10',amount='5000'))
+    rec('S7','배당현금 사용(계좌 단위)','A 2026-09-10 5,000원',f'사용 전 A 현금 {O.won(ca)} ≥ 5,000 → 허용',{'err':e},not e and ca>=5000)
+    # reinvest into a different stock (not held)
+    cash=OT.cash_at_net([A,B],TX,US,TYPES,A,'2026-10-07');px=O.PR['0005A0'];qexp=math.floor(cash/px)
+    rr=await reinv(pg,A,'0005A0','2026-10-07',100)
+    if not rr['err']:T(A,'0005A0','reinvest','2026-10-07',rr['qty'],rr['price'])
+    rec('S8','타 종목(미보유 0005A0) 배당재투자 100%',f'A 세후 현금 {O.won(cash)} / 기준가 {px}',{'qty':qexp,'price':str(px),'cost':O.won(qexp*px)},{'qty':rr['qty'],'price':rr['price'],'err':rr['err']},not rr['err'] and int(rr['qty'])==qexp and Fr(rr['price'])==px)
+    # same stock reinvest in B
+    cashb=OT.cash_at_net([A,B],TX,US,TYPES,B,'2026-10-08');pxb=O.PR['472150'];qb=math.floor(cashb/pxb)
+    rr=await reinv(pg,B,'472150','2026-10-08',100)
+    if not rr['err']:T(B,'472150','reinvest','2026-10-08',rr['qty'],rr['price'])
+    rec('S9','같은 종목(472150) 배당재투자 100%',f'B 세후 현금 {O.won(cashb)} / 기준가 {pxb}',{'qty':qb,'cost':O.won(qb*pxb)},{'qty':rr['qty'],'price':rr['price'],'err':rr['err']},not rr['err'] and int(rr['qty'])==qb)
+    f0=await facts(pg)
+    rr=await reinv(pg,A,'0005A0','2026-10-08',100);f1=await facts(pg)
+    rec('X10','배당현금 부족 재투자 차단(잔액 < 1주 가격)',f'A 세후 잔여 {O.won(OT.cash_at_net([A,B],TX,US,TYPES,A,"2026-10-08"))}','차단·원장 불변',{'qty':rr['qty'],'err':rr['err'],'ledger_same':f1==f0},f1==f0)
+    # repeated identical entries
+    e1=await trade(pg,'497880','add_buy','2026-10-08','1','50000',account='[일반] '+A);T(A,'497880','add_buy','2026-10-08',1,50000)
+    e2=await trade(pg,'497880','add_buy','2026-10-08','1','50000',account='[일반] '+A);T(A,'497880','add_buy','2026-10-08',1,50000)
+    f=await facts(pg);rep=[t for t in f['transactions'] if t['trade_date']=='2026-10-08' and t['type']=='add_buy']
+    rec('S10','동일 거래 반복 입력(2회) → 2건 별도 기록, 순서키 증가','497880 +1@50,000 ×2 (10-08)','2건, order_key 서로 다름, 수량 +2',{'n':len(rep),'keys':[t['order_key'] for t in rep]},not e1 and not e2 and len(rep)==2 and len({t['order_key'] for t in rep})==2)
+    # sell consuming direct first then reinvest (B: direct 10 + reinvest qb)
+    e=await trade(pg,'472150','sell','2026-10-09','10','19600',account='[일반] '+B);T(B,'472150','sell','2026-10-09',10,19600)
+    r=O.run([A,B],TX,US);hb=r['holdings'].get((B,'472150'))
+    rec('S11','매도 시 직접매수분 우선 차감, 재투자분·재투자원가 유지','B 472150 10주 매도',{'direct':'0','reinvest':str(qb),'direct_cost':'0원','reinvest_cost':O.won(qb*pxb)},{k:(str(hb[x]) if x in('d','r') else O.won(hb[x])) for k,x in (('direct','d'),('reinvest','r'),('direct_cost','dc'),('reinvest_cost','rc'))} if hb else None,not e and hb and hb['d']==0 and hb['r']==qb and hb['dc']==0)
+    r2=await verify_all(pg,'CP2',[A,B])
+    for n in ('home','comp_inst','comp_acc','div','perf'):pass
+    await home_read(pg);await shot(pg,'cp2_home');await comp_read(pg,'instrument');await shot(pg,'cp2_comp_instrument');await comp_read(pg,'account');await shot(pg,'cp2_comp_account');await div_read(pg);await shot(pg,'cp2_dividends');await perf_read(pg);await shot(pg,'cp2_performance')
+    # reload
+    fA=await facts(pg);await pg.reload(wait_until='networkidle');await pg.wait_for_timeout(800);fB=await facts(pg)
+    rec('S12','새로고침 후 저장 유지','reload','원장 동일',fA==fB,fA==fB)
+    await verify_all(pg,'CP3-reload',[A,B])
+    # export / reset / import
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(600)
+    async with pg.expect_download() as dl: await pg.click('[data-action="backup"]')
+    d=await dl.value;bp=f'{OUT}/{TAG}_audit_backup.json';await d.save_as(bp);bj=json.load(open(bp,encoding='utf-8'))
+    rec('S13','내보내기 파일 = 저장 원장','backup',f'거래 {len(fA["transactions"])}·사용 {len(fA["dividend_uses"])}',{'tx':len(bj['transactions']),'uses':len(bj['dividend_uses']),'same':bj==fA},bj==fA,os.path.basename(bp))
+    await pg.click('details.mu-danger summary');await pg.click('[data-action="reset"]');await pg.wait_for_timeout(200);await pg.click('#reset-confirm');await pg.wait_for_timeout(500)
+    a=await facts(pg);h=await home_read(pg)
+    rec('S14','초기화 → 기록 0','reset','거래 0',None if a is None else len(a['transactions']),a is None or len(a['transactions'])==0)
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(500)
+    await pg.click('[data-action="restore"]');await pg.wait_for_timeout(200);await pg.set_input_files('#restore-file',bp);await pg.click('#restore-submit');await pg.wait_for_timeout(1200)
+    fr=await facts(pg);rec('S15','가져오기(복원) → 원장 동일','restore backup','내보낸 원장과 동일',fr==fA,fr==fA)
+    await verify_all(pg,'CP4-restore',[A,B])
+    await pg.evaluate('localStorage.clear()');rec('S16','가상 데이터 정리','localStorage.clear',0,await pg.evaluate('localStorage.length'),await pg.evaluate('localStorage.length')==0)
+    rec('S17','console/pageerror 0','전체 실행',[],R['errors'][:5],not R['errors'])
+    R['rows']=ROWS;R['inputs']={'transactions':TX,'uses':US};json.dump(R,open(f'{OUT}/{TAG}_audit.json','w'),ensure_ascii=False,indent=1,default=str);await b.close()
+asyncio.run(main())

@@ -1,0 +1,66 @@
+import asyncio,sys,json
+exec(open('/workspace/mobileui/v53b/tools/qa_v4.py').read().split('async def main')[0])
+PAL=['#3B82F6','#2ECC98','#FFC329','#F46D75','#264DA0','#905BEF','#F07A9B','#16B8AB'];ETC='#6B7280';ZERO='#2b3440'
+GET="""()=>({seg:[...document.querySelectorAll('.mu-donut [data-seg]')].map(x=>[x.dataset.seg,x.dataset.color,x.getAttribute('stroke')]),rows:[...document.querySelectorAll('.mu-comp-row')].map(r=>{const d=r.querySelector('.mu-dot2');return [r.dataset.key,+r.dataset.cost,d.dataset.color,getComputedStyle(d).backgroundColor,r.querySelector('.mu-comp-name b').textContent]})})"""
+def rgb(h):h=h.lstrip('#');return 'rgb(%d, %d, %d)'%tuple(int(h[i:i+2],16) for i in (0,2,4))
+async def get(pg,tab,all_=True):
+    await comp(pg,tab,all_);return await pg.evaluate(GET)
+def verify(tag,c):
+    rows=c['rows'];pos=[r for r in rows if r[1]>0]
+    order=all((a[1]>b[1]) or (a[1]==b[1] and a[0]<b[0]) for a,b in zip(rows,rows[1:]))
+    exp=[(PAL[i] if i<5 else ETC) for i in range(len(pos))]
+    dots=[r[2] for r in pos]==exp and all(r[3]==rgb(r[2]) for r in rows) and all(r[2]==ZERO for r in rows if r[1]==0)
+    seg=c['seg'];top=[s for s in seg if s[0]!='__etc'];etc=[s for s in seg if s[0]=='__etc']
+    segok=[s[0] for s in top]==[r[0] for r in pos[:5]] and [s[1] for s in top]==PAL[:len(top)] and all(s[1]==s[2] for s in seg) and all(s[1]==ETC for s in etc) and (bool(etc)==(len(pos)>5))
+    check(f'{tag}: 금액 내림차순(동률 ID 오름차순)',order,[(r[0][:10],r[1]) for r in rows])
+    check(f'{tag}: 순위색 1~5 + 6위 이하·기타 #6B7280, 도넛=목록 점 일치',dots and segok,{'seg':[s[:2] for s in seg],'dots':[(r[0][:10],r[2]) for r in rows]})
+async def main():
+  async with async_playwright() as p:
+    b=await p.chromium.launch(executable_path='/usr/bin/google-chrome',args=['--no-sandbox'])
+    ctx=await b.new_context(viewport={'width':390,'height':844},device_scale_factor=3,is_mobile=True,has_touch=True,locale='ko-KR',timezone_id='Asia/Seoul')
+    pg=await ctx.new_page()
+    pg.on('console',lambda m:R['errors'].append(['console',m.text]) if m.type=='error' else None)
+    pg.on('pageerror',lambda x:R['errors'].append(['pageerror',str(x)]))
+    t=[await trade(pg,'497880','initial_buy','2026-03-02','4','50000',new_account='가상-일반'),
+       await trade(pg,'0018C0','initial_buy','2026-03-03','10','13000',account='[일반] 가상-일반'),
+       await trade(pg,'472150','initial_buy','2026-05-20','8','25000',new_account='가상-ISA'),
+       await trade(pg,'0005A0','initial_buy','2026-05-21','10','10000',new_account='가상-연금')]
+    check('가상 거래 4종목·3계좌',not any(t),t)
+    for tab in ('instrument','account'):
+        c=await get(pg,tab,False);verify(f'[5개 이하 {tab}]',c);R['numbers']['small_'+tab]=c
+    cat=await pg.evaluate("fetch('data/catalog.json').then(r=>r.json()).then(d=>d.items.map(x=>x.ticker))")
+    extra=[x for x in cat if x not in('497880','0018C0','472150','0005A0')][:6]
+    # 2 ties at same cost (10000) to test ID tie-break
+    for i,code in enumerate(extra):
+        t.append(await trade(pg,code,'initial_buy','2026-06-1'+str(i),'1','10000' if i<2 else str(20000+i*1000),account='[일반] 가상-일반'))
+    check('추가 6종목(동률 2건 포함) 등록',not any(t),t)
+    base={}
+    for tab in ('instrument','account'):
+        c=await get(pg,tab,True);verify(f'[10종목 전체보기 {tab}]',c);base[tab]=c;R['numbers']['big_'+tab]=c
+        c5=await get(pg,tab,False);check(f'[{tab}] 상위5+기타: 기타 회색 #6B7280',any(s[0]=='__etc' and s[1]==ETC for s in c5['seg']) or tab=='account',c5['seg'])
+    await comp(pg,'instrument',True);await pg.reload(wait_until='networkidle');await pg.wait_for_timeout(600)
+    r1=await get(pg,'instrument',True);await get(pg,'account');r2=await get(pg,'instrument',True)
+    check('새로고침·탭 왕복 후 순서·색 동일(종목별)',r1==base['instrument']==r2)
+    a1=await get(pg,'account',True);check('새로고침·탭 왕복 후 순서·색 동일(계좌별)',a1==base['account'])
+    # rank change: buy more 472150 to become #1
+    before={r[0]:r[2] for r in base['instrument']['rows']}
+    e=await trade(pg,'0005A0','add_buy','2026-10-08','15','10000',account='[일반] 가상-연금')
+    c=await get(pg,'instrument',True);verify('[순위 변경 후 종목별]',c);after={r[0]:r[2] for r in c['rows']}
+    check('순위 변경 시 색 재배정: 0005A0 1위·#3B82F6, 기존 1위는 2위색',not e and c['rows'][0][0]=='0005A0' and after['0005A0']=='#3B82F6' and before['0005A0']!='#3B82F6' and after[base['instrument']['rows'][0][0]]=='#2ECC98',{'before':before.get('0005A0'),'after':after.get('0005A0'),'old1':base['instrument']['rows'][0][0]})
+    ca=await get(pg,'account',True);verify('[순위 변경 후 계좌별]',ca)
+    lay={}
+    for w in (360,390,412,430):
+        await pg.set_viewport_size({'width':w,'height':844})
+        for tab in ('instrument','account'):
+            for all_ in (False,True):
+                await comp(pg,tab,all_)
+                if not all_ and await pg.locator('[data-action=comp-all]').count() and '상위' in await pg.inner_text('[data-action=comp-all]'):await pg.click('[data-action=comp-all]');await pg.wait_for_timeout(150)
+                h=await pg.evaluate('document.documentElement.scrollHeight');await pg.set_viewport_size({'width':w,'height':h});r=await pg.evaluate(LAYOUT)
+                nm=f"{OUT}/{TAG}_{w}_{tab}_{'all' if all_ else 'top5'}.png";await pg.screenshot(path=nm);await pg.set_viewport_size({'width':w,'height':844})
+                lay[f'{w}_{tab}_{all_}']={k:v for k,v in r.items() if k in('over','esc','clip','deco','small') and v}
+    R['layout']=lay
+    check('360/390/412/430 종목별·계좌별(상위5·전체) 넘침·겹침·이탈 0',all(not v for v in lay.values()),{k:v for k,v in lay.items() if v})
+    await pg.evaluate('localStorage.clear()');check('가상 데이터 정리',await pg.evaluate('localStorage.length')==0)
+    check('console/pageerror 0',not R['errors'],R['errors'][:5])
+    json.dump(R,open(f'{OUT}/{TAG}_v51qa.json','w'),ensure_ascii=False,indent=1);await b.close()
+asyncio.run(main())

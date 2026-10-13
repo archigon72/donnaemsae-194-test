@@ -1,0 +1,93 @@
+import sys
+src=open('/workspace/mobileui/v53b/tools/qa_v52.py').read()
+exec(src.split('\nasync def main')[0])
+exec('def name_in'+src.split('def name_in')[1].split('asyncio.run')[0])
+from decimal import Decimal as Dm
+M1,M2='0005A0','0004G0'
+def num(s):
+    s=(s or '').replace('확인분 합계','').replace('합계','').replace('원','').replace(',','').replace(' · 확인분','').strip()
+    return Dm(s) if s and s[0].isdigit() else None
+def summ(v):
+    rows=[r for r in v['rows'] if r['amt'] not in ('',None)]
+    return {'top':v['total'],'center':v['center'],'rows_sum':str(sum((Dm(r['amt']) for r in rows),Dm(0))),'label':v['label'],'segs':len(v['seg']),
+            'rows':[(r['name'],r['val'],r['pct'],r.get('sub','')[-60:]) for r in v['rows']]}
+async def main():
+  async with async_playwright() as p:
+    b=await p.chromium.launch(executable_path='/usr/bin/google-chrome',args=['--no-sandbox'])
+    mk=lambda **k:b.new_context(viewport={'width':390,'height':844},device_scale_factor=2,is_mobile=True,has_touch=True,locale='ko-KR',timezone_id='Asia/Seoul',**k)
+    ctx=await mk();pg=await ctx.new_page();logs(pg)
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');check('격리 프로필: 저장 원장 없음',await facts(pg) is None)
+    prices=json.loads(urllib.request.urlopen(BASE+'data/prices.json').read());cat=json.loads(urllib.request.urlopen(BASE+'data/catalog.json').read())['items']
+    T=[('497880','initial_buy','2026-03-02','4','50000',None,'가상-혼합계좌'),(M1,'initial_buy','2026-03-03','10','10000','[일반] 가상-혼합계좌',None),
+       ('0018C0','initial_buy','2026-03-03','30','13000',None,'가상-정상계좌'),('472150','initial_buy','2026-05-20','8','25000','[일반] 가상-정상계좌',None),
+       (M2,'initial_buy','2026-06-01','3','8000',None,'가상-전부미확인계좌')]
+    errs=[await trade(pg,c,t,d,q,pr,account=a,new_account=n) for c,t,d,q,pr,a,n in T]
+    # reinvest 0018C0 in 정상계좌
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(500);await pg.click('.mu-fab');await pg.wait_for_timeout(250)
+    await pg.select_option(F+'select[name=account]',label='[일반] 가상-정상계좌');await pg.fill(F+'input[name=date]','2026-10-08');await pg.dispatch_event(F+'input[name=date]','change')
+    await pg.click(F+'[data-type-btn=reinvest]');await pg.wait_for_timeout(100);await pg.select_option(F+'select[name=code]','0018C0');await pg.dispatch_event(F+'select[name=code]','change')
+    await pg.click('#apply-ref-price');await pg.wait_for_timeout(100);await pg.click('#confirm-reinvest');await pg.wait_for_timeout(100);await pg.click(F+'button[type=submit]');await pg.wait_for_timeout(600)
+    f=await facts(pg);R['facts']=f
+    check('가상 원장: 3계좌 5종목 + 배당재투자 1건',not any(errs) and sum(t['type']=='reinvest' for t in f['transactions'])==1,errs)
+    home=None
+    await pg.goto(BASE+'asset-home.html',wait_until='networkidle');await pg.wait_for_timeout(700)
+    home=await pg.evaluate("({amt:document.querySelector('.mu-amt')?.textContent,cash:document.querySelector('.cash-value b')?.textContent})");R['home_A']=home
+    await ctx.close()
+    seed=json.dumps(f)
+    def mod(kind):
+        P=json.loads(json.dumps(prices))
+        if kind=='B':P['items']=[x for x in P['items'] if x['code']!=M1]
+        if kind=='D':P['items']=[x for x in P['items'] if x['code']!=M2]
+        if kind=='BD':P['items']=[x for x in P['items'] if x['code'] not in (M1,M2)]
+        if kind=='E':P['items']=[]
+        return P
+    R['values']={}
+    for kind in ('A','B','D','BD','E'):
+        cx=await mk(service_workers='block');await cx.add_init_script("if(!localStorage.getItem('%s'))localStorage.setItem('%s',%s)"%(KEY,KEY,json.dumps(seed)))
+        P=mod(kind);body=json.dumps(P)
+        def mkh(body):
+            async def h(route):await route.fulfill(status=200,content_type='application/json',body=body)
+            return h
+        await cx.route('**/data/prices.json',mkh(body));pg=await cx.new_page();logs(pg)
+        vi=await view(pg,'instrument','value');va=await view(pg,'account','value')
+        R['values'][kind]={'instrument':summ(vi),'account':summ(va)};R['snap'][kind]={'instrument':vi,'account':va}
+        for tab,v in (('instrument',vi),('account',va)):
+            cmp_oracle(f'[{kind} {tab}] 행 금액 = 독립 계산(확인 종목만, 계좌는 확인 소계)',v,f,P,tab) if tab=='instrument' else None
+            if kind=='E':
+                check(f'E [{tab}] 전부 미확인: 도넛 없음·평가액 미확인·0원 총액 없음',not v['seg'] and v['none'] and v['total']=='평가액 미확인' and '0원'!=v['total'],summ(v));continue
+            top,cen,rs=num(v['total']),num(v['center']),sum((Dm(r['amt']) for r in v['rows'] if r['amt'] not in('',None)),Dm(0))
+            check(f'{kind} [{tab}] 상단 = 도넛 중앙 = 조각(행) 합계',top is not None and top==cen==rs,{'top':v['total'],'center':v['center'],'rows_sum':str(rs)})
+            partial=kind!='A'
+            if partial:check(f'{kind} [{tab}] 전체 아님 라벨·미확인 종목 안내',v['label']=='확인 가능한 종목 평가액 합계(전체 아님)' and '일부 평가액 미제공' in v['miss'] and '확인분' in v['center'],{'label':v['label'],'miss':v['miss'][:120]})
+            else:check(f'A [{tab}] 전 종목 유효: 전체 평가액 라벨',v['label']=='현재 보유 ETF 평가액 합계' and not v['miss'],v['label'])
+            colorcheck(f'{kind} [{tab}]',v)
+        if kind!='E':
+            check(f'{kind} 종목별 확인 합계 = 계좌별 확인 합계',num(vi['total'])==num(va['total']),[vi['total'],va['total']])
+        accs={r['name'].split('] ',1)[-1]:r for r in va['rows']}
+        if kind in('B','BD'):
+            r=accs['가상-혼합계좌'];pv=Dm(prices_map(prices)['497880'])*4
+            check(f'{kind} 혼합 계좌를 버리지 않음: 확인 종목 소계 {pv} + 확인분 표시 + 미확인 종목명',r['amt'] not in('',None) and Dm(r['amt'])==pv and '확인분' in r['val'] and name_of(cat,M1) in r['sub'] and r['color']!=ZERO,r)
+        if kind in('D','BD'):
+            r=accs['가상-전부미확인계좌'];ok=r['amt']=='' and r['val']=='평가액 미확인' and '0원' not in r['val'] and r['color']==ZERO
+            n=accs['가상-정상계좌'];ok2=n['amt'] not in('',None)
+            check(f'{kind} 전부 미확인 계좌: 0원 아닌 평가액 미확인 + 정상 계좌 금액 보존',ok and ok2,{'z':[r['val'],r['sub'][-50:]],'normal':n['val']})
+        if kind=='B':
+            # F: reload/tab consistency
+            await pg.reload(wait_until='networkidle');await pg.wait_for_timeout(500)
+            v2=await view(pg,'account','value',True,False);await pg.click('[data-comp=instrument]');await pg.wait_for_timeout(200)
+            if await pg.locator('[data-action=comp-all]').count() and '전체' in await pg.inner_text('[data-action=comp-all]'):await pg.click('[data-action=comp-all]');await pg.wait_for_timeout(200)
+            v3=await pg.evaluate(GET)
+            check('F 새로고침·탭 전환 후 값·색 동일(B 상태)',{k:v2[k] for k in('total','rows','seg')}=={k:va[k] for k in('total','rows','seg')} and {k:v3[k] for k in('total','rows','seg')}=={k:vi[k] for k in('total','rows','seg')})
+        if kind=='A':
+            q=qty(f);pm=prices_map(prices);rq=q[[k for k in q if k[1]=='0018C0'][0]]
+            row=[r for r in vi['rows'] if r['key']=='0018C0'][0]
+            check('F 배당재투자 수량 포함: 0018C0 평가액 = (직접30+재투자)×종가',Dm(row['amt'])==rq*Dm(pm['0018C0']) and rq>30,{'qty':str(rq),'amt':row['amt']})
+            check('F 배당현금 제외: 홈 현재 자산가치 = 평가액 합계 + 배당현금',num(home['amt'])==num(vi['total'])+num(home['cash']),{'home':home,'donut':vi['total']})
+        await shots(pg,'G_'+kind,[('value','instrument'),('value','account')]+([('cost','instrument'),('cost','account')] if kind=='A' else []))
+        await cx.close()
+    await b.close()
+  check('console/pageerror 0',not R['errors'],R['errors'][:5])
+  json.dump(R,open(f'{OUT}/{TAG}_qa.json','w'),ensure_ascii=False,indent=1,default=str)
+def prices_map(P):return {x['code']:x['price'] for x in P['items']}
+def name_of(cat,c):return [x['name'] for x in cat if x['ticker']==c][0]
+asyncio.run(main())

@@ -1,0 +1,39 @@
+"""세후 독립 오라클 (Fraction/Decimal) — 앱 코드를 쓰지 않고 업무 규칙에서 직접 계산.
+기존 oracle.py(세전)의 지급 배당 목록을 그대로 받아, 지급 건마다 원천징수 세금을 계산해 계좌 배당현금에서 1회만 차감.
+규칙(대표 확정): ISA/IRP/연금저축 = 0 · 해외형 = 세전×15.4% · 국내 커버드콜 = 회차 과세표준×수량, 없으면 세전×18% 과세표준
+· 그 외 일반 과세형 = 회차 과세표준 우선, 없으면 세전 100%. 원 미만: 과세표준 절사 → 소득세 14% 절사 → 지방세(소득세 10%) 절사."""
+import json,math
+from fractions import Fraction as F
+import sys;sys.path.insert(0,'/workspace/mobileui/audit');import oracle as O
+TX=json.load(open('/workspace/mobileui/v53b/work/data/tax-v53.json'))
+CL=TX['classification'];BS={b['distribution_id']:b for b in TX['bases']}
+DIST={(d['code'],d['ex_date'],d['pay_date']):d for d in json.load(open('/workspace/mobileui/v53b/work/data/management-distributions.json'))['items']}
+DEF=('ISA','IRP','연금저축')
+def tax_of(code,did,ex,ps,qty,pre,typ):
+    if typ in DEF:return F(0),'deferred'
+    cat=CL.get(code,{}).get('category','undecided');b=BS.get(did)
+    m=b is not None and b['code']==code and b['ex_date']==ex and F(b['per_share'])==F(ps)
+    if cat=='overseas':base,r=pre,'overseas_15_4'
+    elif cat=='domestic_cc':base,r=((qty*F(b['taxable_per_share']),'cc_basis') if m else (pre*F(18,100),'cc_18'))
+    else:base,r=((qty*F(b['taxable_per_share']),'other_basis') if m else (pre,'other_100'))
+    inc=math.floor(math.floor(base)*F(14,100));t=min(pre,F(inc+math.floor(inc*F(1,10))));return t,r
+def run_net(accounts,txs,uses,types,asof='2026-10-13'):
+    """oracle.run과 같은 사건 순서. 배당 현금 = 세전 − 세금. 사용·재투자는 세후 현금 한도 확인."""
+    pre=O.run(accounts,txs,uses,asof)
+    taxes={a:F(0) for a in accounts};rows=[]
+    for d in O.DIST:
+        pass
+    for x in pre['divs']:
+        a=x['acc'];c=x['code'];dd=[d for d in O.DIST if d['code']==c and d['pay_date']==x['date'] and d['status']=='confirmed']
+        dd=[d for d in dd if F(d['per_share'])*(x['amount']/F(d['per_share']))==x['amount']]
+        d=dd[0];q=x['amount']/F(d['per_share']);did=d.get('distribution_id') or f"{c}-{d['ex_date'].replace('-','')}"
+        t,r=tax_of(c,did,d['ex_date'],d['per_share'],q,x['amount'],types.get(a,'일반'));taxes[a]+=t
+        rows.append({'acc':a,'code':c,'distribution_id':did,'pay_date':x['date'],'pretax':x['amount'],'tax':t,'rule':r})
+    cash={a:pre['cash'][a]-taxes[a] for a in accounts}
+    for a in accounts:
+        if cash[a]<0:raise ValueError('net cash negative '+a)
+    C=sum(cash.values())
+    out=dict(pre);out.update({'cash':cash,'cash_total':C,'total':pre['total']-sum(taxes.values()),'grown':pre['grown']-sum(taxes.values()),'tax':taxes,'tax_rows':rows,'pre':pre})
+    return out
+def cash_at_net(accounts,txs,uses,types,acc,date):
+    return run_net(accounts,[t for t in txs if t['date']<=date],[u for u in uses if u['date']<=date],types,asof=date)['cash'][acc]
