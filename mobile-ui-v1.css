@@ -323,3 +323,10 @@ body.mu .mu-bar-sum dd.green{color:#43e39a}
 body.mu .mu-chart-note{font-size:11px;line-height:1.45;margin-top:6px}
 body.mu .mu-basisnote{margin:0}
 html body.garden.mc .mc-chart h2{padding-right:48px!important;min-width:0;white-space:normal!important;word-break:keep-all;line-height:1.35!important;padding-top:4px;padding-bottom:4px}
+/* v5.2 투자금 구성 표시 기준 전환 */
+body.mu .mu-tabs.mu-basis{grid-template-columns:1fr 1fr}
+body.mu .mu-tabs.mu-basis button{font-size:14px;min-height:44px;white-space:nowrap}
+body.mu .mu-val-basis{margin-top:4px;font-size:11.5px;color:var(--mu-muted);overflow-wrap:anywhere}
+body.mu .mu-val-miss p{overflow-wrap:anywhere}
+body.mu .mu-val-none{display:flex;flex-direction:column;align-items:center;gap:4px;padding:18px 8px;border:1px dashed var(--mu-line);border-radius:12px;margin-bottom:10px;text-align:center}
+body.mu .mu-val-none small{color:var(--mu-muted);font-size:12px}
