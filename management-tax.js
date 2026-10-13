@@ -1,7 +1,7 @@
 /* v5.3 세후 배당 계산(표시·현금 정합 전용). 원장 replay 결과를 읽어 지급 건별 세후액을 계산하고,
    사용자 확정 실입금액(state.dividend_confirmations)을 우선 적용한다. 원장 기록은 수정하지 않는다.
    규칙(대표 결정): 일반계좌 해외형 = 세전×15.4% · 국내주식형 커버드콜 = 회차 과세표준×수량×15.4%, 자료 없으면 세전×18%를 과세표준 ·
-   ISA/연금저축/IRP = 과세이연(세금 0) · 그 외(대표 미결정) = 회차 과세표준 자료 일치 시 사용, 없으면 세전 전액 과세표준 잠정.
+   ISA/연금저축/IRP = 과세이연(세금 0) · 그 외 일반 과세형(대표 확정 2026-10-14) = 공식 회차 과세표준 자료 일치 시 우선, 없으면 과세대상 비율 100%(세전 전액)×15.4%.
    원 단위: 과세표준 원 미만 절사 → 소득세 = floor(과세표준×14%) → 지방소득세 = floor(소득세×10%) → 세금 = 합, 세전액 초과 불가. */
 (function(root){'use strict';
 let data=null;const byDist=new Map();
@@ -17,7 +17,7 @@ function compute(L,ev,acctType,distributions){
  const match=b&&d&&b.code===code&&b.ex_date===d.ex_date&&L.D.of(b.per_share).cmp(d.per_share)===0;
  if(cat==='overseas'){base=pre;rule='overseas_15_4';label='해외형 · 세전×15.4%'}
  else if(cat==='domestic_cc'){if(match){base=ev.quantity.mul(b.taxable_per_share);rule='cc_basis';label='국내 커버드콜 · 회차 과세표준 '+b.taxable_per_share+'원/주'}else{base=pre.mul('0.18');rule='cc_18';label='국내 커버드콜 · 과세표준 자료 없음 → 세전×18% 과세표준'}}
- else{if(match){base=ev.quantity.mul(b.taxable_per_share);rule='other_basis';label='기타 국내형 · 회차 과세표준 '+b.taxable_per_share+'원/주'}else{base=pre;rule='other_provisional';label='기타 국내형 · 과세표준 미확인 → 세전 전액 잠정(대표 미결정)'}}
+ else{if(match){base=ev.quantity.mul(b.taxable_per_share);rule='other_basis';label='일반 과세형 · 회차 과세표준 '+b.taxable_per_share+'원/주'}else{base=pre;rule='other_100';label='일반 과세형 · 회차 과세표준 자료 없음 → 세전 100%×15.4%'}}
  const bw=floorWon(L,base),inc=floorWon(L,bw.mul('0.14')),loc=floorWon(L,inc.mul('0.1'));let tax=inc.add(loc);if(tax.cmp(pre)>0)tax=pre;
  return {category:cat,rule,rule_label:label,base:bw,income_tax:inc,local_tax:loc,tax,net:pre.sub(tax)};
 }
