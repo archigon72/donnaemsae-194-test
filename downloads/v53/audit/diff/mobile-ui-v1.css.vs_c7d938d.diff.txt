@@ -1,0 +1,13 @@
+--- c7d938d/mobile-ui-v1.css
++++ ed66d27/mobile-ui-v1.css
+@@ -330,3 +330,10 @@
+ body.mu .mu-val-miss p{overflow-wrap:anywhere}
+ body.mu .mu-val-none{display:flex;flex-direction:column;align-items:center;gap:4px;padding:18px 8px;border:1px dashed var(--mu-line);border-radius:12px;margin-bottom:10px;text-align:center}
+ body.mu .mu-val-none small{color:var(--mu-muted);font-size:12px}
++/* v5.3 세전/세후 */
++.mu-taxbasis{margin:8px 0}
++.mu-tax-rows{list-style:none;margin:8px 0;padding:0;display:grid;gap:10px}
++.mu-tax-row{border-top:1px solid rgba(255,255,255,.08);padding-top:8px;min-width:0}
++.mu-tax-top{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}.mu-tax-top b{overflow-wrap:anywhere}
++.mu-tax-sub{display:block;opacity:.75;overflow-wrap:anywhere}
++.mu-tax-dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:6px 0}.mu-tax-dl dt{font-size:.75em;opacity:.7}.mu-tax-dl dd{margin:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}

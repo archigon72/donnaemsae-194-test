@@ -1,0 +1,10 @@
+--- c7d938d/management.html
++++ ed66d27/management.html
+@@ -24,4 +24,4 @@
+ .garden #ledger-dialog input[type="range"]::-moz-range-thumb{
+   width:20px;height:20px;border:0;border-radius:50%;background:#4a9eff;cursor:pointer;
+ }
+-</style><link rel="stylesheet" href="mobile-ui-v1.css"></head><body data-portal-service="management" class="garden" data-view="management"><div id="app"></div><script src="management-ledger.js"></script><script src="management-storage.js"></script><script src="management-data.js"></script><script src="management-view.js"></script></body></html>
+\ No newline at end of file
++</style><link rel="stylesheet" href="mobile-ui-v1.css"></head><body data-portal-service="management" class="garden" data-view="management"><div id="app"></div><script src="management-ledger.js"></script><script src="management-storage.js"></script><script src="management-data.js"></script><script src="management-tax.js"></script><script src="management-view.js"></script></body></html>
+\ No newline at end of file

@@ -1,0 +1,224 @@
+import sys
+src=open('/workspace/mobileui/v52/tools/qa_v52.py').read()
+exec(src.split('\nasync def main')[0])
+from decimal import Decimal as Dm, ROUND_FLOOR
+WORK=os.environ.get('V53DATA','/workspace/mobileui/v53/work')
+TX=json.load(open(WORK+'/data/tax-v53.json'));DI={d['distribution_id']:d for d in json.load(open(WORK+'/data/management-distributions.json'))['items']}
+BASES={b['distribution_id']:b for b in TX['bases']}
+def fl(x):return x.to_integral_value(rounding=ROUND_FLOOR)
+def oracle_net(code,did,pretax,typ):
+    pretax=Dm(pretax);cat=TX['classification'].get(code,{}).get('category','undecided')
+    if typ in('ISA','연금저축','IRP'):return 'deferred',pretax,Dm(0)
+    d=DI[did];b=BASES.get(did);qty=pretax/Dm(d['per_share'])
+    m=b and b['code']==code and b['ex_date']==d['ex_date'] and Dm(b['per_share'])==Dm(d['per_share'])
+    if cat=='overseas':base,r=pretax,'overseas_15_4'
+    elif cat=='domestic_cc':base,r=((qty*Dm(b['taxable_per_share']),'cc_basis') if m else (pretax*Dm('0.18'),'cc_18'))
+    else:base,r=((qty*Dm(b['taxable_per_share']),'other_basis') if m else (pretax,'other_provisional'))
+    inc=fl(fl(base)*Dm('0.14'));tax=min(pretax,inc+fl(inc*Dm('0.1')));return r,pretax-tax,tax
+def W(s):s=(s or '').replace(',','').replace('원','').replace('+','').strip();return Dm(s) if s and (s[0].isdigit() or s[0]=='-') else None
+DIVGET="""()=>({basis:[...document.querySelectorAll('[data-divbasis]')].map(b=>[b.dataset.divbasis,b.getAttribute('aria-pressed')]),tiles:[...document.querySelectorAll('.mu-divsum .mu-tile')].map(t=>[t.querySelector('small').textContent,t.querySelector('b').textContent]),h2:[...document.querySelectorAll('.mu-card h2')].map(h=>h.textContent),bars:[...document.querySelectorAll('.mu-divchart [data-bar]')].map(g=>[g.dataset.v,g.dataset.read]),table:[...document.querySelectorAll('.month-table tbody tr')].map(r=>[...r.cells].map(c=>c.textContent)),th:document.querySelector('.month-table thead')?.textContent,recent:[...document.querySelectorAll('.mu-rec .record-description')].map(x=>x.textContent),rows:[...document.querySelectorAll('.mu-tax-row')].map(r=>({...r.dataset,text:r.textContent})),notice:[...document.querySelectorAll('.mu-taxlist .status-notice')].map(x=>x.textContent).join(' '),summary:document.querySelector('.mu-taxlist .record-note')?.textContent||''})"""
+async def divview(pg,basis='pre',nav=True):
+    if nav:await pg.goto(BASE+'management.html?mode=dividends',wait_until='networkidle');await pg.wait_for_timeout(600)
+    await pg.click(f'button[data-divbasis={basis}]');await pg.wait_for_timeout(250)
+    if basis=='net' and await pg.locator('[data-action=tax-all]').count() and '전체' in await pg.inner_text('[data-action=tax-all]'):await pg.click('[data-action=tax-all]');await pg.wait_for_timeout(200)
+    return await pg.evaluate(DIVGET)
+async def ntrade(pg,code,date,qty,price,account=None,new_account=None,typ='일반'):
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(400);await pg.click('.mu-fab');await pg.wait_for_timeout(200)
+    if new_account:
+        await pg.select_option(F+'select[name=account]','new');await pg.fill(F+'input[name=new_account]',new_account);await pg.select_option(F+'select[name=account_type]',typ)
+    else:await pg.select_option(F+'select[name=account]',label=account)
+    await pg.fill(F+'input[name=date]',date);await pg.dispatch_event(F+'input[name=date]','change')
+    await pg.click(F+'[data-type-btn=initial_buy]');await pg.wait_for_timeout(80);await pg.select_option(F+'select[name=code]',code);await pg.dispatch_event(F+'select[name=code]','change')
+    await pg.fill(F+'input[name=quantity]',qty);await pg.fill(F+'input[name=price]',price);await pg.click(F+'button[type=submit]');await pg.wait_for_timeout(500)
+    e=[x for x in await pg.locator(F+'.form-error').all_inner_texts() if x.strip()] if await pg.locator('#ledger-dialog[open] #trade-form').count() else []
+    if e:await pg.keyboard.press('Escape')
+    return e
+def types(f):return {a['account_id']:a.get('type','일반') for a in f['accounts']}
+def expect(f,rows,conf=None):
+    t=types(f);conf=conf if conf is not None else {c['account_id']+':'+c['distribution_id']:Dm(c['amount']) for c in f.get('dividend_confirmations',[])};out={}
+    for r in rows:
+        a,did=r['key'].split(':',1);code=DI[did]['code'];rule,net,tax=oracle_net(code,did,r['pretax'],t[a]);out[r['key']]=(rule,conf.get(r['key'],net),net)
+    return out
+def rowscheck(tag,v,f):
+    ex=expect(f,v['rows']);bad=[(r['key'][-22:],r['rule'],r['auto'],r['net'],[str(x) for x in ex[r['key']]]) for r in v['rows'] if not(r['rule']==ex[r['key']][0] and Dm(r['auto'])==ex[r['key']][2] and Dm(r['net'])==ex[r['key']][1])]
+    check(tag+': 지급 건별 규칙·자동 세후·적용 세후 = 독립 계산',v['rows'] and not bad,{'n':len(v['rows']),'bad':bad[:5],'rules':sorted({r['rule'] for r in v['rows']})});return ex
+def consist(tag,pre,net,f):
+    ex=expect(f,net['rows']);P=sum(Dm(r['pretax']) for r in net['rows']);N=sum(v[1] for v in ex.values())
+    bym={};[bym.__setitem__(r['key'].split(':',1)[1][-8:][:6],0) for r in []]
+    mp={};mn={}
+    for r in net['rows']:
+        m=DI[r['key'].split(':',1)[1]]['pay_date'][:7];mp[m]=mp.get(m,Dm(0))+Dm(r['pretax']);mn[m]=mn.get(m,Dm(0))+ex[r['key']][1]
+    tp=W(pre['tiles'][0][1]);tn=W(net['tiles'][0][1])
+    tabP={r[0]:W(r[1]) for r in pre['table']};tabN={r[0]:W(r[1]) for r in net['table']}
+    check(tag+': 세전 누적 = 세전 합, 세후 누적 = 독립 세후 합',tp==P and tn==N,{'pre_tile':pre['tiles'][0],'net_tile':net['tiles'][0],'P':str(P),'N':str(N)})
+    okm=all(tabP.get(m,Dm(0))==v for m,v in mp.items()) and all(tabN.get(m,Dm(0))==v for m,v in mn.items()) and sum(tabP.values())==P and sum(tabN.values())==N
+    check(tag+': 월별 표(세전/세후) = 월별 독립 합 (기준 섞임 없음)',okm,{'pre':{k:str(v) for k,v in tabP.items() if v},'net':{k:str(v) for k,v in tabN.items() if v},'exp_net':{k:str(v) for k,v in mn.items()}})
+    lab=all('세전' in x for x in [pre['tiles'][0][0],pre['th']]+[h for h in pre['h2'] if '배당' in h]) and all('세후' in x for x in [net['tiles'][0][0],net['th']]+[h for h in net['h2'] if '받은 배당' in h])
+    bp=sum(Dm(b[0]) for b in pre['bars']);bn=sum(Dm(b[0]) for b in net['bars']);rd=all('세전' in b[1] for b in pre['bars'] if 'ë' not in b[1] and '미제공' not in b[1]) and all('세후' in b[1] for b in net['bars'] if '미제공' not in b[1])
+    last12P=sum(v for m,v in mp.items() if m in [b[1][:0] or m for b in []]) if False else None
+    check(tag+': 제목·타일·표머리·막대 탭 설명이 모두 같은 기준 표기',lab and rd,{'pre_h2':pre['h2'],'net_h2':net['h2'],'pre_bar':pre['bars'][-1][1] if pre['bars'] else None,'net_bar':net['bars'][-1][1] if net['bars'] else None})
+    vals=lambda v:[Dm(b[0]) for b in v['bars']]
+    check(tag+': 막대 값 = 해당 기준 월 합계',vals(pre)[-len(vals(pre)):]==[mp.get(m,Dm(0)) for m in sorted(tabP)[-len(vals(pre)):]] and vals(net)==[mn.get(m,Dm(0)) for m in sorted(tabN)[-len(vals(net)):]],{'pre':[str(x) for x in vals(pre)],'net':[str(x) for x in vals(net)]})
+    return P,N
+async def homecash(pg):
+    await pg.goto(BASE+'asset-home.html',wait_until='networkidle');await pg.wait_for_timeout(700);return await pg.evaluate("document.querySelector('.cash-value b')?.textContent")
+async def precash(pg):
+    return await pg.evaluate("""(async()=>{const L=window.ManagementLedger,st=L.facts(JSON.parse(localStorage.getItem('%s')));const db=(await (await fetch('data/management-distributions.json')).json()).items;const r=L.replay(st,db);return Object.fromEntries([...r.cash].map(([a,v])=>[a,v.str(2)]))})()"""%KEY)
+async def avail(pg,acc_label):
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(500);await pg.click('[data-action=use]');await pg.wait_for_timeout(250)
+    await pg.select_option('#use-form select[name=account]',label=acc_label);await pg.dispatch_event('#use-form select[name=account]','change');await pg.wait_for_timeout(100)
+    t=await pg.inner_text('#available-cash');return t
+async def douse(pg,acc_label,amount):
+    await avail(pg,acc_label);await pg.fill('#use-form input[name=amount]',amount);await pg.click('#use-form button[type=submit]');await pg.wait_for_timeout(400)
+    e=await pg.inner_text('#use-form .form-error') if await pg.locator('#ledger-dialog[open] #use-form').count() else ''
+    if e:await pg.keyboard.press('Escape')
+    return e
+async def taxedit(pg,key,amount=None,revert=False):
+    await divview(pg,'net');await pg.click(f'[data-taxedit="{key}"]');await pg.wait_for_timeout(250)
+    if revert:await pg.click('#tax-revert')
+    else:await pg.fill('#tax-form input[name=amount]',amount);await pg.click('#tax-form button[type=submit]')
+    await pg.wait_for_timeout(400);e=await pg.inner_text('#tax-form .form-error') if await pg.locator('#ledger-dialog[open] #tax-form').count() else ''
+    if e:await pg.keyboard.press('Escape')
+    return e
+ACC=[('가상-일반계좌','일반'),('가상-ISA계좌','ISA'),('가상-IRP계좌','IRP'),('가상-연금계좌','연금저축')]
+T=[('0018C0','30',0),('0094M0','100',0),('0004G0','50',0),('0022T0','20',0),('0089D0','20',0),('0018C0','10',1),('0004G0','10',1),('0005A0','5',2),('0094M0','5',3)]
+async def main():
+  async with async_playwright() as p:
+    b=await p.chromium.launch(executable_path='/usr/bin/google-chrome',args=['--no-sandbox'])
+    mk=lambda **k:b.new_context(viewport={'width':390,'height':844},device_scale_factor=2,is_mobile=True,has_touch=True,locale='ko-KR',timezone_id='Asia/Seoul',accept_downloads=True,**k)
+    ctx=await mk();pg=await ctx.new_page();logs(pg)
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');check('격리 프로필: 저장 원장 없음',await facts(pg) is None)
+    # rule unit checks in browser
+    u=await pg.evaluate("""(()=>{const L=ManagementLedger,T=ManagementTax,mk=(c,q,ps)=>({code:c,distribution_id:'X',quantity:L.D.of(q),amount:L.D.of(q).mul(ps)}),m=new Map(),o=x=>({rule:x.rule,base:x.base&&x.base.str(2),tax:x.tax.str(2),net:x.net.str(2)});return {cc18:o(T.compute(L,mk('0094M0','1000','100'),'일반',m)),ov:o(T.compute(L,mk('0004G0','1000','100'),'일반',m)),isa:o(T.compute(L,mk('0094M0','1000','100'),'ISA',m)),irp:o(T.compute(L,mk('0004G0','1000','100'),'IRP',m)),pen:o(T.compute(L,mk('0004G0','1000','100'),'연금저축',m)),und:o(T.compute(L,mk('0022T0','1000','100'),'일반',m)),odd:o(T.compute(L,mk('0004G0','7','13.7'),'일반',m)),odd18:o(T.compute(L,mk('0094M0','33','47.3'),'일반',m))}})()""")
+    R['unit']=u
+    check('규칙: 국내 커버드콜 자료 없음 100,000원 → 과세표준 18,000 · 세후 97,228',u['cc18']=={'rule':'cc_18','base':'18000','tax':'2772','net':'97228'},u['cc18'])
+    check('규칙: 일반계좌 해외형 100,000원 → 15.4% → 84,600',u['ov']=={'rule':'overseas_15_4','base':'100000','tax':'15400','net':'84600'},u['ov'])
+    check('규칙: ISA/IRP/연금저축 과세이연 → 세금 0',all(u[k]['rule']=='deferred' and u[k]['tax']=='0' and u[k]['net']=='100000' for k in('isa','irp','pen')),[u['isa'],u['irp'],u['pen']])
+    check('규칙: 미결정 기타 국내형(자료 없음) → 18% 미적용, 세전 전액 잠정',u['und']['rule']=='other_provisional' and u['und']['base']=='100000',u['und'])
+    # 원 단위: 95.9 → base 95 → 소득세 13 → 지방 1 ; 1560.9*0.18=280.962→280→39→3
+    check('원 단위 절사: 95.9원(해외) → 세금 14 · 1,560.9원(CC18%) → 세금 42',u['odd']['tax']=='14' and u['odd']['net']=='81.9' and u['odd18']['tax']=='42',[u['odd'],u['odd18']])
+    errs=[]
+    seen=set()
+    for code,q,ai in T:
+        nm,ty=ACC[ai]
+        errs.append(await ntrade(pg,code,'2026-03-02',q,'10000',account=None if nm in seen else None,new_account=None if nm in seen else nm,typ=ty) if nm not in seen else await ntrade(pg,code,'2026-03-02',q,'10000',account=f'{nm} ({ty})'))
+        seen.add(nm)
+    f=await facts(pg);R['facts0']=f
+    check('가상 원장: 4계좌(일반/ISA/IRP/연금저축) 9보유 등록',not any(errs) and len(f['accounts'])==4 and len(f['transactions'])==9,errs)
+    check('계좌 종류 저장: ISA/IRP/연금저축 type 보존(일반은 기본값으로 생략)',sorted(a.get('type','일반') for a in f['accounts'])==sorted(t for _,t in ACC),f['accounts'])
+    await pg.reload(wait_until='networkidle');await pg.wait_for_timeout(400);await pg.click('.mu-fab');await pg.wait_for_timeout(200)
+    labels=await pg.evaluate("[...document.querySelectorAll('#trade-form select[name=account] option')].map(o=>o.textContent)");await pg.keyboard.press('Escape')
+    check('새로고침 후 계좌 종류 표시 유지',all(any(f'{n} ({t})'==l for l in labels) for n,t in ACC),labels)
+    pre=await divview(pg,'pre');net=await divview(pg,'net',nav=False);R['div0']={'pre':pre,'net':net}
+    check('토글: 기본 세전, [세후] 누르면 세후만 눌림',pre['basis']==[['pre','true'],['net','false']] and net['basis']==[['pre','false'],['net','true']],net['basis'])
+    ex=rowscheck('전체 범위',net,f);P,N=consist('전체 범위',pre,net,f)
+    rules={r['rule'] for r in net['rows']}
+    check('가상 원장이 5가지 규칙을 모두 포함(cc_basis/cc_18/overseas/other_basis/other_provisional/deferred)',{'cc_basis','cc_18','overseas_15_4','other_basis','other_provisional','deferred'}<=rules,sorted(rules))
+    # account scope check
+    await pg.goto(BASE+'management.html?mode=dividends',wait_until='networkidle');await pg.wait_for_timeout(500)
+    # cash
+    pc=await precash(pg);hc=await homecash(pg)
+    ded={};[ded.__setitem__(k.split(':')[0],ded.get(k.split(':')[0],Dm(0))+Dm(r['pretax'])-v[1]) for r in net['rows'] for k,v in [(r['key'],ex[r['key']])]]
+    expcash=sum(Dm(v) for v in pc.values())-sum(ded.values())
+    check('홈 배당현금 = 세전 현금 − 세금(1회만 차감)',W(hc)==expcash,{'home':hc,'pretax_cash':pc,'deduct':{k[:8]:str(v) for k,v in ded.items()},'expected':str(expcash)})
+    aid={a['name']:a['account_id'] for a in f['accounts']}
+    gen=aid['가상-일반계좌'];isa=aid['가상-ISA계좌']
+    av=await avail(pg,'가상-일반계좌 (일반)') if False else None
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(400);await pg.click('[data-action=use]');await pg.wait_for_timeout(250)
+    uopts=await pg.evaluate("[...document.querySelectorAll('#use-form select[name=account] option')].map(o=>o.textContent)");await pg.keyboard.press('Escape')
+    GL=[o for o in uopts if o.startswith('가상-일반계좌')][0];IL=[o for o in uopts if o.startswith('가상-ISA계좌')][0]
+    a1=await avail(pg,GL);await pg.keyboard.press('Escape');a2=await avail(pg,IL);await pg.keyboard.press('Escape')
+    eg=Dm(pc[gen])-ded.get(gen,Dm(0));ei=Dm(pc[isa])-ded.get(isa,Dm(0))
+    check('배당 사용 가능액: 일반=세후, ISA=세전(과세이연)',W(a1.split(':')[-1])==eg and W(a2.split(':')[-1])==ei and ei==Dm(pc[isa]),{'gen':a1,'exp_gen':str(eg),'pre_gen':pc[gen],'isa':a2,'exp_isa':str(ei)})
+    f1=await facts(pg);e=await douse(pg,GL,str(Dm(pc[gen])))
+    check('차단: 세전 현금 이내지만 세후 현금 초과 사용 → "세후 배당현금 부족", 원장 불변','세후 배당현금 부족' in e and await facts(pg)==f1,e)
+    # reinvest form availability
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(400);await pg.click('.mu-fab');await pg.wait_for_timeout(200)
+    await pg.select_option(F+'select[name=account]',label='가상-일반계좌 (일반)');await pg.fill(F+'input[name=date]','2026-10-08');await pg.dispatch_event(F+'input[name=date]','change')
+    await pg.click(F+'[data-type-btn=reinvest]');await pg.wait_for_timeout(100);await pg.select_option(F+'select[name=code]','0018C0');await pg.dispatch_event(F+'select[name=code]','change');await pg.wait_for_timeout(150)
+    rtxt=await pg.evaluate("document.querySelector('#ledger-dialog').innerText");await pg.keyboard.press('Escape')
+    nums=[W(x) for x in re.findall(r'[\d,]+(?:\.\d+)?원',rtxt)]
+    check('재투자 폼: 표시 재투자 가능 배당 = 세후 현금',eg in nums and Dm(pc[gen]) not in nums,{'expected':str(eg),'pretax':pc[gen],'text':rtxt[:400]})
+    small=str(fl(eg/2));e=await douse(pg,GL,small);f2=await facts(pg)
+    check('세후 현금 이내 사용은 정상 등록',not e and len(f2.get('dividend_uses',[]))==1,e)
+    # per-row edits across accounts
+    gr=[r for r in net['rows'] if r['key'].startswith(gen) and r['rule']=='overseas_15_4'][0];ir=[r for r in net['rows'] if r['key'].startswith(isa) and r['rule']=='deferred'][0]
+    e1=await taxedit(pg,gr['key'],str(Dm(gr['auto'])-7));e2=await taxedit(pg,ir['key'],str(Dm(ir['pretax'])-3))
+    f3=await facts(pg);conf={c['account_id']+':'+c['distribution_id']:c['amount'] for c in f3.get('dividend_confirmations',[])}
+    check('건별 확정: 일반·ISA 두 계좌 각 1건 확정 저장(세전·자동값은 별도 유지)',not e1 and not e2 and conf=={gr['key']:str(Dm(gr['auto'])-7),ir['key']:str(Dm(ir['pretax'])-3)},{'e':[e1,e2],'conf':conf})
+    pre2=await divview(pg,'pre');net2=await divview(pg,'net',nav=False)
+    rowscheck('확정 반영',net2,f3);consist('확정 반영',pre2,net2,f3)
+    r2={r['key']:r for r in net2['rows']}
+    check('확정 건: 세전 그대로·자동값 그대로·적용=확정, 표시 "확정"',r2[gr['key']]['pretax']==gr['pretax'] and r2[gr['key']]['auto']==gr['auto'] and r2[gr['key']]['confirmed']==conf[gr['key']] and '확정 실입금' in r2[gr['key']]['text'],{k:r2[gr['key']][k] for k in('pretax','auto','net','confirmed')})
+    check('세전 화면은 확정값 영향 없음',W(pre2['tiles'][0][1])==P,pre2['tiles'][0])
+    e=await taxedit(pg,gr['key'],str(Dm(gr['pretax'])+1));check('검증: 세전 초과 실입금액 거부, 원장 불변','클 수 없습니다' in e and await facts(pg)==f3,e)
+    e=await taxedit(pg,gr['key'],'12,3.4.5');check('검증: 잘못된 금액 형식 거부',bool(e) and await facts(pg)==f3,e)
+    # persistence: refresh
+    await pg.reload(wait_until='networkidle');n3=await divview(pg,'net')
+    check('새로고침 후 확정값 유지',{r['key']:r['confirmed'] for r in n3['rows'] if r['confirmed']}==conf,None)
+    # backup -> reset -> restore via UI
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.wait_for_timeout(400)
+    async with pg.expect_download() as dl:await pg.click('[data-action=backup]')
+    d=await dl.value;bp=f'{OUT}/{TAG}_backup.json';await d.save_as(bp);bj=json.load(open(bp))
+    check('백업 파일에 계좌 종류·확정값 포함',bj.get('dividend_confirmations')==f3['dividend_confirmations'] and [a.get('type') for a in bj['accounts']]==[a.get('type') for a in f3['accounts']],{'conf':len(bj.get('dividend_confirmations',[]))})
+    await pg.click('.mu-danger summary');await pg.click('[data-action=reset]');await pg.click('#reset-confirm');await pg.wait_for_timeout(300)
+    check('초기화 후 원장 비움',(await facts(pg)) in (None,) or not (await facts(pg))['accounts'],None)
+    await pg.click('[data-action=restore]');await pg.set_input_files('#restore-file',bp);await pg.click('#restore-submit');await pg.wait_for_timeout(700)
+    f4=await facts(pg);R['restore']={'equal':f4==f3}
+    check('복원 후 원장 = 백업 직전 원장(종류·확정값·사용기록 포함)',f4==f3,None)
+    n4=await divview(pg,'net');check('복원 후 세후 표시 = 복원 전',[(r['key'],r['net']) for r in n4['rows']]==[(r['key'],r['net']) for r in net2['rows']] and n4['tiles'][0]==net2['tiles'][0],n4['tiles'][0])
+    # revert
+    e=await taxedit(pg,gr['key'],revert=True);f5=await facts(pg)
+    check('자동값으로 되돌리기: 해당 건만 확정 해제',not e and [c['account_id']+':'+c['distribution_id'] for c in f5.get('dividend_confirmations',[])]==[ir['key']],e)
+    n5=await divview(pg,'net');check('되돌린 건 적용 세후 = 자동값',[r for r in n5['rows'] if r['key']==gr['key']][0]['net']==gr['auto'],None)
+    # confirmation lowering net after full use -> blocked
+    pc5=await precash(pg);t5=expect(f5,n5['rows']);ded5=sum(Dm(r['pretax'])-t5[r['key']][1] for r in n5['rows'] if r['key'].startswith(gen));rem=Dm(pc5[gen])-ded5
+    e=await douse(pg,GL,str(rem));f6=await facts(pg)
+    check('세후 현금 전액 사용 허용',not e and len(f6['dividend_uses'])==2,{'e':e,'rem':str(rem)})
+    e=await taxedit(pg,gr['key'],str(Dm(gr['auto'])-1))
+    check('차단: 전액 사용 후 실입금액을 낮추는 확정 → 세후 배당현금 부족, 원장 불변','세후 배당현금 부족' in e and await facts(pg)==f6,e)
+    e=await taxedit(pg,gr['key'],gr['pretax']);check('실입금액을 높이는 확정(≤세전)은 허용',not e and any(c['amount']==gr['pretax'] for c in (await facts(pg))['dividend_confirmations']),e)
+    hc=await homecash(pg);pc7=await precash(pg);f7=await facts(pg);n7=await divview(pg,'net');t7=expect(f7,n7['rows'])
+    exp7=sum(Dm(v) for v in pc7.values())-sum(Dm(r['pretax'])-t7[r['key']][1] for r in n7['rows'])
+    check('확정·사용 후 홈 배당현금 = 세전현금 − (세전 − 적용세후)',W(hc)==exp7,{'home':hc,'expected':str(exp7)})
+    # captures
+    lay={}
+    for w in (360,390,412,430):
+        await pg.set_viewport_size({'width':w,'height':844})
+        for bs in ('pre','net'):
+            await divview(pg,bs);h=await pg.evaluate('document.documentElement.scrollHeight');await pg.set_viewport_size({'width':w,'height':h});await pg.wait_for_timeout(150)
+            r=await pg.evaluate(LAYOUT);await pg.screenshot(path=f'{OUT}/{TAG}_div_{w}_{bs}.png');await pg.set_viewport_size({'width':w,'height':844})
+            lay[f'{w}_{bs}']={k:v for k,v in r.items() if k in('over','esc','clip','deco','small') and v}
+        await divview(pg,'net');await pg.click(f'[data-taxedit="{ir["key"]}"]');await pg.wait_for_timeout(250);r=await pg.evaluate(LAYOUT);await pg.screenshot(path=f'{OUT}/{TAG}_dialog_{w}.png');await pg.keyboard.press('Escape')
+        lay[f'{w}_dialog']={k:v for k,v in r.items() if k in('over','esc','clip') and v}
+    R['layout']=lay;check('세전/세후·확정 대화상자 360/390/412/430 넘침·겹침·이탈 0',all(not v for v in lay.values()),{k:v for k,v in lay.items() if v})
+    await ctx.close()
+    # legacy violation: ledger with use > after-tax but <= pretax (old ledger) restored
+    cx=await mk(service_workers='block');pg=await cx.new_page();logs(pg)
+    leg=json.loads(json.dumps(f6));leg.pop('dividend_confirmations',None)
+    leg['dividend_uses'][-1]['amount']=str(Dm(leg['dividend_uses'][-1]['amount'])+Dm(5))
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.evaluate("t=>localStorage.setItem('%s',t)"%KEY,json.dumps(leg));lg=await pg.evaluate("localStorage.getItem('%s')"%KEY)
+    nl=await divview(pg,'net')
+    check('기존 기록이 세후 현금 초과: 경고 표시, 원장 자동 수정 없음','많아요' in nl['notice'] and await pg.evaluate("localStorage.getItem('%s')"%KEY)==lg,nl['notice'][:200])
+    e=await douse(pg,GL,'1');check('기존 부족 상태에서 부족을 늘리는 새 사용 차단','세후 배당현금 부족' in e,e)
+    await cx.close()
+    # old ledger (v5.2a facts) read
+    cx=await mk(service_workers='block');pg=await cx.new_page();logs(pg)
+    old=json.load(open('/workspace/mobileui/v52a/qa/after_local/after_qa.json'))['facts'];ot=json.dumps(old)
+    await pg.goto(BASE+'management.html?mode=ledger',wait_until='networkidle');await pg.evaluate("t=>localStorage.setItem('%s',t)"%KEY,ot)
+    o1=await divview(pg,'pre');o2=await divview(pg,'net',nav=False);st=await pg.evaluate("localStorage.getItem('%s')"%KEY)
+    check('구 원장(v5.2a, type·확정값 없음) 읽기: 오류 없이 세전/세후 표시, 저장 원장 그대로',o1['tiles'] and o2['rows'] and json.loads(st)==old and not any('오류' in x for x in o2['h2']),{'pre':o1['tiles'][:1],'net':o2['tiles'][:1]})
+    rowscheck('구 원장',o2,old)
+    await cx.close()
+    sw=await b.new_context();pg=await sw.new_page();logs(pg);await pg.goto(BASE+'management.html',wait_until='networkidle');await pg.evaluate("navigator.serviceWorker.ready.then(()=>1)")
+    for _ in range(40):
+        keys=await pg.evaluate("caches.keys()");cached=await pg.evaluate("(async()=>{const k=(await caches.keys()).find(k=>k.includes('v53'));if(!k)return [];const c=await caches.open(k);return (await c.keys()).map(r=>new URL(r.url).pathname)})()")
+        if any(x.endswith('tax-v53.json') for x in cached):break
+        await pg.wait_for_timeout(500)
+    check('SW 캐시 v53 + 세금 파일 캐시',any(k.endswith('mobileui-v53') for k in keys) and any(x.endswith('management-tax.js') for x in cached) and any(x.endswith('tax-v53.json') for x in cached),{'keys':keys})
+    await sw.close();await b.close()
+  errs=[e for e in R['errors']];check('콘솔/페이지 오류 0',not errs,errs[:5])
+  check('요청 실패·HTTP 오류 0 (blob 다운로드 제외)',not [x for x in R['requestfailed'] if not x[0].startswith('blob:')] and not R['http_errors'],{'rf':R['requestfailed'][:3],'http':R['http_errors'][:3]})
+  json.dump(R,open(f'{OUT}/{TAG}_qa.json','w'),ensure_ascii=False,indent=1,default=str)
+  print('TOTAL',sum(c['pass'] for c in R['checks']),'/',len(R['checks']))
+asyncio.run(main())

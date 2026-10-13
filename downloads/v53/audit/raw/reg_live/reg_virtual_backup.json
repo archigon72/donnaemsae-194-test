@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-13T20:24:02.655Z",
+  "accounts": [
+    {
+      "account_id": "b877c495-ae69-4bee-a9a8-b94735dc4b88",
+      "name": "가상-일반"
+    },
+    {
+      "account_id": "90a4a783-e18c-493b-aa69-24516574bf37",
+      "name": "가상-ISA"
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "2a32463f-8bb4-4981-9403-e4b58b202f7e",
+      "account_id": "b877c495-ae69-4bee-a9a8-b94735dc4b88",
+      "code": "497880",
+      "cycle_id": "ddb4d17c-b66c-441e-b0a2-75a713bcab4e",
+      "type": "initial_buy",
+      "trade_date": "2025-12-01",
+      "order_key": 0,
+      "quantity": "10",
+      "trade_price": "50000"
+    },
+    {
+      "transaction_id": "cbdd34b9-ce41-4eaf-9ee7-55ac0698b8fd",
+      "account_id": "90a4a783-e18c-493b-aa69-24516574bf37",
+      "code": "472150",
+      "cycle_id": "f6208c2e-a7ef-4055-88d0-08a60a33a125",
+      "type": "initial_buy",
+      "trade_date": "2026-05-20",
+      "order_key": 0,
+      "quantity": "10",
+      "trade_price": "25000"
+    },
+    {
+      "transaction_id": "9417bdb6-a16f-4e55-919d-243bb5bee5d3",
+      "account_id": "b877c495-ae69-4bee-a9a8-b94735dc4b88",
+      "code": "497880",
+      "cycle_id": "ddb4d17c-b66c-441e-b0a2-75a713bcab4e",
+      "type": "add_buy",
+      "trade_date": "2026-03-04",
+      "order_key": 0,
+      "quantity": "6",
+      "trade_price": "50010"
+    },
+    {
+      "transaction_id": "cf8bf48b-fbc7-4c52-a9b3-369fcc961a65",
+      "account_id": "b877c495-ae69-4bee-a9a8-b94735dc4b88",
+      "code": "0018C0",
+      "cycle_id": "e6dc984a-56d8-482d-bbf6-4b37bb4093c1",
+      "type": "initial_buy",
+      "trade_date": "2026-03-03",
+      "order_key": 1,
+      "quantity": "27",
+      "trade_price": "13000"
+    },
+    {
+      "transaction_id": "e5eb8b84-f2fb-4ab6-af56-dadb9c1e0c4d",
+      "account_id": "b877c495-ae69-4bee-a9a8-b94735dc4b88",
+      "code": "497880",
+      "cycle_id": "ddb4d17c-b66c-441e-b0a2-75a713bcab4e",
+      "type": "sell",
+      "trade_date": "2026-07-01",
+      "order_key": 0,
+      "quantity": "3",
+      "trade_price": "50030"
+    },
+    {
+      "transaction_id": "3bdc3f0d-a76d-4d49-acda-22b709ff1bd4",
+      "account_id": "b877c495-ae69-4bee-a9a8-b94735dc4b88",
+      "code": "0018C0",
+      "cycle_id": "e6dc984a-56d8-482d-bbf6-4b37bb4093c1",
+      "type": "sell",
+      "trade_date": "2026-08-03",
+      "order_key": 0,
+      "quantity": "13",
+      "trade_price": "13100"
+    },
+    {
+      "transaction_id": "94416be3-cb77-4f8b-a090-4041dce3f83f",
+      "account_id": "b877c495-ae69-4bee-a9a8-b94735dc4b88",
+      "code": "0018C0",
+      "cycle_id": "e6dc984a-56d8-482d-bbf6-4b37bb4093c1",
+      "type": "sell",
+      "trade_date": "2026-09-01",
+      "order_key": 0,
+      "quantity": "14",
+      "trade_price": "13200"
+    },
+    {
+      "transaction_id": "8f408012-c56d-41fb-93e6-c779e200f7f0",
+      "account_id": "b877c495-ae69-4bee-a9a8-b94735dc4b88",
+      "code": "0005A0",
+      "cycle_id": "0f01c065-13e3-4d22-a345-81ee9190824b",
+      "type": "reinvest",
+      "trade_date": "2026-10-07",
+      "order_key": 0,
+      "quantity": "1",
+      "trade_price": "9090"
+    },
+    {
+      "transaction_id": "d315261e-02c0-4ac2-81fa-3c0d85617d26",
+      "account_id": "b877c495-ae69-4bee-a9a8-b94735dc4b88",
+      "code": "0005A0",
+      "cycle_id": "0f01c065-13e3-4d22-a345-81ee9190824b",
+      "type": "reinvest",
+      "trade_date": "2026-10-08",
+      "order_key": 0,
+      "quantity": "2",
+      "trade_price": "9090"
+    }
+  ],
+  "dividend_uses": [],
+  "metadata": {
+    "app": "donnaemsae-lab",
+    "scope": "user-facts"
+  }
+}

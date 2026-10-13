@@ -1,0 +1,4 @@
+복원 방법 (v5.3 개발 후보, 커밋 ed66d27, 앱 파일 530개, downloads/ 제외)
+1) 같은 폴더에 donnaemsae-194-test_v5.3_ed66d27.zip.part00 donnaemsae-194-test_v5.3_ed66d27.zip.part01 donnaemsae-194-test_v5.3_ed66d27.zip.part02 와 FULL_ZIP_SHA256.txt, FILES_SHA256.txt, restore.sh를 둡니다.
+2) Linux/macOS: sh restore.sh → 마지막 줄 "ALL 530 FILES OK"
+3) Windows: copy /b donnaemsae-194-test_v5.3_ed66d27.zip.part00+donnaemsae-194-test_v5.3_ed66d27.zip.part01+donnaemsae-194-test_v5.3_ed66d27.zip.part02 donnaemsae-194-test_v5.3_ed66d27.zip 후 certutil -hashfile donnaemsae-194-test_v5.3_ed66d27.zip SHA256 값을 FULL_ZIP_SHA256.txt와 비교하고 압축 해제

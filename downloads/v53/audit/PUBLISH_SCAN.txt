@@ -1,0 +1,6 @@
+공개 전 비밀정보 점검 (GrokBot 자체 검증, 2026-10-13T20:28:19Z)
+- 대상: downloads/v53 전체 텍스트 파일 + 백업 ZIP 해제본 530개
+- 패턴: GitHub 토큰(ghp_/gho_/ghs_/github_pat_), AWS 키, PRIVATE KEY, password/secret/token 문자열, 이메일(gmail/naver), 휴대전화, 주민번호 형식
+- 배포 토큰 값 자체 일치 검사(값 미출력)
+- 결과: downloads/v53 0건, ZIP 해제본 패턴 0건, 토큰 값 일치 0건
+- 데이터: 가상 계좌(가상-*/감사-*)·가상 거래만 포함

@@ -1,0 +1,48 @@
+P='/workspace/mobileui/v53/work/management-view.js';s=open(P).read()
+def R(a,b,n=1):
+    global s;assert s.count(a)==n,(s.count(a),a[:70]);s=s.replace(a,b)
+# replay wrapper
+R("const esc=v=>","const T=window.ManagementTax;function RP(st,dbx,asOf){const r=L.replay(st,dbx,asOf);return T?T.adjust(L,r,st,dbx):r}\nconst esc=v=>")
+s=s.replace("L.replay(","RP(")
+# fix the wrapper itself back
+s=s.replace("function RP(st,dbx,asOf){const r=RP(st,dbx,asOf)","function RP(st,dbx,asOf){const r=L.replay(st,dbx,asOf)")
+# commit: after-tax shortfall check
+R("function commit(next,protect=false){if(readOnly)throw Error('기존 저장 자료 오류 상태입니다. 백업 복원 후 기록할 수 있습니다.');RP(next,db);","function commit(next,protect=false){if(readOnly)throw Error('기존 저장 자료 오류 상태입니다. 백업 복원 후 기록할 수 있습니다.');const nr=RP(next,db);if(T&&T.ready()){const before=T.shortfallTotal(L,RP(state,db)),after=T.shortfallTotal(L,nr);if(after.cmp(before)>0)throw Error('세후 배당현금 부족: 원천징수(또는 확정 실입금액) 반영 후 배당현금보다 큰 사용·재투자는 등록할 수 없습니다. 부족 '+fmt(after.sub(before))+'. 원장은 바뀌지 않았습니다.')}")
+# load tax data
+R("source('data/catalog.json','donnaemsae.catalog.cache.v1').then(r=>{catalog=r.data?.items||[]})]);","source('data/catalog.json','donnaemsae.catalog.cache.v1').then(r=>{catalog=r.data?.items||[]}),\n taxSource().then(d=>{taxStatus=T&&T.init(d)?'confirmed':'unavailable'})]);")
+R("async function source(path,cacheKey){","async function taxSource(){const k='donnaemsae.tax.cache.v53';try{const r=await fetch('data/tax-v53.json',{cache:'no-cache'});if(!r.ok)throw Error();const d=await r.json();try{localStorage.setItem(k,JSON.stringify(d))}catch{}return d}catch{try{return JSON.parse(localStorage.getItem(k))}catch{return null}}}\nlet taxStatus='checking',divBasis='pre',taxAll=false;\nasync function source(path,cacheKey){")
+# dividendsView
+old=s[s.index('function dividendsView(){'):s.index('\n',s.index('function dividendsView(){'))]
+new=old
+new=new.replace("sum=a=>a.reduce((v,e)=>v.add(e.amount),L.D.of('0')),inst=scope.kind==='instrument';","sum=a=>a.reduce((v,e)=>v.add(e.amount),L.D.of('0')),inst=scope.kind==='instrument',net=divBasis==='net'&&T&&T.ready()&&model.tax?.ready,tmap=new Map((model.tax?.rows||[]).map(r=>[r.key,r])),amt=e=>net?tmap.get(e.account_id+':'+e.distribution_id).net:e.amount,sumD=a=>a.reduce((v,e)=>v.add(amt(e)),L.D.of('0')),BL=net?'세후':'세전';")
+new=new.replace("byM.set(m,(byM.get(m)||L.D.of('0')).add(e.amount))","byM.set(m,(byM.get(m)||L.D.of('0')).add(amt(e)))")
+new=new.replace("return assetModeHeader('dividends')+scopes()+","return assetModeHeader('dividends')+scopes()+taxToggle()+")
+new=new.replace("tile('coin-small','누적 수령 배당 (세전)',won(sum(divs)),divs.length+'회 지급')","tile('coin-small','누적 수령 배당 ('+BL+')',won(sumD(divs)),divs.length+'회 지급')")
+new=new.replace("<h2>월별 받은 배당 (세전)</h2>","<h2>월별 받은 배당 ('+BL+')</h2>")
+new=new.replace("divBars(shown,byM,divs)","divBars(shown,byM,divs,BL)")
+new=new.replace("<th>받은 배당</th>","<th>받은 배당('+BL+')</th>")
+new=new.replace("<p class=\"record-note\">지급일 기준 원장 자동배당(세전) · 0 = 지급 기록 없음","<p class=\"record-note\">지급일 기준 원장 자동배당('+BL+(net?' = 확정 실입금액 또는 자동 계산 세후액':'')+') · 0 = 지급 기록 없음")
+new=new.replace("<span class=\"record-description\">+'+won(e.amount)+'</span>","<span class=\"record-description\">+'+won(amt(e))+(net&&tmap.get(e.account_id+':'+e.distribution_id).confirmed?' · 확정':'')+'</span>")
+new=new.replace("<h2>최근 받은 배당</h2>","<h2>최근 받은 배당 ('+BL+')</h2>")
+new=new.rstrip()
+assert new.endswith("+'</section>'}")
+new=new[:-1]+"+(net?taxList(divs,tmap):(divBasis==='net'?'<section class=\"mu-card\"><p class=\"status-notice\">세후 계산 자료를 불러오지 못해 세후 금액을 표시할 수 없어요. 세전 금액을 0원이나 세후로 바꿔 표시하지 않습니다.</p></section>':''))}"
+assert new!=old
+s=s.replace(old,new)
+# divBars label
+R("function divBars(shown,byM,divs){","function divBars(shown,byM,divs,BL='세전'){")
+R("'받은 배당(세전) '+won(x.d||L.D.of('0'))","'받은 배당('+BL+') '+won(x.d||L.D.of('0'))")
+# helpers
+helpers=r'''
+function taxToggle(){return '<div class="mu-tabs mu-basis mu-taxbasis" role="group" aria-label="배당 금액 기준">'+[['pre','세전'],['net','세후']].map(([k,t])=>'<button data-divbasis="'+k+'" aria-pressed="'+(divBasis===k)+'">'+t+'</button>').join('')+'</div>'}
+function taxList(divs,tmap){const rows=divs.slice().reverse(),shown=taxAll?rows:rows.slice(0,8),accName=a=>state.accounts.find(x=>x.account_id===a);let tax=L.D.of('0');for(const e of divs)tax=tax.add(tmap.get(e.account_id+':'+e.distribution_id).deduct);const sf=[...(model.tax.shortfall||new Map())].filter(([a])=>scope.kind!=='account'||a===scope.id);
+return '<section class="mu-card mu-taxlist"><div class="mu-card-head"><span>'+ic('doc')+'<h2>지급 건별 세후 입금액</h2></span></div><p class="record-note">세전 '+won(divs.reduce((v,e)=>v.add(e.amount),L.D.of('0')))+' − 차감(원천징수 추정·확정 반영) '+won(tax)+' = 세후 '+won(divs.reduce((v,e)=>v.add(tmap.get(e.account_id+':'+e.distribution_id).net),L.D.of('0')))+'</p>'+(sf.length?'<aside class="status-notice" role="status">'+sf.map(([a,v])=>'<p>'+esc(accName(a)?.name)+': 기존 사용·재투자 기록이 세후 배당현금보다 '+won(v)+' 많아요. 원장은 수정하지 않았고, 부족을 늘리는 새 사용·재투자는 등록되지 않아요.</p>').join('')+'</aside>':'')+'<ol class="mu-tax-rows">'+shown.map(e=>{const r=tmap.get(e.account_id+':'+e.distribution_id),acc=accName(e.account_id);return '<li class="mu-tax-row" data-key="'+esc(r.key)+'" data-rule="'+r.rule+'" data-pretax="'+r.pretax.str(2)+'" data-auto="'+r.auto_net.str(2)+'" data-net="'+r.net.str(2)+'" data-confirmed="'+(r.confirmed?r.confirmed.str(2):'')+'"><div class="mu-tax-top"><time>'+esc(e.date)+'</time><b>'+esc(name(e.code))+'</b></div><small class="mu-tax-sub">'+esc(acc?.name)+' ('+esc(acc?.type||'일반')+') · '+esc(r.rule_label)+'</small><dl class="mu-tax-dl"><div><dt>세전</dt><dd>'+won(r.pretax)+'</dd></div><div><dt>자동 세후</dt><dd>'+won(r.auto_net)+'</dd></div><div><dt>'+(r.confirmed?'확정 실입금':'적용 세후')+'</dt><dd class="green">'+won(r.net)+'</dd></div></dl><button class="mu-sub-link" data-taxedit="'+esc(r.key)+'">'+(r.confirmed?'확정값 수정·되돌리기':'실입금액 확인·수정')+'</button></li>'}).join('')+'</ol>'+(rows.length>8?'<button class="mu-more" data-action="tax-all">'+(taxAll?'최근 8건만 보기':'전체 보기 ('+rows.length+'건)')+'</button>':'')+'<p class="record-note">원 단위: 과세표준 원 미만 절사 → 소득세 14% 원 미만 절사 → 지방소득세(소득세의 10%) 원 미만 절사. 증권사 실제 입금액과 다를 수 있으니 실입금액으로 확정해 주세요.</p></section>'}
+function taxEdit(key){const r=model.tax.rows.find(x=>x.key===key);if(!r)return;const d=dialog('실입금액 확인·수정','<p class="record-note">'+esc(r.date)+' · '+esc(name(r.code))+' · '+esc(state.accounts.find(a=>a.account_id===r.account_id)?.name)+'</p><dl class="mu-tax-dl"><div><dt>세전 분배금</dt><dd>'+won(r.pretax)+'</dd></div><div><dt>자동 계산 세후</dt><dd>'+won(r.auto_net)+'</dd></div><div><dt>현재 적용</dt><dd>'+won(r.net)+(r.confirmed?' (확정)':' (자동)')+'</dd></div></dl><p class="record-note">'+esc(r.rule_label)+(r.base?' · 과세표준 '+won(r.base)+' · 소득세 '+won(r.income_tax)+' · 지방소득세 '+won(r.local_tax):'')+'</p><form id="tax-form"><label>증권사 실제 입금액(원)<input name="amount" inputmode="decimal" value="'+esc((r.confirmed||r.auto_net).str(2))+'" required></label><p class="form-error" role="alert"></p><button class="lab-btn lab-primary" type="submit">실입금액으로 확정</button>'+(r.confirmed?'<button class="lab-btn" type="button" id="tax-revert">자동 계산값으로 되돌리기</button>':'')+'<button class="lab-btn" type="button" data-close>취소</button></form>');const f=d.querySelector('#tax-form'),err=f.querySelector('.form-error');
+const save=amount=>{const next=structuredClone(state);next.dividend_confirmations=(next.dividend_confirmations||[]).filter(c=>c.account_id+':'+c.distribution_id!==key);if(amount!==null)next.dividend_confirmations.push({account_id:r.account_id,distribution_id:r.distribution_id,amount,confirmed_at:new Date().toISOString()});if(!next.dividend_confirmations.length)delete next.dividend_confirmations;commit(next,true);close()};
+f.addEventListener('submit',e=>{e.preventDefault();try{const v=f.amount.value.trim().replace(/,/g,'');if(!/^(0|[1-9]\d*)(\.\d{1,2})?$/.test(v))throw Error('0 이상 원 단위 금액(소수 둘째 자리까지)을 입력해 주세요.');if(L.D.of(v).cmp(r.pretax)>0)throw Error('실입금액은 세전 분배금('+won(r.pretax)+')보다 클 수 없습니다.');save(v)}catch(x){err.textContent=x.message}});const rv=d.querySelector('#tax-revert');if(rv)rv.onclick=()=>{try{save(null)}catch(x){err.textContent=x.message}}}
+'''
+R("function divBars(","\n"+helpers+"\nfunction divBars(")
+# click handlers
+R("if(b.dataset.basis){","if(b.dataset.divbasis){divBasis=b.dataset.divbasis==='net'?'net':'pre';taxAll=false;render()}if(b.dataset.taxedit){taxEdit(b.dataset.taxedit)}if(b.dataset.basis){")
+R("if(action==='comp-all'){compAll=!compAll;render()}","if(action==='comp-all'){compAll=!compAll;render()}if(action==='tax-all'){taxAll=!taxAll;render()}")
+open(P,'w').write(s);print('ok',s.count('RP('))

@@ -1,0 +1,36 @@
+<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width"><title>v5.3 검증 문서</title><body style="font-family:sans-serif;max-width:1100px;margin:auto;padding:8px"><h1>v5.3 세전/세후 배당 토글 — 검증 문서 색인</h1>
+<p style="background:#fff3cd;padding:6px">확인 주체: GrokBot 자체 검증(self-verification). 비서실장 독립 검수 결과가 아님. 상태: v5.3 개발 후보.</p>
+<li>사이트: <a href="https://archigon72.github.io/donnaemsae-194-test/management.html?mode=dividends">https://archigon72.github.io/donnaemsae-194-test/management.html?mode=dividends</a></li>
+<li>커밋: ed66d27 (기준 c7d938d) · SW 캐시 v53 · 상태: <b>v5.3 개발 후보</b></li>
+<h2>스위트 결과</h2>
+<table border=1 cellpadding=4 style="border-collapse:collapse">
+<tr><td>스위트</td><td>환경</td><td>PASS</td><td>FAIL</td><td>기준</td><td>로그</td></tr>
+<tr><td>v5.3 신규 세전/세후 (qa_v53.py)</td><td>실배포</td><td>50</td><td>0</td><td>50</td><td><a href="raw/v53_live.log.txt">raw/v53_live.log.txt</a></td></tr>
+<tr><td>v5.3 신규 세전/세후 (qa_v53.py)</td><td>로컬(같은 파일)</td><td>50</td><td>0</td><td>50</td><td><a href="raw/local/v53_run.log.txt">raw/local/v53_run.log.txt</a></td></tr>
+<tr><td>v5.2 기존 (qa_v52.py)</td><td>실배포</td><td>65</td><td>0</td><td>65</td><td><a href="raw/v52_live.log.txt">raw/v52_live.log.txt</a></td></tr>
+<tr><td>v5.2 기존 (qa_v52.py)</td><td>로컬(같은 파일)</td><td>65</td><td>0</td><td>65</td><td><a href="raw/v52_local.log.txt">raw/v52_local.log.txt</a></td></tr>
+<tr><td>v5.2fix A~G (qa_v52a.py)</td><td>실배포</td><td>58</td><td>0</td><td>58</td><td><a href="raw/after_live.log.txt">raw/after_live.log.txt</a></td></tr>
+<tr><td>v5.2fix A~G (qa_v52a.py)</td><td>로컬(같은 파일)</td><td>58</td><td>0</td><td>58</td><td><a href="raw/after_local.log.txt">raw/after_local.log.txt</a></td></tr>
+<tr><td>원장 정밀검수 (audit.py)</td><td>실배포</td><td>68</td><td>8</td><td>76</td><td><a href="raw/audit_live.log.txt">raw/audit_live.log.txt</a></td></tr>
+<tr><td>원장 정밀검수 (audit.py)</td><td>로컬(같은 파일)</td><td>68</td><td>8</td><td>76</td><td><a href="raw/audit_local.log.txt">raw/audit_local.log.txt</a></td></tr>
+<tr><td>회귀·백업→초기화→복원 (qa_regress_v53.py = v52a 사본, 캐시명만 v53)</td><td>실배포</td><td>39</td><td>0</td><td>39</td><td><a href="raw/reg_live.log.txt">raw/reg_live.log.txt</a></td></tr>
+<tr><td>회귀·백업→초기화→복원 (qa_regress_v53.py = v52a 사본, 캐시명만 v53)</td><td>로컬(같은 파일)</td><td>39</td><td>0</td><td>39</td><td><a href="raw/reg_local.log.txt">raw/reg_local.log.txt</a></td></tr>
+<tr><td>v5.1 도넛 색·순서 (qa_v51.py)</td><td>실배포</td><td>22</td><td>0</td><td>22</td><td><a href="raw/v51_live.log.txt">raw/v51_live.log.txt</a></td></tr>
+<tr><td>v5.1 도넛 색·순서 (qa_v51.py)</td><td>로컬(같은 파일)</td><td>22</td><td>0</td><td>22</td><td><a href="raw/v51_local.log.txt">raw/v51_local.log.txt</a></td></tr>
+</table>
+<h2>문서</h2>
+<li>스위트 상세 v5.3 신규: <a href="suites/v53_50_KO.md">suites/v53_50_KO.md</a></li>
+<li>스위트 상세 v5.2: <a href="suites/v52_65_KO.md">suites/v52_65_KO.md</a></li>
+<li>스위트 상세 v5.2fix: <a href="suites/v52a_58_KO.md">suites/v52a_58_KO.md</a></li>
+<li>스위트 상세 원장 정밀검수(8 FAIL = 세후 의미 변경, NOT_TESTED 문서 참조): <a href="suites/ledger76_KO.md">suites/ledger76_KO.md</a></li>
+<li>스위트 상세 회귀: <a href="suites/reg39_KO.md">suites/reg39_KO.md</a></li>
+<li>스위트 상세 색·순서: <a href="suites/color22_KO.md">suites/color22_KO.md</a></li>
+<li>규칙별 입력·기대·실제: <a href="RULES_INPUT_EXPECTED_ACTUAL_KO.md">RULES_INPUT_EXPECTED_ACTUAL_KO.md</a></li>
+<li>변경 파일·diff·194 데이터 불변 증거: <a href="CHANGES_AND_INVARIANCE_KO.md">CHANGES_AND_INVARIANCE_KO.md</a></li>
+<li>NOT TESTED·분류 결정·동작 변경: <a href="NOT_TESTED_AND_KNOWN_ISSUES_KO.md">NOT_TESTED_AND_KNOWN_ISSUES_KO.md</a></li>
+<li>실행 환경: <a href="ENVIRONMENT_KO.md">ENVIRONMENT_KO.md</a></li>
+<li>캡처(브라우저 열람): <a href="captures/index.html">captures/index.html</a></li>
+<li>백업 분할본·SHA·복원 테스트: <a href="backup/BACKUP_VERIFY_KO.md">backup/BACKUP_VERIFY_KO.md</a></li>
+<li>비밀정보 점검: <a href="PUBLISH_SCAN.txt">PUBLISH_SCAN.txt</a></li>
+<li>요약 JSON: <a href="SUMMARY.json">SUMMARY.json</a></li>
+<li>다운로드 페이지: <a href="../index.html">../index.html</a></li></body>

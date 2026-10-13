@@ -1,0 +1,50 @@
+import json,csv,collections
+from decimal import Decimal as Dm
+W='/workspace/mobileui/v53/work'
+dist=json.load(open(W+'/data/management-distributions.json'))['items']
+cat=[c['ticker'] for c in json.load(open(W+'/data/catalog.json'))['items']]
+fl={x['shortCode']:x for x in json.load(open('/workspace/monthly_etf_audit_full_20261010/v2/raw/FUNETF_KR_RAW.json'))['content']}
+fd=json.load(open('/workspace/monthly_etf_audit_full_20261010/v2/raw/FUNETF_KR_RAW_etfdividend_194.json'))
+CC=['0190G0','0219E0','498400','498410','289480','166400','472150','0104N0','0104P0','0177R0','290080','475720','0094M0','0223A0','489030','0018C0','0210E0','0203D0','0167B0','0199C0','0198A0','0176P0']
+def ymd(s):s=s.replace('-','').replace('.','');return f'{s[:4]}-{s[4:6]}-{s[6:8]}'
+cls={}
+for c in cat:
+    t=fl[c]['etfTypeNm']
+    if c in CC:k='domestic_cc'
+    elif t=='해외주식':k='overseas'
+    else:k='undecided'
+    cls[c]={'category':k,'funetf_type':t}
+src={}  # (code,ex,per_share)->(base,source)
+for r in csv.DictReader(open('/workspace/tax_cc22/tax_cc22_payouts.csv',encoding='utf-8-sig')):
+    src[(r['code'],ymd(r['record_date']),Dm(r['dividend_per_share']))]=(r['taxable_basis_per_share'],r['brand']+' · '+r['source'])
+fun={}
+for isin,x in fd['results'].items():
+    for r in x.get('data') or []:
+        if r.get('taxDividAmt') is not None and r.get('divAmt') is not None:
+            fun[(r['sotCd'],ymd(r['gijunYmd']),Dm(str(r['divAmt'])))]=(str(r['taxDividAmt']),'FunETF etfdividend taxDividAmt (raw 2026-10-10)')
+bases=[];stat=collections.Counter();unmatched_src=[]
+dkeys=set();used=set()
+for d in dist:
+    if d['code'] not in cls:continue
+    k=(d['code'],d['ex_date'],Dm(d['per_share']));dkeys.add(k);c=cls[d['code']]['category']
+    hit=None
+    if c=='domestic_cc':
+        hit=fun.get(k);how='exact'
+        if not hit:
+            import datetime
+            ex=datetime.date.fromisoformat(d['ex_date']);cands=[(kk,v) for kk,v in src.items() if kk[0]==d['code'] and kk[2]==k[2] and 0<=(datetime.date.fromisoformat(kk[1])-ex).days<=4]
+            if len(cands)==1:hit=(cands[0][1][0],cands[0][1][1]+' · 운용사 기준일 '+cands[0][0][1]+' ↔ 분배락일 '+d['ex_date']);used.add(cands[0][0])
+            elif len(cands)>1:stat['ambiguous']+=1
+    elif c=='undecided':hit=fun.get(k)
+    if hit:
+        b=Dm(hit[0]);bases.append({'distribution_id':d['distribution_id'],'code':d['code'],'ex_date':d['ex_date'],'per_share':d['per_share'],'taxable_per_share':str(b),'source':hit[1]});stat[c+'_matched']+=1
+    else:stat[c+'_nomatch']+=1
+for k in src:
+    if k not in used:unmatched_src.append([k[0],k[1],str(k[2])])
+out={'schema':'donnaemsae-tax-v53','note':'세후 계산용 신규 자료. 194종 원천 데이터와 분리. 회차 매칭 = 종목코드+기준일(ex_date)+세전 주당분배금 일치. 관측값만 수록.','generated':'2026-10-14',
+ 'rates':{'income':'0.14','local_of_income':'0.1','cc_default_base_ratio':'0.18'},
+ 'categories':{'overseas':'국내상장 해외형(FunETF etfTypeNm=해외주식): 세전×15.4%','domestic_cc':'국내 주식형 커버드콜 22종: 회차 과세표준×수량×15.4%, 자료 없으면 세전×18%를 과세표준','undecided':'대표 결정 없음: 회차 과세표준(FunETF taxDividAmt) 일치 시 사용, 없으면 분배금 전액 과세표준 잠정 적용(15.4%) · 화면에 잠정 표시'},
+ 'classification':cls,'bases':bases}
+json.dump(out,open(W+'/data/tax-v53.json','w'),ensure_ascii=False,separators=(',',':'))
+print(stat);print('src rows not matching any distribution:',len(unmatched_src));print(unmatched_src[:20])
+print(collections.Counter(v['category'] for v in cls.values()))
