@@ -1,0 +1,258 @@
+{
+ "code": "136340",
+ "isin": "KR7136340007",
+ "url": "https://www.funetf.co.kr/product/etf/view/KR7136340007",
+ "retrieved_kst": "2026-10-14T17:40:45.365567+09:00",
+ "html_sha256": "9415f950fdf63dfffa7e82183cc1c69718907a4bb294f1a8e0356440d0dc9905",
+ "dateModified": "2026-10-14T16:09:58+09:00",
+ "FinancialProduct": {
+  "@type": "FinancialProduct",
+  "category": "ETF",
+  "provider": {
+   "@type": "FinancialService",
+   "name": "KB운용",
+   "url": "http://www.kbam.co.kr/"
+  },
+  "@id": "https://www.funetf.co.kr/product/etf/view/KR7136340007#fund",
+  "name": "RISE 중기우량회사채",
+  "url": "https://www.funetf.co.kr/product/etf/view/KR7136340007",
+  "identifier": "136340",
+  "feesAndCommissionsSpecification": "총 보수 연 0.0700%, 합성총보수 연 0.1000%, 실부담비율 연 0.1035%",
+  "additionalProperty": [
+   {
+    "@type": "PropertyValue",
+    "name": "기초지수",
+    "propertyID": "etf:underlyingIndex",
+    "value": "KOBI 크레딧 지수(총수익)"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "투자위험",
+    "propertyID": "etf:riskGrade",
+    "value": "5등급 (낮은위험)"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "순자산",
+    "propertyID": "etf:netAssetValue",
+    "value": 299362584247,
+    "unitText": "KRW"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "상장일",
+    "propertyID": "etf:listingDate",
+    "value": "2011-04-15"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "1개월 NAV 수익률",
+    "propertyID": "etf:return.nav.1m",
+    "value": 0.75,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "3개월 NAV 수익률",
+    "propertyID": "etf:return.nav.3m",
+    "value": 1.04,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "6개월 NAV 수익률",
+    "propertyID": "etf:return.nav.6m",
+    "value": 0.75,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "1년 NAV 수익률",
+    "propertyID": "etf:return.nav.1y",
+    "value": -0.2,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "3년 NAV 수익률",
+    "propertyID": "etf:return.nav.3y",
+    "value": 10.43,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "5년 NAV 수익률",
+    "propertyID": "etf:return.nav.5y",
+    "value": 12.46,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "연초이후 NAV 수익률",
+    "propertyID": "etf:return.nav.ytd",
+    "value": 0.43,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "상장이후 NAV 수익률",
+    "propertyID": "etf:return.nav.si",
+    "value": 52.44,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "1개월 종가 수익률",
+    "propertyID": "etf:return.price.1m",
+    "value": 0.43,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "3개월 종가 수익률",
+    "propertyID": "etf:return.price.3m",
+    "value": 0.49,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "6개월 종가 수익률",
+    "propertyID": "etf:return.price.6m",
+    "value": -0.41,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "1년 종가 수익률",
+    "propertyID": "etf:return.price.1y",
+    "value": -2.73,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "3년 종가 수익률",
+    "propertyID": "etf:return.price.3y",
+    "value": 1.0,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "5년 종가 수익률",
+    "propertyID": "etf:return.price.5y",
+    "value": 0.04,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "연초이후 종가 수익률",
+    "propertyID": "etf:return.price.ytd",
+    "value": -1.49,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "상장이후 종가 수익률",
+    "propertyID": "etf:return.price.si",
+    "value": 4.39,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "최근 1년 분배율",
+    "propertyID": "etf:distribution.yield.1y",
+    "value": 2.5839,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "최근 1년 분배금",
+    "propertyID": "etf:distribution.amount.1y",
+    "value": 2699,
+    "unitText": "KRW"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "최근 분배금 공시일",
+    "propertyID": "etf:distribution.latest.announcementDate",
+    "value": "2026-09-28"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "최근 분배금 분배락일",
+    "propertyID": "etf:distribution.latest.exDate",
+    "value": "2026-09-29"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "최근 분배금 지급기준일",
+    "propertyID": "etf:distribution.latest.recordDate",
+    "value": "2026-09-30"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "최근 분배금 지급일",
+    "propertyID": "etf:distribution.latest.paymentDate",
+    "value": "2026-10-02"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "최근 지급 분배금",
+    "propertyID": "etf:distribution.latest.amount",
+    "value": 236,
+    "unitText": "KRW"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "최근 1년 분배율",
+    "propertyID": "etf:distribution.latest.yield",
+    "value": 0.2279,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "분배 지급 계획",
+    "propertyID": "etf:distribution.schedule",
+    "additionalProperty": [
+     {
+      "@type": "PropertyValue",
+      "name": "해당 연도",
+      "propertyID": "etf:distribution.schedule.year",
+      "value": 2025
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "분배 지급월",
+      "propertyID": "etf:distribution.schedule.months",
+      "value": "01월,02월,03월,04월,05월,06월,07월,08월,09월,10월,11월,12월"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "분배 횟수",
+      "propertyID": "etf:distribution.schedule.count",
+      "value": 12,
+      "unitText": "회"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "해당 연도",
+      "propertyID": "etf:distribution.schedule.year",
+      "value": 2026
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "분배 지급월",
+      "propertyID": "etf:distribution.schedule.months",
+      "value": "01월,02월,03월,04월,05월,06월,07월,08월,09월"
+     },
+     {
+      "@type": "PropertyValue",
+      "name": "분배 횟수",
+      "propertyID": "etf:distribution.schedule.count",
+      "value": 9,
+      "unitText": "회"
+     }
+    ]
+   }
+  ]
+ }
+}

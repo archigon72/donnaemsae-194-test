@@ -1,0 +1,2145 @@
+{
+ "started_kst": "2026-10-14T17:34:54.036010+09:00",
+ "gap_s": 2.5,
+ "policy": "sequential; 429 backoff Retry-After|30,60,120s; max 3 retries",
+ "items": {
+  "0000D0": {
+   "isin": "KR70000D0009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70000D0009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:34:55.892498+09:00",
+   "html_sha256": "45e45c2572c18b1bf29fd96cbf78a5b02d38e239b7a979dcaacad6b4077ba81d",
+   "status": "ok"
+  },
+  "0004G0": {
+   "isin": "KR70004G0002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70004G0002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:00.432781+09:00",
+   "html_sha256": "69d47442638d2fd04e900a3be41f5f3a31c6df4a21f8ae62ecd7848b933ce943",
+   "status": "ok"
+  },
+  "0005A0": {
+   "isin": "KR70005A0007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70005A0007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:04.855952+09:00",
+   "html_sha256": "35d154d998302863d73a6ac3cd08b3fc9001fe97fdbddf7f193c40a6e3b57d59",
+   "status": "ok"
+  },
+  "0008S0": {
+   "isin": "KR70008S0004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70008S0004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:09.611237+09:00",
+   "html_sha256": "f4dda4bf4ba1733e49ee99023508ccd82bbace1c458a2ca89659477de8ef2e8b",
+   "status": "ok"
+  },
+  "0013P0": {
+   "isin": "KR70013P0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70013P0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:14.490818+09:00",
+   "html_sha256": "cd56f6dcb1b1c4210f8f50cc6ec94307f1171d4baa0762186fb6b5b8bdbaca47",
+   "status": "ok"
+  },
+  "0013R0": {
+   "isin": "KR70013R0008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70013R0008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:18.828361+09:00",
+   "html_sha256": "15cc0cfa391b233491f6f2b0adbe7931fb2f0773777db33bb9787c23b778dd04",
+   "status": "ok"
+  },
+  "0015E0": {
+   "isin": "KR70015E0001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70015E0001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:23.161502+09:00",
+   "html_sha256": "6ca6b7639855e72fb84cc13368dd89fbf3ba6fc19bdacce26c69754404b1c74e",
+   "status": "ok"
+  },
+  "0015F0": {
+   "isin": "KR70015F0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70015F0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:27.460875+09:00",
+   "html_sha256": "a414a78cd25d9c2f8b63e775170bfb8bac1e459a4a2d5b44d6c35f8392d38cd3",
+   "status": "ok"
+  },
+  "0018C0": {
+   "isin": "KR70018C0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70018C0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:31.912954+09:00",
+   "html_sha256": "7509fe1a6dadfdcab0fa2f62aa3f5704941ee65746d8b5270188485fcbef15eb",
+   "status": "ok"
+  },
+  "0022T0": {
+   "isin": "KR70022T0005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70022T0005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:36.221380+09:00",
+   "html_sha256": "7a15cece2fa1d2d2152f291909820f2c80873048f83d662be9518098d1adb80d",
+   "status": "ok"
+  },
+  "0040X0": {
+   "isin": "KR70040X0007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70040X0007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:40.772497+09:00",
+   "html_sha256": "ebb8bef1d11dec5822d11b00134c76cf3a46d132a3fb3b6acbe20fba9ed5ae1f",
+   "status": "ok"
+  },
+  "0040Y0": {
+   "isin": "KR70040Y0006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70040Y0006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:45.281139+09:00",
+   "html_sha256": "3dbc4fd635ba2cabe5f737f23361d8181784df7aebb849bc18687909a19739f1",
+   "status": "ok"
+  },
+  "0046A0": {
+   "isin": "KR70046A0008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70046A0008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:49.545344+09:00",
+   "html_sha256": "ccef06dc270eb63d757e5f3b117f1ff797ae8c180e77757236eb78cda05850f1",
+   "status": "ok"
+  },
+  "0046Y0": {
+   "isin": "KR70046Y0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70046Y0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:53.989121+09:00",
+   "html_sha256": "720e3e3e1f6ed6d858229a8abbb336258529a67cb45d90f71af9e5051fc23442",
+   "status": "ok"
+  },
+  "0048J0": {
+   "isin": "KR70048J0007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70048J0007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:35:58.490535+09:00",
+   "html_sha256": "50a5ef97f7bc8039fdf2be7ea45bf207c9bcf710558753a27c2b51b682a2f576",
+   "status": "ok"
+  },
+  "0049K0": {
+   "isin": "KR70049K0003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70049K0003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:03.215294+09:00",
+   "html_sha256": "56be58ab21113a0ccaab1cc4dc7da180a7d8cacfb8c4286216f14aefbbab9e6a",
+   "status": "ok"
+  },
+  "0049M0": {
+   "isin": "KR70049M0001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70049M0001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:07.762459+09:00",
+   "html_sha256": "df456a11f197ae1b5702c95481809919477335a3aeeccdca2f06def4e7a427f3",
+   "status": "ok"
+  },
+  "0052D0": {
+   "isin": "KR70052D0006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70052D0006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:12.193417+09:00",
+   "html_sha256": "c2487a6e280113edbc257ca5e05fabd65694d98a81dcb4893507ee6d494f4be1",
+   "status": "ok"
+  },
+  "0057H0": {
+   "isin": "KR70057H0007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70057H0007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:16.033643+09:00",
+   "html_sha256": "19e6abee8cc7d6bc519a8bbb16bd4fc4a05ed6d037d91ca0f6531a6f4219fdb8",
+   "status": "ok"
+  },
+  "0073X0": {
+   "isin": "KR70073X0007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70073X0007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:20.376133+09:00",
+   "html_sha256": "c4140627f0fe1beca1bd6b64879c11de2700c7590e378960c0695eea46400467",
+   "status": "ok"
+  },
+  "0080X0": {
+   "isin": "KR70080X0008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70080X0008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:26.097379+09:00",
+   "html_sha256": "f4e9238351e1cb6049784b0c9aab098953462b8e10069311908dcb85a41248b6",
+   "status": "ok"
+  },
+  "0084D0": {
+   "isin": "KR70084D0008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70084D0008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:30.794435+09:00",
+   "html_sha256": "b6c0eb8cfe6cb41af711ddc26f6841c66f358a6005c4ef869acb330634b8df0a",
+   "status": "ok"
+  },
+  "0084E0": {
+   "isin": "KR70084E0007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70084E0007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:34.653359+09:00",
+   "html_sha256": "542e154c81778667995e9a99191ea4f32f00e2a99a0f22d0a5e8a6d1761732da",
+   "status": "ok"
+  },
+  "0085N0": {
+   "isin": "KR70085N0005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70085N0005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:38.946462+09:00",
+   "html_sha256": "4256c5238af5f7f7406bf15e64a4399973c1aa0e66a18eae9e2ca19e60db9898",
+   "status": "ok"
+  },
+  "0085P0": {
+   "isin": "KR70085P0003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70085P0003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:44.202898+09:00",
+   "html_sha256": "611d6b528066d21357ebc7e8997098f195aabc0fd4fed61b7f7a340a6f5413aa",
+   "status": "ok"
+  },
+  "0086B0": {
+   "isin": "KR70086B0008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70086B0008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:48.516280+09:00",
+   "html_sha256": "448144a557f02198b13c97535ccd7ff4ade29c2e0e6f3cc322544ac1aa82a702",
+   "status": "ok"
+  },
+  "0086C0": {
+   "isin": "KR70086C0007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70086C0007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:54.335710+09:00",
+   "html_sha256": "b1ba543663d2d6d456d50b3ca47716ef7fc266eb54c8a67d88d195f9cd1f3095",
+   "status": "ok"
+  },
+  "0089B0": {
+   "isin": "KR70089B0005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70089B0005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:36:58.875964+09:00",
+   "html_sha256": "3b5e912e8932f2402539b1e8ebe7444e6f90911c434b75c40f64ab782f6756ac",
+   "status": "ok"
+  },
+  "0089C0": {
+   "isin": "KR70089C0004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70089C0004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:03.817328+09:00",
+   "html_sha256": "d31f11a2afb4b52fc784bb6e8ced2223db719fd3fc90690a051f82085b362b95",
+   "status": "ok"
+  },
+  "0089D0": {
+   "isin": "KR70089D0003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70089D0003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:08.501838+09:00",
+   "html_sha256": "aaf1c3a4f5e9ed920d0e3218779f03f201ec253c49557b4e597ab0bb07b23c54",
+   "status": "ok"
+  },
+  "0091C0": {
+   "isin": "KR70091C0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70091C0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:12.947211+09:00",
+   "html_sha256": "c0c14152eccb6712f348b2739ce25f227f7fdb93a8f331c9fb09f0d173d50b27",
+   "status": "ok"
+  },
+  "0094L0": {
+   "isin": "KR70094L0006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70094L0006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:17.638426+09:00",
+   "html_sha256": "e6e62e268346e2577b04f804742e7ad092ca0debb4207fc0f572aa2ee737aa54",
+   "status": "ok"
+  },
+  "0094M0": {
+   "isin": "KR70094M0005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70094M0005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:22.186536+09:00",
+   "html_sha256": "6e22c90457ef4996e879345d1ce11becb9ddc84302da87d54eac640d966331f2",
+   "status": "ok"
+  },
+  "0097L0": {
+   "isin": "KR70097L0003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70097L0003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:26.698212+09:00",
+   "html_sha256": "65a887409faf302e9281d4855e81887c8396e00317ae892b8000bf842477b8ce",
+   "status": "ok"
+  },
+  "0098N0": {
+   "isin": "KR70098N0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70098N0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:31.220992+09:00",
+   "html_sha256": "aff4d24b010dfaa14e196b5bbb5b99328fad149cac8aa41c3372ffa82d369786",
+   "status": "ok"
+  },
+  "0104N0": {
+   "isin": "KR70104N0002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70104N0002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:35.835236+09:00",
+   "html_sha256": "ca66cd02041517e96a44335b06a94aeca3b11f6e0d44c88d88e992081d18ef0b",
+   "status": "ok"
+  },
+  "0104P0": {
+   "isin": "KR70104P0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70104P0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:40.582425+09:00",
+   "html_sha256": "c5d4787d6d11956ab853594bd1d2b08a9e0b397852478f5d4c280e72a247b01e",
+   "status": "ok"
+  },
+  "0105E0": {
+   "isin": "KR70105E0002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70105E0002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:45.127584+09:00",
+   "html_sha256": "75795988eee32e5addfc854236c125e2fce7af4c57c4d854c9d49000245b285f",
+   "status": "ok"
+  },
+  "0107F0": {
+   "isin": "KR70107F0009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70107F0009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:49.687665+09:00",
+   "html_sha256": "24691e118545fa1ae4c911cdc32f6d0f922cf7ae217f929372e840a28b6a317e",
+   "status": "ok"
+  },
+  "0111J0": {
+   "isin": "KR70111J0009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70111J0009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:53.995564+09:00",
+   "html_sha256": "0d61a3ded7bcae898d63bba4745e89ce6c79b4c4fa708770827355ced0b62b4b",
+   "status": "ok"
+  },
+  "0115C0": {
+   "isin": "KR70115C0002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70115C0002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:37:58.229499+09:00",
+   "html_sha256": "6ee82ae4941f9f13b087c13b26bb42add5a91effa82db43990fb7a0ed83b2958",
+   "status": "ok"
+  },
+  "0127T0": {
+   "isin": "KR70127T0009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70127T0009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:02.337270+09:00",
+   "html_sha256": "6ec17518eae02f636823057711fb9a1302e19568048a14f0ee70b324654802ff",
+   "status": "ok"
+  },
+  "0127V0": {
+   "isin": "KR70127V0005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70127V0005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:07.311520+09:00",
+   "html_sha256": "3b60476369d42f4f9849c75fb1550640924832cc8aaeea25b55c8c08941be2fc",
+   "status": "ok"
+  },
+  "0128D0": {
+   "isin": "KR70128D0006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70128D0006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:12.463768+09:00",
+   "html_sha256": "2fe61209c6531260ffa7513bc16faef4c0ea247fcf61e05636df45abdd2085f7",
+   "status": "ok"
+  },
+  "0132K0": {
+   "isin": "KR70132K0001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70132K0001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:16.966096+09:00",
+   "html_sha256": "7b17220a57ffc21506afdff053861a99bf6671ed1be57657d9a7af8ac6c11b77",
+   "status": "ok"
+  },
+  "0138T0": {
+   "isin": "KR70138T0006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70138T0006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:21.498293+09:00",
+   "html_sha256": "7b0ddf7191417b6710938fd032da03ade1ddef5f7fecc13b3d5cf6eff8b17b47",
+   "status": "ok"
+  },
+  "0139P0": {
+   "isin": "KR70139P0009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70139P0009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:26.053835+09:00",
+   "html_sha256": "9a3b40ddaeedf761cc662c30f0e95963a2697ef5c4a120c18cd1f40c45c4aa51",
+   "status": "ok"
+  },
+  "0144L0": {
+   "isin": "KR70144L0006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70144L0006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:30.571124+09:00",
+   "html_sha256": "a8fd816229851a964da3dba9507c42ceaffb35b31f87bfa503414a49082470c4",
+   "status": "ok"
+  },
+  "0152E0": {
+   "isin": "KR70152E0004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70152E0004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:35.131239+09:00",
+   "html_sha256": "f266345f585dc3ce4b910075455590a30e96899e4451ab9ed71bb9d37115faa8",
+   "status": "ok"
+  },
+  "0153K0": {
+   "isin": "KR70153K0005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70153K0005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:39.438665+09:00",
+   "html_sha256": "26e62da50c4d181a89bb28f11c11cf176e1f233b6b68d1a2986aae1e2363f980",
+   "status": "ok"
+  },
+  "0153P0": {
+   "isin": "KR70153P0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70153P0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:43.329304+09:00",
+   "html_sha256": "cdbe77667012ba46288612264f389d1b214e1f395843afe9640c2d9d914e390b",
+   "status": "ok"
+  },
+  "0153X0": {
+   "isin": "KR70153X0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70153X0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:47.971071+09:00",
+   "html_sha256": "fafb4f6f6fa365048657aee74f3670886c7e80c8dc6e5a17ec337b732c4818a2",
+   "status": "ok"
+  },
+  "0167B0": {
+   "isin": "KR70167B0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70167B0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:52.289809+09:00",
+   "html_sha256": "2f79cda04fd13c23030393a4d48de893bf26577bfdc477cd2b7930599e9caf8a",
+   "status": "ok"
+  },
+  "0174J0": {
+   "isin": "KR70174J0003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70174J0003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:38:56.208894+09:00",
+   "html_sha256": "055c8efcc6699d638c816b22829bfb67adf21b83afb88c09781cdf0d91920314",
+   "status": "ok"
+  },
+  "0176P0": {
+   "isin": "KR70176P0003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70176P0003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:00.327870+09:00",
+   "html_sha256": "6f4156ab25eab5b08ab4343709c08fddc2ab2e1d87a9aba5dc0bd602ee172e89",
+   "status": "ok"
+  },
+  "0177N0": {
+   "isin": "KR70177N0004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70177N0004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:03.799075+09:00",
+   "html_sha256": "34ed3b4100f57572c94fbd791e84aaaccc7463e7c5a4069230f15c77320e6a65",
+   "status": "ok"
+  },
+  "0177R0": {
+   "isin": "KR70177R0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70177R0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:09.064196+09:00",
+   "html_sha256": "6f9465a0e185f29dafd46e4a4d1688501626d8e752b975fd2af36861f207a4ae",
+   "status": "ok"
+  },
+  "0183V0": {
+   "isin": "KR70183V0006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70183V0006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:13.437600+09:00",
+   "html_sha256": "bfca3e4c02b7dee993275096467fd04ce06e4905323f5bb7e1f909155249a615",
+   "status": "ok"
+  },
+  "0189Z0": {
+   "isin": "KR70189Z0006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70189Z0006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:17.559063+09:00",
+   "html_sha256": "21445244e1be980f0dfb42c50646b80c29554b4567c2d6a46c6a213e73c234d8",
+   "status": "ok"
+  },
+  "0190G0": {
+   "isin": "KR70190G0006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70190G0006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:22.122848+09:00",
+   "html_sha256": "b53a2d368feb46e724549a59e9c304e6c4e41a603ce38b187320527f8b05f5ff",
+   "status": "ok"
+  },
+  "0192S0": {
+   "isin": "KR70192S0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70192S0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:26.547067+09:00",
+   "html_sha256": "4e0f69da338a40a2e7295dd22e5888712f3b1a92a02d4438dc2ad837495e72dc",
+   "status": "ok"
+  },
+  "0194N0": {
+   "isin": "KR70194N0003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70194N0003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:31.059370+09:00",
+   "html_sha256": "7c1b60d4784b649ffba50905578b4cbdae563413977345771c096504373a3b0c",
+   "status": "ok"
+  },
+  "0194R0": {
+   "isin": "KR70194R0009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70194R0009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:34.962637+09:00",
+   "html_sha256": "3f97d107ab3e669f65776174657fe98ae5837e934eba91794ba74c3daaaa3b1e",
+   "status": "ok"
+  },
+  "0198A0": {
+   "isin": "KR70198A0004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70198A0004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:39.459271+09:00",
+   "html_sha256": "4b8f6892eb983670b934d6f130f088c6253ef1bba6016194a54a453f2bb8bf73",
+   "status": "ok"
+  },
+  "0199C0": {
+   "isin": "KR70199C0001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70199C0001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:43.991019+09:00",
+   "html_sha256": "79664ed2eb506bbc8e33e013257ecd38c2bc6bdfaa73c845fb6d2e4ec763edb0",
+   "status": "ok"
+  },
+  "0203D0": {
+   "isin": "KR70203D0004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70203D0004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:48.921926+09:00",
+   "html_sha256": "4896764735aecc406a7afca18a32454cf7a07cf47849b405e7633e9b083de6e4",
+   "status": "ok"
+  },
+  "0210E0": {
+   "isin": "KR70210E0004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70210E0004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:53.455958+09:00",
+   "html_sha256": "63f5c35a1f3994f743934375e9d58c1d54697da03f8b1044a669130466420810",
+   "status": "ok"
+  },
+  "0216K0": {
+   "isin": "KR70216K0000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70216K0000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:39:57.661907+09:00",
+   "html_sha256": "2359870d2561beff8781c2845879d015bcdf6db29d2c05912f75bdddb88ab982",
+   "status": "ok"
+  },
+  "0219E0": {
+   "isin": "KR70219E0005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70219E0005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:02.208314+09:00",
+   "html_sha256": "e035cb3e48f64d68fc0bd66d5c7211842b93944feb1e94547d1f5d0224d16546",
+   "status": "ok"
+  },
+  "0220A0": {
+   "isin": "KR70220A0006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70220A0006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:06.069207+09:00",
+   "html_sha256": "255e897887a8056465c5854b8deecd49ed04050c6b830ae6bcf40c16532eb47b",
+   "status": "ok"
+  },
+  "0222D0": {
+   "isin": "KR70222D0001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70222D0001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:10.180558+09:00",
+   "html_sha256": "721227b57652b9e2e711a20a12b6d98497d27420f5a4b761abcdf577b22c53ca",
+   "status": "ok"
+  },
+  "0223A0": {
+   "isin": "KR70223A0003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70223A0003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:14.287644+09:00",
+   "html_sha256": "8d7df1dfa8f5a51c9361644796436484745e23df53c7220d89f6b4f5b09d9bc5",
+   "status": "ok"
+  },
+  "0224X0": {
+   "isin": "KR70224X0005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70224X0005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:18.190360+09:00",
+   "html_sha256": "3092086c79672e0fd883142c4c9a6c31741d789a8bbe823a47d4a8cda6669e63",
+   "status": "ok"
+  },
+  "0233A0": {
+   "isin": "KR70233A0001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70233A0001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:22.538468+09:00",
+   "html_sha256": "545fa45f064fe3789ff6b284d79973d44ef7aa2a0294d4af773d4ffc5c5bfe02",
+   "status": "ok"
+  },
+  "0233J0": {
+   "isin": "KR70233J0002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70233J0002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:26.963734+09:00",
+   "html_sha256": "0333178c6fb16cfc4f06a81c394536061f2867ea154664c3021ee270cbee4371",
+   "status": "ok"
+  },
+  "0238P0": {
+   "isin": "KR70238P0009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR70238P0009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:31.558798+09:00",
+   "html_sha256": "3d0e7ba13c36c7c28ed8f4fbff6004285412e3ed9d8fbaf6cbd8be08ffdd782d",
+   "status": "ok"
+  },
+  "091170": {
+   "isin": "KR7091170001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7091170001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:36.154000+09:00",
+   "html_sha256": "445c45c1aacae26203f8f5522d905101cb41ba8578acaf7a1aa7c7e0cec998b1",
+   "status": "ok"
+  },
+  "104530": {
+   "isin": "KR7104530001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7104530001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:40.395923+09:00",
+   "html_sha256": "f9d079983bfd273ab688917fec42f15e44f1104f59eaad1736f99ee3757083b4",
+   "status": "ok"
+  },
+  "136340": {
+   "isin": "KR7136340007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7136340007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:45.365567+09:00",
+   "html_sha256": "9415f950fdf63dfffa7e82183cc1c69718907a4bb294f1a8e0356440d0dc9905",
+   "status": "ok"
+  },
+  "153130": {
+   "isin": "KR7153130000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7153130000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:49.801550+09:00",
+   "html_sha256": "2165672b68bb85a4f7cdd64f621a7d7e8db218abc4bb328aa7d524f7e9a2b1c3",
+   "status": "ok"
+  },
+  "161510": {
+   "isin": "KR7161510003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7161510003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:54.556232+09:00",
+   "html_sha256": "581dde7b1ddc1df5c40582522ac927fc7d9d5e77772291d6bf012075337a44dc",
+   "status": "ok"
+  },
+  "166400": {
+   "isin": "KR7166400002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7166400002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:40:59.172282+09:00",
+   "html_sha256": "d66120c73d3ef7d0cd8c5aa2091460c8af4c4ed368223f75966fb1de1172cf6d",
+   "status": "ok"
+  },
+  "181480": {
+   "isin": "KR7181480005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7181480005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:03.147284+09:00",
+   "html_sha256": "692318a5eda70d34b7f8d8727d906171c52fb896a3a9c56622abd5023fb00c95",
+   "status": "ok"
+  },
+  "182480": {
+   "isin": "KR7182480004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7182480004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:07.302506+09:00",
+   "html_sha256": "b4d3bd37882853fcdd77457fb8d9a90cf4477ffa6a47b4775785b47636619646",
+   "status": "ok"
+  },
+  "211900": {
+   "isin": "KR7211900006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7211900006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:11.836296+09:00",
+   "html_sha256": "c44c476fdb60ccff46b40ff7f27164ec06251d654caa255aa033a6a0a35f65c3",
+   "status": "ok"
+  },
+  "214980": {
+   "isin": "KR7214980005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7214980005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:16.273234+09:00",
+   "html_sha256": "cea8fbc818edc032301d150748d9e7eefd0bfd5bc57475c72c1e96074676388e",
+   "status": "ok"
+  },
+  "237370": {
+   "isin": "KR7237370002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7237370002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:20.279556+09:00",
+   "html_sha256": "83dedfd8615ce0e5fdd629a9578a0800febc5db2eb393174234b7d53a411939d",
+   "status": "ok"
+  },
+  "245340": {
+   "isin": "KR7245340005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7245340005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:24.869829+09:00",
+   "html_sha256": "0f9e25ec310cac0e3e46f8b447873c624e451980152a13daf63b300024e461cb",
+   "status": "ok"
+  },
+  "251600": {
+   "isin": "KR7251600003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7251600003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:29.007855+09:00",
+   "html_sha256": "c7a141ae014e3a8ce3c4c43d706f81ddc1ecba272871ff21585241f4627eea80",
+   "status": "ok"
+  },
+  "273140": {
+   "isin": "KR7273140004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7273140004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:33.585627+09:00",
+   "html_sha256": "b0826455a3f34c26766073e05862d09f2978a6ff7f390242f62c65538d8efb07",
+   "status": "ok"
+  },
+  "279530": {
+   "isin": "KR7279530000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7279530000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:38.138394+09:00",
+   "html_sha256": "03a9818427b5737f99ac8a0b5ba2f8911ffacf86bc76985ae52ade37f4e06d86",
+   "status": "ok"
+  },
+  "284430": {
+   "isin": "KR7284430006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7284430006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:42.750290+09:00",
+   "html_sha256": "d4901d76de4dbdeb75d9a68b5768e1b886737baaa4817e4f76cf5b379d8bf9da",
+   "status": "ok"
+  },
+  "289480": {
+   "isin": "KR7289480006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7289480006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:47.534802+09:00",
+   "html_sha256": "a3f9938ec0c280b00fe2049c867fc32f39c4cd8c182addfad41fa71401ccf0e6",
+   "status": "ok"
+  },
+  "290080": {
+   "isin": "KR7290080001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7290080001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:51.793179+09:00",
+   "html_sha256": "671e9a95ab88d8ce3d892b6966db1e8082a43776a4eff8f954e7556dc6f38dd5",
+   "status": "ok"
+  },
+  "316300": {
+   "isin": "KR7316300003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7316300003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:41:56.746881+09:00",
+   "html_sha256": "df781295948e529bfce81d39dc9baafa0bcdf29bd90465bd913fb644d14137b3",
+   "status": "ok"
+  },
+  "322410": {
+   "isin": "KR7322410002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7322410002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:01.336046+09:00",
+   "html_sha256": "8166afa0bb773f9d7176e534faddeb6bef10d8e225b5318e3939651b8910e55c",
+   "status": "ok"
+  },
+  "329200": {
+   "isin": "KR7329200000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7329200000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:05.728605+09:00",
+   "html_sha256": "2320e2b2009e2ca3039505daade97b4265399b7fcfc241b0297cbf5d39325cef",
+   "status": "ok"
+  },
+  "329650": {
+   "isin": "KR7329650006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7329650006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:10.362473+09:00",
+   "html_sha256": "9e75da3a4a498b9ef25b5d9187ae825eb7b565bc63776bd6e3fdb7abab19e01a",
+   "status": "ok"
+  },
+  "329660": {
+   "isin": "KR7329660005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7329660005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:14.471089+09:00",
+   "html_sha256": "8728fa62688797c82f6c62fc1ec42faf6e16d63629907c8a00533aca1736659e",
+   "status": "ok"
+  },
+  "329670": {
+   "isin": "KR7329670004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7329670004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:19.071657+09:00",
+   "html_sha256": "bafe993cef5227d30bb0b2e26944774dfff94922e9bcacf307b9277bb5332d1a",
+   "status": "ok"
+  },
+  "332610": {
+   "isin": "KR7332610005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7332610005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:23.316296+09:00",
+   "html_sha256": "521bfec34c20c3a30a1186cf1c0a9138f8b914cbe3a7b723591653df84f39090",
+   "status": "ok"
+  },
+  "332620": {
+   "isin": "KR7332620004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7332620004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:27.337994+09:00",
+   "html_sha256": "5c7836fb0c85c5fd75a5af1b30358c273f2ed27f169dc274af95cb1f5fec81e2",
+   "status": "ok"
+  },
+  "336160": {
+   "isin": "KR7336160007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7336160007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:31.239609+09:00",
+   "html_sha256": "644d7e302996dfdc0c5756d249ca9f5349915d5f078204c3591a15ce5fbfe36c",
+   "status": "ok"
+  },
+  "341850": {
+   "isin": "KR7341850006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7341850006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:35.170819+09:00",
+   "html_sha256": "3913cf6fd6058dfb12f3741b4a46cb63493df03c004f0966bfaa21f5c1e37541",
+   "status": "ok"
+  },
+  "352540": {
+   "isin": "KR7352540009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7352540009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:39.280864+09:00",
+   "html_sha256": "54206728a337f4db76ed0630f54b33dc994edc9bc48f4e35fe8b2f99cc8ad004",
+   "status": "ok"
+  },
+  "352560": {
+   "isin": "KR7352560007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7352560007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:43.392269+09:00",
+   "html_sha256": "d9f06eb9b8d301dfc3964fab87f40f62135d8e249de413e1d4bb45e9f0ff852d",
+   "status": "ok"
+  },
+  "373790": {
+   "isin": "KR7373790005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7373790005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:47.496538+09:00",
+   "html_sha256": "182b500b39dfb60b2a69616d3391cff42161dd3d400ce868697bec4afcbe5ada",
+   "status": "ok"
+  },
+  "402970": {
+   "isin": "KR7402970008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7402970008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:52.010220+09:00",
+   "html_sha256": "378b6a5bfcd5e8a979aec0028e690791246d01937d5862d0d466cfc92bef5a58",
+   "status": "ok"
+  },
+  "423160": {
+   "isin": "KR7423160001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7423160001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:42:56.137917+09:00",
+   "html_sha256": "f49405617261d0a95544f0fc50a666121b3ba6a6487046ef636eb4b03d43dc7c",
+   "status": "ok"
+  },
+  "429000": {
+   "isin": "KR7429000003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7429000003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:00.363317+09:00",
+   "html_sha256": "1861d2de0a936c9ea7b72b03f20f3fa66b1b457cf151283e9da885c9d75d618e",
+   "status": "ok"
+  },
+  "429740": {
+   "isin": "KR7429740004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7429740004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:04.512174+09:00",
+   "html_sha256": "89035ab0db849413b8f21818e32c251ab4b8fff5e2b89f562a2f9440095de17e",
+   "status": "ok"
+  },
+  "432840": {
+   "isin": "KR7432840007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7432840007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:08.649125+09:00",
+   "html_sha256": "6a19bb2742fd3eff56d613600f97868531919b5e048e24e3e715e1566d1bd559",
+   "status": "ok"
+  },
+  "433330": {
+   "isin": "KR7433330008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7433330008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:13.272942+09:00",
+   "html_sha256": "d079f2e97d4e5c0ec2bc8baa7bfd85b4e8a6a4341225a213308f32e3e79c4242",
+   "status": "ok"
+  },
+  "437070": {
+   "isin": "KR7437070006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7437070006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:17.576982+09:00",
+   "html_sha256": "757f1fb0232166b49f74ea6bad14ef2172a89c544854441ae1536c20500e03ae",
+   "status": "ok"
+  },
+  "437080": {
+   "isin": "KR7437080005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7437080005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:22.217960+09:00",
+   "html_sha256": "aa0ab6a04ff8ad959566c4bcac033c7b955eba849fdd33160daf900a86df512b",
+   "status": "ok"
+  },
+  "438330": {
+   "isin": "KR7438330003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7438330003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:27.014733+09:00",
+   "html_sha256": "98ca336add9942bfc9510c36ccc36415f42186a85eeeb40186684d9a169383eb",
+   "status": "ok"
+  },
+  "440340": {
+   "isin": "KR7440340008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7440340008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:31.453172+09:00",
+   "html_sha256": "e106b94d4855ab81f84366363dc040243508fd0271184168b5a00e478af65af8",
+   "status": "ok"
+  },
+  "441640": {
+   "isin": "KR7441640000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7441640000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:35.577514+09:00",
+   "html_sha256": "809236b21c392eb53236fae9b70b4d62a1849fc630a87fbe95258bf4d7d2e10a",
+   "status": "ok"
+  },
+  "441680": {
+   "isin": "KR7441680006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7441680006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:39.769301+09:00",
+   "html_sha256": "19cb70af705d529db6025eaa45ea1ecb5768e4302f571b9b067e86ee88cc2baf",
+   "status": "ok"
+  },
+  "441800": {
+   "isin": "KR7441800000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7441800000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:44.305814+09:00",
+   "html_sha256": "5ac20547a29a78784f8faddc1a166a7210c4673022c54fad7e741623279552df",
+   "status": "ok"
+  },
+  "446720": {
+   "isin": "KR7446720005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7446720005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:48.366584+09:00",
+   "html_sha256": "3647c89e9dc19b4cb1de41a1fbd702d3e814afa1a69c2d7970a6188dab45efd1",
+   "status": "ok"
+  },
+  "448100": {
+   "isin": "KR7448100008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7448100008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:52.437302+09:00",
+   "html_sha256": "021456dda12444b1b2620034e99811bc62ba5b1aa947a41304887c2e315d0cab",
+   "status": "ok"
+  },
+  "448330": {
+   "isin": "KR7448330001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7448330001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:43:56.947985+09:00",
+   "html_sha256": "8e78fddcebec22dc716490296f0444dd0d32cb754a15b66615123ff92a323889",
+   "status": "ok"
+  },
+  "452360": {
+   "isin": "KR7452360001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7452360001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:00.950754+09:00",
+   "html_sha256": "761b29af4ddca36b948cb822b348f75c1f43b67ed246b8f262fa9e49d52b90cd",
+   "status": "ok"
+  },
+  "453330": {
+   "isin": "KR7453330003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7453330003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:05.272174+09:00",
+   "html_sha256": "2816f1ab64080c8dcc2f71af56c5a98e16a3ea03437149dd5f340a418d19f3e1",
+   "status": "ok"
+  },
+  "453850": {
+   "isin": "KR7453850000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7453850000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:09.611576+09:00",
+   "html_sha256": "2cc5dfee3ddfed539cd0f01e702507534974f057a1c999ba3dc2f314481feb1c",
+   "status": "ok"
+  },
+  "455030": {
+   "isin": "KR7455030007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7455030007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:14.606860+09:00",
+   "html_sha256": "2431ab60c2dbcaf8da0d1e6605a39db877cceb4773e8f90122eaf13aba354260",
+   "status": "ok"
+  },
+  "455660": {
+   "isin": "KR7455660001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7455660001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:19.050556+09:00",
+   "html_sha256": "a8ee27bfafd1532924c6191fc1c7a0fd1e31f09383ff1e7a17cea30ce8de7021",
+   "status": "ok"
+  },
+  "458260": {
+   "isin": "KR7458260007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7458260007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:23.087801+09:00",
+   "html_sha256": "c8cda27026ad457789cb8e7c4a5cb0291f0b0fd4f774fc032eb2b5b332ac95fb",
+   "status": "ok"
+  },
+  "458730": {
+   "isin": "KR7458730009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7458730009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:27.739548+09:00",
+   "html_sha256": "3ee8c14ddedb87f107ac02ccba7671ac65b63cf367ae48806bad0487ec7d22be",
+   "status": "ok"
+  },
+  "458750": {
+   "isin": "KR7458750007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7458750007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:31.842387+09:00",
+   "html_sha256": "09d0c0fb661f9d267e5c0bbe4ca20f27372adfbf17556590d642c15ec5233967",
+   "status": "ok"
+  },
+  "458760": {
+   "isin": "KR7458760006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7458760006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:35.841831+09:00",
+   "html_sha256": "f77259599e38feb1e9360dddb21a2633919152383b63698b5bb82071e01c4e2e",
+   "status": "ok"
+  },
+  "459580": {
+   "isin": "KR7459580007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7459580007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:39.880169+09:00",
+   "html_sha256": "78eeeada5acf9d9b3182e53a7a1be886179da3fd3d4ce948644392c74c830c5a",
+   "status": "ok"
+  },
+  "460660": {
+   "isin": "KR7460660004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7460660004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:44.118033+09:00",
+   "html_sha256": "9817ec368293a0f12542494e5192866ab284d53afecd1ee2c52cc01777642083",
+   "status": "ok"
+  },
+  "460960": {
+   "isin": "KR7460960008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7460960008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:48.837986+09:00",
+   "html_sha256": "3fb4e47e1e0193771a6e4c9d20c4b74ec7f276e522473ac111c02c10692022ff",
+   "status": "ok"
+  },
+  "464470": {
+   "isin": "KR7464470004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7464470004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:52.994712+09:00",
+   "html_sha256": "c25f49e82b9c87863185bb03dd2c618a876b5c87a8b23c1ff66c372f15ebf4e3",
+   "status": "ok"
+  },
+  "465670": {
+   "isin": "KR7465670008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7465670008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:44:57.575504+09:00",
+   "html_sha256": "fb41800dcc9ef5185df0b03cf3936d0c6c204261ba995478892b921755bd1432",
+   "status": "ok"
+  },
+  "466940": {
+   "isin": "KR7466940004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7466940004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:01.687744+09:00",
+   "html_sha256": "8abbaac382bd003b731421c8212fafacd0608820022576646057b3b2c3076b24",
+   "status": "ok"
+  },
+  "468370": {
+   "isin": "KR7468370002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7468370002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:05.604308+09:00",
+   "html_sha256": "715143a678907829fd01256e687b586be5e6d01a4a80f3c57e56d4024f09ed79",
+   "status": "ok"
+  },
+  "468380": {
+   "isin": "KR7468380001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7468380001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:10.308910+09:00",
+   "html_sha256": "bc406120817b1401ecbeb125f27954c136e97203afb3f54f7e7339fd0d6ee4fb",
+   "status": "ok"
+  },
+  "468630": {
+   "isin": "KR7468630009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7468630009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:14.348322+09:00",
+   "html_sha256": "666a0276292cea4187e18b73a1d7d39fc8e656995c688daebfbb76d2232f3611",
+   "status": "ok"
+  },
+  "471460": {
+   "isin": "KR7471460006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7471460006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:18.695164+09:00",
+   "html_sha256": "2bc799378baab8b46e1253ac15329c737bd388cf973de4652c0c59e1fcee33fb",
+   "status": "ok"
+  },
+  "472150": {
+   "isin": "KR7472150002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7472150002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:23.226588+09:00",
+   "html_sha256": "a2a7ce479cdb9a592b87f3201975e008b7b22d8dc203e9e6d030cbb56d4d5701",
+   "status": "ok"
+  },
+  "472830": {
+   "isin": "KR7472830009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7472830009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:27.445889+09:00",
+   "html_sha256": "abb4c153be3a48d72ce508cbf51ab2bcd63f63e32476bd68818b073b3b52caca",
+   "status": "ok"
+  },
+  "472870": {
+   "isin": "KR7472870005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7472870005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:31.357626+09:00",
+   "html_sha256": "1136a22136999dbd3a54d1ec7c8b7e44a78d8d3cf210d95ad214aa318ff632a9",
+   "status": "ok"
+  },
+  "473330": {
+   "isin": "KR7473330009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7473330009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:35.260986+09:00",
+   "html_sha256": "6ac557dd234aab5f6222cbfd54b808b2de14deba7919f9d975b77ff64b335982",
+   "status": "ok"
+  },
+  "474220": {
+   "isin": "KR7474220001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7474220001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:39.216207+09:00",
+   "html_sha256": "6c6184522cff6a65368b7f8c02df804ca5c2a66862d40ec6c527845bbd22f109",
+   "status": "ok"
+  },
+  "475080": {
+   "isin": "KR7475080008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7475080008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:43.713868+09:00",
+   "html_sha256": "213ec034ee02d65fff52613b210c623f9b44d681765b5a35b16c920806015e85",
+   "status": "ok"
+  },
+  "475380": {
+   "isin": "KR7475380002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7475380002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:47.664430+09:00",
+   "html_sha256": "362d7a83ec7f32b2c3fc6cea148ed58eebbf8d990425645f42d632999083a91a",
+   "status": "ok"
+  },
+  "475720": {
+   "isin": "KR7475720009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7475720009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:51.766404+09:00",
+   "html_sha256": "f52d7cf090caa51f51e1fb0d2838f0a6e88209333f221ebf4d781882f45eb523",
+   "status": "ok"
+  },
+  "476550": {
+   "isin": "KR7476550009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7476550009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:55.932692+09:00",
+   "html_sha256": "dffeaaa5113ca4297a49795b92590955405e75ce513710d8911caed7e25a438d",
+   "status": "ok"
+  },
+  "476690": {
+   "isin": "KR7476690003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7476690003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:45:59.857207+09:00",
+   "html_sha256": "db39a6ca2f7cfc9caa3ac61c8a73da9b05f294322ae92ab51e583399de9c7806",
+   "status": "ok"
+  },
+  "476750": {
+   "isin": "KR7476750005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7476750005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:04.170257+09:00",
+   "html_sha256": "a6d40f5555e42fb04b2ea31e4c358bfd43ef0e8da52945af5c2cf82deb5f10d4",
+   "status": "ok"
+  },
+  "476760": {
+   "isin": "KR7476760004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7476760004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:08.663986+09:00",
+   "html_sha256": "a27fa49e0f948ea3180c52f85eaf9a10668efb482e015a3329fc059b10edf650",
+   "status": "ok"
+  },
+  "476800": {
+   "isin": "KR7476800008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7476800008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:13.243449+09:00",
+   "html_sha256": "e9ac2d5ab0686d722344179e2483b6e96196cee361df58a81e76cadd599f94d9",
+   "status": "ok"
+  },
+  "476850": {
+   "isin": "KR7476850003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7476850003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:17.672637+09:00",
+   "html_sha256": "bb0171d96ea76be2a5ce282ba4db2618481a618237627799d77589d88c4aa823",
+   "status": "ok"
+  },
+  "480020": {
+   "isin": "KR7480020007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7480020007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:21.764982+09:00",
+   "html_sha256": "4f57afb720c2d80a13a336be2fa39e1a9695963a3a2c45163f81ee30890eb257",
+   "status": "ok"
+  },
+  "480030": {
+   "isin": "KR7480030006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7480030006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:26.118923+09:00",
+   "html_sha256": "365781464dff596d3f0cb5274f90c1d0dc484fcbd69053306391332c927f9d98",
+   "status": "ok"
+  },
+  "480040": {
+   "isin": "KR7480040005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7480040005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:30.197163+09:00",
+   "html_sha256": "c8c19303c40da495ef081ce7f500ea3409eb29ac1ac28a21b8c3abe951f9e539",
+   "status": "ok"
+  },
+  "480460": {
+   "isin": "KR7480460005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7480460005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:34.669629+09:00",
+   "html_sha256": "23a0e3841dc482db46cd4f6a8390be9f957011f78f368797075a9fb608ccb629",
+   "status": "ok"
+  },
+  "481050": {
+   "isin": "KR7481050003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7481050003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:38.775674+09:00",
+   "html_sha256": "4460014833b84ab812708866bde8f44c6c2556dbb4bd0a4691141ccd2b472187",
+   "status": "ok"
+  },
+  "481060": {
+   "isin": "KR7481060002",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7481060002",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:43.170594+09:00",
+   "html_sha256": "ce86661e8001497e33c7742df7019358049243783ae29a0330acb7730a2657b0",
+   "status": "ok"
+  },
+  "481340": {
+   "isin": "KR7481340008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7481340008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:47.465167+09:00",
+   "html_sha256": "ee5189121711b36474b70ffac87e9ec25b1228947d71ec48f98efe695786353e",
+   "status": "ok"
+  },
+  "482730": {
+   "isin": "KR7482730009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7482730009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:52.037172+09:00",
+   "html_sha256": "0a0c86bddb255cc17738f763a53f166dc653fe769d24587a4539d263ac12176a",
+   "status": "ok"
+  },
+  "483280": {
+   "isin": "KR7483280004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7483280004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:46:56.399564+09:00",
+   "html_sha256": "5b12a354a4886b65f01a4c9afc0f9669b46b6e84fe4504809c9e67c66a9ced25",
+   "status": "ok"
+  },
+  "483290": {
+   "isin": "KR7483290003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7483290003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:00.736875+09:00",
+   "html_sha256": "1f547a61dd0e6e3370d45bbb37b9b6eeff6b87f086e480e41120f2a3f43a0f9b",
+   "status": "ok"
+  },
+  "484790": {
+   "isin": "KR7484790001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7484790001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:05.569442+09:00",
+   "html_sha256": "9b405e769c546f40dd0d4372664d7119c64f0d14d117330e8a90f5495164c946",
+   "status": "ok"
+  },
+  "484880": {
+   "isin": "KR7484880000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7484880000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:09.494748+09:00",
+   "html_sha256": "79e2d48d7d43fb6a2e19c82dcd52494660ba74222ef14171e46b1d24199bd1e4",
+   "status": "ok"
+  },
+  "486290": {
+   "isin": "KR7486290000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7486290000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:14.285267+09:00",
+   "html_sha256": "413161f2db26c9d1f1284cf6da637e1000ec8ed26a474b25d66e8047bfdf716e",
+   "status": "ok"
+  },
+  "487950": {
+   "isin": "KR7487950008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7487950008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:18.656108+09:00",
+   "html_sha256": "4227235fed4a14a7038c7f1d573cf2599719e8a663f1da0aa8e9fb73dad03f67",
+   "status": "ok"
+  },
+  "489030": {
+   "isin": "KR7489030007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7489030007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:23.190569+09:00",
+   "html_sha256": "2e98a75626ea1f5106ab891e31c85848415ce3baac6ce07b1db3810c6a0814c5",
+   "status": "ok"
+  },
+  "489250": {
+   "isin": "KR7489250001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7489250001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:27.533861+09:00",
+   "html_sha256": "ce34d6f98f9766513cc24108277c3ffb4857d32aeff365c28225c01bf617e314",
+   "status": "ok"
+  },
+  "490490": {
+   "isin": "KR7490490000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7490490000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:31.872075+09:00",
+   "html_sha256": "cef1cf951b6c859e3b906edb3e3a06dbd6281c4a5de21ed9279c9928f6d5c0cc",
+   "status": "ok"
+  },
+  "490590": {
+   "isin": "KR7490590007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7490590007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:35.867767+09:00",
+   "html_sha256": "1f2eaae40436baad6193db8875cc1948f82fff0881fd693ffc0331937c1981f0",
+   "status": "ok"
+  },
+  "490600": {
+   "isin": "KR7490600004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7490600004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:40.083309+09:00",
+   "html_sha256": "30486f2fbe735c24519aa9a0d159f578b9a08d27fe824e3ff03d1d3754bbb7bf",
+   "status": "ok"
+  },
+  "491620": {
+   "isin": "KR7491620001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7491620001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:44.645155+09:00",
+   "html_sha256": "25e9ed870ce144eaed26a5ff82cc00593bebc3d1f23e73e69767cc8e5b655ae3",
+   "status": "ok"
+  },
+  "493420": {
+   "isin": "KR7493420004",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7493420004",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:49.089394+09:00",
+   "html_sha256": "710f25e809a69475c282862fcd5925b21124833f6601a41bb071b85bf8dc5ae2",
+   "status": "ok"
+  },
+  "493810": {
+   "isin": "KR7493810006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7493810006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:53.386612+09:00",
+   "html_sha256": "6b5d473e3a8ae7165c660412f23810e15c8839f791f1ec007ba1cfc76270d3d4",
+   "status": "ok"
+  },
+  "494210": {
+   "isin": "KR7494210008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7494210008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:47:57.936050+09:00",
+   "html_sha256": "847642c1c1dc28d7d6b526324d5cd21cbc8c96574fc0726d790198d7c2e20c98",
+   "status": "ok"
+  },
+  "494300": {
+   "isin": "KR7494300007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7494300007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:02.031042+09:00",
+   "html_sha256": "4a105cd9b2ffb2253ba7c1be316b457bd62a4eaa663741eaff8f39a1da606bdb",
+   "status": "ok"
+  },
+  "494420": {
+   "isin": "KR7494420003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7494420003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:06.366901+09:00",
+   "html_sha256": "bbe3a4d49a37451fba1fbc48dab3bf0f07cb698a0cdcee0ca78c3510d5bd014c",
+   "status": "ok"
+  },
+  "495040": {
+   "isin": "KR7495040008",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7495040008",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:10.725464+09:00",
+   "html_sha256": "8a2b8d288579e206e6171f714d67f3375d72007fb935b9554d4338b559c613cb",
+   "status": "ok"
+  },
+  "495050": {
+   "isin": "KR7495050007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7495050007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:15.257053+09:00",
+   "html_sha256": "e1b823da58f11e8f02f6935f5b3b3d9de6741d0123eed566d1f68c03a6365d4e",
+   "status": "ok"
+  },
+  "495230": {
+   "isin": "KR7495230005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7495230005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:20.000688+09:00",
+   "html_sha256": "9c99cf97fc0f1a1314c0c60b9ec2ac470f361e358db4081dde8ee110563cd10c",
+   "status": "ok"
+  },
+  "495330": {
+   "isin": "KR7495330003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7495330003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:24.410841+09:00",
+   "html_sha256": "d982080ec51d9e7b5a18bb5774c99be737a1ff41c6197b38f7a831b2d0e053bd",
+   "status": "ok"
+  },
+  "495850": {
+   "isin": "KR7495850000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7495850000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:28.727756+09:00",
+   "html_sha256": "d8fae1230353847ae39adb5759dbf8c3defef5faaf25270e516a724be06c4d49",
+   "status": "ok"
+  },
+  "496080": {
+   "isin": "KR7496080003",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7496080003",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:33.609652+09:00",
+   "html_sha256": "ece041e56deea208c7b72de29811bc009febceb2ef0f112fafd7674790977f1b",
+   "status": "ok"
+  },
+  "497780": {
+   "isin": "KR7497780007",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7497780007",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:38.365637+09:00",
+   "html_sha256": "07b10946f249453a7be64bacd27c2b4af868b793077bcad2b25a0cfde4013d99",
+   "status": "ok"
+  },
+  "497880": {
+   "isin": "KR7497880005",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7497880005",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:42.305480+09:00",
+   "html_sha256": "49757d07fae773ec78411bf022d9ef9b5b8ad5733a571af40d9dc01a0777e228",
+   "status": "ok"
+  },
+  "498400": {
+   "isin": "KR7498400001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7498400001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:46.429730+09:00",
+   "html_sha256": "a62db05de58558cb6afa81552ae41ada4e2a7967193079a4f06f208194492979",
+   "status": "ok"
+  },
+  "498410": {
+   "isin": "KR7498410000",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7498410000",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:50.768224+09:00",
+   "html_sha256": "c26c8736299e013ff4dc648e347a4ed9014e4b4571aca42894ded953837a8af9",
+   "status": "ok"
+  },
+  "498860": {
+   "isin": "KR7498860006",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7498860006",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:54.701164+09:00",
+   "html_sha256": "5f50386fef57bd7e79e4932611e60eaf95a175cfef8ea96a15f89491b06acad3",
+   "status": "ok"
+  },
+  "499150": {
+   "isin": "KR7499150001",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7499150001",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:48:58.815937+09:00",
+   "html_sha256": "9a2b908275439e32407cdc2d7cd0dad5bcf6553fd8efd97ff01a35988ed7c971",
+   "status": "ok"
+  },
+  "499660": {
+   "isin": "KR7499660009",
+   "url": "https://www.funetf.co.kr/product/etf/view/KR7499660009",
+   "http": 200,
+   "attempts": [
+    200
+   ],
+   "retrieved_kst": "2026-10-14T17:49:03.183195+09:00",
+   "html_sha256": "10efc43ea0eb889150dfce99cc5aa5f035160739c9babe4dc9cbadb33fec24a9",
+   "status": "ok"
+  }
+ },
+ "finished_kst": "2026-10-14T17:49:05.686631+09:00",
+ "counts": {
+  "ok": 194
+ }
+}

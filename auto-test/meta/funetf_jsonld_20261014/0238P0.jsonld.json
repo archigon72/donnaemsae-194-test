@@ -1,0 +1,77 @@
+{
+ "code": "0238P0",
+ "isin": "KR70238P0009",
+ "url": "https://www.funetf.co.kr/product/etf/view/KR70238P0009",
+ "retrieved_kst": "2026-10-14T17:40:31.558798+09:00",
+ "html_sha256": "3d0e7ba13c36c7c28ed8f4fbff6004285412e3ed9d8fbaf6cbd8be08ffdd782d",
+ "dateModified": "2026-10-14T16:09:58+09:00",
+ "FinancialProduct": {
+  "@type": "FinancialProduct",
+  "category": "ETF",
+  "provider": {
+   "@type": "FinancialService",
+   "name": "미래에셋운용",
+   "url": "http://investments.miraeasset.com/main/index.do"
+  },
+  "@id": "https://www.funetf.co.kr/product/etf/view/KR70238P0009#fund",
+  "name": "TIGER 미국S&P500미국채혼합50",
+  "url": "https://www.funetf.co.kr/product/etf/view/KR70238P0009",
+  "identifier": "0238P0",
+  "feesAndCommissionsSpecification": "총 보수 연 0.1500%, 합성총보수 연 0.1600%, 실부담비율 연 0.2001%",
+  "additionalProperty": [
+   {
+    "@type": "PropertyValue",
+    "name": "기초지수",
+    "propertyID": "etf:underlyingIndex",
+    "value": "S&P 500 and Short-Term Treasury 50/50 Blend Index"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "투자위험",
+    "propertyID": "etf:riskGrade",
+    "value": "4등급 (보통위험)"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "순자산",
+    "propertyID": "etf:netAssetValue",
+    "value": 56523164476,
+    "unitText": "KRW"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "상장일",
+    "propertyID": "etf:listingDate",
+    "value": "2026-09-08"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "1개월 NAV 수익률",
+    "propertyID": "etf:return.nav.1m",
+    "value": 1.52,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "상장이후 NAV 수익률",
+    "propertyID": "etf:return.nav.si",
+    "value": 0.78,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "1개월 종가 수익률",
+    "propertyID": "etf:return.price.1m",
+    "value": 1.0,
+    "unitCode": "P1"
+   },
+   {
+    "@type": "PropertyValue",
+    "name": "상장이후 종가 수익률",
+    "propertyID": "etf:return.price.si",
+    "value": 1.0,
+    "unitCode": "P1"
+   }
+  ]
+ }
+}

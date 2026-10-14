@@ -10,26 +10,21 @@ ap.add_argument('--inject-error');ap.add_argument('--interrupt-after-build',acti
 ap.add_argument('--publish-raw',action='store_true',help='대표 승인(공개 허용): 원천 raw 를 auto-test/raw/<release_id>/ 에 보존(덮어쓰기 금지)')
 ap.add_argument('--base-release',help='use this release dir (inputs snapshot) as previous state instead of site inputs')
 A=ap.parse_args();SITE=os.path.abspath(A.site);AT=f'{SITE}/auto-test'
-# ---------- ZeroIn 시험 제어 (yml 변경 없이; 시험 후 반드시 none) ----------
+# 시험 제어(yml 변경 없이). 정상값 none. meta_loss = 승인 메타 1종 유실 주입(작업 사본만, 승격 차단 확인용)
 CTLP=os.path.join(os.path.dirname(os.path.abspath(__file__)),'test_control.json')
 CTL=json.load(open(CTLP)) if os.path.exists(CTLP) else {}
-ZSIM=CTL.get('zeroin_scenario','none')
-assert ZSIM in ('none','all_fail','partial','all_success','block_no_prev'),ZSIM
-ZFIX=CTL.get('fixture_release','auto-20261014-143346-live')   # GrokBot box 실수집 132/194 (2026-10-14 KST)
+SCN=CTL.get('scenario','none');assert SCN in ('none','meta_loss'),SCN
+STORE_P=f'{AT}/meta/product_meta_store.json'
 KST=datetime.timezone(datetime.timedelta(hours=9));NOW=datetime.datetime.now(KST)
 ASOF=A.asof or NOW.strftime('%Y%m%d')
-RID=f"auto-{ASOF}-{NOW.strftime('%H%M%S')}-{A.mode}"+(f"-inj-{A.inject_error}" if A.inject_error else '')+(f"-zsim-{ZSIM}" if ZSIM!='none' else '')
+RID=f"auto-{ASOF}-{NOW.strftime('%H%M%S')}-{A.mode}"+(f"-inj-{A.inject_error}" if A.inject_error else '')+(f"-scn-{SCN}" if SCN!='none' else '')
 RAW=os.path.join(os.path.abspath(A.raw_dir),RID);os.makedirs(RAW,exist_ok=False)
-LOG={'release_id':RID,'zeroin_scenario':ZSIM,'mode':A.mode,'asof':ASOF,'started_kst':NOW.isoformat(),'steps':[],'collect':{},'qa':[],'result':None}
+LOG={'release_id':RID,'scenario':SCN,'mode':A.mode,'asof':ASOF,'started_kst':NOW.isoformat(),'steps':[],'collect':{},'qa':[],'result':None}
 def step(n,**k): LOG['steps'].append({'step':n,'t':datetime.datetime.now(KST).isoformat(),**k});print('STEP',n,json.dumps(k,ensure_ascii=False)[:300],flush=True)
 def sha(b): return hashlib.sha256(b).hexdigest()
 def wjson(p,o): os.makedirs(os.path.dirname(p),exist_ok=True);open(p,'w').write(json.dumps(o,ensure_ascii=False,separators=(',',':')))
 codes=sorted(f[:-5] for f in os.listdir(f'{SITE}/inputs') if f.endswith('.json'))
 if A.codes: codes=[c for c in codes if c in A.codes.split(',')]
-def fixture_quote(c):
-    p=f'{AT}/raw/{ZFIX}/{c}/zeroin.json'
-    return open(p,'rb').read() if os.path.exists(p) else None
-if ZSIM=='all_success': codes=[c for c in codes if fixture_quote(c) is not None];A.codes=','.join(codes)  # 기존 --codes 부분집합 규칙 재사용   # 모의: fixture 보유 종목만 (없는 값을 만들지 않음)
 PREV_IN=A.base_release and f'{A.base_release}/inputs' or f'{SITE}/inputs'
 def prev_bundle(c):
     p=f'{PREV_IN}/{c}.json'
@@ -51,28 +46,20 @@ def collect(c,b):
     if A.mode=='replay':
         d=f'{A.replay_dir}/{c}'
         if not os.path.isdir(d): return {**out,'status':'fail','reason':'replay source missing'},None,None,None
-        nav=open(f'{d}/nav.json','rb').read();div=open(f'{d}/div.json','rb').read();zq=open(f'{d}/zeroin.json','rb').read() if os.path.exists(f'{d}/zeroin.json') else None
-        out['zeroin_origin']='replay'
-        if ZSIM in ('all_fail','block_no_prev'): zq=None;out['zeroin_origin']='simulated'
-        elif ZSIM in ('partial','all_success'): zq=fixture_quote(c);out['zeroin_origin']='simulated_fixture'
-        if zq is None: out['zeroin']='fail (replay/simulated: none)'
+        nav=open(f'{d}/nav.json','rb').read();div=open(f'{d}/div.json','rb').read();zq=None
     else:
         s1,nav=fetch(f'https://www.funetf.co.kr/api/public/product/view/etfnav?gijunYmd={ASOF}&fundCd={isin}&itemId={isin}&schNavStDt={st}&schNavEdDt={ASOF}')
         s2,div=fetch(f'https://www.funetf.co.kr/api/public/product/view/etfdividend?gijunYmd={ASOF}&fundCd={isin}&itemId={isin}')
-        if ZSIM=='none': s3,zq=fetch(f'https://etf.zeroin.co.kr/api/quote/{c}',tries=2,to=12);out['zeroin_origin']='network'
-        elif ZSIM in ('all_fail','block_no_prev'): s3,zq=None,'simulated failure (test_control)';out['zeroin_origin']='simulated'
-        else:
-            fq=fixture_quote(c);s3,zq=(200,fq) if fq else (None,'simulated failure: no fixture');out['zeroin_origin']='simulated_fixture'
+        zq=None   # ZeroIn 일일 호출 제거(2026-10-14 대표 결정). 메타는 저장된 승인본 사용
         if s1!=200 or s2!=200: return {**out,'status':'fail','reason':f'funetf nav={s1 or nav} div={s2 or div}'},None,None,None
-        if s3!=200: out['zeroin']=f'fail {zq}';zq=None
     os.makedirs(f'{RAW}/{c}',exist_ok=True)
-    for n,v in (('nav.json',nav),('div.json',div),('zeroin.json',zq if out.get('zeroin_origin')=='network' else None)):
+    for n,v in (('nav.json',nav),('div.json',div),('zeroin.json',zq)):
         if v is not None: open(f'{RAW}/{c}/{n}','wb').write(v);out.setdefault('sha256',{})[n]=sha(v)
     try: N=json.loads(nav,parse_float=str);D=json.loads(div,parse_float=str);Z=json.loads(zq) if zq else None
     except Exception as e: return {**out,'status':'fail','reason':'parse '+str(e)[:80]},None,None,None
     if not isinstance(N,list) or not isinstance(D,list): return {**out,'status':'fail','reason':'unexpected payload'},None,None,None
     if not N: return {**out,'status':'fail','reason':'nav empty (source returned 0 rows)'},None,None,None
-    if Z is not None: out['zeroin']='ok as_of %s'%Z.get('as_of');out['zeroin_as_of']=str(Z.get('as_of'));out['zeroin_sha256']=sha(zq)
+    out['zeroin']='not_called'
     return {**out,'status':'ok'},N,D,Z
 # ---------- 2 normalize ----------
 def norm_row(r,tmpl):
@@ -127,31 +114,36 @@ try:
     st={}
     for v in LOG['collect'].values(): st[v.get('state',v['status'])]=st.get(v.get('state',v['status']),0)+1
     step('collect',ok=ok,fail=fail,states=st)
-    # ---------- 1b ZeroIn 판정 준비 ----------
-    # CORE가 실제 요구하는 ZeroIn 관련 값 = adapter.metadata()의 issuer·benchmark·fee·strategy (instrument master 또는 bundle.zeroin_metadata).
-    #   비면 CORE가 issue 'zeroin_failed' 를 냄 → 이것을 '필수값 누락' 판정 기준으로 사용.
-    # quote API(close·nav·net_asset·as_of)는 원천 보존용이며 CORE 입력이 아님.
-    # 기준본: 직전 '검증' 승격본 raw zeroin.json(sha 일치) → 없으면 배포 사이트 data/<code>.json (대표 승인본).
-    #   (run #2 auto-20261014-152635-live 는 zeroin.json 0개 → 자연히 그 이전 auto-20261014-143346-live(132) 로 거슬러 올라감)
-    def prev_quotes():
-        ix=json.load(open(f'{AT}/runs/index.json')) if os.path.exists(f'{AT}/runs/index.json') else []
-        got={}
-        for r in ix:
-            rid=r['release_id']
-            if not str(r.get('result','')).startswith('PASS_PROMOTED') or not os.path.exists(f'{AT}/releases/{rid}/manifest.json'): continue
-            m=json.load(open(f'{AT}/releases/{rid}/manifest.json'))
-            for c,h in (m.get('raw_sha256') or {}).items():
-                if c in got or not h or 'zeroin.json' not in h: continue
-                p=f'{AT}/raw/{rid}/{c}/zeroin.json'
-                if os.path.exists(p) and sha(open(p,'rb').read())==h['zeroin.json']:
-                    q=json.load(open(p));got[c]={'source_release':rid,'as_of':str(q.get('as_of')),'sha256':h['zeroin.json'],'path':f'raw/{rid}/{c}/zeroin.json'}
-        return got
-    PQ={} if ZSIM=='block_no_prev' else prev_quotes()
-    BLANKED=None
-    if ZSIM=='block_no_prev':   # 모의: 사이트 기준본에서 필수 메타가 사라진 종목 1개 (작업 사본에서만, 승격 불가)
+    # ---------- 1b 메타: 저장된 승인 메타 결합(일일 재수집 없음) ----------
+    cj=lambda o:json.dumps(o,ensure_ascii=False,sort_keys=True,separators=(',',':'))
+    STORE=json.load(open(STORE_P)) if os.path.exists(STORE_P) else None
+    store_ok=bool(STORE) and sha(cj(STORE['items']).encode())==STORE.get('items_sha256')
+    INJ=None
+    if SCN=='meta_loss':
         for c in codes:
             p_=f'{WORK}/inputs/{c}.json';b_=json.load(open(p_));z_=b_.get('zeroin_metadata') or {}
-            if all(z_.get(k) for k in ('issuer','index_name','fee','strategy')): b_['zeroin_metadata']={};wjson(p_,b_);BLANKED=c;break
+            if all(z_.get(k) for k in ('issuer','index_name','fee','strategy')): b_['zeroin_metadata']={**z_,'issuer':'','fee':''};wjson(p_,b_);INJ=c;break
+    MS={};loss=[]
+    for c in codes:
+        wm=json.load(open(f'{WORK}/inputs/{c}.json')).get('zeroin_metadata') or {}
+        it=(STORE or {}).get('items',{}).get(c) if store_ok else None
+        if it:
+            am=it['approved']['zeroin_metadata'];lost=[k for k,v in am.items() if v not in (None,'',{},[]) and wm.get(k) in (None,'',{},[])]
+            chg=sha(cj(wm).encode())!=it['approved']['sha256']
+            st_='stored' if not chg else ('lost' if lost else 'changed')
+            fu=it.get('funetf') or {}
+            MS[c]={'state':st_,'lost_fields':lost,'approved_sha256':it['approved']['sha256'],'funetf':fu.get('status'),'funetf_retrieved':fu.get('retrieved_kst')}
+        else: MS[c]={'state':'site_baseline_only','lost_fields':[]}
+        if MS[c]['state'] in ('lost','changed'): loss.append(c)
+    fr=sorted({(v.get('funetf_retrieved') or '')[:10] for v in MS.values() if v.get('funetf')=='ok'})
+    MSUM={'metadata':'stored' if store_ok else 'site_baseline_only','metadata_refresh':'skipped','zeroin_daily':'removed','store_built_kst':(STORE or {}).get('built_kst'),
+          'store_integrity':'ok' if store_ok else ('missing' if not STORE else 'BAD'),'total':len(codes),'stored':sum(v['state']=='stored' for v in MS.values()),
+          'site_baseline_only':sum(v['state']=='site_baseline_only' for v in MS.values()),'lost_or_changed':len(loss),'loss_codes':loss[:20],
+          'funetf_meta_verified':sum(v.get('funetf')=='ok' for v in MS.values()),'funetf_meta_unconfirmed':sum(v.get('funetf') not in (None,'ok') for v in MS.values()),
+          'funetf_meta_as_of':(fr[0]+('~'+fr[-1] if len(fr)>1 else '')) if fr else None,'injected':INJ}
+    LOG['metadata']=MSUM;LOG['metadata_detail']=MS
+    step('metadata',**{k:v for k,v in MSUM.items() if k!='loss_codes'})
+    if A.inject_error=='collect_fail_all': fail=len(codes)
     # ---------- 3 CORE ----------
     RT=tempfile.mkdtemp(prefix='rt-');zipfile.ZipFile(f'{WORK}/runtime_source.zip').extractall(RT);sys.path[:0]=[RT,WORK];sys.dont_write_bytecode=True
     import period_bridge,presentation
@@ -168,28 +160,15 @@ try:
         for it in cat['items']:
             if it['ticker']==c: it['available_period']['end']=b['meta']['data_cutoff']
     step('core_build',built=len(built),engine_hash=cat['snapshot']['engine_hash'])
-    # ---------- 3b ZeroIn 판정: fresh / reused(직전 검증 quote) / site_baseline(사이트 기준본) / missing(차단) ----------
+    # 새 필수값 공란(CORE zeroin_failed 가 배포본 대비 새로 발생) = 회귀. 기존 102 공란은 baseline_gap 으로 집계만
     def zf(o): return any('zeroin_failed' in [x.get('code') for x in (v or {}).get('issues',[])] for v in (o.get('periods') or {}).values())
-    ZS={};blocked=[];gap=0
+    newblank=[];gap=0
     for c in codes:
-        v=LOG['collect'][c]
-        if v['status']!='ok' or c not in built: continue
         so=json.load(open(f'{SITE}/data/{c}.json')) if os.path.exists(f'{SITE}/data/{c}.json') else {}
-        base_gap=zf(so);now_fail=zf(json.loads(built[c]));new_missing=now_fail and not base_gap
-        if v.get('zeroin_as_of'): ZS[c]={'state':'fresh','as_of':v['zeroin_as_of'],'origin':v.get('zeroin_origin')}
-        elif c in PQ and not new_missing: ZS[c]={'state':'reused',**PQ[c]}
-        elif not new_missing: ZS[c]={'state':'site_baseline'}
-        else: ZS[c]={'state':'missing','reason':'CORE 필수 메타(issuer·benchmark·fee·strategy) 누락이 사이트 기준본 대비 새로 발생'};blocked.append(c)
-        ZS[c]['baseline_gap']=base_gap;gap+=base_gap;v['zeroin_state']=ZS[c]['state']
-    def cnt(k): return sum(1 for z in ZS.values() if z['state']==k)
-    ra=sorted({z['as_of'] for z in ZS.values() if z['state']=='reused'})
-    ZSUM={'total':len(codes),'fresh':cnt('fresh'),'reused':cnt('reused'),'reused_as_of':(ra[0]+'~'+ra[-1] if len(ra)>1 else (ra[0] if ra else None)),
-          'reused_from':sorted({z['source_release'] for z in ZS.values() if z['state']=='reused'}),'site_baseline':cnt('site_baseline'),'missing':cnt('missing'),
-          'baseline_gap_preexisting':gap,'blocked_codes':blocked[:20],'simulated':ZSIM!='none','scenario':ZSIM,'sim_blanked':BLANKED,
-          'fresh_origin':sorted({z.get('origin') for z in ZS.values() if z['state']=='fresh'}),
-          'note':'quote 미취득 시 CORE 입력은 사이트 기준본 그대로; 0·추정값 대체 없음. baseline_gap_preexisting=배포본에도 이미 zeroin_failed(기존 미제공)'}
-    LOG['zeroin']=ZSUM;LOG['zeroin_detail']=ZS
-    step('zeroin',**{k:ZSUM[k] for k in ('total','fresh','reused','reused_as_of','site_baseline','missing','baseline_gap_preexisting','scenario')})
+        g=zf(so);gap+=g
+        if zf(json.loads(built[c])) and not g: newblank.append(c)
+    MSUM['core_new_blank']=newblank[:20];MSUM['baseline_gap_preexisting']=gap
+    step('metadata_regression',new_blank=len(newblank),baseline_gap_preexisting=gap,lost_or_changed=MSUM['lost_or_changed'])
     if A.interrupt_after_build: step('interrupted');LOG['result']='INTERRUPTED';raise SystemExit(3)
     # ---------- 4 QA ----------
     def qa(n,okk,d=None): LOG['qa'].append({'check':n,'pass':bool(okk),'detail':d});print(('PASS ' if okk else 'FAIL ')+n,json.dumps(d,ensure_ascii=False)[:300] if d is not None else '',flush=True)
@@ -234,7 +213,8 @@ try:
     if A.inject_error=='qa_fail': qa('forced QA failure (inject)',False)
     passed=all(q['pass'] for q in LOG['qa']);step('qa',passed=passed,nq=len(LOG['qa']),fails=[q['check'] for q in LOG['qa'] if not q['pass']])
     if not passed: LOG['result']='FAIL_NOT_PROMOTED';raise SystemExit(2)
-    if ZSUM['missing']: LOG['result']='BLOCKED_ZEROIN_MISSING';step('blocked',reason='ZeroIn 신규·직전 검증본 없음 + CORE 필수값이 사이트 기준본 대비 누락',codes=blocked[:20]);raise SystemExit(4)
+    if MSUM['lost_or_changed'] or MSUM['core_new_blank'] or MSUM['store_integrity']=='BAD':
+        LOG['result']='BLOCKED_META_LOSS';step('blocked',reason='승인 메타 유실/변경 또는 새 필수값 공란',loss=MSUM['loss_codes'],new_blank=MSUM['core_new_blank']);raise SystemExit(4)
     # ---------- 5 promote (immutable dir then pointer) ----------
     R=f'{AT}/releases/{RID}';assert not os.path.exists(R);TMP=R+'.partial';os.makedirs(f'{TMP}/data')
     files={}
@@ -242,16 +222,15 @@ try:
     cs=json.dumps(cat,ensure_ascii=False,separators=(',',':'));open(f'{TMP}/data/catalog.json','w').write(cs);files['data/catalog.json']=sha(cs.encode())
     man={'release_id':RID,'created_kst':datetime.datetime.now(KST).isoformat(),'mode':A.mode,'asof':ASOF,'engine_hash':cat['snapshot']['engine_hash'],
          'cutoffs':{c:json.loads(built[c])['snapshot']['data_cutoff'] for c in codes},'collect_summary':st,'files':files,
-         'raw_sha256':{c:v.get('sha256') for c,v in LOG['collect'].items()},'zeroin':ZSUM,'zeroin_detail':ZS,'note':'raw sources are NOT published; hashes only'}
+         'raw_sha256':{c:v.get('sha256') for c,v in LOG['collect'].items()},'metadata':MSUM,'metadata_store_sha256':sha(open(STORE_P,'rb').read()) if os.path.exists(STORE_P) else None,'note':'raw sources are NOT published; hashes only'}
     wjson(f'{TMP}/manifest.json',man)
     # verify before exposing
     bad=[p for p,h in files.items() if sha(open(f'{TMP}/{p}','rb').read())!=h];assert not bad,bad
     os.rename(TMP,R)
     prevlatest=json.load(open(f'{AT}/latest.json')) if os.path.exists(f'{AT}/latest.json') else None
     lt={'release_id':RID,'path':f'releases/{RID}/','manifest_sha256':sha(open(f'{R}/manifest.json','rb').read()),'promoted_kst':datetime.datetime.now(KST).isoformat(),
-        'mode':A.mode,'previous':prevlatest and prevlatest['release_id'],'max_cutoff':max(man['cutoffs'].values()),'qa':'PASS',
-        'zeroin':{k:ZSUM[k] for k in ('total','fresh','reused','reused_as_of','site_baseline','missing','simulated','scenario')}}
-    RES_=('PASS_PROMOTED' if ZSUM['fresh']==ZSUM['total'] else 'PASS_PROMOTED_WITH_REUSE')+('_SIM' if ZSIM!='none' else '');lt['status']=RES_
+        'mode':A.mode,'previous':prevlatest and prevlatest['release_id'],'max_cutoff':max(man['cutoffs'].values()),'qa':'PASS','metadata':{k:v for k,v in MSUM.items() if k not in('loss_codes','core_new_blank')}}
+    RES_='PASS_PROMOTED' if MSUM['metadata']=='stored' and not MSUM['site_baseline_only'] else 'PASS_PROMOTED_WITH_REUSE';lt['status']=RES_
     wjson(f'{AT}/latest.json.tmp',lt);os.replace(f'{AT}/latest.json.tmp',f'{AT}/latest.json')
     LOG['result']=RES_;step('promoted',release=RID,result=RES_)
 except SystemExit as e:
@@ -260,20 +239,20 @@ except Exception as e:
     LOG['result']='ERROR_NOT_PROMOTED';LOG['error']=traceback.format_exc()[-1500:];print(LOG['error'])
 finally:
     os.makedirs(f'{AT}/runs',exist_ok=True)
-    pub={k:v for k,v in LOG.items() if k!='collect'};pub['collect']={c:{k:v[k] for k in v if k in('status','reason','state','nav_added','div_added','new_cutoff','prev_cutoff','zeroin','zeroin_state','zeroin_origin','zeroin_as_of','overlap_mismatch','div_changed','skipped')} for c,v in LOG['collect'].items()}
+    pub={k:v for k,v in LOG.items() if k!='collect'};pub['collect']={c:{k:v[k] for k in v if k in('status','reason','state','nav_added','div_added','new_cutoff','prev_cutoff','zeroin','overlap_mismatch','div_changed','skipped')} for c,v in LOG['collect'].items()}
     wjson(f'{AT}/runs/{RID}.json',pub)
     ix=json.load(open(f'{AT}/runs/index.json')) if os.path.exists(f'{AT}/runs/index.json') else []
     ix.insert(0,{'release_id':RID,'result':LOG['result'],'mode':A.mode,'inject':A.inject_error,'started_kst':LOG['started_kst'],
       'collect':{k:sum(1 for v in LOG['collect'].values() if v.get('state',v['status'])==k) for k in ('updated','no_change_normal','fail')},
-      'qa_fail':[q['check'] for q in LOG['qa'] if not q['pass']],'zeroin':{k:v for k,v in (LOG.get('zeroin') or {}).items() if k not in('blocked_codes','note')}})
+      'qa_fail':[q['check'] for q in LOG['qa'] if not q['pass']],'metadata':{k:v for k,v in (LOG.get('metadata') or {}).items() if k not in('loss_codes','core_new_blank')}})
     wjson(f'{AT}/runs/index.json',ix[:200]);json.dump(LOG,open(f'{RAW}/run_log.json','w'),ensure_ascii=False,indent=1)
     if A.publish_raw and LOG['collect']:
         dst=f'{AT}/raw/{RID}';assert not os.path.exists(dst);shutil.copytree(RAW,dst)
-    Z_=LOG.get('zeroin') or {}
-    zl=(f"zeroin={Z_.get('fresh')}/{Z_.get('total')} reused={Z_.get('reused')}(기준일 {Z_.get('reused_as_of') or '-'}) site_baseline={Z_.get('site_baseline')} missing={Z_.get('missing')}"
-        +(f" [ZeroIn 모의:{ZSIM}]" if ZSIM!='none' else (' [ZeroIn 재생(replay)]' if A.mode=='replay' else ' [ZeroIn 실네트워크]'))) if Z_ else 'zeroin=NOT_EVALUATED'
-    print('RESULT',LOG['result'],RID,zl)
+    M_=LOG.get('metadata') or {}
+    ml=(f"metadata={M_.get('metadata')} metadata_refresh={M_.get('metadata_refresh')} zeroin_daily={M_.get('zeroin_daily')} stored={M_.get('stored')}/{M_.get('total')} "
+        f"site_baseline_only={M_.get('site_baseline_only')} lost={M_.get('lost_or_changed')} new_blank={len(M_.get('core_new_blank') or [])} funetf_meta={M_.get('funetf_meta_verified')}/{M_.get('total')}(기준일 {M_.get('funetf_meta_as_of') or '-'})") if M_ else 'metadata=NOT_EVALUATED'
+    print('RESULT',LOG['result'],RID,ml+(f' [시험주입:{SCN}]' if SCN!='none' else ''))
     if os.environ.get('GITHUB_STEP_SUMMARY'):
-        warn='' if LOG['result']=='PASS_PROMOTED' else ('> ⚠️ **정상 완료 아님** — ' + {'PASS_PROMOTED_WITH_REUSE':'ZeroIn 일부/전부 미수집, 직전 검증본·사이트 기준본 재사용','BLOCKED_ZEROIN_MISSING':'ZeroIn 필수값 누락으로 승격 차단'}.get(LOG['result'].replace('_SIM',''),LOG['result']))+'\n'
-        open(os.environ['GITHUB_STEP_SUMMARY'],'a').write(f"## oneclick: {LOG['result']}\n{warn}\n- release: `{RID}`\n- ZeroIn 신규 **{Z_.get('fresh')}/{Z_.get('total')}**, 재사용 {Z_.get('reused')} (기준일 {Z_.get('reused_as_of') or '-'}, 출처 {', '.join(Z_.get('reused_from') or []) or '-'}), 사이트 기준본 {Z_.get('site_baseline')}, 누락 {Z_.get('missing')}\n- ZeroIn 출처: {'모의(test_control: '+ZSIM+')' if ZSIM!='none' else ('재생(replay)' if A.mode=='replay' else '실네트워크')}\n\n")
+        r=LOG['result'];head={'PASS_PROMOTED':'✅ 정상','PASS_PROMOTED_WITH_REUSE':'⚠️ 승격됨(경고: 일부 종목 메타 저장소 미포함 → 사이트 기준본 재사용)'}.get(r,'❌ 승격 차단/실패')
+        open(os.environ['GITHUB_STEP_SUMMARY'],'a').write(f"## oneclick: {r} — {head}\n\n- release: `{RID}`\n- 메타: **metadata={M_.get('metadata')}**, metadata_refresh={M_.get('metadata_refresh')} (일일 재수집 안 함이 정상), ZeroIn 일일 호출={M_.get('zeroin_daily')}\n- 저장 승인 메타 유지 {M_.get('stored')}/{M_.get('total')} (저장소 {M_.get('store_built_kst')}), 사이트 기준본 재사용 {M_.get('site_baseline_only')}, 유실/변경 {M_.get('lost_or_changed')}, 새 공란 {len(M_.get('core_new_blank') or [])}, 기존 공란(유지) {M_.get('baseline_gap_preexisting')}\n- FunETF 메타 검증 {M_.get('funetf_meta_verified')}/{M_.get('total')} (기준일 {M_.get('funetf_meta_as_of') or '-'}), 미확인 {M_.get('funetf_meta_unconfirmed')}\n\n")
     sys.exit(0 if LOG['result']=='PASS_PROMOTED' else 1)
