@@ -1,0 +1,8 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="color-scheme" content="dark"><meta name="viewport" content="width=device-width,initial-scale=1"><title>색 확인 (UAT)</title>
+<style>:root{color-scheme:dark}body{margin:0;padding:16px;background:#081521;color:#EFF6F8;font-family:sans-serif}.g{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.s{border-radius:10px;padding:14px 10px;color:#081521;font-weight:800}code{font-size:12px}#env{font-size:12px;color:#AEC0CB;word-break:break-all}</style></head><body>
+<h1 style="font-size:18px">승인 8색 확인 화면 (UAT)</h1><p style="font-size:13px;color:#AEC0CB">아래 칸이 표기 HEX와 같은 밝은 색으로 보여야 정상입니다. 어둡거나 갈색으로 보이면 브라우저 자동 어둡게(Force Dark)가 켜진 상태입니다.</p>
+<div class="g" id="g"></div><svg viewBox="0 0 120 120" width="180" height="180" style="display:block;margin:16px auto"><g transform="rotate(-90 60 60)" id="d"></g></svg><p id="env"></p>
+<script>const P=[['노랑','#FFC83D'],['파랑','#56B9FF'],['민트','#46E5AC'],['핑크','#FF83AC'],['라벤더','#B59AFF'],['오렌지','#FFAA66'],['아쿠아','#45DCE5'],['연파랑','#83A5FF'],['기타','#6B7280']];
+document.getElementById('g').innerHTML=P.map(([n,h])=>'<div class="s" style="background:'+h+'">'+n+'<br><code>'+h+'</code></div>').join('');
+const C=2*Math.PI*44;let off=0;document.getElementById('d').innerHTML=P.slice(0,8).map(([n,h],i)=>{const l=C/8;const r='<circle cx="60" cy="60" r="44" fill="none" stroke="'+h+'" stroke-width="18" stroke-dasharray="'+l+' '+(C-l)+'" stroke-dashoffset="'+(-off)+'"/>';off+=l;return r}).join('');
+document.getElementById('env').textContent='UA: '+navigator.userAgent+' | prefers-color-scheme: dark='+matchMedia('(prefers-color-scheme: dark)').matches+' | forced-colors='+matchMedia('(forced-colors: active)').matches;</script></body></html>
