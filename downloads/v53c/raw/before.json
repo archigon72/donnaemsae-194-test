@@ -1,0 +1,579 @@
+{
+ "meas": {
+  "360_instrument": {
+   "wrapInnerW": 318,
+   "fill": 66.2,
+   "vw": 360,
+   "wrapW": 328,
+   "wrapL": 16,
+   "cardW": 328,
+   "cardL": 16,
+   "cardInnerW": 294,
+   "btnSpan": 210.66,
+   "docOverflow": false,
+   "btn": [
+    {
+     "t": "종목별",
+     "pressed": "true",
+     "btnCx": 72.66,
+     "textCx": 72.66,
+     "dx": -0.01,
+     "w": 103.33,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgb(19, 53, 44)",
+      "bc": "rgb(31, 184, 113)",
+      "color": "rgb(238, 244, 245)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    },
+    {
+     "t": "계좌별",
+     "pressed": "false",
+     "btnCx": 179.99,
+     "textCx": 179.98,
+     "dx": -0.01,
+     "w": 103.33,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "bc": "rgba(0, 0, 0, 0)",
+      "color": "rgb(157, 176, 186)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    }
+   ]
+  },
+  "360_account": {
+   "wrapInnerW": 318,
+   "fill": 66.2,
+   "vw": 360,
+   "wrapW": 328,
+   "wrapL": 16,
+   "cardW": 328,
+   "cardL": 16,
+   "cardInnerW": 294,
+   "btnSpan": 210.66,
+   "docOverflow": false,
+   "btn": [
+    {
+     "t": "종목별",
+     "pressed": "false",
+     "btnCx": 72.66,
+     "textCx": 72.66,
+     "dx": -0.01,
+     "w": 103.33,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "bc": "rgba(0, 0, 0, 0)",
+      "color": "rgb(157, 176, 186)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    },
+    {
+     "t": "계좌별",
+     "pressed": "true",
+     "btnCx": 179.99,
+     "textCx": 179.98,
+     "dx": -0.01,
+     "w": 103.33,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgb(19, 53, 44)",
+      "bc": "rgb(31, 184, 113)",
+      "color": "rgb(238, 244, 245)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    }
+   ]
+  },
+  "390_instrument": {
+   "wrapInnerW": 340,
+   "fill": 66.3,
+   "vw": 390,
+   "wrapW": 350,
+   "wrapL": 20,
+   "cardW": 350,
+   "cardL": 20,
+   "cardInnerW": 316,
+   "btnSpan": 225.33,
+   "docOverflow": false,
+   "btn": [
+    {
+     "t": "종목별",
+     "pressed": "true",
+     "btnCx": 80.33,
+     "textCx": 80.33,
+     "dx": 0,
+     "w": 110.66,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgb(19, 53, 44)",
+      "bc": "rgb(31, 184, 113)",
+      "color": "rgb(238, 244, 245)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    },
+    {
+     "t": "계좌별",
+     "pressed": "false",
+     "btnCx": 194.99,
+     "textCx": 194.98,
+     "dx": -0.01,
+     "w": 110.67,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "bc": "rgba(0, 0, 0, 0)",
+      "color": "rgb(157, 176, 186)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    }
+   ]
+  },
+  "390_account": {
+   "wrapInnerW": 340,
+   "fill": 66.3,
+   "vw": 390,
+   "wrapW": 350,
+   "wrapL": 20,
+   "cardW": 350,
+   "cardL": 20,
+   "cardInnerW": 316,
+   "btnSpan": 225.33,
+   "docOverflow": false,
+   "btn": [
+    {
+     "t": "종목별",
+     "pressed": "false",
+     "btnCx": 80.33,
+     "textCx": 80.33,
+     "dx": 0,
+     "w": 110.66,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "bc": "rgba(0, 0, 0, 0)",
+      "color": "rgb(157, 176, 186)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    },
+    {
+     "t": "계좌별",
+     "pressed": "true",
+     "btnCx": 194.99,
+     "textCx": 194.98,
+     "dx": -0.01,
+     "w": 110.67,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgb(19, 53, 44)",
+      "bc": "rgb(31, 184, 113)",
+      "color": "rgb(238, 244, 245)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    }
+   ]
+  },
+  "412_instrument": {
+   "wrapInnerW": 362,
+   "fill": 66.3,
+   "vw": 412,
+   "wrapW": 372,
+   "wrapL": 20,
+   "cardW": 372,
+   "cardL": 20,
+   "cardInnerW": 338,
+   "btnSpan": 240,
+   "docOverflow": false,
+   "btn": [
+    {
+     "t": "종목별",
+     "pressed": "true",
+     "btnCx": 84,
+     "textCx": 84,
+     "dx": 0,
+     "w": 118,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgb(19, 53, 44)",
+      "bc": "rgb(31, 184, 113)",
+      "color": "rgb(238, 244, 245)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    },
+    {
+     "t": "계좌별",
+     "pressed": "false",
+     "btnCx": 206,
+     "textCx": 206,
+     "dx": 0,
+     "w": 118,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "bc": "rgba(0, 0, 0, 0)",
+      "color": "rgb(157, 176, 186)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    }
+   ]
+  },
+  "412_account": {
+   "wrapInnerW": 362,
+   "fill": 66.3,
+   "vw": 412,
+   "wrapW": 372,
+   "wrapL": 20,
+   "cardW": 372,
+   "cardL": 20,
+   "cardInnerW": 338,
+   "btnSpan": 240,
+   "docOverflow": false,
+   "btn": [
+    {
+     "t": "종목별",
+     "pressed": "false",
+     "btnCx": 84,
+     "textCx": 84,
+     "dx": 0,
+     "w": 118,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "bc": "rgba(0, 0, 0, 0)",
+      "color": "rgb(157, 176, 186)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    },
+    {
+     "t": "계좌별",
+     "pressed": "true",
+     "btnCx": 206,
+     "textCx": 206,
+     "dx": 0,
+     "w": 118,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgb(19, 53, 44)",
+      "bc": "rgb(31, 184, 113)",
+      "color": "rgb(238, 244, 245)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    }
+   ]
+  },
+  "430_instrument": {
+   "wrapInnerW": 380,
+   "fill": 66.3,
+   "vw": 430,
+   "wrapW": 390,
+   "wrapL": 20,
+   "cardW": 390,
+   "cardL": 20,
+   "cardInnerW": 356,
+   "btnSpan": 252,
+   "docOverflow": false,
+   "btn": [
+    {
+     "t": "종목별",
+     "pressed": "true",
+     "btnCx": 87,
+     "textCx": 87,
+     "dx": 0,
+     "w": 124,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgb(19, 53, 44)",
+      "bc": "rgb(31, 184, 113)",
+      "color": "rgb(238, 244, 245)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    },
+    {
+     "t": "계좌별",
+     "pressed": "false",
+     "btnCx": 215,
+     "textCx": 215,
+     "dx": 0,
+     "w": 124,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "bc": "rgba(0, 0, 0, 0)",
+      "color": "rgb(157, 176, 186)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    }
+   ]
+  },
+  "430_account": {
+   "wrapInnerW": 380,
+   "fill": 66.3,
+   "vw": 430,
+   "wrapW": 390,
+   "wrapL": 20,
+   "cardW": 390,
+   "cardL": 20,
+   "cardInnerW": 356,
+   "btnSpan": 252,
+   "docOverflow": false,
+   "btn": [
+    {
+     "t": "종목별",
+     "pressed": "false",
+     "btnCx": 87,
+     "textCx": 87,
+     "dx": 0,
+     "w": 124,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgba(0, 0, 0, 0)",
+      "bc": "rgba(0, 0, 0, 0)",
+      "color": "rgb(157, 176, 186)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    },
+    {
+     "t": "계좌별",
+     "pressed": "true",
+     "btnCx": 215,
+     "textCx": 215,
+     "dx": 0,
+     "w": 124,
+     "h": 44,
+     "textH": 20,
+     "lines": 1,
+     "overflow": false,
+     "style": {
+      "bg": "rgb(19, 53, 44)",
+      "bc": "rgb(31, 184, 113)",
+      "color": "rgb(238, 244, 245)",
+      "fw": "600",
+      "fs": "15px",
+      "radius": "10px",
+      "minh": "44px"
+     }
+    }
+   ]
+  }
+ },
+ "other": {
+  "management.html?mode=composition": [
+   [
+    "mu-tabs mu-basis|직접투자 원가현재 평가액",
+    "grid;168px 168px;4px;4px;rgba(15, 32, 48, 0.9);1px solid rgb(44, 74, 90);14px;350px;16px;400;rgb(243, 247, 248);start;normal;normal;auto;normal;25.6px"
+   ],
+   [
+    "|직접투자 원가",
+    "block;none;normal;1px 6px;rgb(19, 53, 44);1px solid rgb(31, 184, 113);10px;168px;14px;600;rgb(238, 244, 245);center;normal;normal;44px;nowrap;22.4px"
+   ],
+   [
+    "|현재 평가액",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;168px;14px;600;rgb(157, 176, 186);center;normal;normal;44px;nowrap;22.4px"
+   ]
+  ],
+  "management.html?mode=ledger": [
+   [
+    "mu-tabs|전체계좌별종목별",
+    "grid;110.656px 110.672px 110.656px;4px;4px;rgba(15, 32, 48, 0.9);1px solid rgb(44, 74, 90);14px;350px;16px;400;rgb(243, 247, 248);start;normal;normal;auto;normal;25.6px"
+   ],
+   [
+    "|전체",
+    "block;none;normal;1px 6px;rgb(19, 53, 44);1px solid rgb(31, 184, 113);10px;110.656px;15px;600;rgb(238, 244, 245);center;normal;normal;44px;normal;24px"
+   ],
+   [
+    "|계좌별",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;110.672px;15px;600;rgb(157, 176, 186);center;normal;normal;44px;normal;24px"
+   ],
+   [
+    "|종목별",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;110.656px;15px;600;rgb(157, 176, 186);center;normal;normal;44px;normal;24px"
+   ]
+  ],
+  "management.html?mode=dividends": [
+   [
+    "mu-tabs|전체계좌별종목별",
+    "grid;110.656px 110.672px 110.656px;4px;4px;rgba(15, 32, 48, 0.9);1px solid rgb(44, 74, 90);14px;350px;16px;400;rgb(243, 247, 248);start;normal;normal;auto;normal;25.6px"
+   ],
+   [
+    "|전체",
+    "block;none;normal;1px 6px;rgb(19, 53, 44);1px solid rgb(31, 184, 113);10px;110.656px;15px;600;rgb(238, 244, 245);center;normal;normal;44px;normal;24px"
+   ],
+   [
+    "|계좌별",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;110.672px;15px;600;rgb(157, 176, 186);center;normal;normal;44px;normal;24px"
+   ],
+   [
+    "|종목별",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;110.656px;15px;600;rgb(157, 176, 186);center;normal;normal;44px;normal;24px"
+   ],
+   [
+    "mu-tabs mu-basis mu-taxbasis|세전세후",
+    "grid;168px 168px;4px;4px;rgba(15, 32, 48, 0.9);1px solid rgb(44, 74, 90);14px;350px;16px;400;rgb(243, 247, 248);start;normal;normal;auto;normal;25.6px"
+   ],
+   [
+    "|세전",
+    "block;none;normal;1px 6px;rgb(19, 53, 44);1px solid rgb(31, 184, 113);10px;168px;14px;600;rgb(238, 244, 245);center;normal;normal;44px;nowrap;22.4px"
+   ],
+   [
+    "|세후",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;168px;14px;600;rgb(157, 176, 186);center;normal;normal;44px;nowrap;22.4px"
+   ]
+  ],
+  "management.html?mode=performance": [
+   [
+    "mu-tabs|전체계좌별종목별",
+    "grid;110.656px 110.672px 110.656px;4px;4px;rgba(15, 32, 48, 0.9);1px solid rgb(44, 74, 90);14px;350px;16px;400;rgb(243, 247, 248);start;normal;normal;auto;normal;25.6px"
+   ],
+   [
+    "|전체",
+    "block;none;normal;1px 6px;rgb(19, 53, 44);1px solid rgb(31, 184, 113);10px;110.656px;15px;600;rgb(238, 244, 245);center;normal;normal;44px;normal;24px"
+   ],
+   [
+    "|계좌별",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;110.672px;15px;600;rgb(157, 176, 186);center;normal;normal;44px;normal;24px"
+   ],
+   [
+    "|종목별",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;110.656px;15px;600;rgb(157, 176, 186);center;normal;normal;44px;normal;24px"
+   ],
+   [
+    "mu-tabs mu-basis mu-taxbasis|세전세후",
+    "grid;168px 168px;4px;4px;rgba(15, 32, 48, 0.9);1px solid rgb(44, 74, 90);14px;350px;16px;400;rgb(243, 247, 248);start;normal;normal;auto;normal;25.6px"
+   ],
+   [
+    "|세전",
+    "block;none;normal;1px 6px;rgb(19, 53, 44);1px solid rgb(31, 184, 113);10px;168px;14px;600;rgb(238, 244, 245);center;normal;normal;44px;nowrap;22.4px"
+   ],
+   [
+    "|세후",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;168px;14px;600;rgb(157, 176, 186);center;normal;normal;44px;nowrap;22.4px"
+   ]
+  ],
+  "management.html?mode=valuation": [
+   [
+    "mu-tabs|전체계좌별종목별",
+    "grid;110.656px 110.672px 110.656px;4px;4px;rgba(15, 32, 48, 0.9);1px solid rgb(44, 74, 90);14px;350px;16px;400;rgb(243, 247, 248);start;normal;normal;auto;normal;25.6px"
+   ],
+   [
+    "|전체",
+    "block;none;normal;1px 6px;rgb(19, 53, 44);1px solid rgb(31, 184, 113);10px;110.656px;15px;600;rgb(238, 244, 245);center;normal;normal;44px;normal;24px"
+   ],
+   [
+    "|계좌별",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;110.672px;15px;600;rgb(157, 176, 186);center;normal;normal;44px;normal;24px"
+   ],
+   [
+    "|종목별",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;110.656px;15px;600;rgb(157, 176, 186);center;normal;normal;44px;normal;24px"
+   ]
+  ],
+  "asset-home.html": [
+   [
+    "mu-tabs mu-basis mu-taxbasis|세전세후",
+    "grid;151px 151px;4px;4px;rgba(15, 32, 48, 0.9);1px solid rgb(44, 74, 90);14px;316px;16px;400;rgb(238, 244, 245);start;normal;normal;0px;normal;25.6px"
+   ],
+   [
+    "|세전",
+    "block;none;normal;1px 6px;rgb(19, 53, 44);1px solid rgb(31, 184, 113);10px;151px;14px;600;rgb(238, 244, 245);center;normal;normal;44px;nowrap;22.4px"
+   ],
+   [
+    "|세후",
+    "block;none;normal;1px 6px;rgba(0, 0, 0, 0);1px solid rgba(0, 0, 0, 0);10px;151px;14px;600;rgb(157, 176, 186);center;normal;normal;44px;nowrap;22.4px"
+   ]
+  ]
+ },
+ "errors": []
+}
