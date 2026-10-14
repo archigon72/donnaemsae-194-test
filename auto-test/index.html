@@ -1,9 +1,9 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>원클릭 격리 시험 상태</title><meta name="robots" content="noindex">
-<style>body{font-family:sans-serif;margin:12px;max-width:640px}td,th{border-bottom:1px solid #ddd;padding:4px;font-size:13px;text-align:left}table{border-collapse:collapse;width:100%}.ok{color:#0a7}.ng{color:#c22}code{word-break:break-all}</style></head>
+<style>body{font-family:sans-serif;margin:12px;max-width:640px}td,th{border-bottom:1px solid #ddd;padding:4px;font-size:13px;text-align:left}table{border-collapse:collapse;width:100%}.ok{color:#0a7}.warn{color:#b60}.badge{display:inline-block;padding:1px 6px;border-radius:4px;font-size:12px;color:#fff}.b-ok{background:#0a7}.b-warn{background:#c80}.b-ng{background:#c22}.ng{color:#c22}code{word-break:break-all}</style></head>
 <body><h2>원클릭 격리 시험 (194-test/auto-test)</h2>
-<p>정식 사이트 데이터가 아닌 <b>격리 시험본</b>입니다. 실행 버튼(GitHub Actions <i>oneclick-autotest</i>)은 토큰 workflow 권한 승인 후 등록됩니다. 현재 이력은 GrokBot 상자(box) 실행분입니다.</p>
-<div id="latest">불러오는 중…</div><h3>실행 이력</h3><table id="runs"><tr><th>release_id</th><th>결과</th><th>수집(갱신/무변화/실패)</th></tr></table>
+<p>정식 사이트 데이터가 아닌 <b>격리 시험본</b>입니다. 실행: GitHub Actions <i>oneclick-autotest</i> → Run workflow. ZeroIn 미수집 종목은 직전 검증본/사이트 기준본을 재사용하며 이 경우 <b>정상 완료로 표시하지 않습니다</b>.</p>
+<div id="latest">불러오는 중…</div><h3>실행 이력</h3><table id="runs"><tr><th>release_id</th><th>결과</th><th>수집(갱신/무변화/실패)</th><th>ZeroIn 신규/재사용(기준일)/기준본/누락</th></tr></table>
 <script>
 const nc={cache:'no-store'};
 async function sha(b){const h=await crypto.subtle.digest('SHA-256',b);return [...new Uint8Array(h)].map(x=>x.toString(16).padStart(2,'0')).join('')}
@@ -12,12 +12,14 @@ async function sha(b){const h=await crypto.subtle.digest('SHA-256',b);return [..
   const mb=await (await fetch(L.path+'manifest.json',nc)).arrayBuffer();const msha=await sha(mb);const M=JSON.parse(new TextDecoder().decode(mb));
   const cb=await (await fetch(L.path+'data/catalog.json',nc)).arrayBuffer();const csha=await sha(cb);
   const same=M.release_id===L.release_id&&msha===L.manifest_sha256&&csha===M.files['data/catalog.json'];
-  const cut=Object.values(M.cutoffs);
-  document.getElementById('latest').innerHTML=`<p>최신 격리본: <code>${L.release_id}</code> (${L.mode}) 승격 ${L.promoted_kst}<br>최대 기준일 ${L.max_cutoff} · 종목 ${cut.length} · QA ${L.qa}<br>
+  const cut=Object.values(M.cutoffs);const Z=L.zeroin||M.zeroin;const st=L.status||'PASS_PROMOTED(구버전·ZeroIn 집계 없음)';
+  const cls=st==='PASS_PROMOTED'?'b-ok':(st.startsWith('PASS_PROMOTED')?'b-warn':'b-ng');
+  const zt=Z?`ZeroIn 신규 <b>${Z.fresh}/${Z.total}</b> · 재사용 ${Z.reused} (기준일 ${Z.reused_as_of||'-'}) · 사이트 기준본 ${Z.site_baseline} · 누락 ${Z.missing}${Z.simulated?' · <b class="warn">모의('+Z.scenario+')</b>':' · 실네트워크'}`:'<b class="warn">ZeroIn 집계 없음(미검증)</b>';
+  document.getElementById('latest').innerHTML=`<p><span class="badge ${cls}">${st}</span>${st==='PASS_PROMOTED'?'':' <b class="warn">⚠ 정상 완료 아님</b>'}<br>최신 격리본: <code>${L.release_id}</code> (${L.mode}) 승격 ${L.promoted_kst}<br>최대 기준일 ${L.max_cutoff} · 종목 ${cut.length} · QA ${L.qa}<br>${zt}<br>
   무결성(같은 release_id·manifest·catalog 해시): <b class="${same?'ok':'ng'}">${same?'일치':'불일치'}</b><br>이전본: ${L.previous||'-'}</p>`;
  }catch(e){document.getElementById('latest').textContent='최신 격리본 없음 또는 읽기 실패: '+e}
  try{const R=await (await fetch('runs/index.json?t='+Date.now(),nc)).json();const t=document.getElementById('runs');
-  for(const r of R.slice(0,30)){const c=r.collect||{};t.insertAdjacentHTML('beforeend',`<tr><td><code>${r.release_id}</code></td><td class="${r.result==='PASS_PROMOTED'?'ok':'ng'}">${r.result}</td><td>${c.updated||0}/${c.no_change_normal||0}/${c.fail||0}</td></tr>`)}
+  for(const r of R.slice(0,30)){const c=r.collect||{};t.insertAdjacentHTML('beforeend',`<tr><td><code>${r.release_id}</code></td><td class="${r.result==='PASS_PROMOTED'?'ok':(String(r.result).startsWith('PASS_PROMOTED')?'warn':'ng')}">${r.result}</td><td>${c.updated||0}/${c.no_change_normal||0}/${c.fail||0}</td><td>${r.zeroin?`${r.zeroin.fresh}/${r.zeroin.total} · ${r.zeroin.reused}(${r.zeroin.reused_as_of||'-'}) · ${r.zeroin.site_baseline} · ${r.zeroin.missing}${r.zeroin.simulated?' [모의]':''}`:'-'}</td></tr>`)}
  }catch(e){}
 })();
 </script></body></html>
