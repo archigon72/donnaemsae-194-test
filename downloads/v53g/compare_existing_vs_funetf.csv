@@ -1,0 +1,1553 @@
+code,name,field,existing_approved,funetf,funetf_status,compare
+0000D0,TIGER 엔비디아미국채커버드콜밸런스(합성),issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+0000D0,TIGER 엔비디아미국채커버드콜밸런스(합성),issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+0000D0,TIGER 엔비디아미국채커버드콜밸런스(합성),fee(total),0.3900,0.3900,verified,same
+0000D0,TIGER 엔비디아미국채커버드콜밸런스(합성),synthetic_total_fee,,0.4700,verified,existing_blank(유지·미충전)
+0000D0,TIGER 엔비디아미국채커버드콜밸런스(합성),effective_burden,,0.4737,verified,existing_blank(유지·미충전)
+0000D0,TIGER 엔비디아미국채커버드콜밸런스(합성),index,KEDI 엔비디아미국채30년타겟커버드콜혼합지수(TR),KEDI 엔비디아미국채30년타겟커버드콜혼합지수(TR),verified,same
+0000D0,TIGER 엔비디아미국채커버드콜밸런스(합성),risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+0000D0,TIGER 엔비디아미국채커버드콜밸런스(합성),listing_date,2024.12.17,2024-12-17,verified,same
+0004G0,,issuer,,하나자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0224X0)",existing_blank(유지·미충전)
+0004G0,,issuer_short,,하나운용,verified,existing_blank(유지·미충전)
+0004G0,,fee(total),,0.1000,verified,existing_blank(유지·미충전)
+0004G0,,synthetic_total_fee,,0.2600,verified,existing_blank(유지·미충전)
+0004G0,,effective_burden,,0.4228,verified,existing_blank(유지·미충전)
+0004G0,,index,,Solactive U.S. Dividend 30 Index PR,verified,existing_blank(유지·미충전)
+0004G0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0004G0,,listing_date,,2025-01-21,verified,existing_blank(유지·미충전)
+0005A0,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+0005A0,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+0005A0,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+0005A0,,synthetic_total_fee,,0.3600,verified,existing_blank(유지·미충전)
+0005A0,,effective_burden,,0.5593,verified,existing_blank(유지·미충전)
+0005A0,,index,,S&P 500 Covered Call 1% OTM Daily Index (Total Return),verified,existing_blank(유지·미충전)
+0005A0,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+0005A0,,listing_date,,2025-01-07,verified,existing_blank(유지·미충전)
+0008S0,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+0008S0,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+0008S0,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+0008S0,,synthetic_total_fee,,0.3200,verified,existing_blank(유지·미충전)
+0008S0,,effective_burden,,0.4916,verified,existing_blank(유지·미충전)
+0008S0,,index,,Dow Jones U.S. Dividend 100 10% Daily Premium Covered Call 지수,verified,existing_blank(유지·미충전)
+0008S0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0008S0,,listing_date,,2025-01-17,verified,existing_blank(유지·미충전)
+0013P0,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+0013P0,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+0013P0,,fee(total),,0.2000,verified,existing_blank(유지·미충전)
+0013P0,,synthetic_total_fee,,0.3300,verified,existing_blank(유지·미충전)
+0013P0,,effective_burden,,0.4909,verified,existing_blank(유지·미충전)
+0013P0,,index,,KEDI 미국 은행 TOP10 지수,verified,existing_blank(유지·미충전)
+0013P0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0013P0,,listing_date,,2025-02-18,verified,existing_blank(유지·미충전)
+0013R0,RISE 테슬라미국채타겟커버드콜혼합(합성),issuer,KB자산운용,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",same
+0013R0,RISE 테슬라미국채타겟커버드콜혼합(합성),issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+0013R0,RISE 테슬라미국채타겟커버드콜혼합(합성),fee(total),0.2500,0.2500,verified,same
+0013R0,RISE 테슬라미국채타겟커버드콜혼합(합성),synthetic_total_fee,,0.3400,verified,existing_blank(유지·미충전)
+0013R0,RISE 테슬라미국채타겟커버드콜혼합(합성),effective_burden,,0.3491,verified,existing_blank(유지·미충전)
+0013R0,RISE 테슬라미국채타겟커버드콜혼합(합성),index,KEDI 테슬라미국30년국채15%타겟프리미엄 혼합지수(TR),KEDI 테슬라미국30년국채15%타겟프리미엄 혼합지수(TR),verified,same
+0013R0,RISE 테슬라미국채타겟커버드콜혼합(합성),risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0013R0,RISE 테슬라미국채타겟커버드콜혼합(합성),listing_date,2025.02.18,2025-02-18,verified,same
+0015E0,KIWOOM 엔비디아미국30년국채혼합액티브(H),issuer,키움투자자산운용,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",same
+0015E0,KIWOOM 엔비디아미국30년국채혼합액티브(H),issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0015E0,KIWOOM 엔비디아미국30년국채혼합액티브(H),fee(total),0.1900,0.1900,verified,same
+0015E0,KIWOOM 엔비디아미국30년국채혼합액티브(H),synthetic_total_fee,,0.4100,verified,existing_blank(유지·미충전)
+0015E0,KIWOOM 엔비디아미국30년국채혼합액티브(H),effective_burden,,0.5062,verified,existing_blank(유지·미충전)
+0015E0,KIWOOM 엔비디아미국30년국채혼합액티브(H),index,Bloomberg Blended NVIDIA and US Long Treasury Bond Index,Bloomberg Blended NVIDIA and US Long Treasury Bond Index,verified,same
+0015E0,KIWOOM 엔비디아미국30년국채혼합액티브(H),risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0015E0,KIWOOM 엔비디아미국30년국채혼합액티브(H),listing_date,2025.02.11,2025-02-11,verified,same
+0015F0,KIWOOM 팔란티어미국30년국채혼합액티브(H),issuer,키움투자자산운용,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",same
+0015F0,KIWOOM 팔란티어미국30년국채혼합액티브(H),issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0015F0,KIWOOM 팔란티어미국30년국채혼합액티브(H),fee(total),0.1900,0.1900,verified,same
+0015F0,KIWOOM 팔란티어미국30년국채혼합액티브(H),synthetic_total_fee,,0.3700,verified,existing_blank(유지·미충전)
+0015F0,KIWOOM 팔란티어미국30년국채혼합액티브(H),effective_burden,,0.4566,verified,existing_blank(유지·미충전)
+0015F0,KIWOOM 팔란티어미국30년국채혼합액티브(H),index,Bloomberg Blended PALANTIR and US Long Treasury Bond Index,Bloomberg Blended PALANTIR and US Long Treasury Bond Index,verified,same
+0015F0,KIWOOM 팔란티어미국30년국채혼합액티브(H),risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0015F0,KIWOOM 팔란티어미국30년국채혼합액티브(H),listing_date,2025.02.11,2025-02-11,verified,same
+0018C0,,issuer,,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",existing_blank(유지·미충전)
+0018C0,,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+0018C0,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+0018C0,,synthetic_total_fee,,0.3700,verified,existing_blank(유지·미충전)
+0018C0,,effective_burden,,0.5917,verified,existing_blank(유지·미충전)
+0018C0,,index,,코스피 고배당 위클리 고정 커버드콜 지수,verified,existing_blank(유지·미충전)
+0018C0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0018C0,,listing_date,,2025-03-05,verified,existing_blank(유지·미충전)
+0022T0,,issuer,,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",existing_blank(유지·미충전)
+0022T0,,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+0022T0,,fee(total),,0.4500,verified,existing_blank(유지·미충전)
+0022T0,,synthetic_total_fee,,0.5500,verified,existing_blank(유지·미충전)
+0022T0,,effective_burden,,0.6542,verified,existing_blank(유지·미충전)
+0022T0,,index,,KEDI 골드인컴프리미엄 지수(NTR),verified,existing_blank(유지·미충전)
+0022T0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0022T0,,listing_date,,2025-03-11,verified,existing_blank(유지·미충전)
+0040X0,SOL 팔란티어미국채커버드콜혼합,issuer,신한자산운용,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",same
+0040X0,SOL 팔란티어미국채커버드콜혼합,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+0040X0,SOL 팔란티어미국채커버드콜혼합,fee(total),0.3500,0.3500,verified,same
+0040X0,SOL 팔란티어미국채커버드콜혼합,synthetic_total_fee,,0.4500,verified,existing_blank(유지·미충전)
+0040X0,SOL 팔란티어미국채커버드콜혼합,effective_burden,,0.7767,verified,existing_blank(유지·미충전)
+0040X0,SOL 팔란티어미국채커버드콜혼합,index,KEDI 팔란티어미국채커버드콜혼합지수(NTR),KEDI 팔란티어미국채커버드콜혼합지수(NTR),verified,same
+0040X0,SOL 팔란티어미국채커버드콜혼합,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+0040X0,SOL 팔란티어미국채커버드콜혼합,listing_date,2025.04.22,2025-04-22,verified,same
+0040Y0,SOL 팔란티어커버드콜OTM채권혼합,issuer,신한자산운용,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",same
+0040Y0,SOL 팔란티어커버드콜OTM채권혼합,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+0040Y0,SOL 팔란티어커버드콜OTM채권혼합,fee(total),0.3500,0.3500,verified,same
+0040Y0,SOL 팔란티어커버드콜OTM채권혼합,synthetic_total_fee,,0.4400,verified,existing_blank(유지·미충전)
+0040Y0,SOL 팔란티어커버드콜OTM채권혼합,effective_burden,,0.7448,verified,existing_blank(유지·미충전)
+0040Y0,SOL 팔란티어커버드콜OTM채권혼합,index,KEDI 팔란티어커버드콜OTM 채권혼합지수(NTR),KEDI 팔란티어커버드콜OTM 채권혼합지수(NTR),verified,same
+0040Y0,SOL 팔란티어커버드콜OTM채권혼합,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+0040Y0,SOL 팔란티어커버드콜OTM채권혼합,listing_date,2025.04.22,2025-04-22,verified,same
+0046A0,TIGER 미국초단기(3개월이하)국채,issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+0046A0,TIGER 미국초단기(3개월이하)국채,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+0046A0,TIGER 미국초단기(3개월이하)국채,fee(total),0.0900,0.0900,verified,same
+0046A0,TIGER 미국초단기(3개월이하)국채,synthetic_total_fee,,0.1400,verified,existing_blank(유지·미충전)
+0046A0,TIGER 미국초단기(3개월이하)국채,effective_burden,,0.2018,verified,existing_blank(유지·미충전)
+0046A0,TIGER 미국초단기(3개월이하)국채,index,ICE 0-3 Month US Treasury Securities 지수,ICE 0-3 Month US Treasury Securities 지수,verified,same
+0046A0,TIGER 미국초단기(3개월이하)국채,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0046A0,TIGER 미국초단기(3개월이하)국채,listing_date,2025.04.29,2025-04-29,verified,same
+0046Y0,,issuer,,,unmapped,existing_blank(유지·미충전)
+0046Y0,,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+0046Y0,,fee(total),,0.1500,verified,existing_blank(유지·미충전)
+0046Y0,,synthetic_total_fee,,0.3200,verified,existing_blank(유지·미충전)
+0046Y0,,effective_burden,,0.4125,verified,existing_blank(유지·미충전)
+0046Y0,,index,,WisdomTree U.S. Quality Dividend Growth Index (Price Return),verified,existing_blank(유지·미충전)
+0046Y0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0046Y0,,listing_date,,2025-05-13,verified,existing_blank(유지·미충전)
+0048J0,KODEX 미국머니마켓액티브,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+0048J0,KODEX 미국머니마켓액티브,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+0048J0,KODEX 미국머니마켓액티브,fee(total),0.0500,0.0500,verified,same
+0048J0,KODEX 미국머니마켓액티브,synthetic_total_fee,,0.0800,verified,existing_blank(유지·미충전)
+0048J0,KODEX 미국머니마켓액티브,effective_burden,,0.0826,verified,existing_blank(유지·미충전)
+0048J0,KODEX 미국머니마켓액티브,index,KAP 미국 머니마켓 지수,KAP 미국 머니마켓 지수,verified,same
+0048J0,KODEX 미국머니마켓액티브,risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+0048J0,KODEX 미국머니마켓액티브,listing_date,2025.05.13,2025-05-13,verified,same
+0049K0,ACE 미국배당퀄리티채권혼합50,issuer,한국투신운용(ETF),,unmapped,funetf_unverified
+0049K0,ACE 미국배당퀄리티채권혼합50,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+0049K0,ACE 미국배당퀄리티채권혼합50,fee(total),0.1500,0.1500,verified,same
+0049K0,ACE 미국배당퀄리티채권혼합50,synthetic_total_fee,,0.4200,verified,existing_blank(유지·미충전)
+0049K0,ACE 미국배당퀄리티채권혼합50,effective_burden,,0.4866,verified,existing_blank(유지·미충전)
+0049K0,ACE 미국배당퀄리티채권혼합50,index,Bloomberg WisdomTree U.S. Quality Dividend & Short Term KRW Bonds 50:50 TR Index,Bloomberg WisdomTree U.S. Quality Dividend & Short Term KRW Bonds 5050 TR Index,verified,DIFF
+0049K0,ACE 미국배당퀄리티채권혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0049K0,ACE 미국배당퀄리티채권혼합50,listing_date,2025.05.13,2025-05-13,verified,same
+0049M0,,issuer,,,unmapped,existing_blank(유지·미충전)
+0049M0,,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+0049M0,,fee(total),,0.1500,verified,existing_blank(유지·미충전)
+0049M0,,synthetic_total_fee,,0.4100,verified,existing_blank(유지·미충전)
+0049M0,,effective_burden,,0.5022,verified,existing_blank(유지·미충전)
+0049M0,,index,,Bloomberg WisdomTree U.S. Quality Dividend & B500 Premium Decrement 50:50 Index,verified,existing_blank(유지·미충전)
+0049M0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0049M0,,listing_date,,2025-05-13,verified,existing_blank(유지·미충전)
+0052D0,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+0052D0,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+0052D0,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+0052D0,,synthetic_total_fee,,0.3000,verified,existing_blank(유지·미충전)
+0052D0,,effective_burden,,0.4199,verified,existing_blank(유지·미충전)
+0052D0,,index,,Dow Jones Korea Dividend 30 지수 (Price Return),verified,existing_blank(유지·미충전)
+0052D0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0052D0,,listing_date,,2025-05-20,verified,existing_blank(유지·미충전)
+0057H0,PLUS 미국S&P500미국채혼합50액티브,issuer,한화자산운용,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",same
+0057H0,PLUS 미국S&P500미국채혼합50액티브,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+0057H0,PLUS 미국S&P500미국채혼합50액티브,fee(total),0.1500,0.1500,verified,same
+0057H0,PLUS 미국S&P500미국채혼합50액티브,synthetic_total_fee,,0.2100,verified,existing_blank(유지·미충전)
+0057H0,PLUS 미국S&P500미국채혼합50액티브,effective_burden,,0.3096,verified,existing_blank(유지·미충전)
+0057H0,PLUS 미국S&P500미국채혼합50액티브,index,S&P 500 and U.S. Treasury Bill 0-3 Month 50/50 Blend Index (USD),S&P 500 and U.S. Treasury Bill 0-3 Month 50/50 Blend Index,verified,DIFF
+0057H0,PLUS 미국S&P500미국채혼합50액티브,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0057H0,PLUS 미국S&P500미국채혼합50액티브,listing_date,2025.06.10,2025-06-10,verified,same
+0073X0,FOCUS 알리바바미국채커버드콜혼합,issuer,브이아이자산운용,브이아이자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0073X0)",same
+0073X0,FOCUS 알리바바미국채커버드콜혼합,issuer_short,,브이아이운용,verified,existing_blank(유지·미충전)
+0073X0,FOCUS 알리바바미국채커버드콜혼합,fee(total),0.3600,0.3600,verified,same
+0073X0,FOCUS 알리바바미국채커버드콜혼합,synthetic_total_fee,,0.5600,verified,existing_blank(유지·미충전)
+0073X0,FOCUS 알리바바미국채커버드콜혼합,effective_burden,,1.5950,verified,existing_blank(유지·미충전)
+0073X0,FOCUS 알리바바미국채커버드콜혼합,index,KEDI 알리바바미국채커버드콜혼합지수(TR),KEDI 알리바바미국채커버드콜혼합지수(TR),verified,same
+0073X0,FOCUS 알리바바미국채커버드콜혼합,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+0073X0,FOCUS 알리바바미국채커버드콜혼합,listing_date,2025.07.01,2025-07-01,verified,same
+0080X0,SOL 미국S&P500미국채혼합50,issuer,신한자산운용,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",same
+0080X0,SOL 미국S&P500미국채혼합50,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+0080X0,SOL 미국S&P500미국채혼합50,fee(total),0.1500,0.1500,verified,same
+0080X0,SOL 미국S&P500미국채혼합50,synthetic_total_fee,,0.3800,verified,existing_blank(유지·미충전)
+0080X0,SOL 미국S&P500미국채혼합50,effective_burden,,0.4552,verified,existing_blank(유지·미충전)
+0080X0,SOL 미국S&P500미국채혼합50,index,S&P 500 and iBoxx $ Treasuries 7-10Y 5050 Blend Index(USD) PR/TR Hybrid,S&P 500 and iBoxx $ Treasuries 7-10Y 5050 Blend Index(USD) PR/TR Hybrid,verified,same
+0080X0,SOL 미국S&P500미국채혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0080X0,SOL 미국S&P500미국채혼합50,listing_date,2025.07.15,2025-07-15,verified,same
+0084D0,,issuer,,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",existing_blank(유지·미충전)
+0084D0,,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0084D0,,fee(total),,0.4900,verified,existing_blank(유지·미충전)
+0084D0,,synthetic_total_fee,,0.6500,verified,existing_blank(유지·미충전)
+0084D0,,effective_burden,,0.9577,verified,existing_blank(유지·미충전)
+0084D0,,index,,Akros 미국테크100 월간방어적배분 지수(TR),verified,existing_blank(유지·미충전)
+0084D0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0084D0,,listing_date,,2025-07-22,verified,existing_blank(유지·미충전)
+0084E0,,issuer,,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",existing_blank(유지·미충전)
+0084E0,,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0084E0,,fee(total),,0.4900,verified,existing_blank(유지·미충전)
+0084E0,,synthetic_total_fee,,0.6300,verified,existing_blank(유지·미충전)
+0084E0,,effective_burden,,1.1476,verified,existing_blank(유지·미충전)
+0084E0,,index,,Akros 미국대형주500 월간방어적배분 지수(TR),verified,existing_blank(유지·미충전)
+0084E0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0084E0,,listing_date,,2025-10-21,verified,existing_blank(유지·미충전)
+0085N0,ACE 미국10년국채액티브(H),issuer,한국투신운용(ETF),,unmapped,funetf_unverified
+0085N0,ACE 미국10년국채액티브(H),issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+0085N0,ACE 미국10년국채액티브(H),fee(total),0.1500,0.1500,verified,same
+0085N0,ACE 미국10년국채액티브(H),synthetic_total_fee,,0.2200,verified,existing_blank(유지·미충전)
+0085N0,ACE 미국10년국채액티브(H),effective_burden,,0.2429,verified,existing_blank(유지·미충전)
+0085N0,ACE 미국10년국채액티브(H),index,ICE U.S. Treasury 7-10 Year Bond Index (Total Return),ICE U.S. Treasury 7-10 Year Bond Index (Total Return),verified,same
+0085N0,ACE 미국10년국채액티브(H),risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+0085N0,ACE 미국10년국채액티브(H),listing_date,2025.07.22,2025-07-22,verified,same
+0085P0,ACE 미국10년국채액티브,issuer,한국투신운용(ETF),,unmapped,funetf_unverified
+0085P0,ACE 미국10년국채액티브,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+0085P0,ACE 미국10년국채액티브,fee(total),0.1500,0.1500,verified,same
+0085P0,ACE 미국10년국채액티브,synthetic_total_fee,,0.2000,verified,existing_blank(유지·미충전)
+0085P0,ACE 미국10년국채액티브,effective_burden,,0.2151,verified,existing_blank(유지·미충전)
+0085P0,ACE 미국10년국채액티브,index,ICE U.S. Treasury 7-10 Year Bond Index (Total Return),ICE U.S. Treasury 7-10 Year Bond Index (Total Return),verified,same
+0085P0,ACE 미국10년국채액티브,risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+0085P0,ACE 미국10년국채액티브,listing_date,2025.07.22,2025-07-22,verified,same
+0086B0,TIGER 리츠부동산인프라TOP10액티브,issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+0086B0,TIGER 리츠부동산인프라TOP10액티브,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+0086B0,TIGER 리츠부동산인프라TOP10액티브,fee(total),0.0600,0.0600,verified,same
+0086B0,TIGER 리츠부동산인프라TOP10액티브,synthetic_total_fee,,0.1200,verified,existing_blank(유지·미충전)
+0086B0,TIGER 리츠부동산인프라TOP10액티브,effective_burden,,0.1469,verified,existing_blank(유지·미충전)
+0086B0,TIGER 리츠부동산인프라TOP10액티브,index,KEDI 리츠부동산인프라TOP10지수 (Price Return),KEDI 리츠부동산인프라TOP10지수 (Price Return,verified,DIFF
+0086B0,TIGER 리츠부동산인프라TOP10액티브,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0086B0,TIGER 리츠부동산인프라TOP10액티브,listing_date,2025.07.29,2025-07-29,verified,same
+0086C0,TIGER 리츠부동산인프라10채권혼합액티브,issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+0086C0,TIGER 리츠부동산인프라10채권혼합액티브,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+0086C0,TIGER 리츠부동산인프라10채권혼합액티브,fee(total),0.1500,0.1500,verified,same
+0086C0,TIGER 리츠부동산인프라10채권혼합액티브,synthetic_total_fee,,0.2100,verified,existing_blank(유지·미충전)
+0086C0,TIGER 리츠부동산인프라10채권혼합액티브,effective_burden,,0.2404,verified,existing_blank(유지·미충전)
+0086C0,TIGER 리츠부동산인프라10채권혼합액티브,index,KEDI 리츠부동산인프라TOP10채권혼합지수 (Price Return),KEDI 리츠부동산인프라TOP10채권혼합지수 (Price Return),verified,same
+0086C0,TIGER 리츠부동산인프라10채권혼합액티브,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0086C0,TIGER 리츠부동산인프라10채권혼합액티브,listing_date,2025.07.29,2025-07-29,verified,same
+0089B0,PLUS 미국나스닥100미국채혼합50,issuer,한화자산운용,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",same
+0089B0,PLUS 미국나스닥100미국채혼합50,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+0089B0,PLUS 미국나스닥100미국채혼합50,fee(total),0.1500,0.1500,verified,same
+0089B0,PLUS 미국나스닥100미국채혼합50,synthetic_total_fee,,0.3200,verified,existing_blank(유지·미충전)
+0089B0,PLUS 미국나스닥100미국채혼합50,effective_burden,,0.4468,verified,existing_blank(유지·미충전)
+0089B0,PLUS 미국나스닥100미국채혼합50,index,Nasdaq-100 US T-Bills 1-3 Month 50/50 Index (USD),Nasdaq-100 US T-Bills 1-3 Month 50/50 Index (USD),verified,same
+0089B0,PLUS 미국나스닥100미국채혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0089B0,PLUS 미국나스닥100미국채혼합50,listing_date,2025.08.19,2025-08-19,verified,same
+0089C0,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+0089C0,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+0089C0,,fee(total),,0.3900,verified,existing_blank(유지·미충전)
+0089C0,,synthetic_total_fee,,0.5400,verified,existing_blank(유지·미충전)
+0089C0,,effective_burden,,0.6344,verified,existing_blank(유지·미충전)
+0089C0,,index,,Cboe S&P500 Volatility Contingent Daily Covered Call Index (Total Return),verified,existing_blank(유지·미충전)
+0089C0,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+0089C0,,listing_date,,2025-08-12,verified,existing_blank(유지·미충전)
+0089D0,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+0089D0,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+0089D0,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+0089D0,,synthetic_total_fee,,0.3300,verified,existing_blank(유지·미충전)
+0089D0,,effective_burden,,0.4105,verified,existing_blank(유지·미충전)
+0089D0,,index,,코스피 200 금융 고배당 TOP 10 지수,verified,existing_blank(유지·미충전)
+0089D0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0089D0,,listing_date,,2025-08-12,verified,existing_blank(유지·미충전)
+0091C0,KODEX 미국10년국채액티브(H),issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+0091C0,KODEX 미국10년국채액티브(H),issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+0091C0,KODEX 미국10년국채액티브(H),fee(total),0.1500,0.1500,verified,same
+0091C0,KODEX 미국10년국채액티브(H),synthetic_total_fee,,0.1800,verified,existing_blank(유지·미충전)
+0091C0,KODEX 미국10년국채액티브(H),effective_burden,,0.2062,verified,existing_blank(유지·미충전)
+0091C0,KODEX 미국10년국채액티브(H),index,KAP 미국 국채 10년 지수(총수익),KAP 미국 국채 10년 지수(총수익),verified,same
+0091C0,KODEX 미국10년국채액티브(H),risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+0091C0,KODEX 미국10년국채액티브(H),listing_date,2025.08.19,2025-08-19,verified,same
+0094L0,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+0094L0,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+0094L0,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+0094L0,,synthetic_total_fee,,0.6700,verified,existing_blank(유지·미충전)
+0094L0,,effective_burden,,1.0328,verified,existing_blank(유지·미충전)
+0094L0,,index,,Bloomberg China Tech Select TOP 10 + 12% Target Premium Weekly Index,verified,existing_blank(유지·미충전)
+0094L0,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+0094L0,,listing_date,,2025-09-02,verified,existing_blank(유지·미충전)
+0094M0,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+0094M0,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+0094M0,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+0094M0,,synthetic_total_fee,,0.3300,verified,existing_blank(유지·미충전)
+0094M0,,effective_burden,,0.5224,verified,existing_blank(유지·미충전)
+0094M0,,index,,코리아 밸류업 위클리 커버드콜 30% 지수,verified,existing_blank(유지·미충전)
+0094M0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0094M0,,listing_date,,2025-09-02,verified,existing_blank(유지·미충전)
+0097L0,,issuer,,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",existing_blank(유지·미충전)
+0097L0,,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0097L0,,fee(total),,0.4500,verified,existing_blank(유지·미충전)
+0097L0,,synthetic_total_fee,,0.5500,verified,existing_blank(유지·미충전)
+0097L0,,effective_burden,,0.6349,verified,existing_blank(유지·미충전)
+0097L0,,index,,Akros 미국AI테크TOP10&한국고배당3070 지수,verified,existing_blank(유지·미충전)
+0097L0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0097L0,,listing_date,,2025-09-02,verified,existing_blank(유지·미충전)
+0098N0,,issuer,,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",existing_blank(유지·미충전)
+0098N0,,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+0098N0,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+0098N0,,synthetic_total_fee,,0.3600,verified,existing_blank(유지·미충전)
+0098N0,,effective_burden,,0.4282,verified,existing_blank(유지·미충전)
+0098N0,,index,,FnGuide 고배당주 플러스 자사주 지수 (PR),verified,existing_blank(유지·미충전)
+0098N0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0098N0,,listing_date,,2025-09-16,verified,existing_blank(유지·미충전)
+0104N0,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+0104N0,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+0104N0,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+0104N0,,synthetic_total_fee,,0.2800,verified,existing_blank(유지·미충전)
+0104N0,,effective_burden,,0.3337,verified,existing_blank(유지·미충전)
+0104N0,,index,,코스피 200 타겟 7% 위클리 커버드콜 지수(Price Return),verified,existing_blank(유지·미충전)
+0104N0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0104N0,,listing_date,,2025-09-23,verified,existing_blank(유지·미충전)
+0104P0,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+0104P0,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+0104P0,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+0104P0,,synthetic_total_fee,,0.2900,verified,existing_blank(유지·미충전)
+0104P0,,effective_burden,,0.4454,verified,existing_blank(유지·미충전)
+0104P0,,index,,KRX 다우존스 코리아 배당 30 타겟 7% 위클리 커버드콜 지수,verified,existing_blank(유지·미충전)
+0104P0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0104P0,,listing_date,,2025-09-23,verified,existing_blank(유지·미충전)
+0105E0,,issuer,,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",existing_blank(유지·미충전)
+0105E0,,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+0105E0,,fee(total),,0.1500,verified,existing_blank(유지·미충전)
+0105E0,,synthetic_total_fee,,0.2100,verified,existing_blank(유지·미충전)
+0105E0,,effective_burden,,0.2539,verified,existing_blank(유지·미충전)
+0105E0,,index,,FnGuide 코리아 고배당 지수(PR),verified,existing_blank(유지·미충전)
+0105E0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0105E0,,listing_date,,2025-09-23,verified,existing_blank(유지·미충전)
+0107F0,,issuer,,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",existing_blank(유지·미충전)
+0107F0,,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0107F0,,fee(total),,0.4500,verified,existing_blank(유지·미충전)
+0107F0,,synthetic_total_fee,,0.6400,verified,existing_blank(유지·미충전)
+0107F0,,effective_burden,,0.8840,verified,existing_blank(유지·미충전)
+0107F0,,index,,Akros 미국AI테크TOP10&미국고배당3070지수,verified,existing_blank(유지·미충전)
+0107F0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0107F0,,listing_date,,2025-09-23,verified,existing_blank(유지·미충전)
+0111J0,,issuer,,,unmapped,existing_blank(유지·미충전)
+0111J0,,issuer_short,,NH-Amundi운용,verified,existing_blank(유지·미충전)
+0111J0,,fee(total),,0.0700,verified,existing_blank(유지·미충전)
+0111J0,,synthetic_total_fee,,0.1300,verified,existing_blank(유지·미충전)
+0111J0,,effective_burden,,0.1492,verified,existing_blank(유지·미충전)
+0111J0,,index,,FnGuide 증권 고배당 TOP3 플러스 지수,verified,existing_blank(유지·미충전)
+0111J0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0111J0,,listing_date,,2025-10-28,verified,existing_blank(유지·미충전)
+0115C0,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+0115C0,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+0115C0,,fee(total),,0.0100,verified,existing_blank(유지·미충전)
+0115C0,,synthetic_total_fee,,0.3000,verified,existing_blank(유지·미충전)
+0115C0,,effective_burden,,0.4748,verified,existing_blank(유지·미충전)
+0115C0,,index,,Dow Jones U.S. High Dividend 10 Index,verified,existing_blank(유지·미충전)
+0115C0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0115C0,,listing_date,,2025-10-21,verified,existing_blank(유지·미충전)
+0127T0,,issuer,,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",existing_blank(유지·미충전)
+0127T0,,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0127T0,,fee(total),,0.0900,verified,existing_blank(유지·미충전)
+0127T0,,synthetic_total_fee,,0.8100,verified,existing_blank(유지·미충전)
+0127T0,,effective_burden,,0.9114,verified,existing_blank(유지·미충전)
+0127T0,,index,,S&P500 생애배당다우존스 2040 지수,verified,existing_blank(유지·미충전)
+0127T0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0127T0,,listing_date,,2025-11-11,verified,existing_blank(유지·미충전)
+0127V0,,issuer,,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",existing_blank(유지·미충전)
+0127V0,,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0127V0,,fee(total),,0.1900,verified,existing_blank(유지·미충전)
+0127V0,,synthetic_total_fee,,0.6000,verified,existing_blank(유지·미충전)
+0127V0,,effective_burden,,0.7210,verified,existing_blank(유지·미충전)
+0127V0,,index,,S&P500 TOP10 생애배당다우존스 2040 지수,verified,existing_blank(유지·미충전)
+0127V0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0127V0,,listing_date,,2025-11-11,verified,existing_blank(유지·미충전)
+0128D0,,issuer,,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",existing_blank(유지·미충전)
+0128D0,,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+0128D0,,fee(total),,0.3900,verified,existing_blank(유지·미충전)
+0128D0,,synthetic_total_fee,,0.6800,verified,existing_blank(유지·미충전)
+0128D0,,effective_burden,,1.2282,verified,existing_blank(유지·미충전)
+0128D0,,index,,HSTECH 15% Target Premium Weekly Covered Call Index,verified,existing_blank(유지·미충전)
+0128D0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0128D0,,listing_date,,2025-11-18,verified,existing_blank(유지·미충전)
+0132K0,PLUS 테슬라위클리커버드콜채권혼합,issuer,한화자산운용,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",same
+0132K0,PLUS 테슬라위클리커버드콜채권혼합,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+0132K0,PLUS 테슬라위클리커버드콜채권혼합,fee(total),0.3900,0.3900,verified,same
+0132K0,PLUS 테슬라위클리커버드콜채권혼합,synthetic_total_fee,,0.4700,verified,existing_blank(유지·미충전)
+0132K0,PLUS 테슬라위클리커버드콜채권혼합,effective_burden,,0.6739,verified,existing_blank(유지·미충전)
+0132K0,PLUS 테슬라위클리커버드콜채권혼합,index,Akros 테슬라 위클리 커버드콜 채권혼합 지수,Akros 테슬라 위클리 커버드콜 채권혼합 지수,verified,same
+0132K0,PLUS 테슬라위클리커버드콜채권혼합,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+0132K0,PLUS 테슬라위클리커버드콜채권혼합,listing_date,2025.12.09,2025-12-09,verified,same
+0138T0,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+0138T0,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+0138T0,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+0138T0,,synthetic_total_fee,,0.4900,verified,existing_blank(유지·미충전)
+0138T0,,effective_burden,,0.6502,verified,existing_blank(유지·미충전)
+0138T0,,index,,S&P500 10% Daily Fixed Covered Call Index,verified,existing_blank(유지·미충전)
+0138T0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0138T0,,listing_date,,2025-12-23,verified,existing_blank(유지·미충전)
+0139P0,,issuer,,,unmapped,existing_blank(유지·미충전)
+0139P0,,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+0139P0,,fee(total),,0.1500,verified,existing_blank(유지·미충전)
+0139P0,,synthetic_total_fee,,0.2000,verified,existing_blank(유지·미충전)
+0139P0,,effective_burden,,0.2557,verified,existing_blank(유지·미충전)
+0139P0,,index,,KRX-Akros 고배당주 20 지수,verified,existing_blank(유지·미충전)
+0139P0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0139P0,,listing_date,,2025-12-16,verified,existing_blank(유지·미충전)
+0144L0,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+0144L0,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+0144L0,,fee(total),,0.4900,verified,existing_blank(유지·미충전)
+0144L0,,synthetic_total_fee,,0.5100,verified,existing_blank(유지·미충전)
+0144L0,,effective_burden,,0.6485,verified,existing_blank(유지·미충전)
+0144L0,,index,,NASDAQ100 Index (Price Return),verified,existing_blank(유지·미충전)
+0144L0,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+0144L0,,listing_date,,2025-12-23,verified,existing_blank(유지·미충전)
+0152E0,,issuer,,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",existing_blank(유지·미충전)
+0152E0,,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+0152E0,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+0152E0,,synthetic_total_fee,,0.3500,verified,existing_blank(유지·미충전)
+0152E0,,effective_burden,,0.4202,verified,existing_blank(유지·미충전)
+0152E0,,index,,FnGuide 배당성향탑픽 지수(PR),verified,existing_blank(유지·미충전)
+0152E0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0152E0,,listing_date,,2026-01-13,verified,existing_blank(유지·미충전)
+0153K0,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+0153K0,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+0153K0,,fee(total),,0.3300,verified,existing_blank(유지·미충전)
+0153K0,,synthetic_total_fee,,0.3700,verified,existing_blank(유지·미충전)
+0153K0,,effective_burden,,0.5156,verified,existing_blank(유지·미충전)
+0153K0,,index,,Akros 주주환원 고배당 지수 (Price Return),verified,existing_blank(유지·미충전)
+0153K0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0153K0,,listing_date,,2026-01-20,verified,existing_blank(유지·미충전)
+0153P0,ACE 리츠부동산인프라액티브,issuer,한국투신운용(ETF),,unmapped,funetf_unverified
+0153P0,ACE 리츠부동산인프라액티브,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+0153P0,ACE 리츠부동산인프라액티브,fee(total),0.0600,0.0600,verified,same
+0153P0,ACE 리츠부동산인프라액티브,synthetic_total_fee,,0.1200,verified,existing_blank(유지·미충전)
+0153P0,ACE 리츠부동산인프라액티브,effective_burden,,0.1324,verified,existing_blank(유지·미충전)
+0153P0,ACE 리츠부동산인프라액티브,index,FnGuide 맥쿼리인프라 배당 리츠 지수 (시장가격),FnGuide 맥쿼리인프라 배당 리츠 지수 (시장가격),verified,same
+0153P0,ACE 리츠부동산인프라액티브,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0153P0,ACE 리츠부동산인프라액티브,listing_date,2026.01.20,2026-01-20,verified,same
+0153X0,,issuer,,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",existing_blank(유지·미충전)
+0153X0,,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+0153X0,,fee(total),,0.2300,verified,existing_blank(유지·미충전)
+0153X0,,synthetic_total_fee,,0.3500,verified,existing_blank(유지·미충전)
+0153X0,,effective_burden,,0.6495,verified,existing_blank(유지·미충전)
+0153X0,,index,,Akros 미국 고배당주 20 지수,verified,existing_blank(유지·미충전)
+0153X0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0153X0,,listing_date,,2026-01-27,verified,existing_blank(유지·미충전)
+0167B0,,issuer,,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",existing_blank(유지·미충전)
+0167B0,,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+0167B0,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+0167B0,,synthetic_total_fee,,0.3200,verified,existing_blank(유지·미충전)
+0167B0,,effective_burden,,0.3487,verified,existing_blank(유지·미충전)
+0167B0,,index,,코스피 200 타겟 15% 위클리 커버드콜 지수,verified,existing_blank(유지·미충전)
+0167B0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0167B0,,listing_date,,2026-03-17,verified,existing_blank(유지·미충전)
+0174J0,DAISHIN 오피스리츠플러스,issuer,대신자산운용,대신자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0174J0)",same
+0174J0,DAISHIN 오피스리츠플러스,issuer_short,,대신운용,verified,existing_blank(유지·미충전)
+0174J0,DAISHIN 오피스리츠플러스,fee(total),0.1900,0.1900,verified,same
+0174J0,DAISHIN 오피스리츠플러스,synthetic_total_fee,,0.3000,verified,existing_blank(유지·미충전)
+0174J0,DAISHIN 오피스리츠플러스,effective_burden,,0.3177,verified,existing_blank(유지·미충전)
+0174J0,DAISHIN 오피스리츠플러스,index,KRX 프라임 오피스 리츠 지수,KRX 프라임 오피스 리츠 지수,verified,same
+0174J0,DAISHIN 오피스리츠플러스,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0174J0,DAISHIN 오피스리츠플러스,listing_date,2026.03.31,2026-03-31,verified,same
+0176P0,,issuer,,브이아이자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0073X0)",existing_blank(유지·미충전)
+0176P0,,issuer_short,,브이아이운용,verified,existing_blank(유지·미충전)
+0176P0,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+0176P0,,synthetic_total_fee,,0.3400,verified,existing_blank(유지·미충전)
+0176P0,,effective_burden,,0.3866,verified,existing_blank(유지·미충전)
+0176P0,,index,,AI 반도체 위클리 고정 30% 커버드콜 지수,verified,existing_blank(유지·미충전)
+0176P0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0176P0,,listing_date,,2026-04-07,verified,existing_blank(유지·미충전)
+0177N0,KODEX 삼성전자SK하이닉스채권혼합50,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+0177N0,KODEX 삼성전자SK하이닉스채권혼합50,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+0177N0,KODEX 삼성전자SK하이닉스채권혼합50,fee(total),0.0700,0.0700,verified,same
+0177N0,KODEX 삼성전자SK하이닉스채권혼합50,synthetic_total_fee,,0.1100,verified,existing_blank(유지·미충전)
+0177N0,KODEX 삼성전자SK하이닉스채권혼합50,effective_burden,,0.2452,verified,existing_blank(유지·미충전)
+0177N0,KODEX 삼성전자SK하이닉스채권혼합50,index,Wise 삼성전자 SK하이닉스 채권혼합 지수,Wise 삼성전자 SK하이닉스 채권혼합 지수,verified,same
+0177N0,KODEX 삼성전자SK하이닉스채권혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0177N0,KODEX 삼성전자SK하이닉스채권혼합50,listing_date,2026.04.07,2026-04-07,verified,same
+0177R0,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+0177R0,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+0177R0,,fee(total),,0.4500,verified,existing_blank(유지·미충전)
+0177R0,,synthetic_total_fee,,0.4700,verified,existing_blank(유지·미충전)
+0177R0,,effective_burden,,0.5805,verified,existing_blank(유지·미충전)
+0177R0,,index,,FnGuide 반도체 TOP10 Capped 지수(Price Return),verified,existing_blank(유지·미충전)
+0177R0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0177R0,,listing_date,,2026-04-21,verified,existing_blank(유지·미충전)
+0183V0,KIWOOM 삼성전자&SK하이닉스채권혼합50,issuer,키움투자자산운용,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",same
+0183V0,KIWOOM 삼성전자&SK하이닉스채권혼합50,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0183V0,KIWOOM 삼성전자&SK하이닉스채권혼합50,fee(total),0.0700,0.0700,verified,same
+0183V0,KIWOOM 삼성전자&SK하이닉스채권혼합50,synthetic_total_fee,,0.1000,verified,existing_blank(유지·미충전)
+0183V0,KIWOOM 삼성전자&SK하이닉스채권혼합50,effective_burden,,0.1361,verified,existing_blank(유지·미충전)
+0183V0,KIWOOM 삼성전자&SK하이닉스채권혼합50,index,FnGuide 삼성전자 & SK하이닉스 채권혼합 지수,FnGuide 삼성전자 & SK하이닉스 채권혼합 지수,verified,same
+0183V0,KIWOOM 삼성전자&SK하이닉스채권혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0183V0,KIWOOM 삼성전자&SK하이닉스채권혼합50,listing_date,2026.04.21,2026-04-21,verified,same
+0189Z0,,issuer,,대신자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0174J0)",existing_blank(유지·미충전)
+0189Z0,,issuer_short,,대신운용,verified,existing_blank(유지·미충전)
+0189Z0,,fee(total),,0.2400,verified,existing_blank(유지·미충전)
+0189Z0,,synthetic_total_fee,,0.2700,verified,existing_blank(유지·미충전)
+0189Z0,,effective_burden,,0.2756,verified,existing_blank(유지·미충전)
+0189Z0,,index,,KRX-Akros 금융&지주고배당 지수,verified,existing_blank(유지·미충전)
+0189Z0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0189Z0,,listing_date,,2026-06-09,verified,existing_blank(유지·미충전)
+0190G0,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+0190G0,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+0190G0,,fee(total),,0.4500,verified,existing_blank(유지·미충전)
+0190G0,,synthetic_total_fee,,0.4700,verified,existing_blank(유지·미충전)
+0190G0,,effective_burden,,0.6657,verified,existing_blank(유지·미충전)
+0190G0,,index,,KRX 반도체 타겟 9% 분배 위클리 커버드콜 지수,verified,existing_blank(유지·미충전)
+0190G0,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+0190G0,,listing_date,,2026-05-12,verified,existing_blank(유지·미충전)
+0192S0,SOL 코스피200채권혼합50,issuer,신한자산운용,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",same
+0192S0,SOL 코스피200채권혼합50,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+0192S0,SOL 코스피200채권혼합50,fee(total),0.1500,0.1500,verified,same
+0192S0,SOL 코스피200채권혼합50,synthetic_total_fee,,0.1800,verified,existing_blank(유지·미충전)
+0192S0,SOL 코스피200채권혼합50,effective_burden,,0.1872,verified,existing_blank(유지·미충전)
+0192S0,SOL 코스피200채권혼합50,index,코스피 200 KTB 혼합지수,코스피 200 KTB 혼합지수,verified,same
+0192S0,SOL 코스피200채권혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0192S0,SOL 코스피200채권혼합50,listing_date,2026.05.19,2026-05-19,verified,same
+0194N0,KIWOOM 삼성전자선물단일종목레버리지,issuer,키움투자자산운용,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",same
+0194N0,KIWOOM 삼성전자선물단일종목레버리지,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0194N0,KIWOOM 삼성전자선물단일종목레버리지,fee(total),0.2500,0.2500,verified,same
+0194N0,KIWOOM 삼성전자선물단일종목레버리지,synthetic_total_fee,,0.2900,verified,existing_blank(유지·미충전)
+0194N0,KIWOOM 삼성전자선물단일종목레버리지,effective_burden,,0.6021,verified,existing_blank(유지·미충전)
+0194N0,KIWOOM 삼성전자선물단일종목레버리지,index,KRX 삼성전자 선물 지수,KRX 삼성전자 선물 지수,verified,same
+0194N0,KIWOOM 삼성전자선물단일종목레버리지,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+0194N0,KIWOOM 삼성전자선물단일종목레버리지,listing_date,2026.05.27,2026-05-27,verified,same
+0194R0,KIWOOM SK하이닉스선물단일종목레버리지,issuer,키움투자자산운용,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",same
+0194R0,KIWOOM SK하이닉스선물단일종목레버리지,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0194R0,KIWOOM SK하이닉스선물단일종목레버리지,fee(total),0.2500,0.2500,verified,same
+0194R0,KIWOOM SK하이닉스선물단일종목레버리지,synthetic_total_fee,,0.2800,verified,existing_blank(유지·미충전)
+0194R0,KIWOOM SK하이닉스선물단일종목레버리지,effective_burden,,0.5678,verified,existing_blank(유지·미충전)
+0194R0,KIWOOM SK하이닉스선물단일종목레버리지,index,KRX SK하이닉스 선물 지수,KRX SK하이닉스 선물 지수,verified,same
+0194R0,KIWOOM SK하이닉스선물단일종목레버리지,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+0194R0,KIWOOM SK하이닉스선물단일종목레버리지,listing_date,2026.05.27,2026-05-27,verified,same
+0198A0,,issuer,,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",existing_blank(유지·미충전)
+0198A0,,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0198A0,,fee(total),,0.6300,verified,existing_blank(유지·미충전)
+0198A0,,synthetic_total_fee,,0.6400,verified,existing_blank(유지·미충전)
+0198A0,,effective_burden,,0.6744,verified,existing_blank(유지·미충전)
+0198A0,,index,,코스닥150 위클리고정30% 커버드콜지수,verified,existing_blank(유지·미충전)
+0198A0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0198A0,,listing_date,,2026-06-30,verified,existing_blank(유지·미충전)
+0199C0,,issuer,,,unmapped,existing_blank(유지·미충전)
+0199C0,,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+0199C0,,fee(total),,0.4000,verified,existing_blank(유지·미충전)
+0199C0,,synthetic_total_fee,,0.4100,verified,existing_blank(유지·미충전)
+0199C0,,effective_burden,,0.4629,verified,existing_blank(유지·미충전)
+0199C0,,index,,KRX-Akros 고배당주 20 위클리 고정 30% 커버드콜 지수,verified,existing_blank(유지·미충전)
+0199C0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0199C0,,listing_date,,2026-06-02,verified,existing_blank(유지·미충전)
+0203D0,PLUS 200위클리커버드콜채권혼합,issuer,한화자산운용,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",same
+0203D0,PLUS 200위클리커버드콜채권혼합,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+0203D0,PLUS 200위클리커버드콜채권혼합,fee(total),0.3900,0.3900,verified,same
+0203D0,PLUS 200위클리커버드콜채권혼합,synthetic_total_fee,,0.4400,verified,existing_blank(유지·미충전)
+0203D0,PLUS 200위클리커버드콜채권혼합,effective_burden,,0.5142,verified,existing_blank(유지·미충전)
+0203D0,PLUS 200위클리커버드콜채권혼합,index,코스피 200 KTB 혼합 위클리 고정 10% 커버드콜 지수,코스피 200 KTB 혼합 위클리 고정 10% 커버드콜 지수,verified,same
+0203D0,PLUS 200위클리커버드콜채권혼합,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+0203D0,PLUS 200위클리커버드콜채권혼합,listing_date,2026.06.02,2026-06-02,verified,same
+0210E0,,issuer,,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",existing_blank(유지·미충전)
+0210E0,,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+0210E0,,fee(total),,0.4910,verified,existing_blank(유지·미충전)
+0210E0,,synthetic_total_fee,,0.5000,verified,existing_blank(유지·미충전)
+0210E0,,effective_burden,,0.6149,verified,existing_blank(유지·미충전)
+0210E0,,index,,코스피 200 위클리 고정 30% 커버드콜 지수,verified,existing_blank(유지·미충전)
+0210E0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0210E0,,listing_date,,2026-06-23,verified,existing_blank(유지·미충전)
+0216K0,KIWOOM 미국우주테크TOP2채권혼합50,issuer,키움투자자산운용,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",same
+0216K0,KIWOOM 미국우주테크TOP2채권혼합50,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0216K0,KIWOOM 미국우주테크TOP2채권혼합50,fee(total),0.2100,0.2100,verified,same
+0216K0,KIWOOM 미국우주테크TOP2채권혼합50,synthetic_total_fee,,0.2600,verified,existing_blank(유지·미충전)
+0216K0,KIWOOM 미국우주테크TOP2채권혼합50,effective_burden,,0.3488,verified,existing_blank(유지·미충전)
+0216K0,KIWOOM 미국우주테크TOP2채권혼합50,index,Akros 미국 우주 Top 2 채권혼합 지수,Akros 미국 우주 Top 2 채권혼합 지수,verified,same
+0216K0,KIWOOM 미국우주테크TOP2채권혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0216K0,KIWOOM 미국우주테크TOP2채권혼합50,listing_date,2026.07.07,2026-07-07,verified,same
+0219E0,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+0219E0,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+0219E0,,fee(total),,0.5000,verified,existing_blank(유지·미충전)
+0219E0,,synthetic_total_fee,,0.5100,verified,existing_blank(유지·미충전)
+0219E0,,effective_burden,,0.5455,verified,existing_blank(유지·미충전)
+0219E0,,index,,코스피 200 커버드콜 5% OTM 지수,verified,existing_blank(유지·미충전)
+0219E0,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+0219E0,,listing_date,,2026-07-14,verified,existing_blank(유지·미충전)
+0220A0,KIWOOM 현대차그룹TOP3채권혼합50,issuer,키움투자자산운용,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",same
+0220A0,KIWOOM 현대차그룹TOP3채권혼합50,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+0220A0,KIWOOM 현대차그룹TOP3채권혼합50,fee(total),0.1500,0.1500,verified,same
+0220A0,KIWOOM 현대차그룹TOP3채권혼합50,synthetic_total_fee,,0.1700,verified,existing_blank(유지·미충전)
+0220A0,KIWOOM 현대차그룹TOP3채권혼합50,effective_burden,,0.1836,verified,existing_blank(유지·미충전)
+0220A0,KIWOOM 현대차그룹TOP3채권혼합50,index,FnGuide 현대차그룹TOP3 채권혼합 지수,FnGuide 현대차그룹TOP3 채권혼합 지수,verified,same
+0220A0,KIWOOM 현대차그룹TOP3채권혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0220A0,KIWOOM 현대차그룹TOP3채권혼합50,listing_date,2026.07.14,2026-07-14,verified,same
+0222D0,,issuer,,,unmapped,existing_blank(유지·미충전)
+0222D0,,issuer_short,,삼성액티브자산운용,verified,existing_blank(유지·미충전)
+0222D0,,fee(total),,0.5000,verified,existing_blank(유지·미충전)
+0222D0,,synthetic_total_fee,,0.5100,verified,existing_blank(유지·미충전)
+0222D0,,effective_burden,,0.5770,verified,existing_blank(유지·미충전)
+0222D0,,index,,코스피200 고배당 지수,verified,existing_blank(유지·미충전)
+0222D0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0222D0,,listing_date,,2026-07-28,verified,existing_blank(유지·미충전)
+0223A0,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+0223A0,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+0223A0,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+0223A0,,synthetic_total_fee,,0.3100,verified,existing_blank(유지·미충전)
+0223A0,,effective_burden,,0.3475,verified,existing_blank(유지·미충전)
+0223A0,,index,,코스닥 150 타겟 15% 위클리 커버드콜 지수,verified,existing_blank(유지·미충전)
+0223A0,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+0223A0,,listing_date,,2026-07-28,verified,existing_blank(유지·미충전)
+0224X0,1Q 엔비디아알파벳미국채혼합50,issuer,하나자산운용,하나자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0224X0)",same
+0224X0,1Q 엔비디아알파벳미국채혼합50,issuer_short,,하나운용,verified,existing_blank(유지·미충전)
+0224X0,1Q 엔비디아알파벳미국채혼합50,fee(total),0.4500,0.4500,verified,same
+0224X0,1Q 엔비디아알파벳미국채혼합50,synthetic_total_fee,,0.4700,verified,existing_blank(유지·미충전)
+0224X0,1Q 엔비디아알파벳미국채혼합50,effective_burden,,0.5730,verified,existing_blank(유지·미충전)
+0224X0,1Q 엔비디아알파벳미국채혼합50,index,KEDI 엔비디아알파벳미국채혼합50 지수,KEDI 엔비디아알파벳미국채혼합50 지수,verified,same
+0224X0,1Q 엔비디아알파벳미국채혼합50,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+0224X0,1Q 엔비디아알파벳미국채혼합50,listing_date,2026.07.28,2026-07-28,verified,same
+0233A0,ACE 삼성전자SK하이닉스플러스채권혼합50,issuer,한국투신운용(ETF),,unmapped,funetf_unverified
+0233A0,ACE 삼성전자SK하이닉스플러스채권혼합50,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+0233A0,ACE 삼성전자SK하이닉스플러스채권혼합50,fee(total),0.0700,0.0700,verified,same
+0233A0,ACE 삼성전자SK하이닉스플러스채권혼합50,synthetic_total_fee,,0.0800,verified,existing_blank(유지·미충전)
+0233A0,ACE 삼성전자SK하이닉스플러스채권혼합50,effective_burden,,0.0828,verified,existing_blank(유지·미충전)
+0233A0,ACE 삼성전자SK하이닉스플러스채권혼합50,index,KAP 삼성전자SK하이닉스플러스채권혼합50지수,KAP 삼성전자SK하이닉스플러스채권혼합50지수,verified,same
+0233A0,ACE 삼성전자SK하이닉스플러스채권혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0233A0,ACE 삼성전자SK하이닉스플러스채권혼합50,listing_date,2026.08.25,2026-08-25,verified,same
+0233J0,TIGER 삼성전자SK하이닉스미국채혼합50,issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+0233J0,TIGER 삼성전자SK하이닉스미국채혼합50,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+0233J0,TIGER 삼성전자SK하이닉스미국채혼합50,fee(total),0.1500,0.1500,verified,same
+0233J0,TIGER 삼성전자SK하이닉스미국채혼합50,synthetic_total_fee,,0.1600,verified,existing_blank(유지·미충전)
+0233J0,TIGER 삼성전자SK하이닉스미국채혼합50,effective_burden,,0.1657,verified,existing_blank(유지·미충전)
+0233J0,TIGER 삼성전자SK하이닉스미국채혼합50,index,KRX 삼성전자 SK하이닉스 미국채 혼합지수,KRX 삼성전자 SK하이닉스 미국채 혼합 지수,verified,same
+0233J0,TIGER 삼성전자SK하이닉스미국채혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0233J0,TIGER 삼성전자SK하이닉스미국채혼합50,listing_date,2026.08.25,2026-08-25,verified,same
+0238P0,TIGER 미국S&P500미국채혼합50,issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+0238P0,TIGER 미국S&P500미국채혼합50,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+0238P0,TIGER 미국S&P500미국채혼합50,fee(total),0.1500,0.1500,verified,same
+0238P0,TIGER 미국S&P500미국채혼합50,synthetic_total_fee,,0.1600,verified,existing_blank(유지·미충전)
+0238P0,TIGER 미국S&P500미국채혼합50,effective_burden,,0.2001,verified,existing_blank(유지·미충전)
+0238P0,TIGER 미국S&P500미국채혼합50,index,S&P 500 and Short-Term Treasury 50/50 Blend Index,S&P 500 and Short-Term Treasury 50/50 Blend Index,verified,same
+0238P0,TIGER 미국S&P500미국채혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+0238P0,TIGER 미국S&P500미국채혼합50,listing_date,2026.09.08,2026-09-08,verified,same
+091170,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+091170,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+091170,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+091170,,synthetic_total_fee,,0.3100,verified,existing_blank(유지·미충전)
+091170,,effective_burden,,0.3343,verified,existing_blank(유지·미충전)
+091170,,index,,KRX 은행,verified,existing_blank(유지·미충전)
+091170,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+091170,,listing_date,,2006-06-27,verified,existing_blank(유지·미충전)
+104530,,issuer,,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",existing_blank(유지·미충전)
+104530,,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+104530,,fee(total),,0.1900,verified,existing_blank(유지·미충전)
+104530,,synthetic_total_fee,,0.2400,verified,existing_blank(유지·미충전)
+104530,,effective_burden,,0.3274,verified,existing_blank(유지·미충전)
+104530,,index,,MF 웰스 고배당 20,verified,existing_blank(유지·미충전)
+104530,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+104530,,listing_date,,2008-07-29,verified,existing_blank(유지·미충전)
+136340,RISE 중기우량회사채,issuer,KB자산운용,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",same
+136340,RISE 중기우량회사채,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+136340,RISE 중기우량회사채,fee(total),0.0700,0.0700,verified,same
+136340,RISE 중기우량회사채,synthetic_total_fee,,0.1000,verified,existing_blank(유지·미충전)
+136340,RISE 중기우량회사채,effective_burden,,0.1035,verified,existing_blank(유지·미충전)
+136340,RISE 중기우량회사채,index,KOBI 크레딧 지수(총수익),KOBI 크레딧 지수(총수익),verified,same
+136340,RISE 중기우량회사채,risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+136340,RISE 중기우량회사채,listing_date,2011.04.15,2011-04-15,verified,same
+153130,KODEX 단기채권,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+153130,KODEX 단기채권,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+153130,KODEX 단기채권,fee(total),0.1500,0.1500,verified,same
+153130,KODEX 단기채권,synthetic_total_fee,,0.1700,verified,existing_blank(유지·미충전)
+153130,KODEX 단기채권,effective_burden,,0.1778,verified,existing_blank(유지·미충전)
+153130,KODEX 단기채권,index,KRW Cash Index(총수익),KRW Cash Index Total Return,verified,DIFF
+153130,KODEX 단기채권,risk_grade,,6등급 (매우낮은위험),verified,existing_blank(유지·미충전)
+153130,KODEX 단기채권,listing_date,2012.02.22,2012-02-22,verified,same
+161510,,issuer,,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",existing_blank(유지·미충전)
+161510,,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+161510,,fee(total),,0.2300,verified,existing_blank(유지·미충전)
+161510,,synthetic_total_fee,,0.2800,verified,existing_blank(유지·미충전)
+161510,,effective_burden,,0.3427,verified,existing_blank(유지·미충전)
+161510,,index,,FnGuide 배당주 지수,verified,existing_blank(유지·미충전)
+161510,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+161510,,listing_date,,2012-08-29,verified,existing_blank(유지·미충전)
+166400,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+166400,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+166400,,fee(total),,0.3800,verified,existing_blank(유지·미충전)
+166400,,synthetic_total_fee,,0.4000,verified,existing_blank(유지·미충전)
+166400,,effective_burden,,0.6384,verified,existing_blank(유지·미충전)
+166400,,index,,코스피 200 커버드콜지수,verified,existing_blank(유지·미충전)
+166400,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+166400,,listing_date,,2012-10-25,verified,existing_blank(유지·미충전)
+181480,ACE 미국부동산리츠(합성 H),issuer,한국투신운용(ETF),,unmapped,funetf_unverified
+181480,ACE 미국부동산리츠(합성 H),issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+181480,ACE 미국부동산리츠(합성 H),fee(total),0.3000,0.3000,verified,same
+181480,ACE 미국부동산리츠(합성 H),synthetic_total_fee,,0.4300,verified,existing_blank(유지·미충전)
+181480,ACE 미국부동산리츠(합성 H),effective_burden,,0.4407,verified,existing_blank(유지·미충전)
+181480,ACE 미국부동산리츠(합성 H),index,Dow Jones U.S. Real Estate Index,Dow Jones US Real Estate Index,verified,DIFF
+181480,ACE 미국부동산리츠(합성 H),risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+181480,ACE 미국부동산리츠(합성 H),listing_date,2013.08.01,2013-08-01,verified,same
+182480,TIGER 미국MSCI리츠(합성 H),issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+182480,TIGER 미국MSCI리츠(합성 H),issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+182480,TIGER 미국MSCI리츠(합성 H),fee(total),0.2400,0.2400,verified,same
+182480,TIGER 미국MSCI리츠(합성 H),synthetic_total_fee,,0.3600,verified,existing_blank(유지·미충전)
+182480,TIGER 미국MSCI리츠(합성 H),effective_burden,,0.4205,verified,existing_blank(유지·미충전)
+182480,TIGER 미국MSCI리츠(합성 H),index,MSCI US REIT INDEX,MSCI US REIT Index,verified,same
+182480,TIGER 미국MSCI리츠(합성 H),risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+182480,TIGER 미국MSCI리츠(합성 H),listing_date,2013.10.10,2013-10-10,verified,same
+211900,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+211900,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+211900,,fee(total),,0.1500,verified,existing_blank(유지·미충전)
+211900,,synthetic_total_fee,,0.1800,verified,existing_blank(유지·미충전)
+211900,,effective_burden,,0.2144,verified,existing_blank(유지·미충전)
+211900,,index,,코스피 배당성장 50,verified,existing_blank(유지·미충전)
+211900,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+211900,,listing_date,,2014-12-17,verified,existing_blank(유지·미충전)
+214980,KODEX 단기채권PLUS,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+214980,KODEX 단기채권PLUS,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+214980,KODEX 단기채권PLUS,fee(total),0.1500,0.1500,verified,same
+214980,KODEX 단기채권PLUS,synthetic_total_fee,,0.1700,verified,existing_blank(유지·미충전)
+214980,KODEX 단기채권PLUS,effective_burden,,0.1704,verified,existing_blank(유지·미충전)
+214980,KODEX 단기채권PLUS,index,KRW Cash PLUS 지수(총수익),KRW Cash PLUS Index Total Return,verified,DIFF
+214980,KODEX 단기채권PLUS,risk_grade,,6등급 (매우낮은위험),verified,existing_blank(유지·미충전)
+214980,KODEX 단기채권PLUS,listing_date,2015.03.03,2015-03-03,verified,same
+237370,KODEX 코리아배당성장채권혼합,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+237370,KODEX 코리아배당성장채권혼합,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+237370,KODEX 코리아배당성장채권혼합,fee(total),0.1900,0.1900,verified,same
+237370,KODEX 코리아배당성장채권혼합,synthetic_total_fee,,0.2300,verified,existing_blank(유지·미충전)
+237370,KODEX 코리아배당성장채권혼합,effective_burden,,0.3427,verified,existing_blank(유지·미충전)
+237370,KODEX 코리아배당성장채권혼합,index,배당성장채권혼합지수,KRX 배당성장 채권혼합지수,verified,DIFF
+237370,KODEX 코리아배당성장채권혼합,risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+237370,KODEX 코리아배당성장채권혼합,listing_date,2016.01.27,2016-01-27,verified,same
+245340,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+245340,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+245340,,fee(total),,0.3500,verified,existing_blank(유지·미충전)
+245340,,synthetic_total_fee,,0.4300,verified,existing_blank(유지·미충전)
+245340,,effective_burden,,0.4842,verified,existing_blank(유지·미충전)
+245340,,index,,Dow Jones Industrial Average,verified,existing_blank(유지·미충전)
+245340,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+245340,,listing_date,,2016-07-01,verified,existing_blank(유지·미충전)
+251600,PLUS 고배당주채권혼합,issuer,한화자산운용,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",same
+251600,PLUS 고배당주채권혼합,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+251600,PLUS 고배당주채권혼합,fee(total),0.2000,0.2000,verified,same
+251600,PLUS 고배당주채권혼합,synthetic_total_fee,,0.2500,verified,existing_blank(유지·미충전)
+251600,PLUS 고배당주채권혼합,effective_burden,,0.4936,verified,existing_blank(유지·미충전)
+251600,PLUS 고배당주채권혼합,index,FnGuide 고배당주 채권혼합 지수,FnGuide 고배당 채권혼합 지수,verified,DIFF
+251600,PLUS 고배당주채권혼합,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+251600,PLUS 고배당주채권혼합,listing_date,2016.08.11,2016-08-11,verified,same
+273140,KODEX 단기변동금리부채권액티브,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+273140,KODEX 단기변동금리부채권액티브,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+273140,KODEX 단기변동금리부채권액티브,fee(total),0.1500,0.1500,verified,same
+273140,KODEX 단기변동금리부채권액티브,synthetic_total_fee,,0.1700,verified,existing_blank(유지·미충전)
+273140,KODEX 단기변동금리부채권액티브,effective_burden,,0.1726,verified,existing_blank(유지·미충전)
+273140,KODEX 단기변동금리부채권액티브,index,KAP 단기변동금리부은행채권지수,"KAP 단기 변동금리부 은행채권지수(AAA, 총수익)",verified,DIFF
+273140,KODEX 단기변동금리부채권액티브,risk_grade,,6등급 (매우낮은위험),verified,existing_blank(유지·미충전)
+273140,KODEX 단기변동금리부채권액티브,listing_date,2017.06.29,2017-06-29,verified,same
+279530,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+279530,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+279530,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+279530,,synthetic_total_fee,,0.3600,verified,existing_blank(유지·미충전)
+279530,,effective_burden,,0.5242,verified,existing_blank(유지·미충전)
+279530,,index,,FnGuide 고배당 Plus 지수,verified,existing_blank(유지·미충전)
+279530,,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+279530,,listing_date,,2017-10-17,verified,existing_blank(유지·미충전)
+284430,KODEX 200미국채혼합50,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+284430,KODEX 200미국채혼합50,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+284430,KODEX 200미국채혼합50,fee(total),0.3500,0.3500,verified,same
+284430,KODEX 200미국채혼합50,synthetic_total_fee,,0.3900,verified,existing_blank(유지·미충전)
+284430,KODEX 200미국채혼합50,effective_burden,,0.6095,verified,existing_blank(유지·미충전)
+284430,KODEX 200미국채혼합50,index,코스피 200 미국채혼합지수,코스피 200 미국채 혼합지수,verified,same
+284430,KODEX 200미국채혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+284430,KODEX 200미국채혼합50,listing_date,2017.11.30,2017-11-30,verified,same
+289480,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+289480,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+289480,,fee(total),,0.3800,verified,existing_blank(유지·미충전)
+289480,,synthetic_total_fee,,0.4200,verified,existing_blank(유지·미충전)
+289480,,effective_burden,,0.7140,verified,existing_blank(유지·미충전)
+289480,,index,,코스피 200 커버드콜 ATM,verified,existing_blank(유지·미충전)
+289480,,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+289480,,listing_date,,2018-02-09,verified,existing_blank(유지·미충전)
+290080,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+290080,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+290080,,fee(total),,0.4000,verified,existing_blank(유지·미충전)
+290080,,synthetic_total_fee,,0.4500,verified,existing_blank(유지·미충전)
+290080,,effective_burden,,0.6444,verified,existing_blank(유지·미충전)
+290080,,index,,코스피 200 고배당커버드콜 ATM 지수(시장가격지수),verified,existing_blank(유지·미충전)
+290080,,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+290080,,listing_date,,2018-02-27,verified,existing_blank(유지·미충전)
+316300,ACE 싱가포르리츠,issuer,한국투신운용(ETF),,unmapped,funetf_unverified
+316300,ACE 싱가포르리츠,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+316300,ACE 싱가포르리츠,fee(total),0.4000,0.4000,verified,same
+316300,ACE 싱가포르리츠,synthetic_total_fee,,1.0200,verified,existing_blank(유지·미충전)
+316300,ACE 싱가포르리츠,effective_burden,,1.0395,verified,existing_blank(유지·미충전)
+316300,ACE 싱가포르리츠,index,Morningstar Singapore REIT Yield Focus Index(PR),Morningstar Singapore REIT Yield Focus Index(PR),verified,same
+316300,ACE 싱가포르리츠,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+316300,ACE 싱가포르리츠,listing_date,2019.01.29,2019-01-29,verified,same
+322410,,issuer,,,unmapped,existing_blank(유지·미충전)
+322410,,issuer_short,,NH-Amundi운용,verified,existing_blank(유지·미충전)
+322410,,fee(total),,0.0700,verified,existing_blank(유지·미충전)
+322410,,synthetic_total_fee,,0.1400,verified,existing_blank(유지·미충전)
+322410,,effective_burden,,0.1786,verified,existing_blank(유지·미충전)
+322410,,index,,FnGuide 고배당 알파 지수,verified,existing_blank(유지·미충전)
+322410,,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+322410,,listing_date,,2019-04-23,verified,existing_blank(유지·미충전)
+329200,TIGER 리츠부동산인프라,issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+329200,TIGER 리츠부동산인프라,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+329200,TIGER 리츠부동산인프라,fee(total),0.0800,0.0800,verified,same
+329200,TIGER 리츠부동산인프라,synthetic_total_fee,,0.1200,verified,existing_blank(유지·미충전)
+329200,TIGER 리츠부동산인프라,effective_burden,,0.1398,verified,existing_blank(유지·미충전)
+329200,TIGER 리츠부동산인프라,index,FnGuide 리츠부동산인프라,FnGuide 부동산인프라고배당 지수,verified,DIFF
+329200,TIGER 리츠부동산인프라,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+329200,TIGER 리츠부동산인프라,listing_date,2019.07.19,2019-07-19,verified,same
+329650,KODEX TRF3070,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+329650,KODEX TRF3070,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+329650,KODEX TRF3070,fee(total),0.2400,0.2400,verified,same
+329650,KODEX TRF3070,synthetic_total_fee,,0.2900,verified,existing_blank(유지·미충전)
+329650,KODEX TRF3070,effective_burden,,0.3141,verified,existing_blank(유지·미충전)
+329650,KODEX TRF3070,index,FnGuide TRF 3070 지수,Fnguide TRF 3070 지수,verified,same
+329650,KODEX TRF3070,risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+329650,KODEX TRF3070,listing_date,2019.07.04,2019-07-04,verified,same
+329660,KODEX TRF5050,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+329660,KODEX TRF5050,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+329660,KODEX TRF5050,fee(total),0.1700,0.1700,verified,same
+329660,KODEX TRF5050,synthetic_total_fee,,0.2200,verified,existing_blank(유지·미충전)
+329660,KODEX TRF5050,effective_burden,,0.2547,verified,existing_blank(유지·미충전)
+329660,KODEX TRF5050,index,FnGuide TRF 5050 지수,Fnguide TRF 5050 지수,verified,same
+329660,KODEX TRF5050,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+329660,KODEX TRF5050,listing_date,2019.07.04,2019-07-04,verified,same
+329670,KODEX TRF7030,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+329670,KODEX TRF7030,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+329670,KODEX TRF7030,fee(total),0.1000,0.1000,verified,same
+329670,KODEX TRF7030,synthetic_total_fee,,0.1600,verified,existing_blank(유지·미충전)
+329670,KODEX TRF7030,effective_burden,,0.2001,verified,existing_blank(유지·미충전)
+329670,KODEX TRF7030,index,FnGuide TRF 7030 지수,Fnguide TRF 7030 지수,verified,same
+329670,KODEX TRF7030,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+329670,KODEX TRF7030,listing_date,2019.07.04,2019-07-04,verified,same
+332610,PLUS 미국단기회사채(AAA~A),issuer,한화자산운용,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",same
+332610,PLUS 미국단기회사채(AAA~A),issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+332610,PLUS 미국단기회사채(AAA~A),fee(total),0.3150,0.3150,verified,same
+332610,PLUS 미국단기회사채(AAA~A),synthetic_total_fee,,0.4000,verified,existing_blank(유지·미충전)
+332610,PLUS 미국단기회사채(AAA~A),effective_burden,,0.4000,verified,existing_blank(유지·미충전)
+332610,PLUS 미국단기회사채(AAA~A),index,ICE BofaAML 1-3 Year AAA-A US Corporate Index(총수익지수),ICE BofaAML 1-3 Year AAA-A US Corporate Index(총수익지수),verified,same
+332610,PLUS 미국단기회사채(AAA~A),risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+332610,PLUS 미국단기회사채(AAA~A),listing_date,2019.08.20,2019-08-20,verified,same
+332620,PLUS 미국장기우량회사채,issuer,한화자산운용,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",same
+332620,PLUS 미국장기우량회사채,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+332620,PLUS 미국장기우량회사채,fee(total),0.3150,0.3150,verified,same
+332620,PLUS 미국장기우량회사채,synthetic_total_fee,,0.4000,verified,existing_blank(유지·미충전)
+332620,PLUS 미국장기우량회사채,effective_burden,,0.4000,verified,existing_blank(유지·미충전)
+332620,PLUS 미국장기우량회사채,index,ICE BofaAML 15+ Year AAA-A US Corporate Index(총수익지수),ICE BofaAML 15+ Year AAA-A US Corporate Index(총수익지수),verified,same
+332620,PLUS 미국장기우량회사채,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+332620,PLUS 미국장기우량회사채,listing_date,2019.08.20,2019-08-20,verified,same
+336160,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+336160,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+336160,,fee(total),,0.0700,verified,existing_blank(유지·미충전)
+336160,,synthetic_total_fee,,0.0900,verified,existing_blank(유지·미충전)
+336160,,effective_burden,,0.0945,verified,existing_blank(유지·미충전)
+336160,,index,,KIS 종합채권금융채 2.5Y-3Y 지수 (총수익),verified,existing_blank(유지·미충전)
+336160,,risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+336160,,listing_date,,2019-10-29,verified,existing_blank(유지·미충전)
+341850,TIGER 리츠부동산인프라채권,issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+341850,TIGER 리츠부동산인프라채권,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+341850,TIGER 리츠부동산인프라채권,fee(total),0.2200,0.2200,verified,same
+341850,TIGER 리츠부동산인프라채권,synthetic_total_fee,,0.2600,verified,existing_blank(유지·미충전)
+341850,TIGER 리츠부동산인프라채권,effective_burden,,0.2902,verified,existing_blank(유지·미충전)
+341850,TIGER 리츠부동산인프라채권,index,KIS 리츠부동산인프라채권PR 지수,KIS 부동산인프라채권 TR지수,verified,DIFF
+341850,TIGER 리츠부동산인프라채권,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+341850,TIGER 리츠부동산인프라채권,listing_date,2020.05.22,2020-05-22,verified,same
+352540,KODEX 일본부동산리츠(H),issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+352540,KODEX 일본부동산리츠(H),issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+352540,KODEX 일본부동산리츠(H),fee(total),0.3000,0.3000,verified,same
+352540,KODEX 일본부동산리츠(H),synthetic_total_fee,,0.4200,verified,existing_blank(유지·미충전)
+352540,KODEX 일본부동산리츠(H),effective_burden,,0.5043,verified,existing_blank(유지·미충전)
+352540,KODEX 일본부동산리츠(H),index,Tokyo Stock Exchange REIT Index,Tokyo Stock Exchange REIT Index,verified,same
+352540,KODEX 일본부동산리츠(H),risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+352540,KODEX 일본부동산리츠(H),listing_date,2020.05.13,2020-05-13,verified,same
+352560,KODEX 미국부동산리츠(H),issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+352560,KODEX 미국부동산리츠(H),issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+352560,KODEX 미국부동산리츠(H),fee(total),0.0900,0.0900,verified,same
+352560,KODEX 미국부동산리츠(H),synthetic_total_fee,,0.2500,verified,existing_blank(유지·미충전)
+352560,KODEX 미국부동산리츠(H),effective_burden,,0.3362,verified,existing_blank(유지·미충전)
+352560,KODEX 미국부동산리츠(H),index,Dow Jones U.S. Real Estate PR Index,Dow Jones US Real Estate Index,verified,DIFF
+352560,KODEX 미국부동산리츠(H),risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+352560,KODEX 미국부동산리츠(H),listing_date,2020.05.13,2020-05-13,verified,same
+373790,,issuer,,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",existing_blank(유지·미충전)
+373790,,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+373790,,fee(total),,0.4000,verified,existing_blank(유지·미충전)
+373790,,synthetic_total_fee,,1.1300,verified,existing_blank(유지·미충전)
+373790,,effective_burden,,1.4622,verified,existing_blank(유지·미충전)
+373790,,index,,Nasdaq US Low Volatility Dividend Achievers Index,verified,existing_blank(유지·미충전)
+373790,,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+373790,,listing_date,,2020-12-24,verified,existing_blank(유지·미충전)
+402970,,issuer,,,unmapped,existing_blank(유지·미충전)
+402970,,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+402970,,fee(total),,0.0100,verified,existing_blank(유지·미충전)
+402970,,synthetic_total_fee,,0.0700,verified,existing_blank(유지·미충전)
+402970,,effective_burden,,0.1524,verified,existing_blank(유지·미충전)
+402970,,index,,Dow Jones U.S. Dividend 100 Price Return Index,verified,existing_blank(유지·미충전)
+402970,,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+402970,,listing_date,,2021-10-21,verified,existing_blank(유지·미충전)
+423160,KODEX KOFR금리액티브(합성),issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+423160,KODEX KOFR금리액티브(합성),issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+423160,KODEX KOFR금리액티브(합성),fee(total),0.0500,0.0500,verified,same
+423160,KODEX KOFR금리액티브(합성),synthetic_total_fee,,0.0600,verified,existing_blank(유지·미충전)
+423160,KODEX KOFR금리액티브(합성),effective_burden,,0.0620,verified,existing_blank(유지·미충전)
+423160,KODEX KOFR금리액티브(합성),index,KOFR 지수,KOFR Index,verified,DIFF
+423160,KODEX KOFR금리액티브(합성),risk_grade,,6등급 (매우낮은위험),verified,existing_blank(유지·미충전)
+423160,KODEX KOFR금리액티브(합성),listing_date,2022.04.26,2022-04-26,verified,same
+429000,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+429000,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+429000,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+429000,,synthetic_total_fee,,0.3300,verified,existing_blank(유지·미충전)
+429000,,effective_burden,,0.4134,verified,existing_blank(유지·미충전)
+429000,,index,,S&P 500 Dividend Aristocrats 지수 (Price Return),verified,existing_blank(유지·미충전)
+429000,,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+429000,,listing_date,,2022-05-17,verified,existing_blank(유지·미충전)
+429740,PLUS K리츠,issuer,한화자산운용,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",same
+429740,PLUS K리츠,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+429740,PLUS K리츠,fee(total),0.2500,0.2500,verified,same
+429740,PLUS K리츠,synthetic_total_fee,,0.3300,verified,existing_blank(유지·미충전)
+429740,PLUS K리츠,effective_burden,,0.3555,verified,existing_blank(유지·미충전)
+429740,PLUS K리츠,index,FnGuide 리츠 지수,FnGuide 리츠 지수,verified,same
+429740,PLUS K리츠,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+429740,PLUS K리츠,listing_date,2022.05.24,2022-05-24,verified,same
+432840,,issuer,,,unmapped,existing_blank(유지·미충전)
+432840,,issuer_short,,NH-Amundi운용,verified,existing_blank(유지·미충전)
+432840,,fee(total),,0.0450,verified,existing_blank(유지·미충전)
+432840,,synthetic_total_fee,,0.2800,verified,existing_blank(유지·미충전)
+432840,,effective_burden,,0.2829,verified,existing_blank(유지·미충전)
+432840,,index,,S&P 500,verified,existing_blank(유지·미충전)
+432840,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+432840,,listing_date,,2022-06-08,verified,existing_blank(유지·미충전)
+433330,,issuer,,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",existing_blank(유지·미충전)
+433330,,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+433330,,fee(total),,0.0047,verified,existing_blank(유지·미충전)
+433330,,synthetic_total_fee,,0.0800,verified,existing_blank(유지·미충전)
+433330,,effective_burden,,0.1445,verified,existing_blank(유지·미충전)
+433330,,index,,S&P 500,verified,existing_blank(유지·미충전)
+433330,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+433330,,listing_date,,2022-06-21,verified,existing_blank(유지·미충전)
+437070,KODEX 아시아달러채권ESG플러스액티브,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+437070,KODEX 아시아달러채권ESG플러스액티브,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+437070,KODEX 아시아달러채권ESG플러스액티브,fee(total),0.1800,0.1800,verified,same
+437070,KODEX 아시아달러채권ESG플러스액티브,synthetic_total_fee,,0.2300,verified,existing_blank(유지·미충전)
+437070,KODEX 아시아달러채권ESG플러스액티브,effective_burden,,0.2321,verified,existing_blank(유지·미충전)
+437070,KODEX 아시아달러채권ESG플러스액티브,index,Bloomberg MSCI EM Asia Investment Grade Credit SRI Index(Total Return),Bloomberg Barclays MSCI EM Asia Investment Grade Credit SRI Index(Total Return),verified,DIFF
+437070,KODEX 아시아달러채권ESG플러스액티브,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+437070,KODEX 아시아달러채권ESG플러스액티브,listing_date,2022.08.09,2022-08-09,verified,same
+437080,KODEX 미국종합채권ESG액티브(H),issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+437080,KODEX 미국종합채권ESG액티브(H),issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+437080,KODEX 미국종합채권ESG액티브(H),fee(total),0.1800,0.1800,verified,same
+437080,KODEX 미국종합채권ESG액티브(H),synthetic_total_fee,,0.2300,verified,existing_blank(유지·미충전)
+437080,KODEX 미국종합채권ESG액티브(H),effective_burden,,0.2301,verified,existing_blank(유지·미충전)
+437080,KODEX 미국종합채권ESG액티브(H),index,Bloomberg MSCI US Aggregate 2bn ex Securitized SRI Capped Index(Total Return),Bloomberg Barclays MSCI US Aggregate 2BN ex Securitized SRI Capped Index(Total Return),verified,DIFF
+437080,KODEX 미국종합채권ESG액티브(H),risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+437080,KODEX 미국종합채권ESG액티브(H),listing_date,2022.08.09,2022-08-09,verified,same
+438330,TIGER 우량회사채액티브,issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+438330,TIGER 우량회사채액티브,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+438330,TIGER 우량회사채액티브,fee(total),0.1000,0.1000,verified,same
+438330,TIGER 우량회사채액티브,synthetic_total_fee,,0.1200,verified,existing_blank(유지·미충전)
+438330,TIGER 우량회사채액티브,effective_burden,,0.1434,verified,existing_blank(유지·미충전)
+438330,TIGER 우량회사채액티브,index,KIS 투자등급회사채 지수(총수익),KIS 투자등급회사채 지수(총수익),verified,same
+438330,TIGER 우량회사채액티브,risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+438330,TIGER 우량회사채액티브,listing_date,2022.08.23,2022-08-23,verified,same
+440340,TIGER 글로벌멀티에셋TIF액티브,issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+440340,TIGER 글로벌멀티에셋TIF액티브,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+440340,TIGER 글로벌멀티에셋TIF액티브,fee(total),0.5500,0.5500,verified,same
+440340,TIGER 글로벌멀티에셋TIF액티브,synthetic_total_fee,,0.6700,verified,existing_blank(유지·미충전)
+440340,TIGER 글로벌멀티에셋TIF액티브,effective_burden,,0.7718,verified,existing_blank(유지·미충전)
+440340,TIGER 글로벌멀티에셋TIF액티브,index,INDXX 멀티에셋인컴 지수(시장가격 지수),INDXX 멀티에셋인컴 지수(시장가격 지수),verified,same
+440340,TIGER 글로벌멀티에셋TIF액티브,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+440340,TIGER 글로벌멀티에셋TIF액티브,listing_date,2022.08.30,2022-08-30,verified,same
+441640,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+441640,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+441640,,fee(total),,0.1900,verified,existing_blank(유지·미충전)
+441640,,synthetic_total_fee,,0.2500,verified,existing_blank(유지·미충전)
+441640,,effective_burden,,0.3624,verified,existing_blank(유지·미충전)
+441640,,index,,S&P 500 Index PR,verified,existing_blank(유지·미충전)
+441640,,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+441640,,listing_date,,2022-09-27,verified,existing_blank(유지·미충전)
+441680,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+441680,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+441680,,fee(total),,0.3700,verified,existing_blank(유지·미충전)
+441680,,synthetic_total_fee,,0.4700,verified,existing_blank(유지·미충전)
+441680,,effective_burden,,0.4864,verified,existing_blank(유지·미충전)
+441680,,index,,Cboe Nasdaq-100 BuyWrite V2 지수 (Total Return),verified,existing_blank(유지·미충전)
+441680,,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+441680,,listing_date,,2022-09-22,verified,existing_blank(유지·미충전)
+441800,,issuer,,,unmapped,existing_blank(유지·미충전)
+441800,,issuer_short,,타임폴리오자산운용,verified,existing_blank(유지·미충전)
+441800,,fee(total),,0.8000,verified,existing_blank(유지·미충전)
+441800,,synthetic_total_fee,,0.8200,verified,existing_blank(유지·미충전)
+441800,,effective_burden,,1.0666,verified,existing_blank(유지·미충전)
+441800,,index,,코스피 200,verified,existing_blank(유지·미충전)
+441800,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+441800,,listing_date,,2022-09-27,verified,existing_blank(유지·미충전)
+446720,,issuer,,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",existing_blank(유지·미충전)
+446720,,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+446720,,fee(total),,0.0100,verified,existing_blank(유지·미충전)
+446720,,synthetic_total_fee,,0.0700,verified,existing_blank(유지·미충전)
+446720,,effective_burden,,0.1711,verified,existing_blank(유지·미충전)
+446720,,index,,Dow Jones U.S. Dividend 100 Price Return Index,verified,existing_blank(유지·미충전)
+446720,,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+446720,,listing_date,,2022-11-15,verified,existing_blank(유지·미충전)
+448100,,issuer,,우리자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 480460)",existing_blank(유지·미충전)
+448100,,issuer_short,,우리운용,verified,existing_blank(유지·미충전)
+448100,,fee(total),,0.0500,verified,existing_blank(유지·미충전)
+448100,,synthetic_total_fee,,0.0500,verified,existing_blank(유지·미충전)
+448100,,effective_burden,,0.0669,verified,existing_blank(유지·미충전)
+448100,,index,,코스피 200,verified,existing_blank(유지·미충전)
+448100,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+448100,,listing_date,,2022-12-16,verified,existing_blank(유지·미충전)
+448330,KODEX 삼성전자채권혼합,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+448330,KODEX 삼성전자채권혼합,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+448330,KODEX 삼성전자채권혼합,fee(total),0.0700,0.0700,verified,same
+448330,KODEX 삼성전자채권혼합,synthetic_total_fee,,0.1400,verified,existing_blank(유지·미충전)
+448330,KODEX 삼성전자채권혼합,effective_burden,,0.1620,verified,existing_blank(유지·미충전)
+448330,KODEX 삼성전자채권혼합,index,Wise 삼성전자채권혼합 지수,Wise 삼성전자 채권 혼합 지수,verified,same
+448330,KODEX 삼성전자채권혼합,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+448330,KODEX 삼성전자채권혼합,listing_date,2022.11.29,2022-11-29,verified,same
+452360,,issuer,,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",existing_blank(유지·미충전)
+452360,,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+452360,,fee(total),,0.0500,verified,existing_blank(유지·미충전)
+452360,,synthetic_total_fee,,0.1200,verified,existing_blank(유지·미충전)
+452360,,effective_burden,,0.2456,verified,existing_blank(유지·미충전)
+452360,,index,,Dow Jones U.S. Dividend 100 Price Return Index,verified,existing_blank(유지·미충전)
+452360,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+452360,,listing_date,,2023-03-21,verified,existing_blank(유지·미충전)
+453330,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+453330,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+453330,,fee(total),,0.0047,verified,existing_blank(유지·미충전)
+453330,,synthetic_total_fee,,0.1300,verified,existing_blank(유지·미충전)
+453330,,effective_burden,,0.2054,verified,existing_blank(유지·미충전)
+453330,,index,,S&P 500,verified,existing_blank(유지·미충전)
+453330,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+453330,,listing_date,,2023-03-21,verified,existing_blank(유지·미충전)
+453850,ACE 미국30년국채액티브(H),issuer,한국투자신탁운용,,unmapped,funetf_unverified
+453850,ACE 미국30년국채액티브(H),issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+453850,ACE 미국30년국채액티브(H),fee(total),0.0500,0.0500,verified,same
+453850,ACE 미국30년국채액티브(H),synthetic_total_fee,,0.1200,verified,existing_blank(유지·미충전)
+453850,ACE 미국30년국채액티브(H),effective_burden,,0.1323,verified,existing_blank(유지·미충전)
+453850,ACE 미국30년국채액티브(H),index,Bloomberg U.S Treasury 20+ Year Total Return Index,Bloomberg U.S Treasury 20+ Year Total Return Index,verified,same
+453850,ACE 미국30년국채액티브(H),risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+453850,ACE 미국30년국채액티브(H),listing_date,2023.03.14,2023-03-14,verified,same
+455030,KODEX 미국달러SOFR금리액티브(합성),issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+455030,KODEX 미국달러SOFR금리액티브(합성),issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+455030,KODEX 미국달러SOFR금리액티브(합성),fee(total),0.1500,0.1500,verified,same
+455030,KODEX 미국달러SOFR금리액티브(합성),synthetic_total_fee,,0.1800,verified,existing_blank(유지·미충전)
+455030,KODEX 미국달러SOFR금리액티브(합성),effective_burden,,0.1802,verified,existing_blank(유지·미충전)
+455030,KODEX 미국달러SOFR금리액티브(합성),index,Bloomberg SOFR Daily Total Return Index,Bloomberg SOFR Daily Total Return Index,verified,same
+455030,KODEX 미국달러SOFR금리액티브(합성),risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+455030,KODEX 미국달러SOFR금리액티브(합성),listing_date,2023.04.04,2023-04-04,verified,same
+455660,,issuer,,,unmapped,existing_blank(유지·미충전)
+455660,,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+455660,,fee(total),,0.2400,verified,existing_blank(유지·미충전)
+455660,,synthetic_total_fee,,0.3200,verified,existing_blank(유지·미충전)
+455660,,effective_burden,,0.3547,verified,existing_blank(유지·미충전)
+455660,,index,,Markit iBoxx USD Liquid High Yield Total Return Index,verified,existing_blank(유지·미충전)
+455660,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+455660,,listing_date,,2023-04-18,verified,existing_blank(유지·미충전)
+458260,TIGER 미국투자등급회사채액티브(H),issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+458260,TIGER 미국투자등급회사채액티브(H),issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+458260,TIGER 미국투자등급회사채액티브(H),fee(total),0.1400,0.1400,verified,same
+458260,TIGER 미국투자등급회사채액티브(H),synthetic_total_fee,,0.2000,verified,existing_blank(유지·미충전)
+458260,TIGER 미국투자등급회사채액티브(H),effective_burden,,0.2176,verified,existing_blank(유지·미충전)
+458260,TIGER 미국투자등급회사채액티브(H),index,iBoxx USD Liquid Investment Grade Index(Price Return),iBoxx USD Liquid Investment Grade Index(Price Return),verified,same
+458260,TIGER 미국투자등급회사채액티브(H),risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+458260,TIGER 미국투자등급회사채액티브(H),listing_date,2023.05.31,2023-05-31,verified,same
+458730,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+458730,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+458730,,fee(total),,0.0100,verified,existing_blank(유지·미충전)
+458730,,synthetic_total_fee,,0.0600,verified,existing_blank(유지·미충전)
+458730,,effective_burden,,0.1064,verified,existing_blank(유지·미충전)
+458730,,index,,Dow Jones U.S. Dividend 100 Price Return Index,verified,existing_blank(유지·미충전)
+458730,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+458730,,listing_date,,2023-06-20,verified,existing_blank(유지·미충전)
+458750,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+458750,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+458750,,fee(total),,0.3900,verified,existing_blank(유지·미충전)
+458750,,synthetic_total_fee,,0.4700,verified,existing_blank(유지·미충전)
+458750,,effective_burden,,0.5857,verified,existing_blank(유지·미충전)
+458750,,index,,DowJones U.S. Dividend 100 3% Premium Covered Call 지수 (TR),verified,existing_blank(유지·미충전)
+458750,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+458750,,listing_date,,2023-06-20,verified,existing_blank(유지·미충전)
+458760,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+458760,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+458760,,fee(total),,0.3900,verified,existing_blank(유지·미충전)
+458760,,synthetic_total_fee,,0.4500,verified,existing_blank(유지·미충전)
+458760,,effective_burden,,0.5695,verified,existing_blank(유지·미충전)
+458760,,index,,DowJones U.S. Dividend 100 7% Premium Covered Call 지수 (TR),verified,existing_blank(유지·미충전)
+458760,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+458760,,listing_date,,2023-06-20,verified,existing_blank(유지·미충전)
+459580,KODEX CD금리액티브(합성),issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+459580,KODEX CD금리액티브(합성),issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+459580,KODEX CD금리액티브(합성),fee(total),0.0200,0.0200,verified,same
+459580,KODEX CD금리액티브(합성),synthetic_total_fee,,0.0300,verified,existing_blank(유지·미충전)
+459580,KODEX CD금리액티브(합성),effective_burden,,0.0332,verified,existing_blank(유지·미충전)
+459580,KODEX CD금리액티브(합성),index,KAP 양도성예금증서(CD)금리지수(총수익지수),KAP 양도성예금증서(CD) 금리 지수,verified,DIFF
+459580,KODEX CD금리액티브(합성),risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+459580,KODEX CD금리액티브(합성),listing_date,2023.06.08,2023-06-08,verified,same
+460660,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+460660,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+460660,,fee(total),,0.0100,verified,existing_blank(유지·미충전)
+460660,,synthetic_total_fee,,0.2200,verified,existing_blank(유지·미충전)
+460660,,effective_burden,,0.3136,verified,existing_blank(유지·미충전)
+460660,,index,,S&P Dividend Monarchs Index(Price Return),verified,existing_blank(유지·미충전)
+460660,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+460660,,listing_date,,2023-06-27,verified,existing_blank(유지·미충전)
+460960,,issuer,,,unmapped,existing_blank(유지·미충전)
+460960,,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+460960,,fee(total),,0.2400,verified,existing_blank(유지·미충전)
+460960,,synthetic_total_fee,,0.3100,verified,existing_blank(유지·미충전)
+460960,,effective_burden,,0.4516,verified,existing_blank(유지·미충전)
+460960,,index,,Solactive Global Superior Income TOP 10 Price Return Index,verified,existing_blank(유지·미충전)
+460960,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+460960,,listing_date,,2023-07-11,verified,existing_blank(유지·미충전)
+464470,PLUS 미국채30년액티브,issuer,한화자산운용,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",same
+464470,PLUS 미국채30년액티브,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+464470,PLUS 미국채30년액티브,fee(total),0.1500,0.1500,verified,same
+464470,PLUS 미국채30년액티브,synthetic_total_fee,,0.2300,verified,existing_blank(유지·미충전)
+464470,PLUS 미국채30년액티브,effective_burden,,0.2522,verified,existing_blank(유지·미충전)
+464470,PLUS 미국채30년액티브,index,ICE U.S. Treasury 20+ Year Bond Index(Total Return),ICE U.S. Treasury 20+ Year Bond Index(Total Return),verified,same
+464470,PLUS 미국채30년액티브,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+464470,PLUS 미국채30년액티브,listing_date,2023.08.22,2023-08-22,verified,same
+465670,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+465670,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+465670,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+465670,,synthetic_total_fee,,0.4500,verified,existing_blank(유지·미충전)
+465670,,effective_burden,,0.7600,verified,existing_blank(유지·미충전)
+465670,,index,,Global X U.S. Cash Flow Kings 100 Index(TR),verified,existing_blank(유지·미충전)
+465670,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+465670,,listing_date,,2023-09-19,verified,existing_blank(유지·미충전)
+466940,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+466940,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+466940,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+466940,,synthetic_total_fee,,0.3600,verified,existing_blank(유지·미충전)
+466940,,effective_burden,,0.3862,verified,existing_blank(유지·미충전)
+466940,,index,,FnGuide 은행고배당플러스TOP10 지수(시장가격 지수),verified,existing_blank(유지·미충전)
+466940,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+466940,,listing_date,,2023-10-17,verified,existing_blank(유지·미충전)
+468370,KODEX iShares미국인플레이션국채액티브,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+468370,KODEX iShares미국인플레이션국채액티브,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+468370,KODEX iShares미국인플레이션국채액티브,fee(total),0.1000,0.1000,verified,same
+468370,KODEX iShares미국인플레이션국채액티브,synthetic_total_fee,,0.1200,verified,existing_blank(유지·미충전)
+468370,KODEX iShares미국인플레이션국채액티브,effective_burden,,0.1531,verified,existing_blank(유지·미충전)
+468370,KODEX iShares미국인플레이션국채액티브,index,ICE U.S. Treasury Inflation Linked Bond Index(Total Return),ICE U.S. Treasury Inflation Linked Bond Index(Total Return),verified,same
+468370,KODEX iShares미국인플레이션국채액티브,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+468370,KODEX iShares미국인플레이션국채액티브,listing_date,2023.10.19,2023-10-19,verified,same
+468380,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+468380,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+468380,,fee(total),,0.1500,verified,existing_blank(유지·미충전)
+468380,,synthetic_total_fee,,0.1700,verified,existing_blank(유지·미충전)
+468380,,effective_burden,,0.2258,verified,existing_blank(유지·미충전)
+468380,,index,,ICE BofAML US HY Constrained Index(Total Return),verified,existing_blank(유지·미충전)
+468380,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+468380,,listing_date,,2023-10-19,verified,existing_blank(유지·미충전)
+468630,KODEX iShares미국투자등급회사채액티브,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+468630,KODEX iShares미국투자등급회사채액티브,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+468630,KODEX iShares미국투자등급회사채액티브,fee(total),0.1000,0.1000,verified,same
+468630,KODEX iShares미국투자등급회사채액티브,synthetic_total_fee,,0.1500,verified,existing_blank(유지·미충전)
+468630,KODEX iShares미국투자등급회사채액티브,effective_burden,,0.1864,verified,existing_blank(유지·미충전)
+468630,KODEX iShares미국투자등급회사채액티브,index,iBoxx USD Liquid Investment Grade Index(Total Return),Markit iBoxx USD Liquid Investment Grade Index(Total Return),verified,DIFF
+468630,KODEX iShares미국투자등급회사채액티브,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+468630,KODEX iShares미국투자등급회사채액티브,listing_date,2023.10.19,2023-10-19,verified,same
+471460,KIWOOM 국고채30년액티브,issuer,키움투자자산운용,키움투자자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0015E0,0015F0,0183V0)",same
+471460,KIWOOM 국고채30년액티브,issuer_short,,키움투자운용,verified,existing_blank(유지·미충전)
+471460,KIWOOM 국고채30년액티브,fee(total),0.0350,0.0350,verified,same
+471460,KIWOOM 국고채30년액티브,synthetic_total_fee,,0.0600,verified,existing_blank(유지·미충전)
+471460,KIWOOM 국고채30년액티브,effective_burden,,0.0667,verified,existing_blank(유지·미충전)
+471460,KIWOOM 국고채30년액티브,index,KIS-키움 국고채30년 지수(총수익지수),KIS-키움 국고채30년 지수(총수익지수),verified,same
+471460,KIWOOM 국고채30년액티브,risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+471460,KIWOOM 국고채30년액티브,listing_date,2023.11.07,2023-11-07,verified,same
+472150,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+472150,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+472150,,fee(total),,0.5000,verified,existing_blank(유지·미충전)
+472150,,synthetic_total_fee,,0.5100,verified,existing_blank(유지·미충전)
+472150,,effective_burden,,0.6073,verified,existing_blank(유지·미충전)
+472150,,index,,코스피200 커버드콜 5% OTM 지수(시장가격 지수),verified,existing_blank(유지·미충전)
+472150,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+472150,,listing_date,,2023-12-12,verified,existing_blank(유지·미충전)
+472830,RISE 미국30년국채커버드콜(합성),issuer,KB자산운용,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",same
+472830,RISE 미국30년국채커버드콜(합성),issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+472830,RISE 미국30년국채커버드콜(합성),fee(total),0.2500,0.2500,verified,same
+472830,RISE 미국30년국채커버드콜(합성),synthetic_total_fee,,0.3200,verified,existing_blank(유지·미충전)
+472830,RISE 미국30년국채커버드콜(합성),effective_burden,,0.3397,verified,existing_blank(유지·미충전)
+472830,RISE 미국30년국채커버드콜(합성),index,Bloomberg U.S. Treasury 20+ Year (TLT) 2% OTM Covered Call Index(TR),Bloomberg U.S. Treasury 20+ Year (TLT) 2% OTM Covered Call Index(TR),verified,same
+472830,RISE 미국30년국채커버드콜(합성),risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+472830,RISE 미국30년국채커버드콜(합성),listing_date,2023.12.14,2023-12-14,verified,same
+472870,RISE 미국30년국채엔화노출(합성 H),issuer,KB자산운용,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",same
+472870,RISE 미국30년국채엔화노출(합성 H),issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+472870,RISE 미국30년국채엔화노출(합성 H),fee(total),0.1500,0.1500,verified,same
+472870,RISE 미국30년국채엔화노출(합성 H),synthetic_total_fee,,0.1800,verified,existing_blank(유지·미충전)
+472870,RISE 미국30년국채엔화노출(합성 H),effective_burden,,0.1853,verified,existing_blank(유지·미충전)
+472870,RISE 미국30년국채엔화노출(합성 H),index,KIS 미국채30년 엔화노출 지수(USD/JPY 헤지)(총수익지수),KIS 미국채 30년 엔화노출 지수(USD/JPY 헤지)(총수익지수),verified,same
+472870,RISE 미국30년국채엔화노출(합성 H),risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+472870,RISE 미국30년국채엔화노출(합성 H),listing_date,2023.12.27,2023-12-27,verified,same
+473330,SOL 미국30년국채커버드콜(합성),issuer,신한자산운용,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",same
+473330,SOL 미국30년국채커버드콜(합성),issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+473330,SOL 미국30년국채커버드콜(합성),fee(total),0.2500,0.2500,verified,same
+473330,SOL 미국30년국채커버드콜(합성),synthetic_total_fee,,0.3500,verified,existing_blank(유지·미충전)
+473330,SOL 미국30년국채커버드콜(합성),effective_burden,,0.3500,verified,existing_blank(유지·미충전)
+473330,SOL 미국30년국채커버드콜(합성),index,KEDI 미국 국채 20년+ 커버드콜 지수(NTR),KEDI 미국 국채 20년+ 커버드콜 지수(NTR),verified,same
+473330,SOL 미국30년국채커버드콜(합성),risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+473330,SOL 미국30년국채커버드콜(합성),listing_date,2023.12.27,2023-12-27,verified,same
+474220,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+474220,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+474220,,fee(total),,0.5000,verified,existing_blank(유지·미충전)
+474220,,synthetic_total_fee,,0.5900,verified,existing_blank(유지·미충전)
+474220,,effective_burden,,0.6704,verified,existing_blank(유지·미충전)
+474220,,index,,Bloomberg U.S. Tech Top10+10% Premium Covered Call Index,verified,existing_blank(유지·미충전)
+474220,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+474220,,listing_date,,2024-01-16,verified,existing_blank(유지·미충전)
+475080,KODEX 테슬라커버드콜채권혼합액티브,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+475080,KODEX 테슬라커버드콜채권혼합액티브,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+475080,KODEX 테슬라커버드콜채권혼합액티브,fee(total),0.3900,0.3900,verified,same
+475080,KODEX 테슬라커버드콜채권혼합액티브,synthetic_total_fee,,0.4800,verified,existing_blank(유지·미충전)
+475080,KODEX 테슬라커버드콜채권혼합액티브,effective_burden,,0.5167,verified,existing_blank(유지·미충전)
+475080,KODEX 테슬라커버드콜채권혼합액티브,index,KEDI 테슬라 인컴 프리미엄 밸런스드 지수(TR),KEDI 테슬라 인컴 프리미엄 밸런스드 지수(Total Return),verified,DIFF
+475080,KODEX 테슬라커버드콜채권혼합액티브,risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+475080,KODEX 테슬라커버드콜채권혼합액티브,listing_date,2024.01.23,2024-01-23,verified,same
+475380,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+475380,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+475380,,fee(total),,0.0100,verified,existing_blank(유지·미충전)
+475380,,synthetic_total_fee,,0.1000,verified,existing_blank(유지·미충전)
+475380,,effective_burden,,0.1568,verified,existing_blank(유지·미충전)
+475380,,index,,Solactive Global Realty Income Index(Price Return),verified,existing_blank(유지·미충전)
+475380,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+475380,,listing_date,,2024-02-20,verified,existing_blank(유지·미충전)
+475720,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+475720,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+475720,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+475720,,synthetic_total_fee,,0.3300,verified,existing_blank(유지·미충전)
+475720,,effective_burden,,0.6329,verified,existing_blank(유지·미충전)
+475720,,index,,코스피 200 위클리 커버드콜 ATM 지수,verified,existing_blank(유지·미충전)
+475720,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+475720,,listing_date,,2024-03-05,verified,existing_blank(유지·미충전)
+476550,TIGER 미국30년국채커버드콜액티브(H),issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+476550,TIGER 미국30년국채커버드콜액티브(H),issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+476550,TIGER 미국30년국채커버드콜액티브(H),fee(total),0.3900,0.3900,verified,same
+476550,TIGER 미국30년국채커버드콜액티브(H),synthetic_total_fee,,0.4700,verified,existing_blank(유지·미충전)
+476550,TIGER 미국30년국채커버드콜액티브(H),effective_burden,,0.7729,verified,existing_blank(유지·미충전)
+476550,TIGER 미국30년국채커버드콜액티브(H),index,KEDI 미국채30년 위클리 커버드콜30 지수(Total Return),KEDI 미국채30년 위클리 커버드콜30 지수(Total Return),verified,same
+476550,TIGER 미국30년국채커버드콜액티브(H),risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+476550,TIGER 미국30년국채커버드콜액티브(H),listing_date,2024.02.27,2024-02-27,verified,same
+476690,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+476690,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+476690,,fee(total),,0.4500,verified,existing_blank(유지·미충전)
+476690,,synthetic_total_fee,,0.5300,verified,existing_blank(유지·미충전)
+476690,,effective_burden,,0.6385,verified,existing_blank(유지·미충전)
+476690,,index,,Indxx Global Obesity Treatment Top 2 Plus 지수 (시장가격),verified,existing_blank(유지·미충전)
+476690,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+476690,,listing_date,,2024-02-29,verified,existing_blank(유지·미충전)
+476750,ACE 미국30년국채엔화노출액티브(H),issuer,한국투자신탁운용,,unmapped,funetf_unverified
+476750,ACE 미국30년국채엔화노출액티브(H),issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+476750,ACE 미국30년국채엔화노출액티브(H),fee(total),0.1500,0.1500,verified,same
+476750,ACE 미국30년국채엔화노출액티브(H),synthetic_total_fee,,0.2400,verified,existing_blank(유지·미충전)
+476750,ACE 미국30년국채엔화노출액티브(H),effective_burden,,0.2618,verified,existing_blank(유지·미충전)
+476750,ACE 미국30년국채엔화노출액티브(H),index,Bloomberg U.S. Treasury 20+ Year Total Return Index T1530 JPY Currency Hedged,Bloomberg U.S. Treasury 20+ Year Total Return Index T1530 JPY Currency Hedged,verified,same
+476750,ACE 미국30년국채엔화노출액티브(H),risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+476750,ACE 미국30년국채엔화노출액티브(H),listing_date,2024.03.12,2024-03-12,verified,same
+476760,ACE 미국30년국채액티브,issuer,한국투자신탁운용,,unmapped,funetf_unverified
+476760,ACE 미국30년국채액티브,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+476760,ACE 미국30년국채액티브,fee(total),0.0500,0.0500,verified,same
+476760,ACE 미국30년국채액티브,synthetic_total_fee,,0.1200,verified,existing_blank(유지·미충전)
+476760,ACE 미국30년국채액티브,effective_burden,,0.1318,verified,existing_blank(유지·미충전)
+476760,ACE 미국30년국채액티브,index,Bloomberg U.S Treasury 20+ Year Total Return Index,Bloomberg U.S. Treasury 20+ Year Total Return Index,verified,DIFF
+476760,ACE 미국30년국채액티브,risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+476760,ACE 미국30년국채액티브,listing_date,2024.03.12,2024-03-12,verified,same
+476800,KODEX 한국부동산리츠인프라,issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+476800,KODEX 한국부동산리츠인프라,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+476800,KODEX 한국부동산리츠인프라,fee(total),0.0900,0.0900,verified,same
+476800,KODEX 한국부동산리츠인프라,synthetic_total_fee,,0.1200,verified,existing_blank(유지·미충전)
+476800,KODEX 한국부동산리츠인프라,effective_burden,,0.1490,verified,existing_blank(유지·미충전)
+476800,KODEX 한국부동산리츠인프라,index,KRX 부동산리츠인프라 지수,KRX 부동산리츠인프라 지수,verified,same
+476800,KODEX 한국부동산리츠인프라,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+476800,KODEX 한국부동산리츠인프라,listing_date,2024.03.05,2024-03-05,verified,same
+476850,,issuer,,,unmapped,existing_blank(유지·미충전)
+476850,,issuer_short,,삼성액티브자산운용,verified,existing_blank(유지·미충전)
+476850,,fee(total),,0.5000,verified,existing_blank(유지·미충전)
+476850,,synthetic_total_fee,,0.5200,verified,existing_blank(유지·미충전)
+476850,,effective_burden,,0.9470,verified,existing_blank(유지·미충전)
+476850,,index,,코스피,verified,existing_blank(유지·미충전)
+476850,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+476850,,listing_date,,2024-02-27,verified,existing_blank(유지·미충전)
+480020,,issuer,,,unmapped,existing_blank(유지·미충전)
+480020,,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+480020,,fee(total),,0.4500,verified,existing_blank(유지·미충전)
+480020,,synthetic_total_fee,,0.5200,verified,existing_blank(유지·미충전)
+480020,,effective_burden,,0.5383,verified,existing_blank(유지·미충전)
+480020,,index,,Bloomberg US Big Tech Top 7 Plus Premium Decrement 15% Distribution Index,verified,existing_blank(유지·미충전)
+480020,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+480020,,listing_date,,2024-04-23,verified,existing_blank(유지·미충전)
+480030,,issuer,,,unmapped,existing_blank(유지·미충전)
+480030,,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+480030,,fee(total),,0.4500,verified,existing_blank(유지·미충전)
+480030,,synthetic_total_fee,,0.5200,verified,existing_blank(유지·미충전)
+480030,,effective_burden,,0.5391,verified,existing_blank(유지·미충전)
+480030,,index,,Bloomberg US 500 Large Cap Premium Decrement 15% Distribution Index,verified,existing_blank(유지·미충전)
+480030,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+480030,,listing_date,,2024-04-23,verified,existing_blank(유지·미충전)
+480040,,issuer,,,unmapped,existing_blank(유지·미충전)
+480040,,issuer_short,,한국투자신탁운용,verified,existing_blank(유지·미충전)
+480040,,fee(total),,0.4500,verified,existing_blank(유지·미충전)
+480040,,synthetic_total_fee,,0.5200,verified,existing_blank(유지·미충전)
+480040,,effective_burden,,0.5413,verified,existing_blank(유지·미충전)
+480040,,index,,Bloomberg US Listed Semiconductor Premium Decrement 15% Distribution Index,verified,existing_blank(유지·미충전)
+480040,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+480040,,listing_date,,2024-04-23,verified,existing_blank(유지·미충전)
+480460,WON 한국부동산TOP3플러스,issuer,우리자산운용,우리자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 480460)",same
+480460,WON 한국부동산TOP3플러스,issuer_short,,우리운용,verified,existing_blank(유지·미충전)
+480460,WON 한국부동산TOP3플러스,fee(total),0.2500,0.2500,verified,same
+480460,WON 한국부동산TOP3플러스,synthetic_total_fee,,0.3100,verified,existing_blank(유지·미충전)
+480460,WON 한국부동산TOP3플러스,effective_burden,,0.3317,verified,existing_blank(유지·미충전)
+480460,WON 한국부동산TOP3플러스,index,DeepSearch 한국부동산TOP3플러스 지수,DeepSearch 한국부동산TOP3플러스 지수,verified,same
+480460,WON 한국부동산TOP3플러스,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+480460,WON 한국부동산TOP3플러스,listing_date,2024.04.30,2024-04-30,verified,same
+481050,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+481050,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+481050,,fee(total),,0.0500,verified,existing_blank(유지·미충전)
+481050,,synthetic_total_fee,,0.0600,verified,existing_blank(유지·미충전)
+481050,,effective_burden,,0.0658,verified,existing_blank(유지·미충전)
+481050,,index,,KAP 1년은행CD+추가금리 지수(총수익지수),verified,existing_blank(유지·미충전)
+481050,,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+481050,,listing_date,,2024-04-23,verified,existing_blank(유지·미충전)
+481060,KODEX 미국30년국채타겟커버드콜(합성 H),issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+481060,KODEX 미국30년국채타겟커버드콜(합성 H),issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+481060,KODEX 미국30년국채타겟커버드콜(합성 H),fee(total),0.2500,0.2500,verified,same
+481060,KODEX 미국30년국채타겟커버드콜(합성 H),synthetic_total_fee,,0.3200,verified,existing_blank(유지·미충전)
+481060,KODEX 미국30년국채타겟커버드콜(합성 H),effective_burden,,0.3248,verified,existing_blank(유지·미충전)
+481060,KODEX 미국30년국채타겟커버드콜(합성 H),index,Bloomberg U.S.Treasury 20+ Year(TLT)+ 12% Premium Covered Call index(TR),Bloomberg U.S.Treasury 20+ Year(TLT)+ 12% Premium Covered Call index(Total Return),verified,DIFF
+481060,KODEX 미국30년국채타겟커버드콜(합성 H),risk_grade,,3등급 (다소높은위험),verified,existing_blank(유지·미충전)
+481060,KODEX 미국30년국채타겟커버드콜(합성 H),listing_date,2024.04.30,2024-04-30,verified,same
+481340,RISE 미국30년국채액티브,issuer,KB자산운용,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",same
+481340,RISE 미국30년국채액티브,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+481340,RISE 미국30년국채액티브,fee(total),0.0500,0.0500,verified,same
+481340,RISE 미국30년국채액티브,synthetic_total_fee,,0.1400,verified,existing_blank(유지·미충전)
+481340,RISE 미국30년국채액티브,effective_burden,,0.1591,verified,existing_blank(유지·미충전)
+481340,RISE 미국30년국채액티브,index,Bloomberg U.S Treasury 20+ Year Total Return Index,Bloomberg U.S Treasury 20+ Year Total Return Index,verified,same
+481340,RISE 미국30년국채액티브,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+481340,RISE 미국30년국채액티브,listing_date,2024.05.28,2024-05-28,verified,same
+482730,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+482730,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+482730,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+482730,,synthetic_total_fee,,0.3200,verified,existing_blank(유지·미충전)
+482730,,effective_burden,,0.4285,verified,existing_blank(유지·미충전)
+482730,,index,,S&P500 10% Daily Premium Covered Call Index(TR),verified,existing_blank(유지·미충전)
+482730,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+482730,,listing_date,,2024-05-21,verified,existing_blank(유지·미충전)
+483280,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+483280,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+483280,,fee(total),,0.3900,verified,existing_blank(유지·미충전)
+483280,,synthetic_total_fee,,0.4800,verified,existing_blank(유지·미충전)
+483280,,effective_burden,,0.5706,verified,existing_blank(유지·미충전)
+483280,,index,,KEDI 미국AI테크TOP10+15%프리미엄 지수(Total Return),verified,existing_blank(유지·미충전)
+483280,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+483280,,listing_date,,2024-05-28,verified,existing_blank(유지·미충전)
+483290,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+483290,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+483290,,fee(total),,0.3900,verified,existing_blank(유지·미충전)
+483290,,synthetic_total_fee,,0.4700,verified,existing_blank(유지·미충전)
+483290,,effective_burden,,0.5831,verified,existing_blank(유지·미충전)
+483290,,index,,Dow Jones U.S. Dividend 100 10% Premium Covered Call Index(Total Return),verified,existing_blank(유지·미충전)
+483290,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+483290,,listing_date,,2024-05-28,verified,existing_blank(유지·미충전)
+484790,KODEX 미국30년국채액티브(H),issuer,삼성자산운용(ETF),삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",same
+484790,KODEX 미국30년국채액티브(H),issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+484790,KODEX 미국30년국채액티브(H),fee(total),0.0150,0.0150,verified,same
+484790,KODEX 미국30년국채액티브(H),synthetic_total_fee,,0.0500,verified,existing_blank(유지·미충전)
+484790,KODEX 미국30년국채액티브(H),effective_burden,,0.0560,verified,existing_blank(유지·미충전)
+484790,KODEX 미국30년국채액티브(H),index,KEDI-KAP 미국 국채 20+ 지수(TR),KEDI-KAP 미국 국채 20년+ 지수(TR),verified,DIFF
+484790,KODEX 미국30년국채액티브(H),risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+484790,KODEX 미국30년국채액티브(H),listing_date,2024.06.18,2024-06-18,verified,same
+484880,,issuer,,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",existing_blank(유지·미충전)
+484880,,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+484880,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+484880,,synthetic_total_fee,,0.3600,verified,existing_blank(유지·미충전)
+484880,,effective_burden,,0.3655,verified,existing_blank(유지·미충전)
+484880,,index,,FnGuide 금융지주플러스고배당 지수(PR),verified,existing_blank(유지·미충전)
+484880,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+484880,,listing_date,,2024-06-25,verified,existing_blank(유지·미충전)
+486290,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+486290,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+486290,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+486290,,synthetic_total_fee,,0.3400,verified,existing_blank(유지·미충전)
+486290,,effective_burden,,0.4548,verified,existing_blank(유지·미충전)
+486290,,index,,NASDAQ 100 Daily Covered Call Target Premium 15% 지수(TR),verified,existing_blank(유지·미충전)
+486290,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+486290,,listing_date,,2024-06-25,verified,existing_blank(유지·미충전)
+487950,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+487950,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+487950,,fee(total),,0.4500,verified,existing_blank(유지·미충전)
+487950,,synthetic_total_fee,,0.6100,verified,existing_blank(유지·미충전)
+487950,,effective_burden,,0.9383,verified,existing_blank(유지·미충전)
+487950,,index,,Dow Jones Taiwan Technology Dividend 30 Index (Price Return),verified,existing_blank(유지·미충전)
+487950,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+487950,,listing_date,,2024-07-23,verified,existing_blank(유지·미충전)
+489030,,issuer,,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",existing_blank(유지·미충전)
+489030,,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+489030,,fee(total),,0.3000,verified,existing_blank(유지·미충전)
+489030,,synthetic_total_fee,,0.3700,verified,existing_blank(유지·미충전)
+489030,,effective_burden,,0.8195,verified,existing_blank(유지·미충전)
+489030,,index,,코스피 고배당 위클리 콜매도 ATM 지수,verified,existing_blank(유지·미충전)
+489030,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+489030,,listing_date,,2024-08-13,verified,existing_blank(유지·미충전)
+489250,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+489250,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+489250,,fee(total),,0.0099,verified,existing_blank(유지·미충전)
+489250,,synthetic_total_fee,,0.0800,verified,existing_blank(유지·미충전)
+489250,,effective_burden,,0.1759,verified,existing_blank(유지·미충전)
+489250,,index,,Dow Jones U.S. Dividend 100 Index(Price Return),verified,existing_blank(유지·미충전)
+489250,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+489250,,listing_date,,2024-08-13,verified,existing_blank(유지·미충전)
+490490,SOL 미국배당미국채혼합50,issuer,신한자산운용,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",same
+490490,SOL 미국배당미국채혼합50,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+490490,SOL 미국배당미국채혼합50,fee(total),0.1500,0.1500,verified,same
+490490,SOL 미국배당미국채혼합50,synthetic_total_fee,,0.2200,verified,existing_blank(유지·미충전)
+490490,SOL 미국배당미국채혼합50,effective_burden,,0.2891,verified,existing_blank(유지·미충전)
+490490,SOL 미국배당미국채혼합50,index,KRX 다우존스 미국배당국채 혼합지수,KRX 다우존스미국배당국채혼합지수(PR),verified,DIFF
+490490,SOL 미국배당미국채혼합50,risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+490490,SOL 미국배당미국채혼합50,listing_date,2024.09.24,2024-09-24,verified,same
+490590,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+490590,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+490590,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+490590,,synthetic_total_fee,,0.3300,verified,existing_blank(유지·미충전)
+490590,,effective_burden,,0.5618,verified,existing_blank(유지·미충전)
+490590,,index,,KEDI 미국 AI밸류체인 90%참여+데일리옵션 프리미엄 지수(TR),verified,existing_blank(유지·미충전)
+490590,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+490590,,listing_date,,2024-10-02,verified,existing_blank(유지·미충전)
+490600,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+490600,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+490600,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+490600,,synthetic_total_fee,,0.3400,verified,existing_blank(유지·미충전)
+490600,,effective_burden,,0.5728,verified,existing_blank(유지·미충전)
+490600,,index,,KEDI 미국 배당100 90%참여+데일리옵션 프리미엄 지수,verified,existing_blank(유지·미충전)
+490600,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+490600,,listing_date,,2024-09-24,verified,existing_blank(유지·미충전)
+491620,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+491620,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+491620,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+491620,,synthetic_total_fee,,0.3300,verified,existing_blank(유지·미충전)
+491620,,effective_burden,,0.5863,verified,existing_blank(유지·미충전)
+491620,,index,,KEDI 미국 테크100 90%참여+데일리옵션 프리미엄 지수(TR),verified,existing_blank(유지·미충전)
+491620,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+491620,,listing_date,,2024-10-02,verified,existing_blank(유지·미충전)
+493420,,issuer,,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",existing_blank(유지·미충전)
+493420,,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+493420,,fee(total),,0.0100,verified,existing_blank(유지·미충전)
+493420,,synthetic_total_fee,,0.0900,verified,existing_blank(유지·미충전)
+493420,,effective_burden,,0.1937,verified,existing_blank(유지·미충전)
+493420,,index,,Dow Jones U.S. Dividend 100 Index(TR),verified,existing_blank(유지·미충전)
+493420,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+493420,,listing_date,,2024-10-08,verified,existing_blank(유지·미충전)
+493810,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+493810,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+493810,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+493810,,synthetic_total_fee,,0.3300,verified,existing_blank(유지·미충전)
+493810,,effective_burden,,0.4754,verified,existing_blank(유지·미충전)
+493810,,index,,KEDI 미국AI빅테크10+15%데일리프리미엄 지수(TR),verified,existing_blank(유지·미충전)
+493810,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+493810,,listing_date,,2024-10-15,verified,existing_blank(유지·미충전)
+494210,,issuer,,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",existing_blank(유지·미충전)
+494210,,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+494210,,fee(total),,0.3500,verified,existing_blank(유지·미충전)
+494210,,synthetic_total_fee,,0.5600,verified,existing_blank(유지·미충전)
+494210,,effective_burden,,0.6187,verified,existing_blank(유지·미충전)
+494210,,index,,KEDI 미국퀄리티500+월1%프리미엄 지수(NTR),verified,existing_blank(유지·미충전)
+494210,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+494210,,listing_date,,2024-10-15,verified,existing_blank(유지·미충전)
+494300,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+494300,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+494300,,fee(total),,0.2500,verified,existing_blank(유지·미충전)
+494300,,synthetic_total_fee,,0.3500,verified,existing_blank(유지·미충전)
+494300,,effective_burden,,0.5033,verified,existing_blank(유지·미충전)
+494300,,index,,NASDAQ-100 Daily Covered Call 101 Index(Total Return),verified,existing_blank(유지·미충전)
+494300,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+494300,,listing_date,,2024-10-22,verified,existing_blank(유지·미충전)
+494420,,issuer,,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",existing_blank(유지·미충전)
+494420,,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+494420,,fee(total),,0.3900,verified,existing_blank(유지·미충전)
+494420,,synthetic_total_fee,,0.5100,verified,existing_blank(유지·미충전)
+494420,,effective_burden,,0.7680,verified,existing_blank(유지·미충전)
+494420,,index,,Bloomberg U.S. Dividend Growth Partial Covered Call Index,verified,existing_blank(유지·미충전)
+494420,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+494420,,listing_date,,2024-10-22,verified,existing_blank(유지·미충전)
+495040,,issuer,,한화자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0057H0,0089B0,0132K0)",existing_blank(유지·미충전)
+495040,,issuer_short,,한화운용,verified,existing_blank(유지·미충전)
+495040,,fee(total),,0.0090,verified,existing_blank(유지·미충전)
+495040,,synthetic_total_fee,,0.0500,verified,existing_blank(유지·미충전)
+495040,,effective_burden,,0.1710,verified,existing_blank(유지·미충전)
+495040,,index,,코리아 밸류업 지수(TR),verified,existing_blank(유지·미충전)
+495040,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+495040,,listing_date,,2024-11-04,verified,existing_blank(유지·미충전)
+495050,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+495050,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+495050,,fee(total),,0.0080,verified,existing_blank(유지·미충전)
+495050,,synthetic_total_fee,,0.0200,verified,existing_blank(유지·미충전)
+495050,,effective_burden,,0.0627,verified,existing_blank(유지·미충전)
+495050,,index,,코리아 밸류업 지수(TR),verified,existing_blank(유지·미충전)
+495050,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+495050,,listing_date,,2024-11-04,verified,existing_blank(유지·미충전)
+495230,,issuer,,,unmapped,existing_blank(유지·미충전)
+495230,,issuer_short,,삼성액티브자산운용,verified,existing_blank(유지·미충전)
+495230,,fee(total),,0.5000,verified,existing_blank(유지·미충전)
+495230,,synthetic_total_fee,,0.5100,verified,existing_blank(유지·미충전)
+495230,,effective_burden,,1.0383,verified,existing_blank(유지·미충전)
+495230,,index,,코리아 밸류업 지수(TR),verified,existing_blank(유지·미충전)
+495230,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+495230,,listing_date,,2024-11-04,verified,existing_blank(유지·미충전)
+495330,,issuer,,하나자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0224X0)",existing_blank(유지·미충전)
+495330,,issuer_short,,하나운용,verified,existing_blank(유지·미충전)
+495330,,fee(total),,0.0200,verified,existing_blank(유지·미충전)
+495330,,synthetic_total_fee,,0.0400,verified,existing_blank(유지·미충전)
+495330,,effective_burden,,0.0890,verified,existing_blank(유지·미충전)
+495330,,index,,코리아 밸류업 지수(TR),verified,existing_blank(유지·미충전)
+495330,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+495330,,listing_date,,2024-11-04,verified,existing_blank(유지·미충전)
+495850,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+495850,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+495850,,fee(total),,0.0080,verified,existing_blank(유지·미충전)
+495850,,synthetic_total_fee,,0.0200,verified,existing_blank(유지·미충전)
+495850,,effective_burden,,0.1533,verified,existing_blank(유지·미충전)
+495850,,index,,코리아 밸류업 지수,verified,existing_blank(유지·미충전)
+495850,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+495850,,listing_date,,2024-11-04,verified,existing_blank(유지·미충전)
+496080,,issuer,,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",existing_blank(유지·미충전)
+496080,,issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+496080,,fee(total),,0.0080,verified,existing_blank(유지·미충전)
+496080,,synthetic_total_fee,,0.0200,verified,existing_blank(유지·미충전)
+496080,,effective_burden,,0.1374,verified,existing_blank(유지·미충전)
+496080,,index,,코리아 밸류업 지수(TR),verified,existing_blank(유지·미충전)
+496080,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+496080,,listing_date,,2024-11-04,verified,existing_blank(유지·미충전)
+497780,,issuer,,,unmapped,existing_blank(유지·미충전)
+497780,,issuer_short,,삼성액티브자산운용,verified,existing_blank(유지·미충전)
+497780,,fee(total),,0.5000,verified,existing_blank(유지·미충전)
+497780,,synthetic_total_fee,,0.5900,verified,existing_blank(유지·미충전)
+497780,,effective_burden,,0.7999,verified,existing_blank(유지·미충전)
+497780,,index,,Solactive 미국천연가스인프라 PR 지수,verified,existing_blank(유지·미충전)
+497780,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+497780,,listing_date,,2024-12-10,verified,existing_blank(유지·미충전)
+497880,SOL CD금리&머니마켓액티브,issuer,신한자산운용,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",same
+497880,SOL CD금리&머니마켓액티브,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+497880,SOL CD금리&머니마켓액티브,fee(total),0.0500,0.0500,verified,same
+497880,SOL CD금리&머니마켓액티브,synthetic_total_fee,,0.0700,verified,existing_blank(유지·미충전)
+497880,SOL CD금리&머니마켓액티브,effective_burden,,0.0711,verified,existing_blank(유지·미충전)
+497880,SOL CD금리&머니마켓액티브,index,KAP CD&단기자금시장지수(PR),KAP CD&단기자금시장지수,verified,DIFF
+497880,SOL CD금리&머니마켓액티브,risk_grade,,5등급 (낮은위험),verified,existing_blank(유지·미충전)
+497880,SOL CD금리&머니마켓액티브,listing_date,2024.11.26,2024-11-26,verified,same
+498400,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+498400,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+498400,,fee(total),,0.3900,verified,existing_blank(유지·미충전)
+498400,,synthetic_total_fee,,0.4200,verified,existing_blank(유지·미충전)
+498400,,effective_burden,,0.5041,verified,existing_blank(유지·미충전)
+498400,,index,,코스피 200 타겟 15% 위클리 커버드콜 지수,verified,existing_blank(유지·미충전)
+498400,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+498400,,listing_date,,2024-12-03,verified,existing_blank(유지·미충전)
+498410,,issuer,,삼성자산운용(ETF),"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0048J0,0091C0,0177N0)",existing_blank(유지·미충전)
+498410,,issuer_short,,삼성운용,verified,existing_blank(유지·미충전)
+498410,,fee(total),,0.3900,verified,existing_blank(유지·미충전)
+498410,,synthetic_total_fee,,0.4200,verified,existing_blank(유지·미충전)
+498410,,effective_burden,,0.6639,verified,existing_blank(유지·미충전)
+498410,,index,,코스피 200 금융 고배당 TOP 10 타겟 15%분배 위클리 커버드콜 지수,verified,existing_blank(유지·미충전)
+498410,,risk_grade,,1등급 (매우높은위험),verified,existing_blank(유지·미충전)
+498410,,listing_date,,2024-12-17,verified,existing_blank(유지·미충전)
+498860,,issuer,,KB자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0013R0,136340,472830)",existing_blank(유지·미충전)
+498860,,issuer_short,,KB운용,verified,existing_blank(유지·미충전)
+498860,,fee(total),,0.1000,verified,existing_blank(유지·미충전)
+498860,,synthetic_total_fee,,0.1700,verified,existing_blank(유지·미충전)
+498860,,effective_burden,,0.2293,verified,existing_blank(유지·미충전)
+498860,,index,,iSelect 코리아 금융 고배당 지수,verified,existing_blank(유지·미충전)
+498860,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+498860,,listing_date,,2024-12-09,verified,existing_blank(유지·미충전)
+499150,,issuer,,신한자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0040X0,0040Y0,0080X0)",existing_blank(유지·미충전)
+499150,,issuer_short,,신한자산운용,verified,existing_blank(유지·미충전)
+499150,,fee(total),,0.1500,verified,existing_blank(유지·미충전)
+499150,,synthetic_total_fee,,0.8600,verified,existing_blank(유지·미충전)
+499150,,effective_burden,,0.9235,verified,existing_blank(유지·미충전)
+499150,,index,,S&P500 Yen Hedged Index,verified,existing_blank(유지·미충전)
+499150,,risk_grade,,2등급 (높은위험),verified,existing_blank(유지·미충전)
+499150,,listing_date,,2024-12-03,verified,existing_blank(유지·미충전)
+499660,TIGER CD금리플러스액티브(합성),issuer,미래에셋자산운용,미래에셋자산운용,"verified(map: 기존 승인 formal↔FunETF short 1:1, 근거 0000D0,0046A0,0086B0)",same
+499660,TIGER CD금리플러스액티브(합성),issuer_short,,미래에셋운용,verified,existing_blank(유지·미충전)
+499660,TIGER CD금리플러스액티브(합성),fee(total),0.0098,0.0098,verified,same
+499660,TIGER CD금리플러스액티브(합성),synthetic_total_fee,,0.0300,verified,existing_blank(유지·미충전)
+499660,TIGER CD금리플러스액티브(합성),effective_burden,,0.0327,verified,existing_blank(유지·미충전)
+499660,TIGER CD금리플러스액티브(합성),index,KIS CD+CPI연동금리 월분배 지수,KIS CD+CPI연동금리 월분배 지수,verified,same
+499660,TIGER CD금리플러스액티브(합성),risk_grade,,4등급 (보통위험),verified,existing_blank(유지·미충전)
+499660,TIGER CD금리플러스액티브(합성),listing_date,2024.12.17,2024-12-17,verified,same

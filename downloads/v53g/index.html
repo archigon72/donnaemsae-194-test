@@ -1,0 +1,14 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>v53g FunETF 메타·원클릭 경량화</title>
+<style>body{font-family:sans-serif;margin:12px;max-width:640px;font-size:14px}li{margin:6px 0}code{word-break:break-all}</style></head><body>
+<h2>v53g FunETF 메타 통합·원클릭 경량화</h2><p>GrokBot 자체 검증 · 2026-10-14 · 커밋 762c6c4 · 격리 경로(auto-test/)만 변경</p>
+<ul>
+<li><a href="v53g_meta_oneclick_evidence.zip">증거 ZIP</a> (sha256 <code>53c2fb120789cae13dce8be303c601145dd90d60b24b86e42263775aba131379</code>)</li>
+<li><a href="oneclick-autotest.yml.txt">워크플로 교체 파일 (1개)</a> · <a href="oneclick-autotest.yml.diff.txt">변경 diff</a></li>
+<li><a href="field_coverage.csv">FunETF 194×필드 확보표</a> · <a href="unverified65_recheck.csv">미검증 65종 재확인표</a> · <a href="compare_existing_vs_funetf.csv">기존값 비교표</a></li>
+<li><a href="../../auto-test/">격리 상태 페이지</a></li>
+</ul>
+<h3>워크플로 교체 방법 (대표 1회)</h3>
+<ol><li>GitHub → archigon72/donnaemsae-194-test → <code>.github/workflows/oneclick-autotest.yml</code> → 연필(Edit)</li>
+<li>전체 선택 후 삭제 → 위 "워크플로 교체 파일" 내용 전체 붙여넣기 → Commit changes</li>
+<li>Actions → oneclick-autotest → Run workflow (기본값 live / none / 체크 해제) 1회</li></ol>
+</body></html>
