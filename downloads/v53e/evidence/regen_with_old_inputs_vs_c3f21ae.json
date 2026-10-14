@@ -1,0 +1,4419 @@
+{
+ "byte_same": [
+  "0004G0",
+  "0005A0",
+  "0008S0",
+  "0013P0",
+  "0018C0",
+  "0022T0",
+  "0046Y0",
+  "0049M0",
+  "0052D0",
+  "0084D0",
+  "0084E0",
+  "0089C0",
+  "0089D0",
+  "0094L0",
+  "0094M0",
+  "0097L0",
+  "0098N0",
+  "0104N0",
+  "0104P0",
+  "0105E0",
+  "0107F0",
+  "0111J0",
+  "0115C0",
+  "0127T0",
+  "0127V0",
+  "0128D0",
+  "0138T0",
+  "0139P0",
+  "0144L0",
+  "0152E0",
+  "0153K0",
+  "0153X0",
+  "0167B0",
+  "0176P0",
+  "0177R0",
+  "0189Z0",
+  "0190G0",
+  "0198A0",
+  "0199C0",
+  "0210E0",
+  "0219E0",
+  "0222D0",
+  "0223A0",
+  "091170",
+  "104530",
+  "161510",
+  "166400",
+  "211900",
+  "245340",
+  "279530",
+  "289480",
+  "290080",
+  "322410",
+  "336160",
+  "373790",
+  "402970",
+  "429000",
+  "432840",
+  "433330",
+  "441640",
+  "441680",
+  "441800",
+  "446720",
+  "448100",
+  "452360",
+  "453330",
+  "455660",
+  "458730",
+  "458750",
+  "458760",
+  "460660",
+  "460960",
+  "465670",
+  "466940",
+  "468380",
+  "472150",
+  "474220",
+  "475380",
+  "475720",
+  "476690",
+  "476850",
+  "480020",
+  "480030",
+  "480040",
+  "481050",
+  "482730",
+  "483280",
+  "483290",
+  "484880",
+  "486290",
+  "487950",
+  "489030",
+  "489250",
+  "490590",
+  "490600",
+  "491620",
+  "493420",
+  "493810",
+  "494210",
+  "494300",
+  "494420",
+  "495040",
+  "495050",
+  "495230",
+  "495330",
+  "495850",
+  "496080",
+  "497780",
+  "498400",
+  "498410",
+  "498860",
+  "499150"
+ ],
+ "semantic_same": [],
+ "diff": {
+  "0000D0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0013R0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0015E0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0015F0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0040X0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0040Y0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0046A0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0048J0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0049K0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0057H0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0073X0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0080X0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0085N0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0085P0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0086B0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0086C0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0089B0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0091C0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0132K0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0153P0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0174J0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0177N0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0183V0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "proof_meta"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0192S0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "proof_meta"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0194N0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "proof_meta"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0194R0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "proof_meta"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0203D0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "proof_meta"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0216K0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "proof_meta"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0220A0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "proof_meta"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0224X0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "proof_meta"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0233A0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "proof_meta"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0233J0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "proof_meta"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "0238P0": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "proof_meta"
+   ],
+   "periods.6개월": [
+    "cache",
+    "proof_meta"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "136340": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "153130": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "181480": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "182480": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "214980": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "237370": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "251600": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "273140": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "284430": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "316300": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "329200": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "issues",
+    "proof_meta"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "329650": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "329660": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "329670": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "332610": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "332620": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "341850": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "352540": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "352560": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "423160": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "429740": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "437070": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "437080": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "438330": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "440340": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "448330": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "453850": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "455030": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "458260": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "459580": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "464470": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "468370": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "468630": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "471460": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "472830": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "472870": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "473330": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "475080": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "476550": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "476750": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "476760": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "476800": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "480460": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "481060": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "481340": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "484790": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "490490": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "497880": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "499660": {
+   "periods.1개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.전체": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.1년": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "periods.6개월": [
+    "cache",
+    "health",
+    "issues",
+    "performance",
+    "proof_meta",
+    "series",
+    "status"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ]
+  }
+ },
+ "summary": {
+  "files": 194,
+  "byte_same": 112,
+  "semantic_same_only": 0,
+  "diff": 82
+ }
+}

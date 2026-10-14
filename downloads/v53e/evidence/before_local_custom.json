@@ -1,0 +1,51 @@
+{
+ "0004G0:2026-03-03~2026-09-30": {
+  "caption": "2026-03-03 ~ 2026-09-30",
+  "status": "일부 종목 정보는 제공되지 않을 수 있습니다.",
+  "err": null,
+  "alerts": [],
+  "dist": [
+   "14.00원",
+   "296.00원",
+   "3.54%"
+  ],
+  "perf": [
+   "NAV-TR",
+   "NAV-TR - Raw NAV",
+   "NAV-TR은 세전 분배금 전액 재투자 가정값입니다. 실제 계좌수익률과 다를 수 있"
+  ]
+ },
+ "0048J0:2026-03-03~2026-09-30": {
+  "caption": "실제 자료 범위에서 분석합니다.",
+  "status": "Error: Bundle boundary mismatch",
+  "err": null,
+  "alerts": [],
+  "dist": [
+   "—",
+   "—",
+   "—"
+  ],
+  "perf": [
+   "NAV-TR",
+   "NAV-TR - Raw NAV",
+   "NAV-TR은 세전 분배금 전액 재투자 가정값입니다. 실제 계좌수익률과 다를 수 있"
+  ]
+ },
+ "0203D0:2026-06-15~2026-09-30": {
+  "caption": "실제 자료 범위에서 분석합니다.",
+  "status": "Error: Bundle boundary mismatch",
+  "err": null,
+  "alerts": [],
+  "dist": [
+   "—",
+   "—",
+   "—"
+  ],
+  "perf": [
+   "NAV-TR",
+   "NAV-TR - Raw NAV",
+   "NAV-TR은 세전 분배금 전액 재투자 가정값입니다. 실제 계좌수익률과 다를 수 있"
+  ]
+ },
+ "_errors": []
+}

@@ -1,0 +1,17 @@
+{
+ "targets": 194,
+ "periods": 776,
+ "mismatch": {},
+ "history_gap": {},
+ "missing_keys": {},
+ "dist_keys_mismatch": {},
+ "summary": {
+  "mismatch_codes": 0,
+  "mismatch_periods": 0,
+  "history_gap_codes": 0,
+  "history_gap_periods": 0,
+  "missing_keys_codes": 0,
+  "dist_keys_mismatch_codes": 0,
+  "dist_keys_mismatch_periods": 0
+ }
+}

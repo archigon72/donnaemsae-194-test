@@ -1,0 +1,33 @@
+{
+ "online": {
+  "keys": [
+   "donnaemsae-asset-hub-20261013-mobileui-v53d"
+  ],
+  "ctrl": true,
+  "donnaemsae-asset-hub-20261013-mobileui-v53d|data/runtime-manifest.json": {
+   "len": 24345,
+   "facts": false,
+   "health_display": false,
+   "accepted": false,
+   "sha_nav": false
+  },
+  "donnaemsae-asset-hub-20261013-mobileui-v53d|phase-worker.js": {
+   "len": 5870,
+   "facts": false,
+   "health_display": false,
+   "accepted": false,
+   "sha_nav": false
+  },
+  "donnaemsae-asset-hub-20261013-mobileui-v53d|comparison-worker.js": {
+   "len": 3665,
+   "facts": false,
+   "health_display": false,
+   "accepted": false,
+   "sha_nav": false
+  },
+  "fetched": {
+   "facts": false,
+   "len": 346309
+  }
+ }
+}

@@ -1,0 +1,3960 @@
+{
+ "targets": {
+  "codes": 194,
+  "periods": 776
+ },
+ "counts": {
+  "PASS": 14408,
+  "FAIL": 656,
+  "SKIP": 336
+ },
+ "fail_by_check": {
+  "cache.data_cutoff 형식 ISO(YYYY-MM-DD)": 328,
+  "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)": 328
+ },
+ "skip_by_rule": {
+  "ratio(12개월 미만 정상 공란)": 152,
+  "정상 공란(기간 부족/Core 미실행): series": 60,
+  "정상 공란(기간 부족/Core 미실행): performance": 60,
+  "정상 공란(기간 부족/Core 미실행): health": 60,
+  "latest": 4
+ },
+ "fails": [
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0000D0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0000D0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0000D0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0000D0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0000D0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0000D0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0000D0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0000D0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0013R0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0013R0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0013R0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0013R0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0013R0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0013R0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0013R0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0013R0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015E0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015E0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015E0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015E0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015E0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015E0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015E0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015E0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015F0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015F0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015F0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015F0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015F0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015F0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015F0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0015F0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040X0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040X0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040X0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040X0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040X0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040X0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040X0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040X0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040Y0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040Y0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040Y0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040Y0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040Y0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040Y0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040Y0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0040Y0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0046A0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0046A0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0046A0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0046A0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0046A0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0046A0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0046A0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0046A0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0048J0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0048J0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0048J0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0048J0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0048J0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0048J0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0048J0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0048J0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0049K0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0049K0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0049K0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0049K0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0049K0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0049K0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0049K0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0049K0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0057H0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0057H0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0057H0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0057H0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0057H0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0057H0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0057H0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0057H0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0073X0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0073X0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0073X0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0073X0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0073X0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0073X0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0073X0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0073X0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0080X0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0080X0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0080X0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0080X0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0080X0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0080X0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0080X0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0080X0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085N0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085N0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085N0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085N0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085N0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085N0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085N0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085N0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085P0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085P0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085P0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085P0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085P0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085P0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085P0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0085P0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086B0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086B0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086B0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086B0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086B0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086B0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086B0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086B0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086C0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086C0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086C0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086C0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086C0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086C0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086C0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0086C0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0089B0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0089B0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0089B0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0089B0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0089B0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0089B0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0089B0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0089B0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0091C0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0091C0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0091C0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0091C0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0091C0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0091C0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0091C0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0091C0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0132K0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0132K0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0132K0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0132K0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0132K0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0132K0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0132K0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0132K0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0153P0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0153P0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0153P0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0153P0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0153P0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0153P0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0153P0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0153P0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0174J0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0174J0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0174J0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0174J0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0174J0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0174J0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0174J0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0174J0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0177N0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0177N0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0177N0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0177N0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0177N0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0177N0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0177N0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0177N0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0183V0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0183V0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0183V0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0183V0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0183V0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0183V0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0183V0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0183V0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0192S0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0192S0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0192S0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0192S0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0192S0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0192S0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0192S0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0192S0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194N0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194N0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194N0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194N0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194N0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194N0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194N0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194N0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194R0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194R0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194R0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194R0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194R0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194R0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194R0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0194R0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0203D0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0203D0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0203D0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0203D0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0203D0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0203D0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0203D0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0203D0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0216K0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0216K0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0216K0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0216K0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0216K0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0216K0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0216K0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0216K0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0220A0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0220A0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0220A0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0220A0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0220A0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0220A0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0220A0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0220A0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0224X0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0224X0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0224X0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0224X0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0224X0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0224X0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0224X0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0224X0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233A0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233A0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233A0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233A0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233A0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233A0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233A0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233A0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233J0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233J0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233J0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233J0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233J0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233J0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233J0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0233J0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0238P0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0238P0",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0238P0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0238P0",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0238P0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0238P0",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0238P0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "0238P0",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "136340",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "136340",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "136340",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "136340",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "136340",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "136340",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "136340",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "136340",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "153130",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "153130",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "153130",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "153130",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "153130",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "153130",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "153130",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "153130",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "181480",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "181480",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "181480",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "181480",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "181480",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "181480",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "181480",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "181480",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "182480",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "182480",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "182480",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "182480",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "182480",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "182480",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "182480",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "182480",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "214980",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "214980",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "214980",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "214980",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "214980",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "214980",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "214980",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "214980",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "237370",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "237370",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "237370",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "237370",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "237370",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "237370",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "237370",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "237370",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "251600",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "251600",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "251600",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "251600",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "251600",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "251600",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "251600",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "251600",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "273140",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "273140",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "273140",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "273140",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "273140",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "273140",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "273140",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "273140",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "284430",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "284430",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "284430",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "284430",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "284430",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "284430",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "284430",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "284430",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "316300",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "316300",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "316300",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "316300",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "316300",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "316300",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "316300",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "316300",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329200",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329200",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329200",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329200",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329200",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329200",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329200",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329200",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329650",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329650",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329650",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329650",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329650",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329650",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329650",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329650",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329660",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329660",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329660",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329660",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329660",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329660",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329660",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329660",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329670",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329670",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329670",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329670",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329670",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329670",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329670",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "329670",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332610",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332610",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332610",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332610",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332610",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332610",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332610",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332610",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332620",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332620",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332620",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332620",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332620",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332620",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332620",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "332620",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "341850",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "341850",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "341850",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "341850",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "341850",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "341850",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "341850",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "341850",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352540",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352540",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352540",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352540",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352540",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352540",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352540",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352540",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352560",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352560",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352560",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352560",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352560",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352560",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352560",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "352560",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "423160",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "423160",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "423160",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "423160",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "423160",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "423160",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "423160",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "423160",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "429740",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "429740",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "429740",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "429740",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "429740",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "429740",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "429740",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "429740",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437070",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437070",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437070",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437070",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437070",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437070",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437070",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437070",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437080",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437080",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437080",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437080",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437080",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437080",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437080",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "437080",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "438330",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "438330",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "438330",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "438330",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "438330",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "438330",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "438330",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "438330",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "440340",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "440340",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "440340",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "440340",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "440340",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "440340",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "440340",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "440340",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "448330",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "448330",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "448330",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "448330",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "448330",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "448330",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "448330",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "448330",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "453850",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "453850",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "453850",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "453850",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "453850",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "453850",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "453850",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "453850",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "455030",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "455030",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "455030",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "455030",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "455030",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "455030",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "455030",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "455030",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "458260",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "458260",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "458260",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "458260",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "458260",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "458260",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "458260",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "458260",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "459580",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "459580",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "459580",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "459580",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "459580",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "459580",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "459580",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "459580",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "464470",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "464470",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "464470",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "464470",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "464470",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "464470",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "464470",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "464470",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468370",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468370",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468370",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468370",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468370",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468370",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468370",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468370",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468630",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468630",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468630",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468630",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468630",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468630",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468630",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "468630",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "471460",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "471460",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "471460",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "471460",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "471460",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "471460",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "471460",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "471460",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472830",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472830",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472830",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472830",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472830",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472830",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472830",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472830",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472870",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472870",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472870",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472870",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472870",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472870",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472870",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "472870",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "473330",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "473330",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "473330",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "473330",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "473330",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "473330",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "473330",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "473330",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "475080",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "475080",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "475080",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "475080",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "475080",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "475080",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "475080",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "475080",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476550",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476550",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476550",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476550",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476550",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476550",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476550",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476550",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476750",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476750",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476750",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476750",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476750",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476750",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476750",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476750",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476760",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476760",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476760",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476760",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476760",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476760",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476760",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476760",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476800",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476800",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476800",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476800",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476800",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476800",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476800",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "476800",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "480460",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "480460",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "480460",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "480460",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "480460",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "480460",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "480460",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "480460",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481060",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481060",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481060",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481060",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481060",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481060",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481060",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481060",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481340",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481340",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481340",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481340",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481340",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481340",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481340",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "481340",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "484790",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "484790",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "484790",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "484790",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "484790",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "484790",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "484790",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "484790",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "490490",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "490490",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "490490",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "490490",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "490490",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "490490",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "490490",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "490490",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "497880",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "497880",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "497880",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "497880",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "497880",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "497880",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "497880",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "497880",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "499660",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "499660",
+   "period": "1개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "499660",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "499660",
+   "period": "6개월",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "499660",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "499660",
+   "period": "1년",
+   "value": "20261008"
+  },
+  {
+   "check": "cache.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "499660",
+   "period": "전체",
+   "value": "20261008"
+  },
+  {
+   "check": "proof_meta.data_cutoff 형식 ISO(YYYY-MM-DD)",
+   "code": "499660",
+   "period": "전체",
+   "value": "20261008"
+  }
+ ]
+}

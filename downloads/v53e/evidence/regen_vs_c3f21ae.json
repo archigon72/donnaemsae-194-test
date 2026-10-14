@@ -1,0 +1,1902 @@
+{
+ "byte_same": [
+  "0004G0",
+  "0005A0",
+  "0008S0",
+  "0013P0",
+  "0018C0",
+  "0022T0",
+  "0046Y0",
+  "0049M0",
+  "0052D0",
+  "0084D0",
+  "0084E0",
+  "0089C0",
+  "0089D0",
+  "0094L0",
+  "0094M0",
+  "0097L0",
+  "0098N0",
+  "0104N0",
+  "0104P0",
+  "0105E0",
+  "0107F0",
+  "0111J0",
+  "0115C0",
+  "0127T0",
+  "0127V0",
+  "0128D0",
+  "0138T0",
+  "0139P0",
+  "0144L0",
+  "0152E0",
+  "0153K0",
+  "0153X0",
+  "0167B0",
+  "0176P0",
+  "0177R0",
+  "0189Z0",
+  "0190G0",
+  "0198A0",
+  "0199C0",
+  "0210E0",
+  "0219E0",
+  "0222D0",
+  "0223A0",
+  "091170",
+  "104530",
+  "161510",
+  "166400",
+  "211900",
+  "245340",
+  "279530",
+  "289480",
+  "290080",
+  "322410",
+  "336160",
+  "373790",
+  "402970",
+  "429000",
+  "432840",
+  "433330",
+  "441640",
+  "441680",
+  "441800",
+  "446720",
+  "448100",
+  "452360",
+  "453330",
+  "455660",
+  "458730",
+  "458750",
+  "458760",
+  "460660",
+  "460960",
+  "465670",
+  "466940",
+  "468380",
+  "472150",
+  "474220",
+  "475380",
+  "475720",
+  "476690",
+  "476850",
+  "480020",
+  "480030",
+  "480040",
+  "481050",
+  "482730",
+  "483280",
+  "483290",
+  "484880",
+  "486290",
+  "487950",
+  "489030",
+  "489250",
+  "490590",
+  "490600",
+  "491620",
+  "493420",
+  "493810",
+  "494210",
+  "494300",
+  "494420",
+  "495040",
+  "495050",
+  "495230",
+  "495330",
+  "495850",
+  "496080",
+  "497780",
+  "498400",
+  "498410",
+  "498860",
+  "499150"
+ ],
+ "semantic_same": [],
+ "diff": {
+  "0000D0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0013R0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0015E0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0015F0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0040X0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0040Y0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0046A0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0048J0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0049K0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0057H0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0073X0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0080X0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0085N0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0085P0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0086B0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0086C0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0089B0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0091C0": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0132K0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0153P0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0174J0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0177N0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0183V0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0192S0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0194N0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0194R0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0203D0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0216K0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0220A0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0224X0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0233A0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0233J0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "0238P0": {
+   "presentations.1년": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "136340": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "153130": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "181480": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "182480": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "214980": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "237370": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "251600": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "273140": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "284430": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "316300": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "329200": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display"
+   ]
+  },
+  "329650": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "329660": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "329670": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "332610": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "332620": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "341850": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "352540": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "352560": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "423160": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "429740": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "437070": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "437080": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "438330": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "440340": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "448330": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "453850": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "455030": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "458260": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "459580": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "464470": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "468370": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "468630": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "471460": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "472830": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "472870": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "473330": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "475080": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "476550": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "476750": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "476760": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "476800": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "480460": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "481060": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "481340": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "484790": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "490490": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "497880": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  },
+  "499660": {
+   "presentations.1년": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.6개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.1개월": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ],
+   "presentations.전체": [
+    "facts",
+    "health_display",
+    "reinvestment_effect_pp"
+   ]
+  }
+ },
+ "summary": {
+  "files": 194,
+  "byte_same": 112,
+  "semantic_same_only": 0,
+  "diff": 82
+ }
+}
