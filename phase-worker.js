@@ -36,7 +36,7 @@ async function execute(data){
   postMessage({type:'progress',id:data.id,phase:'input_loading'});
   const inputPath='inputs/'+data.ticker+'.json',bytes=await(await get('./'+inputPath)).arrayBuffer();
   hashBytes(inputPath,bytes);const bundle=JSON.parse(new TextDecoder().decode(bytes));
-  if(bundle.ticker!==data.ticker||bundle.meta.snapshot_id!==data.snapshot_id)throw Error('Bundle boundary mismatch');
+  if(bundle.ticker!==data.ticker||(bundle.meta.snapshot_id!==data.snapshot_id&&!Object.hasOwn(manifest.accepted_bundle_snapshots||{},bundle.meta.snapshot_id)))throw Error('Bundle boundary mismatch');
   if(data.operation==='market'){
    phase='compare';const refs=[];
    if(!Array.isArray(data.references)||data.references.length<1||data.references.length>2||new Set(data.references).size!==data.references.length)throw Error('Select at most two references');

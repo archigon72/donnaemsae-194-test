@@ -34,7 +34,7 @@ async function execute(data){
    const path=(item.kind==='etf'?'inputs/':'references/')+item.code+'.json';
    const bytes=await(await get('./'+path)).arrayBuffer();hashBytes(path,bytes);
    const bundle=JSON.parse(new TextDecoder().decode(bytes));
-   if(bundle.ticker!==item.code||bundle.meta.snapshot_id!==manifest.snapshot.snapshot_id)throw Error('Input boundary mismatch');
+   if(bundle.ticker!==item.code||(bundle.meta.snapshot_id!==manifest.snapshot.snapshot_id&&!Object.hasOwn(manifest.accepted_bundle_snapshots||{},bundle.meta.snapshot_id)))throw Error('Input boundary mismatch');
    bundles.push(bundle);
   }
   postMessage({type:'progress',id:data.id,message:'실제 공통 관측일로 비교하고 있어요…'});
