@@ -1,0 +1,2546 @@
+[
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "body bg",
+  "computed": "#081521",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "hero/card bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "card border",
+  "computed": "#385465",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "card text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "h2 text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "muted label",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "FAB bg",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "FAB text",
+  "computed": "#09251E",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "selected tab bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "selected tab text",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "unselected tab text",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "top5 row bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "top5 rank1 swatch",
+  "computed": "#9DCFF3",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "top5 rank2 swatch",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "top5 rank3 swatch",
+  "computed": "#F5D39A",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "top5 rank4 swatch",
+  "computed": "#D1B9EE",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "bottom nav bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "scope select bg",
+  "computed": "#102638",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "scope select text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-bg",
+  "computed": "#081521",
+  "approved": "#081521",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-surface",
+  "computed": "#102638",
+  "approved": "#102638",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-surface-raised",
+  "computed": "#193448",
+  "approved": "#193448",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-surface-soft",
+  "computed": "#213B4B",
+  "approved": "#213B4B",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-border",
+  "computed": "#385465",
+  "approved": "#385465",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-text",
+  "computed": "#EFF6F8",
+  "approved": "#EFF6F8",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-text-muted",
+  "computed": "#AEC0CB",
+  "approved": "#AEC0CB",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-text-subtle",
+  "computed": "#8CA4B3",
+  "approved": "#8CA4B3",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-primary",
+  "computed": "#A7DEC9",
+  "approved": "#A7DEC9",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-primary-strong",
+  "computed": "#317C69",
+  "approved": "#317C69",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-complete",
+  "computed": "#9DCFF3",
+  "approved": "#9DCFF3",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-expected",
+  "computed": "#F5D39A",
+  "approved": "#F5D39A",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-scheduled",
+  "computed": "#F0B9D0",
+  "approved": "#F0B9D0",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-exdate",
+  "computed": "#97DFCA",
+  "approved": "#97DFCA",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-unconfirmed",
+  "computed": "#BBC9D5",
+  "approved": "#BBC9D5",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-warning",
+  "computed": "#E9B6A8",
+  "approved": "#E9B6A8",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-error",
+  "computed": "#E9A8B1",
+  "approved": "#E9A8B1",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 360,
+  "item": "--fd-focus",
+  "computed": "#B4E3FC",
+  "approved": "#B4E3FC",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "body bg",
+  "computed": "#081521",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "hero/card bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "card border",
+  "computed": "#385465",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "card text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "h2 text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "muted label",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "FAB bg",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "FAB text",
+  "computed": "#09251E",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "selected tab bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "selected tab text",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "unselected tab text",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "top5 row bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "top5 rank1 swatch",
+  "computed": "#9DCFF3",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "top5 rank2 swatch",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "top5 rank3 swatch",
+  "computed": "#F5D39A",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "top5 rank4 swatch",
+  "computed": "#D1B9EE",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "bottom nav bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "scope select bg",
+  "computed": "#102638",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "scope select text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-bg",
+  "computed": "#081521",
+  "approved": "#081521",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-surface",
+  "computed": "#102638",
+  "approved": "#102638",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-surface-raised",
+  "computed": "#193448",
+  "approved": "#193448",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-surface-soft",
+  "computed": "#213B4B",
+  "approved": "#213B4B",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-border",
+  "computed": "#385465",
+  "approved": "#385465",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-text",
+  "computed": "#EFF6F8",
+  "approved": "#EFF6F8",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-text-muted",
+  "computed": "#AEC0CB",
+  "approved": "#AEC0CB",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-text-subtle",
+  "computed": "#8CA4B3",
+  "approved": "#8CA4B3",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-primary",
+  "computed": "#A7DEC9",
+  "approved": "#A7DEC9",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-primary-strong",
+  "computed": "#317C69",
+  "approved": "#317C69",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-complete",
+  "computed": "#9DCFF3",
+  "approved": "#9DCFF3",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-expected",
+  "computed": "#F5D39A",
+  "approved": "#F5D39A",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-scheduled",
+  "computed": "#F0B9D0",
+  "approved": "#F0B9D0",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-exdate",
+  "computed": "#97DFCA",
+  "approved": "#97DFCA",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-unconfirmed",
+  "computed": "#BBC9D5",
+  "approved": "#BBC9D5",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-warning",
+  "computed": "#E9B6A8",
+  "approved": "#E9B6A8",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-error",
+  "computed": "#E9A8B1",
+  "approved": "#E9A8B1",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 390,
+  "item": "--fd-focus",
+  "computed": "#B4E3FC",
+  "approved": "#B4E3FC",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "body bg",
+  "computed": "#081521",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "hero/card bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "card border",
+  "computed": "#385465",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "card text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "h2 text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "muted label",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "FAB bg",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "FAB text",
+  "computed": "#09251E",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "selected tab bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "selected tab text",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "unselected tab text",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "top5 row bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "top5 rank1 swatch",
+  "computed": "#9DCFF3",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "top5 rank2 swatch",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "top5 rank3 swatch",
+  "computed": "#F5D39A",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "top5 rank4 swatch",
+  "computed": "#D1B9EE",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "bottom nav bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "scope select bg",
+  "computed": "#102638",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "scope select text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-bg",
+  "computed": "#081521",
+  "approved": "#081521",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-surface",
+  "computed": "#102638",
+  "approved": "#102638",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-surface-raised",
+  "computed": "#193448",
+  "approved": "#193448",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-surface-soft",
+  "computed": "#213B4B",
+  "approved": "#213B4B",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-border",
+  "computed": "#385465",
+  "approved": "#385465",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-text",
+  "computed": "#EFF6F8",
+  "approved": "#EFF6F8",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-text-muted",
+  "computed": "#AEC0CB",
+  "approved": "#AEC0CB",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-text-subtle",
+  "computed": "#8CA4B3",
+  "approved": "#8CA4B3",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-primary",
+  "computed": "#A7DEC9",
+  "approved": "#A7DEC9",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-primary-strong",
+  "computed": "#317C69",
+  "approved": "#317C69",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-complete",
+  "computed": "#9DCFF3",
+  "approved": "#9DCFF3",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-expected",
+  "computed": "#F5D39A",
+  "approved": "#F5D39A",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-scheduled",
+  "computed": "#F0B9D0",
+  "approved": "#F0B9D0",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-exdate",
+  "computed": "#97DFCA",
+  "approved": "#97DFCA",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-unconfirmed",
+  "computed": "#BBC9D5",
+  "approved": "#BBC9D5",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-warning",
+  "computed": "#E9B6A8",
+  "approved": "#E9B6A8",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-error",
+  "computed": "#E9A8B1",
+  "approved": "#E9A8B1",
+  "match": true
+ },
+ {
+  "screen": "hub",
+  "w": 430,
+  "item": "--fd-focus",
+  "computed": "#B4E3FC",
+  "approved": "#B4E3FC",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "body bg",
+  "computed": "#081521",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "hero/card bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "card border",
+  "computed": "#385465",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "card text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "h2 text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "muted label",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "FAB bg",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "FAB text",
+  "computed": "#09251E",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "selected tab bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "selected tab text",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "unselected tab text",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "top5 row bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "top5 rank1 swatch",
+  "computed": "#9DCFF3",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "top5 rank2 swatch",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "top5 rank3 swatch",
+  "computed": "#F5D39A",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "top5 rank4 swatch",
+  "computed": "#D1B9EE",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "bottom nav bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "scope select bg",
+  "computed": "#102638",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "scope select text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-bg",
+  "computed": "#081521",
+  "approved": "#081521",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-surface",
+  "computed": "#102638",
+  "approved": "#102638",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-surface-raised",
+  "computed": "#193448",
+  "approved": "#193448",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-surface-soft",
+  "computed": "#213B4B",
+  "approved": "#213B4B",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-border",
+  "computed": "#385465",
+  "approved": "#385465",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-text",
+  "computed": "#EFF6F8",
+  "approved": "#EFF6F8",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-text-muted",
+  "computed": "#AEC0CB",
+  "approved": "#AEC0CB",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-text-subtle",
+  "computed": "#8CA4B3",
+  "approved": "#8CA4B3",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-primary",
+  "computed": "#A7DEC9",
+  "approved": "#A7DEC9",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-primary-strong",
+  "computed": "#317C69",
+  "approved": "#317C69",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-complete",
+  "computed": "#9DCFF3",
+  "approved": "#9DCFF3",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-expected",
+  "computed": "#F5D39A",
+  "approved": "#F5D39A",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-scheduled",
+  "computed": "#F0B9D0",
+  "approved": "#F0B9D0",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-exdate",
+  "computed": "#97DFCA",
+  "approved": "#97DFCA",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-unconfirmed",
+  "computed": "#BBC9D5",
+  "approved": "#BBC9D5",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-warning",
+  "computed": "#E9B6A8",
+  "approved": "#E9B6A8",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-error",
+  "computed": "#E9A8B1",
+  "approved": "#E9A8B1",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 360,
+  "item": "--fd-focus",
+  "computed": "#B4E3FC",
+  "approved": "#B4E3FC",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "body bg",
+  "computed": "#081521",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "hero/card bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "card border",
+  "computed": "#385465",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "card text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "h2 text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "muted label",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "FAB bg",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "FAB text",
+  "computed": "#09251E",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "selected tab bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "selected tab text",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "unselected tab text",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "top5 row bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "top5 rank1 swatch",
+  "computed": "#9DCFF3",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "top5 rank2 swatch",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "top5 rank3 swatch",
+  "computed": "#F5D39A",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "top5 rank4 swatch",
+  "computed": "#D1B9EE",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "bottom nav bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "scope select bg",
+  "computed": "#102638",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "scope select text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-bg",
+  "computed": "#081521",
+  "approved": "#081521",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-surface",
+  "computed": "#102638",
+  "approved": "#102638",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-surface-raised",
+  "computed": "#193448",
+  "approved": "#193448",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-surface-soft",
+  "computed": "#213B4B",
+  "approved": "#213B4B",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-border",
+  "computed": "#385465",
+  "approved": "#385465",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-text",
+  "computed": "#EFF6F8",
+  "approved": "#EFF6F8",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-text-muted",
+  "computed": "#AEC0CB",
+  "approved": "#AEC0CB",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-text-subtle",
+  "computed": "#8CA4B3",
+  "approved": "#8CA4B3",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-primary",
+  "computed": "#A7DEC9",
+  "approved": "#A7DEC9",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-primary-strong",
+  "computed": "#317C69",
+  "approved": "#317C69",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-complete",
+  "computed": "#9DCFF3",
+  "approved": "#9DCFF3",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-expected",
+  "computed": "#F5D39A",
+  "approved": "#F5D39A",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-scheduled",
+  "computed": "#F0B9D0",
+  "approved": "#F0B9D0",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-exdate",
+  "computed": "#97DFCA",
+  "approved": "#97DFCA",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-unconfirmed",
+  "computed": "#BBC9D5",
+  "approved": "#BBC9D5",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-warning",
+  "computed": "#E9B6A8",
+  "approved": "#E9B6A8",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-error",
+  "computed": "#E9A8B1",
+  "approved": "#E9A8B1",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 390,
+  "item": "--fd-focus",
+  "computed": "#B4E3FC",
+  "approved": "#B4E3FC",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "body bg",
+  "computed": "#081521",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "hero/card bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "card border",
+  "computed": "#385465",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "card text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "h2 text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "muted label",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "FAB bg",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "FAB text",
+  "computed": "#09251E",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "selected tab bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "selected tab text",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "unselected tab text",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "top5 row bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "top5 rank1 swatch",
+  "computed": "#9DCFF3",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "top5 rank2 swatch",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "top5 rank3 swatch",
+  "computed": "#F5D39A",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "top5 rank4 swatch",
+  "computed": "#D1B9EE",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "bottom nav bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "scope select bg",
+  "computed": "#102638",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "scope select text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-bg",
+  "computed": "#081521",
+  "approved": "#081521",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-surface",
+  "computed": "#102638",
+  "approved": "#102638",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-surface-raised",
+  "computed": "#193448",
+  "approved": "#193448",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-surface-soft",
+  "computed": "#213B4B",
+  "approved": "#213B4B",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-border",
+  "computed": "#385465",
+  "approved": "#385465",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-text",
+  "computed": "#EFF6F8",
+  "approved": "#EFF6F8",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-text-muted",
+  "computed": "#AEC0CB",
+  "approved": "#AEC0CB",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-text-subtle",
+  "computed": "#8CA4B3",
+  "approved": "#8CA4B3",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-primary",
+  "computed": "#A7DEC9",
+  "approved": "#A7DEC9",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-primary-strong",
+  "computed": "#317C69",
+  "approved": "#317C69",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-complete",
+  "computed": "#9DCFF3",
+  "approved": "#9DCFF3",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-expected",
+  "computed": "#F5D39A",
+  "approved": "#F5D39A",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-scheduled",
+  "computed": "#F0B9D0",
+  "approved": "#F0B9D0",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-exdate",
+  "computed": "#97DFCA",
+  "approved": "#97DFCA",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-unconfirmed",
+  "computed": "#BBC9D5",
+  "approved": "#BBC9D5",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-warning",
+  "computed": "#E9B6A8",
+  "approved": "#E9B6A8",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-error",
+  "computed": "#E9A8B1",
+  "approved": "#E9A8B1",
+  "match": true
+ },
+ {
+  "screen": "hub_hardreload",
+  "w": 430,
+  "item": "--fd-focus",
+  "computed": "#B4E3FC",
+  "approved": "#B4E3FC",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "body bg",
+  "computed": "#081521",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "hero/card bg",
+  "computed": "#102638@0.9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "card border",
+  "computed": "#385465",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "card text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "h2 text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "muted label",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "FAB bg",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "FAB text",
+  "computed": "#09251E",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "계좌추가 bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "계좌추가 border",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "selected tab bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "selected tab text",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "unselected tab text",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "bottom nav bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-bg",
+  "computed": "#081521",
+  "approved": "#081521",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-surface",
+  "computed": "#102638",
+  "approved": "#102638",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-surface-raised",
+  "computed": "#193448",
+  "approved": "#193448",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-surface-soft",
+  "computed": "#213B4B",
+  "approved": "#213B4B",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-border",
+  "computed": "#385465",
+  "approved": "#385465",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-text",
+  "computed": "#EFF6F8",
+  "approved": "#EFF6F8",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-text-muted",
+  "computed": "#AEC0CB",
+  "approved": "#AEC0CB",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-text-subtle",
+  "computed": "#8CA4B3",
+  "approved": "#8CA4B3",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-primary",
+  "computed": "#A7DEC9",
+  "approved": "#A7DEC9",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-primary-strong",
+  "computed": "#317C69",
+  "approved": "#317C69",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-complete",
+  "computed": "#9DCFF3",
+  "approved": "#9DCFF3",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-expected",
+  "computed": "#F5D39A",
+  "approved": "#F5D39A",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-scheduled",
+  "computed": "#F0B9D0",
+  "approved": "#F0B9D0",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-exdate",
+  "computed": "#97DFCA",
+  "approved": "#97DFCA",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-unconfirmed",
+  "computed": "#BBC9D5",
+  "approved": "#BBC9D5",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-warning",
+  "computed": "#E9B6A8",
+  "approved": "#E9B6A8",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-error",
+  "computed": "#E9A8B1",
+  "approved": "#E9A8B1",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 360,
+  "item": "--fd-focus",
+  "computed": "#B4E3FC",
+  "approved": "#B4E3FC",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "body bg",
+  "computed": "#081521",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "hero/card bg",
+  "computed": "#102638@0.9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "card border",
+  "computed": "#385465",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "card text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "h2 text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "muted label",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "FAB bg",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "FAB text",
+  "computed": "#09251E",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "계좌추가 bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "계좌추가 border",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "selected tab bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "selected tab text",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "unselected tab text",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "bottom nav bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-bg",
+  "computed": "#081521",
+  "approved": "#081521",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-surface",
+  "computed": "#102638",
+  "approved": "#102638",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-surface-raised",
+  "computed": "#193448",
+  "approved": "#193448",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-surface-soft",
+  "computed": "#213B4B",
+  "approved": "#213B4B",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-border",
+  "computed": "#385465",
+  "approved": "#385465",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-text",
+  "computed": "#EFF6F8",
+  "approved": "#EFF6F8",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-text-muted",
+  "computed": "#AEC0CB",
+  "approved": "#AEC0CB",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-text-subtle",
+  "computed": "#8CA4B3",
+  "approved": "#8CA4B3",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-primary",
+  "computed": "#A7DEC9",
+  "approved": "#A7DEC9",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-primary-strong",
+  "computed": "#317C69",
+  "approved": "#317C69",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-complete",
+  "computed": "#9DCFF3",
+  "approved": "#9DCFF3",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-expected",
+  "computed": "#F5D39A",
+  "approved": "#F5D39A",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-scheduled",
+  "computed": "#F0B9D0",
+  "approved": "#F0B9D0",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-exdate",
+  "computed": "#97DFCA",
+  "approved": "#97DFCA",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-unconfirmed",
+  "computed": "#BBC9D5",
+  "approved": "#BBC9D5",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-warning",
+  "computed": "#E9B6A8",
+  "approved": "#E9B6A8",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-error",
+  "computed": "#E9A8B1",
+  "approved": "#E9A8B1",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 390,
+  "item": "--fd-focus",
+  "computed": "#B4E3FC",
+  "approved": "#B4E3FC",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "body bg",
+  "computed": "#081521",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "hero/card bg",
+  "computed": "#102638@0.9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "card border",
+  "computed": "#385465",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "card text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "h2 text",
+  "computed": "#EFF6F8",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "muted label",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "FAB bg",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "FAB text",
+  "computed": "#09251E",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "계좌추가 bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "계좌추가 border",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "selected tab bg",
+  "computed": "#193448",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "selected tab text",
+  "computed": "#A7DEC9",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "unselected tab text",
+  "computed": "#AEC0CB",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "bottom nav bg",
+  "computed": "#000000@0",
+  "approved": "승인 토큰",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-bg",
+  "computed": "#081521",
+  "approved": "#081521",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-surface",
+  "computed": "#102638",
+  "approved": "#102638",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-surface-raised",
+  "computed": "#193448",
+  "approved": "#193448",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-surface-soft",
+  "computed": "#213B4B",
+  "approved": "#213B4B",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-border",
+  "computed": "#385465",
+  "approved": "#385465",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-text",
+  "computed": "#EFF6F8",
+  "approved": "#EFF6F8",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-text-muted",
+  "computed": "#AEC0CB",
+  "approved": "#AEC0CB",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-text-subtle",
+  "computed": "#8CA4B3",
+  "approved": "#8CA4B3",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-primary",
+  "computed": "#A7DEC9",
+  "approved": "#A7DEC9",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-primary-strong",
+  "computed": "#317C69",
+  "approved": "#317C69",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-complete",
+  "computed": "#9DCFF3",
+  "approved": "#9DCFF3",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-expected",
+  "computed": "#F5D39A",
+  "approved": "#F5D39A",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-scheduled",
+  "computed": "#F0B9D0",
+  "approved": "#F0B9D0",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-exdate",
+  "computed": "#97DFCA",
+  "approved": "#97DFCA",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-unconfirmed",
+  "computed": "#BBC9D5",
+  "approved": "#BBC9D5",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-warning",
+  "computed": "#E9B6A8",
+  "approved": "#E9B6A8",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-error",
+  "computed": "#E9A8B1",
+  "approved": "#E9A8B1",
+  "match": true
+ },
+ {
+  "screen": "management",
+  "w": 430,
+  "item": "--fd-focus",
+  "computed": "#B4E3FC",
+  "approved": "#B4E3FC",
+  "match": true
+ }
+]

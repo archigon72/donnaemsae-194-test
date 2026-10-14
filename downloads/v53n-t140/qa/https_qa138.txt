@@ -1,0 +1,38 @@
+PASS FD chips include 계좌명(종류) ["전체 계좌", "카카오(일반)", "카카오(ISA)", "카카오(연금저축)", "키움(IRP)"]
+PASS FD chips no duplicated ISA(ISA) ["전체 계좌", "카카오(일반)", "카카오(ISA)", "카카오(연금저축)", "키움(IRP)"]
+PASS FD chip 키움(IRP) dedupe ["전체 계좌", "카카오(일반)", "카카오(ISA)", "카카오(연금저축)", "키움(IRP)"]
+PASS 계좌별 tab AL labels ["카카오(일반)", "560원", "카카오(ISA)", "0.1만", "카카오(연금저축)", "528원", "키움(IRP)", "0.2만"]
+PASS palette CSS tokens match locked HEX {"bad": [], "sample": {"--fd-bg": "#081521", "--fd-surface": "#102638", "--fd-surface-raised": "#193448", "--fd-surface-soft": "#213B4B"}}
+PASS contrast ratios >= 4.5 for key pairs [{"fg": "#EFF6F8", "bg": "#081521", "ratio": 16.86}, {"fg": "#A7DEC9", "bg": "#09251E", "ratio": 10.76}, {"fg": "#AEC0CB", "bg": "#102638", "ratio": 8.26}, {"fg": "#F5D39A", "bg": "#081521", "ratio": 12.87}, {"fg": "#9DCFF3", "bg": "#081521", "ratio": 11.1}]
+PASS calendar page FutureDividend present {"hasF": true, "hasL": true, "accounts": ["카카오/일반", "카카오/ISA", "카카오/연금저축", "키움 IRP/IRP"]}
+PASS 계좌 추가 button present
+PASS 거래 등록 FAB present
+PASS FAB/계좌추가 vs bottom nav overlap 0 {"add": {"x": 16, "y": 720, "width": 93.109375, "height": 48}, "trade": {"x": 264.171875, "y": 720, "width": 109.828125, "height": 48}, "nav": null}
+PASS 계좌 추가 dialog opens
+PASS 계좌 추가 title visible "계좌 추가"
+PASS close button visible on open
+PASS 계좌 추가 persisted ["카카오:일반", "카카오:ISA", "카카오:연금저축", "키움 IRP:IRP", "테스트증권:ISA"]
+PASS trade select AL labels ["카카오(일반)", "카카오(ISA)", "카카오(연금저축)", "키움(IRP)", "테스트증권(ISA)", "+ 새 계좌"]
+PASS existing account shows read-only type "등록된 계좌 종류: 일반 (거래 등록에서 변경 불가 · 계좌 추가에서만 설정)"
+PASS trade modal title sticky/visible {"top": 10, "pos": "sticky", "text": "거래 등록", "visible": true}
+PASS search focus selects all {"start": 0, "end": 33, "len": 33}
+PASS search 리츠 returns candidates ["TIGER 리츠부동산인프라TOP10액티브 · 0086B0", "TIGER 리츠부동산인프라10채권혼합액티브 · 0086C0", "ACE 리츠부동산인프라액티브 · 0153P0", "DAISHIN 오피스리츠플러스 · 0174J0", "ACE 미국부동산리츠(합성 H) · 181480"]
+PASS search empty-result message
+PASS search clear X present
+PASS holding scope note prominent on sell "선택한 계좌의 해당 거래일 보유종목만 표시됩니다."
+PASS holding note has uat-scope-note "record-note uat-scope-note"
+PASS reinvest holding-restricted "배당재투자: 선택한 계좌의 해당 거래일 보유종목만 표시됩니다."
+PASS new account: name+type shown, tip hidden {"tip_h": true, "name_h": false, "type_h": false}
+PASS title still visible with reduced vvh {"top": 10, "h": 69.390625, "visible": true}
+PASS donut/comp legend no ellipsis truncation style [{"text": "TIGER 리츠부동산인프라329200 · 직접 48주 · 3개 계좌", "overflow": "visible", "whiteSpace": "normal", "textOverflow": "clip"}, {"text": "KODEX iShares미국인플레이션국채액티브468370 · 직접 15주", "overflow": "visible", "whiteSpace": "normal", "textOverflow": "clip"}, {"text": "1Q 미국배당TOP300004G0 · 직접 12주", "overflow": 
+PASS FD big amount uses 만/원 (no FX) "0.5만"
+PASS SW cache v53n-2 {"scope": "https://archigon72.github.io/donnaemsae-194-test/account-uat/", "keys": ["dnmuat194-acct-uat-v53n-2"]}
+PASS ledger key dnmuat194.management.facts.v1 unchanged ["dnmuat194.management.facts.v1", "dnmuat194.tax.cache.v53", "dnmuat194.catalog.cache.v1", "dnmuat194.distributions.cache.v1", "dnmuat194.market.cache.v1"]
+PASS no page errors []
+PASS 360 chips no horizontal truncation [{"t": "전체 계좌", "ow": false, "whiteSpace": "normal"}, {"t": "카카오(일반)", "ow": false, "whiteSpace": "normal"}, {"t": "카카오(ISA)", "ow": false, "whiteSpace": "normal"}, {"t": "카카오(연금저축)", "ow": false, "whiteSpace": "normal"}, {"t": "키움(IRP)", "ow": false, "whiteSpace": "normal"}]
+PASS 360 trade title visible
+PASS 390 chips no horizontal truncation [{"t": "전체 계좌", "ow": false, "whiteSpace": "normal"}, {"t": "카카오(일반)", "ow": false, "whiteSpace": "normal"}, {"t": "카카오(ISA)", "ow": false, "whiteSpace": "normal"}, {"t": "카카오(연금저축)", "ow": false, "whiteSpace": "normal"}, {"t": "키움(IRP)", "ow": false, "whiteSpace": "normal"}]
+PASS 390 trade title visible
+PASS 430 chips no horizontal truncation [{"t": "전체 계좌", "ow": false, "whiteSpace": "normal"}, {"t": "카카오(일반)", "ow": false, "whiteSpace": "normal"}, {"t": "카카오(ISA)", "ow": false, "whiteSpace": "normal"}, {"t": "카카오(연금저축)", "ow": false, "whiteSpace": "normal"}, {"t": "키움(IRP)", "ow": false, "whiteSpace": "normal"}]
+PASS 430 trade title visible
+SUMMARY 37/37 PASS, 0 FAIL

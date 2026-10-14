@@ -1,0 +1,30 @@
+{
+ "checks": [
+  {
+   "name": "360 BEFORE hub FAB count",
+   "pass": true,
+   "detail": {
+    "fab": false,
+    "top5": false
+   }
+  },
+  {
+   "name": "390 BEFORE hub FAB count",
+   "pass": true,
+   "detail": {
+    "fab": false,
+    "top5": false
+   }
+  },
+  {
+   "name": "430 BEFORE hub FAB count",
+   "pass": true,
+   "detail": {
+    "fab": false,
+    "top5": false
+   }
+  }
+ ],
+ "failed": 0,
+ "total": 3
+}

@@ -1,0 +1,62 @@
+PASS 360 top5 names/order/% == 평가액 구성 범례 {"hub": [["1", "TIGER 리츠부동산인프라", "39.2%"], ["2", "KODEX iShares미국인플레이션국채액티브", "30.4%"], ["3", "1Q 미국배당TOP30", "20.2%"], ["4", "PLUS 고배당주위클리고정커버드콜", "10.3%"]], "comp": [["TIGER 리츠부동산인프라", "39.2%"], ["KODEX iShares미국인플레이션국채액티브", "30.4%"], ["1Q 미국배당TOP30", "20.2%
+PASS 360 top5 rank colors = 승인 8색 순서 ["#9DCFF3", "#A7DEC9", "#F5D39A", "#D1B9EE"]
+PASS 360 donut segment colors == top5 colors {"donut": ["#9DCFF3", "#A7DEC9", "#F5D39A", "#D1B9EE"], "hub": ["#9DCFF3", "#A7DEC9", "#F5D39A", "#D1B9EE"]}
+PASS 360 top5 금액 합 = 평가액 합계 (±표시 버림 오차 n원) {"sum": 494610, "total": "494,610"}
+PASS 360 원가 표시 유지(내가 넣은 돈·직접투자 취득원가)
+PASS 360 조회 범위=카카오(ISA) → 그 계좌 보유만(329200·468370) [["1", "KODEX iShares미국인플레이션국채액티브", "55.4%"], ["2", "TIGER 리츠부동산인프라", "44.6%"]]
+PASS 360 원가 표시 유지
+PASS 360 hub 조회범위 라벨 키움(IRP) (중복 없음) ["전체", "카카오(일반)", "카카오(ISA)", "카카오(연금저축)", "키움(IRP)"]
+PASS 360 hub + 거래 등록 FAB 존재
+PASS 360 FAB 화면 안·우측 하단 {"x": 234.171875, "y": 616, "width": 109.828125, "height": 48}
+PASS 360 FAB vs 하단 내비 겹침 0 {"fab": {"x": 234.171875, "y": 616, "width": 109.828125, "height": 48}, "nav": {"x": 0, "y": 679.078125, "width": 360, "height": 60.921875}}
+PASS 360 FAB 중심점 최상단(가림 없음)
+PASS 360 tap → 기존 거래 등록 모달
+PASS 360 모달 열림 중 FAB 숨김(겹침 0)
+PASS 360 닫기 → 모달 닫힘
+PASS 360 복귀: 같은 자산 화면·FAB 유지
+PASS 360 화면 전환 후 복귀 시 FAB 표시
+PASS 360 계좌 추가와 분리(hub에 계좌추가 버튼 별도 없음, FAB=거래 등록)
+PASS 360 강제 새로고침 후 SW 캐시 v53n-2·토큰 유지 {"keys": ["dnmuat194-acct-uat-v53n-2"], "ctl": true}
+PASS 360 page errors 0 []
+PASS 390 top5 names/order/% == 평가액 구성 범례 {"hub": [["1", "TIGER 리츠부동산인프라", "39.2%"], ["2", "KODEX iShares미국인플레이션국채액티브", "30.4%"], ["3", "1Q 미국배당TOP30", "20.2%"], ["4", "PLUS 고배당주위클리고정커버드콜", "10.3%"]], "comp": [["TIGER 리츠부동산인프라", "39.2%"], ["KODEX iShares미국인플레이션국채액티브", "30.4%"], ["1Q 미국배당TOP30", "20.2%
+PASS 390 top5 rank colors = 승인 8색 순서 ["#9DCFF3", "#A7DEC9", "#F5D39A", "#D1B9EE"]
+PASS 390 donut segment colors == top5 colors {"donut": ["#9DCFF3", "#A7DEC9", "#F5D39A", "#D1B9EE"], "hub": ["#9DCFF3", "#A7DEC9", "#F5D39A", "#D1B9EE"]}
+PASS 390 top5 금액 합 = 평가액 합계 (±표시 버림 오차 n원) {"sum": 494610, "total": "494,610"}
+PASS 390 원가 표시 유지(내가 넣은 돈·직접투자 취득원가)
+PASS 390 조회 범위=카카오(ISA) → 그 계좌 보유만(329200·468370) [["1", "KODEX iShares미국인플레이션국채액티브", "55.4%"], ["2", "TIGER 리츠부동산인프라", "44.6%"]]
+PASS 390 원가 표시 유지
+PASS 390 hub 조회범위 라벨 키움(IRP) (중복 없음) ["전체", "카카오(일반)", "카카오(ISA)", "카카오(연금저축)", "키움(IRP)"]
+PASS 390 hub + 거래 등록 FAB 존재
+PASS 390 FAB 화면 안·우측 하단 {"x": 264.171875, "y": 720, "width": 109.828125, "height": 48}
+PASS 390 FAB vs 하단 내비 겹침 0 {"fab": {"x": 264.171875, "y": 720, "width": 109.828125, "height": 48}, "nav": {"x": 0, "y": 778, "width": 390, "height": 66}}
+PASS 390 FAB 중심점 최상단(가림 없음)
+PASS 390 tap → 기존 거래 등록 모달
+PASS 390 모달 열림 중 FAB 숨김(겹침 0)
+PASS 390 닫기 → 모달 닫힘
+PASS 390 복귀: 같은 자산 화면·FAB 유지
+PASS 390 화면 전환 후 복귀 시 FAB 표시
+PASS 390 계좌 추가와 분리(hub에 계좌추가 버튼 별도 없음, FAB=거래 등록)
+PASS 390 강제 새로고침 후 SW 캐시 v53n-2·토큰 유지 {"keys": ["dnmuat194-acct-uat-v53n-2"], "ctl": true}
+PASS 390 page errors 0 []
+PASS 430 top5 names/order/% == 평가액 구성 범례 {"hub": [["1", "TIGER 리츠부동산인프라", "39.2%"], ["2", "KODEX iShares미국인플레이션국채액티브", "30.4%"], ["3", "1Q 미국배당TOP30", "20.2%"], ["4", "PLUS 고배당주위클리고정커버드콜", "10.3%"]], "comp": [["TIGER 리츠부동산인프라", "39.2%"], ["KODEX iShares미국인플레이션국채액티브", "30.4%"], ["1Q 미국배당TOP30", "20.2%
+PASS 430 top5 rank colors = 승인 8색 순서 ["#9DCFF3", "#A7DEC9", "#F5D39A", "#D1B9EE"]
+PASS 430 donut segment colors == top5 colors {"donut": ["#9DCFF3", "#A7DEC9", "#F5D39A", "#D1B9EE"], "hub": ["#9DCFF3", "#A7DEC9", "#F5D39A", "#D1B9EE"]}
+PASS 430 top5 금액 합 = 평가액 합계 (±표시 버림 오차 n원) {"sum": 494610, "total": "494,610"}
+PASS 430 원가 표시 유지(내가 넣은 돈·직접투자 취득원가)
+PASS 430 조회 범위=카카오(ISA) → 그 계좌 보유만(329200·468370) [["1", "KODEX iShares미국인플레이션국채액티브", "55.4%"], ["2", "TIGER 리츠부동산인프라", "44.6%"]]
+PASS 430 원가 표시 유지
+PASS 430 hub 조회범위 라벨 키움(IRP) (중복 없음) ["전체", "카카오(일반)", "카카오(ISA)", "카카오(연금저축)", "키움(IRP)"]
+PASS 430 hub + 거래 등록 FAB 존재
+PASS 430 FAB 화면 안·우측 하단 {"x": 304.171875, "y": 808, "width": 109.828125, "height": 48}
+PASS 430 FAB vs 하단 내비 겹침 0 {"fab": {"x": 304.171875, "y": 808, "width": 109.828125, "height": 48}, "nav": {"x": 0, "y": 859.234375, "width": 430, "height": 72.765625}}
+PASS 430 FAB 중심점 최상단(가림 없음)
+PASS 430 tap → 기존 거래 등록 모달
+PASS 430 모달 열림 중 FAB 숨김(겹침 0)
+PASS 430 닫기 → 모달 닫힘
+PASS 430 복귀: 같은 자산 화면·FAB 유지
+PASS 430 화면 전환 후 복귀 시 FAB 표시
+PASS 430 계좌 추가와 분리(hub에 계좌추가 버튼 별도 없음, FAB=거래 등록)
+PASS 430 강제 새로고침 후 SW 캐시 v53n-2·토큰 유지 {"keys": ["dnmuat194-acct-uat-v53n-2"], "ctl": true}
+PASS 430 page errors 0 []
+PASS computed 색상 전부 승인 HEX(투명 제외) []
+SUMMARY 61/61 PASS, 0 FAIL

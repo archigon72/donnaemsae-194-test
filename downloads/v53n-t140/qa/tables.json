@@ -1,0 +1,1420 @@
+{
+ "hub": {
+  "360": {
+   "body bg": {
+    "sel": "body",
+    "prop": "backgroundColor",
+    "val": "rgb(8, 21, 33)"
+   },
+   "hero/card bg": {
+    "sel": ".mu-card",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "card border": {
+    "sel": ".mu-card",
+    "prop": "borderTopColor",
+    "val": "rgb(56, 84, 101)"
+   },
+   "card text": {
+    "sel": ".mu-card",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "h2 text": {
+    "sel": ".mu-card h2",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "muted label": {
+    "sel": ".mu-label, .mu-stat small, .record-note",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "FAB bg": {
+    "sel": ".mu-fab",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "FAB text": {
+    "sel": ".mu-fab",
+    "prop": "color",
+    "val": "rgb(9, 37, 30)"
+   },
+   "계좌추가 bg": {
+    "sel": ".uat-acct-add",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "계좌추가 border": {
+    "sel": ".uat-acct-add",
+    "prop": "borderTopColor",
+    "val": null
+   },
+   "selected tab bg": {
+    "sel": ".mu-tabs button[aria-pressed=true], .mc-scope button[aria-pressed=true]",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "selected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=true]",
+    "prop": "color",
+    "val": "rgb(167, 222, 201)"
+   },
+   "unselected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=false]",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "top5 row bg": {
+    "sel": ".uat-top5 li",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "top5 rank1 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"1\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(157, 207, 243)"
+   },
+   "top5 rank2 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"2\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "top5 rank3 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"3\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(245, 211, 154)"
+   },
+   "top5 rank4 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"4\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(209, 185, 238)"
+   },
+   "bottom nav bg": {
+    "sel": ".lab-bottom, .mc-nav",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "scope select bg": {
+    "sel": "#mc-scope-select",
+    "prop": "backgroundColor",
+    "val": "rgb(16, 38, 56)"
+   },
+   "scope select text": {
+    "sel": "#mc-scope-select",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "__vars": {
+    "--fd-bg": "#081521",
+    "--fd-surface": "#102638",
+    "--fd-surface-raised": "#193448",
+    "--fd-surface-soft": "#213B4B",
+    "--fd-border": "#385465",
+    "--fd-text": "#EFF6F8",
+    "--fd-text-muted": "#AEC0CB",
+    "--fd-text-subtle": "#8CA4B3",
+    "--fd-primary": "#A7DEC9",
+    "--fd-primary-strong": "#317C69",
+    "--fd-complete": "#9DCFF3",
+    "--fd-expected": "#F5D39A",
+    "--fd-scheduled": "#F0B9D0",
+    "--fd-exdate": "#97DFCA",
+    "--fd-unconfirmed": "#BBC9D5",
+    "--fd-warning": "#E9B6A8",
+    "--fd-error": "#E9A8B1",
+    "--fd-focus": "#B4E3FC"
+   }
+  },
+  "390": {
+   "body bg": {
+    "sel": "body",
+    "prop": "backgroundColor",
+    "val": "rgb(8, 21, 33)"
+   },
+   "hero/card bg": {
+    "sel": ".mu-card",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "card border": {
+    "sel": ".mu-card",
+    "prop": "borderTopColor",
+    "val": "rgb(56, 84, 101)"
+   },
+   "card text": {
+    "sel": ".mu-card",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "h2 text": {
+    "sel": ".mu-card h2",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "muted label": {
+    "sel": ".mu-label, .mu-stat small, .record-note",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "FAB bg": {
+    "sel": ".mu-fab",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "FAB text": {
+    "sel": ".mu-fab",
+    "prop": "color",
+    "val": "rgb(9, 37, 30)"
+   },
+   "계좌추가 bg": {
+    "sel": ".uat-acct-add",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "계좌추가 border": {
+    "sel": ".uat-acct-add",
+    "prop": "borderTopColor",
+    "val": null
+   },
+   "selected tab bg": {
+    "sel": ".mu-tabs button[aria-pressed=true], .mc-scope button[aria-pressed=true]",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "selected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=true]",
+    "prop": "color",
+    "val": "rgb(167, 222, 201)"
+   },
+   "unselected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=false]",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "top5 row bg": {
+    "sel": ".uat-top5 li",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "top5 rank1 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"1\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(157, 207, 243)"
+   },
+   "top5 rank2 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"2\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "top5 rank3 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"3\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(245, 211, 154)"
+   },
+   "top5 rank4 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"4\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(209, 185, 238)"
+   },
+   "bottom nav bg": {
+    "sel": ".lab-bottom, .mc-nav",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "scope select bg": {
+    "sel": "#mc-scope-select",
+    "prop": "backgroundColor",
+    "val": "rgb(16, 38, 56)"
+   },
+   "scope select text": {
+    "sel": "#mc-scope-select",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "__vars": {
+    "--fd-bg": "#081521",
+    "--fd-surface": "#102638",
+    "--fd-surface-raised": "#193448",
+    "--fd-surface-soft": "#213B4B",
+    "--fd-border": "#385465",
+    "--fd-text": "#EFF6F8",
+    "--fd-text-muted": "#AEC0CB",
+    "--fd-text-subtle": "#8CA4B3",
+    "--fd-primary": "#A7DEC9",
+    "--fd-primary-strong": "#317C69",
+    "--fd-complete": "#9DCFF3",
+    "--fd-expected": "#F5D39A",
+    "--fd-scheduled": "#F0B9D0",
+    "--fd-exdate": "#97DFCA",
+    "--fd-unconfirmed": "#BBC9D5",
+    "--fd-warning": "#E9B6A8",
+    "--fd-error": "#E9A8B1",
+    "--fd-focus": "#B4E3FC"
+   }
+  },
+  "430": {
+   "body bg": {
+    "sel": "body",
+    "prop": "backgroundColor",
+    "val": "rgb(8, 21, 33)"
+   },
+   "hero/card bg": {
+    "sel": ".mu-card",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "card border": {
+    "sel": ".mu-card",
+    "prop": "borderTopColor",
+    "val": "rgb(56, 84, 101)"
+   },
+   "card text": {
+    "sel": ".mu-card",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "h2 text": {
+    "sel": ".mu-card h2",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "muted label": {
+    "sel": ".mu-label, .mu-stat small, .record-note",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "FAB bg": {
+    "sel": ".mu-fab",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "FAB text": {
+    "sel": ".mu-fab",
+    "prop": "color",
+    "val": "rgb(9, 37, 30)"
+   },
+   "계좌추가 bg": {
+    "sel": ".uat-acct-add",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "계좌추가 border": {
+    "sel": ".uat-acct-add",
+    "prop": "borderTopColor",
+    "val": null
+   },
+   "selected tab bg": {
+    "sel": ".mu-tabs button[aria-pressed=true], .mc-scope button[aria-pressed=true]",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "selected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=true]",
+    "prop": "color",
+    "val": "rgb(167, 222, 201)"
+   },
+   "unselected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=false]",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "top5 row bg": {
+    "sel": ".uat-top5 li",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "top5 rank1 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"1\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(157, 207, 243)"
+   },
+   "top5 rank2 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"2\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "top5 rank3 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"3\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(245, 211, 154)"
+   },
+   "top5 rank4 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"4\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(209, 185, 238)"
+   },
+   "bottom nav bg": {
+    "sel": ".lab-bottom, .mc-nav",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "scope select bg": {
+    "sel": "#mc-scope-select",
+    "prop": "backgroundColor",
+    "val": "rgb(16, 38, 56)"
+   },
+   "scope select text": {
+    "sel": "#mc-scope-select",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "__vars": {
+    "--fd-bg": "#081521",
+    "--fd-surface": "#102638",
+    "--fd-surface-raised": "#193448",
+    "--fd-surface-soft": "#213B4B",
+    "--fd-border": "#385465",
+    "--fd-text": "#EFF6F8",
+    "--fd-text-muted": "#AEC0CB",
+    "--fd-text-subtle": "#8CA4B3",
+    "--fd-primary": "#A7DEC9",
+    "--fd-primary-strong": "#317C69",
+    "--fd-complete": "#9DCFF3",
+    "--fd-expected": "#F5D39A",
+    "--fd-scheduled": "#F0B9D0",
+    "--fd-exdate": "#97DFCA",
+    "--fd-unconfirmed": "#BBC9D5",
+    "--fd-warning": "#E9B6A8",
+    "--fd-error": "#E9A8B1",
+    "--fd-focus": "#B4E3FC"
+   }
+  }
+ },
+ "top5": {
+  "360": {
+   "hub": [
+    {
+     "rank": "1",
+     "color": "#9DCFF3",
+     "name": "TIGER 리츠부동산인프라",
+     "pct": "39.2%",
+     "amt": "193,680원"
+    },
+    {
+     "rank": "2",
+     "color": "#A7DEC9",
+     "name": "KODEX iShares미국인플레이션국채액티브",
+     "pct": "30.4%",
+     "amt": "150,450원"
+    },
+    {
+     "rank": "3",
+     "color": "#F5D39A",
+     "name": "1Q 미국배당TOP30",
+     "pct": "20.2%",
+     "amt": "99,780원"
+    },
+    {
+     "rank": "4",
+     "color": "#D1B9EE",
+     "name": "PLUS 고배당주위클리고정커버드콜",
+     "pct": "10.3%",
+     "amt": "50,700원"
+    }
+   ],
+   "composition": [
+    {
+     "name": "TIGER 리츠부동산인프라",
+     "pct": "39.2%",
+     "amt": "193,680원",
+     "dot": "rgb(157, 207, 243)"
+    },
+    {
+     "name": "KODEX iShares미국인플레이션국채액티브",
+     "pct": "30.4%",
+     "amt": "150,450원",
+     "dot": "rgb(167, 222, 201)"
+    },
+    {
+     "name": "1Q 미국배당TOP30",
+     "pct": "20.2%",
+     "amt": "99,780원",
+     "dot": "rgb(245, 211, 154)"
+    },
+    {
+     "name": "PLUS 고배당주위클리고정커버드콜",
+     "pct": "10.3%",
+     "amt": "50,700원",
+     "dot": "rgb(209, 185, 238)"
+    }
+   ],
+   "donut": [
+    {
+     "k": "329200",
+     "c": "#9DCFF3"
+    },
+    {
+     "k": "468370",
+     "c": "#A7DEC9"
+    },
+    {
+     "k": "0004G0",
+     "c": "#F5D39A"
+    },
+    {
+     "k": "0018C0",
+     "c": "#D1B9EE"
+    }
+   ],
+   "foot": "현재 평가액 기준 순위·비중 · 합계 494,610원 · 내 투자금 구성(평가액) 도넛과 같은 계산",
+   "scope_k2": [
+    [
+     "1",
+     "KODEX iShares미국인플레이션국채액티브",
+     "55.4%"
+    ],
+    [
+     "2",
+     "TIGER 리츠부동산인프라",
+     "44.6%"
+    ]
+   ]
+  },
+  "390": {
+   "hub": [
+    {
+     "rank": "1",
+     "color": "#9DCFF3",
+     "name": "TIGER 리츠부동산인프라",
+     "pct": "39.2%",
+     "amt": "193,680원"
+    },
+    {
+     "rank": "2",
+     "color": "#A7DEC9",
+     "name": "KODEX iShares미국인플레이션국채액티브",
+     "pct": "30.4%",
+     "amt": "150,450원"
+    },
+    {
+     "rank": "3",
+     "color": "#F5D39A",
+     "name": "1Q 미국배당TOP30",
+     "pct": "20.2%",
+     "amt": "99,780원"
+    },
+    {
+     "rank": "4",
+     "color": "#D1B9EE",
+     "name": "PLUS 고배당주위클리고정커버드콜",
+     "pct": "10.3%",
+     "amt": "50,700원"
+    }
+   ],
+   "composition": [
+    {
+     "name": "TIGER 리츠부동산인프라",
+     "pct": "39.2%",
+     "amt": "193,680원",
+     "dot": "rgb(157, 207, 243)"
+    },
+    {
+     "name": "KODEX iShares미국인플레이션국채액티브",
+     "pct": "30.4%",
+     "amt": "150,450원",
+     "dot": "rgb(167, 222, 201)"
+    },
+    {
+     "name": "1Q 미국배당TOP30",
+     "pct": "20.2%",
+     "amt": "99,780원",
+     "dot": "rgb(245, 211, 154)"
+    },
+    {
+     "name": "PLUS 고배당주위클리고정커버드콜",
+     "pct": "10.3%",
+     "amt": "50,700원",
+     "dot": "rgb(209, 185, 238)"
+    }
+   ],
+   "donut": [
+    {
+     "k": "329200",
+     "c": "#9DCFF3"
+    },
+    {
+     "k": "468370",
+     "c": "#A7DEC9"
+    },
+    {
+     "k": "0004G0",
+     "c": "#F5D39A"
+    },
+    {
+     "k": "0018C0",
+     "c": "#D1B9EE"
+    }
+   ],
+   "foot": "현재 평가액 기준 순위·비중 · 합계 494,610원 · 내 투자금 구성(평가액) 도넛과 같은 계산",
+   "scope_k2": [
+    [
+     "1",
+     "KODEX iShares미국인플레이션국채액티브",
+     "55.4%"
+    ],
+    [
+     "2",
+     "TIGER 리츠부동산인프라",
+     "44.6%"
+    ]
+   ]
+  },
+  "430": {
+   "hub": [
+    {
+     "rank": "1",
+     "color": "#9DCFF3",
+     "name": "TIGER 리츠부동산인프라",
+     "pct": "39.2%",
+     "amt": "193,680원"
+    },
+    {
+     "rank": "2",
+     "color": "#A7DEC9",
+     "name": "KODEX iShares미국인플레이션국채액티브",
+     "pct": "30.4%",
+     "amt": "150,450원"
+    },
+    {
+     "rank": "3",
+     "color": "#F5D39A",
+     "name": "1Q 미국배당TOP30",
+     "pct": "20.2%",
+     "amt": "99,780원"
+    },
+    {
+     "rank": "4",
+     "color": "#D1B9EE",
+     "name": "PLUS 고배당주위클리고정커버드콜",
+     "pct": "10.3%",
+     "amt": "50,700원"
+    }
+   ],
+   "composition": [
+    {
+     "name": "TIGER 리츠부동산인프라",
+     "pct": "39.2%",
+     "amt": "193,680원",
+     "dot": "rgb(157, 207, 243)"
+    },
+    {
+     "name": "KODEX iShares미국인플레이션국채액티브",
+     "pct": "30.4%",
+     "amt": "150,450원",
+     "dot": "rgb(167, 222, 201)"
+    },
+    {
+     "name": "1Q 미국배당TOP30",
+     "pct": "20.2%",
+     "amt": "99,780원",
+     "dot": "rgb(245, 211, 154)"
+    },
+    {
+     "name": "PLUS 고배당주위클리고정커버드콜",
+     "pct": "10.3%",
+     "amt": "50,700원",
+     "dot": "rgb(209, 185, 238)"
+    }
+   ],
+   "donut": [
+    {
+     "k": "329200",
+     "c": "#9DCFF3"
+    },
+    {
+     "k": "468370",
+     "c": "#A7DEC9"
+    },
+    {
+     "k": "0004G0",
+     "c": "#F5D39A"
+    },
+    {
+     "k": "0018C0",
+     "c": "#D1B9EE"
+    }
+   ],
+   "foot": "현재 평가액 기준 순위·비중 · 합계 494,610원 · 내 투자금 구성(평가액) 도넛과 같은 계산",
+   "scope_k2": [
+    [
+     "1",
+     "KODEX iShares미국인플레이션국채액티브",
+     "55.4%"
+    ],
+    [
+     "2",
+     "TIGER 리츠부동산인프라",
+     "44.6%"
+    ]
+   ]
+  }
+ },
+ "hub_hardreload": {
+  "360": {
+   "body bg": {
+    "sel": "body",
+    "prop": "backgroundColor",
+    "val": "rgb(8, 21, 33)"
+   },
+   "hero/card bg": {
+    "sel": ".mu-card",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "card border": {
+    "sel": ".mu-card",
+    "prop": "borderTopColor",
+    "val": "rgb(56, 84, 101)"
+   },
+   "card text": {
+    "sel": ".mu-card",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "h2 text": {
+    "sel": ".mu-card h2",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "muted label": {
+    "sel": ".mu-label, .mu-stat small, .record-note",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "FAB bg": {
+    "sel": ".mu-fab",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "FAB text": {
+    "sel": ".mu-fab",
+    "prop": "color",
+    "val": "rgb(9, 37, 30)"
+   },
+   "계좌추가 bg": {
+    "sel": ".uat-acct-add",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "계좌추가 border": {
+    "sel": ".uat-acct-add",
+    "prop": "borderTopColor",
+    "val": null
+   },
+   "selected tab bg": {
+    "sel": ".mu-tabs button[aria-pressed=true], .mc-scope button[aria-pressed=true]",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "selected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=true]",
+    "prop": "color",
+    "val": "rgb(167, 222, 201)"
+   },
+   "unselected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=false]",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "top5 row bg": {
+    "sel": ".uat-top5 li",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "top5 rank1 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"1\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(157, 207, 243)"
+   },
+   "top5 rank2 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"2\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "top5 rank3 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"3\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(245, 211, 154)"
+   },
+   "top5 rank4 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"4\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(209, 185, 238)"
+   },
+   "bottom nav bg": {
+    "sel": ".lab-bottom, .mc-nav",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "scope select bg": {
+    "sel": "#mc-scope-select",
+    "prop": "backgroundColor",
+    "val": "rgb(16, 38, 56)"
+   },
+   "scope select text": {
+    "sel": "#mc-scope-select",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "__vars": {
+    "--fd-bg": "#081521",
+    "--fd-surface": "#102638",
+    "--fd-surface-raised": "#193448",
+    "--fd-surface-soft": "#213B4B",
+    "--fd-border": "#385465",
+    "--fd-text": "#EFF6F8",
+    "--fd-text-muted": "#AEC0CB",
+    "--fd-text-subtle": "#8CA4B3",
+    "--fd-primary": "#A7DEC9",
+    "--fd-primary-strong": "#317C69",
+    "--fd-complete": "#9DCFF3",
+    "--fd-expected": "#F5D39A",
+    "--fd-scheduled": "#F0B9D0",
+    "--fd-exdate": "#97DFCA",
+    "--fd-unconfirmed": "#BBC9D5",
+    "--fd-warning": "#E9B6A8",
+    "--fd-error": "#E9A8B1",
+    "--fd-focus": "#B4E3FC"
+   }
+  },
+  "390": {
+   "body bg": {
+    "sel": "body",
+    "prop": "backgroundColor",
+    "val": "rgb(8, 21, 33)"
+   },
+   "hero/card bg": {
+    "sel": ".mu-card",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "card border": {
+    "sel": ".mu-card",
+    "prop": "borderTopColor",
+    "val": "rgb(56, 84, 101)"
+   },
+   "card text": {
+    "sel": ".mu-card",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "h2 text": {
+    "sel": ".mu-card h2",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "muted label": {
+    "sel": ".mu-label, .mu-stat small, .record-note",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "FAB bg": {
+    "sel": ".mu-fab",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "FAB text": {
+    "sel": ".mu-fab",
+    "prop": "color",
+    "val": "rgb(9, 37, 30)"
+   },
+   "계좌추가 bg": {
+    "sel": ".uat-acct-add",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "계좌추가 border": {
+    "sel": ".uat-acct-add",
+    "prop": "borderTopColor",
+    "val": null
+   },
+   "selected tab bg": {
+    "sel": ".mu-tabs button[aria-pressed=true], .mc-scope button[aria-pressed=true]",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "selected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=true]",
+    "prop": "color",
+    "val": "rgb(167, 222, 201)"
+   },
+   "unselected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=false]",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "top5 row bg": {
+    "sel": ".uat-top5 li",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "top5 rank1 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"1\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(157, 207, 243)"
+   },
+   "top5 rank2 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"2\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "top5 rank3 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"3\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(245, 211, 154)"
+   },
+   "top5 rank4 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"4\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(209, 185, 238)"
+   },
+   "bottom nav bg": {
+    "sel": ".lab-bottom, .mc-nav",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "scope select bg": {
+    "sel": "#mc-scope-select",
+    "prop": "backgroundColor",
+    "val": "rgb(16, 38, 56)"
+   },
+   "scope select text": {
+    "sel": "#mc-scope-select",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "__vars": {
+    "--fd-bg": "#081521",
+    "--fd-surface": "#102638",
+    "--fd-surface-raised": "#193448",
+    "--fd-surface-soft": "#213B4B",
+    "--fd-border": "#385465",
+    "--fd-text": "#EFF6F8",
+    "--fd-text-muted": "#AEC0CB",
+    "--fd-text-subtle": "#8CA4B3",
+    "--fd-primary": "#A7DEC9",
+    "--fd-primary-strong": "#317C69",
+    "--fd-complete": "#9DCFF3",
+    "--fd-expected": "#F5D39A",
+    "--fd-scheduled": "#F0B9D0",
+    "--fd-exdate": "#97DFCA",
+    "--fd-unconfirmed": "#BBC9D5",
+    "--fd-warning": "#E9B6A8",
+    "--fd-error": "#E9A8B1",
+    "--fd-focus": "#B4E3FC"
+   }
+  },
+  "430": {
+   "body bg": {
+    "sel": "body",
+    "prop": "backgroundColor",
+    "val": "rgb(8, 21, 33)"
+   },
+   "hero/card bg": {
+    "sel": ".mu-card",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "card border": {
+    "sel": ".mu-card",
+    "prop": "borderTopColor",
+    "val": "rgb(56, 84, 101)"
+   },
+   "card text": {
+    "sel": ".mu-card",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "h2 text": {
+    "sel": ".mu-card h2",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "muted label": {
+    "sel": ".mu-label, .mu-stat small, .record-note",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "FAB bg": {
+    "sel": ".mu-fab",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "FAB text": {
+    "sel": ".mu-fab",
+    "prop": "color",
+    "val": "rgb(9, 37, 30)"
+   },
+   "계좌추가 bg": {
+    "sel": ".uat-acct-add",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "계좌추가 border": {
+    "sel": ".uat-acct-add",
+    "prop": "borderTopColor",
+    "val": null
+   },
+   "selected tab bg": {
+    "sel": ".mu-tabs button[aria-pressed=true], .mc-scope button[aria-pressed=true]",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "selected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=true]",
+    "prop": "color",
+    "val": "rgb(167, 222, 201)"
+   },
+   "unselected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=false]",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "top5 row bg": {
+    "sel": ".uat-top5 li",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "top5 rank1 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"1\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(157, 207, 243)"
+   },
+   "top5 rank2 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"2\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "top5 rank3 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"3\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(245, 211, 154)"
+   },
+   "top5 rank4 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"4\"] .sw",
+    "prop": "backgroundColor",
+    "val": "rgb(209, 185, 238)"
+   },
+   "bottom nav bg": {
+    "sel": ".lab-bottom, .mc-nav",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "scope select bg": {
+    "sel": "#mc-scope-select",
+    "prop": "backgroundColor",
+    "val": "rgb(16, 38, 56)"
+   },
+   "scope select text": {
+    "sel": "#mc-scope-select",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "__vars": {
+    "--fd-bg": "#081521",
+    "--fd-surface": "#102638",
+    "--fd-surface-raised": "#193448",
+    "--fd-surface-soft": "#213B4B",
+    "--fd-border": "#385465",
+    "--fd-text": "#EFF6F8",
+    "--fd-text-muted": "#AEC0CB",
+    "--fd-text-subtle": "#8CA4B3",
+    "--fd-primary": "#A7DEC9",
+    "--fd-primary-strong": "#317C69",
+    "--fd-complete": "#9DCFF3",
+    "--fd-expected": "#F5D39A",
+    "--fd-scheduled": "#F0B9D0",
+    "--fd-exdate": "#97DFCA",
+    "--fd-unconfirmed": "#BBC9D5",
+    "--fd-warning": "#E9B6A8",
+    "--fd-error": "#E9A8B1",
+    "--fd-focus": "#B4E3FC"
+   }
+  }
+ },
+ "management": {
+  "360": {
+   "body bg": {
+    "sel": "body",
+    "prop": "backgroundColor",
+    "val": "rgb(8, 21, 33)"
+   },
+   "hero/card bg": {
+    "sel": ".mu-card",
+    "prop": "backgroundColor",
+    "val": "rgba(16, 38, 56, 0.9)"
+   },
+   "card border": {
+    "sel": ".mu-card",
+    "prop": "borderTopColor",
+    "val": "rgb(56, 84, 101)"
+   },
+   "card text": {
+    "sel": ".mu-card",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "h2 text": {
+    "sel": ".mu-card h2",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "muted label": {
+    "sel": ".mu-label, .mu-stat small, .record-note",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "FAB bg": {
+    "sel": ".mu-fab",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "FAB text": {
+    "sel": ".mu-fab",
+    "prop": "color",
+    "val": "rgb(9, 37, 30)"
+   },
+   "계좌추가 bg": {
+    "sel": ".uat-acct-add",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "계좌추가 border": {
+    "sel": ".uat-acct-add",
+    "prop": "borderTopColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "selected tab bg": {
+    "sel": ".mu-tabs button[aria-pressed=true], .mc-scope button[aria-pressed=true]",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "selected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=true]",
+    "prop": "color",
+    "val": "rgb(167, 222, 201)"
+   },
+   "unselected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=false]",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "top5 row bg": {
+    "sel": ".uat-top5 li",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank1 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"1\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank2 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"2\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank3 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"3\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank4 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"4\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "bottom nav bg": {
+    "sel": ".lab-bottom, .mc-nav",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "scope select bg": {
+    "sel": "#mc-scope-select",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "scope select text": {
+    "sel": "#mc-scope-select",
+    "prop": "color",
+    "val": null
+   },
+   "__vars": {
+    "--fd-bg": "#081521",
+    "--fd-surface": "#102638",
+    "--fd-surface-raised": "#193448",
+    "--fd-surface-soft": "#213B4B",
+    "--fd-border": "#385465",
+    "--fd-text": "#EFF6F8",
+    "--fd-text-muted": "#AEC0CB",
+    "--fd-text-subtle": "#8CA4B3",
+    "--fd-primary": "#A7DEC9",
+    "--fd-primary-strong": "#317C69",
+    "--fd-complete": "#9DCFF3",
+    "--fd-expected": "#F5D39A",
+    "--fd-scheduled": "#F0B9D0",
+    "--fd-exdate": "#97DFCA",
+    "--fd-unconfirmed": "#BBC9D5",
+    "--fd-warning": "#E9B6A8",
+    "--fd-error": "#E9A8B1",
+    "--fd-focus": "#B4E3FC"
+   }
+  },
+  "390": {
+   "body bg": {
+    "sel": "body",
+    "prop": "backgroundColor",
+    "val": "rgb(8, 21, 33)"
+   },
+   "hero/card bg": {
+    "sel": ".mu-card",
+    "prop": "backgroundColor",
+    "val": "rgba(16, 38, 56, 0.9)"
+   },
+   "card border": {
+    "sel": ".mu-card",
+    "prop": "borderTopColor",
+    "val": "rgb(56, 84, 101)"
+   },
+   "card text": {
+    "sel": ".mu-card",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "h2 text": {
+    "sel": ".mu-card h2",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "muted label": {
+    "sel": ".mu-label, .mu-stat small, .record-note",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "FAB bg": {
+    "sel": ".mu-fab",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "FAB text": {
+    "sel": ".mu-fab",
+    "prop": "color",
+    "val": "rgb(9, 37, 30)"
+   },
+   "계좌추가 bg": {
+    "sel": ".uat-acct-add",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "계좌추가 border": {
+    "sel": ".uat-acct-add",
+    "prop": "borderTopColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "selected tab bg": {
+    "sel": ".mu-tabs button[aria-pressed=true], .mc-scope button[aria-pressed=true]",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "selected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=true]",
+    "prop": "color",
+    "val": "rgb(167, 222, 201)"
+   },
+   "unselected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=false]",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "top5 row bg": {
+    "sel": ".uat-top5 li",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank1 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"1\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank2 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"2\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank3 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"3\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank4 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"4\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "bottom nav bg": {
+    "sel": ".lab-bottom, .mc-nav",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "scope select bg": {
+    "sel": "#mc-scope-select",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "scope select text": {
+    "sel": "#mc-scope-select",
+    "prop": "color",
+    "val": null
+   },
+   "__vars": {
+    "--fd-bg": "#081521",
+    "--fd-surface": "#102638",
+    "--fd-surface-raised": "#193448",
+    "--fd-surface-soft": "#213B4B",
+    "--fd-border": "#385465",
+    "--fd-text": "#EFF6F8",
+    "--fd-text-muted": "#AEC0CB",
+    "--fd-text-subtle": "#8CA4B3",
+    "--fd-primary": "#A7DEC9",
+    "--fd-primary-strong": "#317C69",
+    "--fd-complete": "#9DCFF3",
+    "--fd-expected": "#F5D39A",
+    "--fd-scheduled": "#F0B9D0",
+    "--fd-exdate": "#97DFCA",
+    "--fd-unconfirmed": "#BBC9D5",
+    "--fd-warning": "#E9B6A8",
+    "--fd-error": "#E9A8B1",
+    "--fd-focus": "#B4E3FC"
+   }
+  },
+  "430": {
+   "body bg": {
+    "sel": "body",
+    "prop": "backgroundColor",
+    "val": "rgb(8, 21, 33)"
+   },
+   "hero/card bg": {
+    "sel": ".mu-card",
+    "prop": "backgroundColor",
+    "val": "rgba(16, 38, 56, 0.9)"
+   },
+   "card border": {
+    "sel": ".mu-card",
+    "prop": "borderTopColor",
+    "val": "rgb(56, 84, 101)"
+   },
+   "card text": {
+    "sel": ".mu-card",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "h2 text": {
+    "sel": ".mu-card h2",
+    "prop": "color",
+    "val": "rgb(239, 246, 248)"
+   },
+   "muted label": {
+    "sel": ".mu-label, .mu-stat small, .record-note",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "FAB bg": {
+    "sel": ".mu-fab",
+    "prop": "backgroundColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "FAB text": {
+    "sel": ".mu-fab",
+    "prop": "color",
+    "val": "rgb(9, 37, 30)"
+   },
+   "계좌추가 bg": {
+    "sel": ".uat-acct-add",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "계좌추가 border": {
+    "sel": ".uat-acct-add",
+    "prop": "borderTopColor",
+    "val": "rgb(167, 222, 201)"
+   },
+   "selected tab bg": {
+    "sel": ".mu-tabs button[aria-pressed=true], .mc-scope button[aria-pressed=true]",
+    "prop": "backgroundColor",
+    "val": "rgb(25, 52, 72)"
+   },
+   "selected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=true]",
+    "prop": "color",
+    "val": "rgb(167, 222, 201)"
+   },
+   "unselected tab text": {
+    "sel": ".mu-tabs button[aria-pressed=false]",
+    "prop": "color",
+    "val": "rgb(174, 192, 203)"
+   },
+   "top5 row bg": {
+    "sel": ".uat-top5 li",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank1 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"1\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank2 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"2\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank3 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"3\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "top5 rank4 swatch": {
+    "sel": ".uat-top5 li[data-rank=\"4\"] .sw",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "bottom nav bg": {
+    "sel": ".lab-bottom, .mc-nav",
+    "prop": "backgroundColor",
+    "val": "rgba(0, 0, 0, 0)"
+   },
+   "scope select bg": {
+    "sel": "#mc-scope-select",
+    "prop": "backgroundColor",
+    "val": null
+   },
+   "scope select text": {
+    "sel": "#mc-scope-select",
+    "prop": "color",
+    "val": null
+   },
+   "__vars": {
+    "--fd-bg": "#081521",
+    "--fd-surface": "#102638",
+    "--fd-surface-raised": "#193448",
+    "--fd-surface-soft": "#213B4B",
+    "--fd-border": "#385465",
+    "--fd-text": "#EFF6F8",
+    "--fd-text-muted": "#AEC0CB",
+    "--fd-text-subtle": "#8CA4B3",
+    "--fd-primary": "#A7DEC9",
+    "--fd-primary-strong": "#317C69",
+    "--fd-complete": "#9DCFF3",
+    "--fd-expected": "#F5D39A",
+    "--fd-scheduled": "#F0B9D0",
+    "--fd-exdate": "#97DFCA",
+    "--fd-unconfirmed": "#BBC9D5",
+    "--fd-warning": "#E9B6A8",
+    "--fd-error": "#E9A8B1",
+    "--fd-focus": "#B4E3FC"
+   }
+  }
+ }
+}
