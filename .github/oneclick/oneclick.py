@@ -14,6 +14,9 @@ A=ap.parse_args();SITE=os.path.abspath(A.site);AT=f'{SITE}/auto-test'
 CTLP=os.path.join(os.path.dirname(os.path.abspath(__file__)),'test_control.json')
 CTL=json.load(open(CTLP)) if os.path.exists(CTLP) else {}
 SCN=CTL.get('scenario','none');assert SCN in ('none','meta_loss'),SCN
+# 1회성 범위 제한: only_run_number 지정 시 그 Actions 실행 번호에서만 유효, expires_kst 이후 무효 → 그 외 실행은 none
+if SCN!='none' and CTL.get('only_run_number') is not None and str(os.environ.get('GITHUB_RUN_NUMBER'))!=str(CTL['only_run_number']): SCN='none'
+if SCN!='none' and CTL.get('expires_kst') and datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).isoformat()>CTL['expires_kst']: SCN='none'
 STORE_P=f'{AT}/meta/product_meta_store.json'
 KST=datetime.timezone(datetime.timedelta(hours=9));NOW=datetime.datetime.now(KST)
 ASOF=A.asof or NOW.strftime('%Y%m%d')
@@ -113,7 +116,9 @@ try:
         wjson(f'{WORK}/inputs/{c}.json',nb)
     st={}
     for v in LOG['collect'].values(): st[v.get('state',v['status'])]=st.get(v.get('state',v['status']),0)+1
-    step('collect',ok=ok,fail=fail,states=st)
+    SRC_STATE='collection_error' if fail else ('unchanged_all' if st.get('no_change_normal',0)==len(codes) else ('partly_unchanged' if st.get('no_change_normal') else 'updated'))
+    LOG['source_state']=SRC_STATE   # unchanged_all = 휴장·원천 미변경(정상), collection_error = 수집 오류(QA 차단)
+    step('collect',ok=ok,fail=fail,states=st,source_state=SRC_STATE)
     # ---------- 1b 메타: 저장된 승인 메타 결합(일일 재수집 없음) ----------
     cj=lambda o:json.dumps(o,ensure_ascii=False,sort_keys=True,separators=(',',':'))
     STORE=json.load(open(STORE_P)) if os.path.exists(STORE_P) else None
@@ -148,11 +153,14 @@ try:
     RT=tempfile.mkdtemp(prefix='rt-');zipfile.ZipFile(f'{WORK}/runtime_source.zip').extractall(RT);sys.path[:0]=[RT,WORK];sys.dont_write_bytecode=True
     import period_bridge,presentation
     cat=json.load(open(f'{SITE}/data/catalog.json'));cat['snapshot']['snapshot_id']=RID
-    built={};errs=[]
+    built={};errs=[];INPUT_BAD=[]
     for c in codes:
         b=json.load(open(f'{WORK}/inputs/{c}.json'))
         if A.inject_error=='bad_input' and c==codes[0]: b['distribution_rows'].insert(0,dict(b['distribution_rows'][0] if b['distribution_rows'] else {},gijunYmd='20261013',divAmt='-5.0'))
         b['meta']['snapshot_id']=RID
+        # 입력 오염 검사(CORE 직전 실제 투입 객체): 계산 대상 분배금 숫자·양수, 날짜 YYYYMMDD, 회차 중복 없음
+        _dr=b['distribution_rows'];_bad=[r.get('gijunYmd') for r in _dr if not re.fullmatch(r'\d{8}',str(r.get('gijunYmd'))) or not re.fullmatch(r'-?\d+(\.\d+)?',str(r.get('divAmt'))) or float(r['divAmt'])<=0]
+        if _bad or len({r['gijunYmd'] for r in _dr})!=len(_dr): INPUT_BAD.append({'code':c,'rows':_bad[:5],'dup':len(_dr)-len({r['gijunYmd'] for r in _dr})})
         out={'snapshot':b['meta'],'ticker':c,'periods':{},'presentations':{}}
         for k in ['1개월','6개월','1년','전체']:
             bb=copy.deepcopy(b);bb['period']=k;v=period_bridge.run_period(bb,None,None);out['periods'][k]=v;out['presentations'][k]=presentation.detail_presentation(v,bb)
@@ -213,6 +221,17 @@ try:
     if A.inject_error=='qa_fail': qa('forced QA failure (inject)',False)
     passed=all(q['pass'] for q in LOG['qa']);step('qa',passed=passed,nq=len(LOG['qa']),fails=[q['check'] for q in LOG['qa'] if not q['pass']])
     if not passed: LOG['result']='FAIL_NOT_PROMOTED';raise SystemExit(2)
+    LOG['input_contamination']=INPUT_BAD
+    if INPUT_BAD: LOG['result']='BLOCKED_INPUT_INVALID';step('blocked',reason='CORE 입력 오염(0·음수·비숫자 분배금/날짜 형식/회차 중복)',items=INPUT_BAD[:10]);raise SystemExit(6)
+    # ---------- 4b 출력 단계: 지급일 실제/예상 구분 파일 (v5.3f 형식) ----------
+    sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)));import paydate_stage as PS
+    CAL=PS.KRX();SMD=json.load(open(f'{SITE}/data/management-distributions.json'));sids={x['distribution_id'] for x in SMD['items']}
+    NEWR=[(c,r) for c in codes for r in (lambda b:b.get('distribution_rows_raw',b['distribution_rows']))(json.load(open(f'{WORK}/inputs/{c}.json'))) if f"{c}-{r['gijunYmd']}" not in sids]
+    PDOC,PADD,PDUP=PS.build(SMD,NEWR,CAL);PCHK,PCNT=PS.checks(SMD,PDOC,PADD,CAL)
+    appeared=[f"{c}-{d['date']}" for c,v in LOG['collect'].items() for d in (v.get('div_changed') or []) if d.get('new_payDt') and not d.get('old_payDt')]
+    PCNT['payDt_appeared_not_applied']=appeared[:50];PDOC['calendar']={**PDOC.get('calendar',{}),'calendar_sha256_used':CAL.sha}
+    LOG['paydate']={'counts':PCNT,'checks':PCHK};step('paydate',**PCNT,fails=[x['check'] for x in PCHK if not x['pass']])
+    if not all(x['pass'] for x in PCHK): LOG['result']='BLOCKED_PAYDATE';raise SystemExit(5)
     if MSUM['lost_or_changed'] or MSUM['core_new_blank'] or MSUM['store_integrity']=='BAD':
         LOG['result']='BLOCKED_META_LOSS';step('blocked',reason='승인 메타 유실/변경 또는 새 필수값 공란',loss=MSUM['loss_codes'],new_blank=MSUM['core_new_blank']);raise SystemExit(4)
     # ---------- 5 promote (immutable dir then pointer) ----------
@@ -220,16 +239,17 @@ try:
     files={}
     for c,s in built.items(): open(f'{TMP}/data/{c}.json','w').write(s);files[f'data/{c}.json']=sha(s.encode())
     cs=json.dumps(cat,ensure_ascii=False,separators=(',',':'));open(f'{TMP}/data/catalog.json','w').write(cs);files['data/catalog.json']=sha(cs.encode())
+    os.makedirs(f'{TMP}/aux');ps_=json.dumps(PDOC,ensure_ascii=False,indent=1);open(f'{TMP}/aux/management-distributions.json','w').write(ps_);files['aux/management-distributions.json']=sha(ps_.encode())
     man={'release_id':RID,'created_kst':datetime.datetime.now(KST).isoformat(),'mode':A.mode,'asof':ASOF,'engine_hash':cat['snapshot']['engine_hash'],
          'cutoffs':{c:json.loads(built[c])['snapshot']['data_cutoff'] for c in codes},'collect_summary':st,'files':files,
-         'raw_sha256':{c:v.get('sha256') for c,v in LOG['collect'].items()},'metadata':MSUM,'metadata_store_sha256':sha(open(STORE_P,'rb').read()) if os.path.exists(STORE_P) else None,'note':'raw sources are NOT published; hashes only'}
+         'raw_sha256':{c:v.get('sha256') for c,v in LOG['collect'].items()},'source_state':SRC_STATE,'paydate':PCNT,'metadata':MSUM,'metadata_store_sha256':sha(open(STORE_P,'rb').read()) if os.path.exists(STORE_P) else None,'note':'raw sources are NOT published; hashes only'}
     wjson(f'{TMP}/manifest.json',man)
     # verify before exposing
     bad=[p for p,h in files.items() if sha(open(f'{TMP}/{p}','rb').read())!=h];assert not bad,bad
     os.rename(TMP,R)
     prevlatest=json.load(open(f'{AT}/latest.json')) if os.path.exists(f'{AT}/latest.json') else None
     lt={'release_id':RID,'path':f'releases/{RID}/','manifest_sha256':sha(open(f'{R}/manifest.json','rb').read()),'promoted_kst':datetime.datetime.now(KST).isoformat(),
-        'mode':A.mode,'previous':prevlatest and prevlatest['release_id'],'max_cutoff':max(man['cutoffs'].values()),'qa':'PASS','metadata':{k:v for k,v in MSUM.items() if k not in('loss_codes','core_new_blank')}}
+        'mode':A.mode,'previous':prevlatest and prevlatest['release_id'],'max_cutoff':max(man['cutoffs'].values()),'qa':'PASS','source_state':SRC_STATE,'paydate':{k:PCNT[k] for k in('out','added','added_kind')},'metadata':{k:v for k,v in MSUM.items() if k not in('loss_codes','core_new_blank')}}
     RES_='PASS_PROMOTED' if MSUM['metadata']=='stored' and not MSUM['site_baseline_only'] else 'PASS_PROMOTED_WITH_REUSE';lt['status']=RES_
     wjson(f'{AT}/latest.json.tmp',lt);os.replace(f'{AT}/latest.json.tmp',f'{AT}/latest.json')
     LOG['result']=RES_;step('promoted',release=RID,result=RES_)
@@ -244,15 +264,17 @@ finally:
     ix=json.load(open(f'{AT}/runs/index.json')) if os.path.exists(f'{AT}/runs/index.json') else []
     ix.insert(0,{'release_id':RID,'result':LOG['result'],'mode':A.mode,'inject':A.inject_error,'started_kst':LOG['started_kst'],
       'collect':{k:sum(1 for v in LOG['collect'].values() if v.get('state',v['status'])==k) for k in ('updated','no_change_normal','fail')},
-      'qa_fail':[q['check'] for q in LOG['qa'] if not q['pass']],'metadata':{k:v for k,v in (LOG.get('metadata') or {}).items() if k not in('loss_codes','core_new_blank')}})
+      'qa_fail':[q['check'] for q in LOG['qa'] if not q['pass']],'source_state':LOG.get('source_state'),'paydate':(LOG.get('paydate') or {}).get('counts',{}).get('out'),'metadata':{k:v for k,v in (LOG.get('metadata') or {}).items() if k not in('loss_codes','core_new_blank')}})
     wjson(f'{AT}/runs/index.json',ix[:200]);json.dump(LOG,open(f'{RAW}/run_log.json','w'),ensure_ascii=False,indent=1)
     if A.publish_raw and LOG['collect']:
         dst=f'{AT}/raw/{RID}';assert not os.path.exists(dst);shutil.copytree(RAW,dst)
     M_=LOG.get('metadata') or {}
     ml=(f"metadata={M_.get('metadata')} metadata_refresh={M_.get('metadata_refresh')} zeroin_daily={M_.get('zeroin_daily')} stored={M_.get('stored')}/{M_.get('total')} "
         f"site_baseline_only={M_.get('site_baseline_only')} lost={M_.get('lost_or_changed')} new_blank={len(M_.get('core_new_blank') or [])} funetf_meta={M_.get('funetf_meta_verified')}/{M_.get('total')}(기준일 {M_.get('funetf_meta_as_of') or '-'})") if M_ else 'metadata=NOT_EVALUATED'
+    pc=(LOG.get('paydate') or {}).get('counts') or {}
+    ml+=f" source_state={LOG.get('source_state')} paydate=actual {pc.get('out',{}).get('actual','-')}/estimated {pc.get('out',{}).get('estimated','-')}(+{pc.get('added','-')})"
     print('RESULT',LOG['result'],RID,ml+(f' [시험주입:{SCN}]' if SCN!='none' else ''))
     if os.environ.get('GITHUB_STEP_SUMMARY'):
-        r=LOG['result'];head={'PASS_PROMOTED':'✅ 정상','PASS_PROMOTED_WITH_REUSE':'⚠️ 승격됨(경고: 일부 종목 메타 저장소 미포함 → 사이트 기준본 재사용)'}.get(r,'❌ 승격 차단/실패')
-        open(os.environ['GITHUB_STEP_SUMMARY'],'a').write(f"## oneclick: {r} — {head}\n\n- release: `{RID}`\n- 메타: **metadata={M_.get('metadata')}**, metadata_refresh={M_.get('metadata_refresh')} (일일 재수집 안 함이 정상), ZeroIn 일일 호출={M_.get('zeroin_daily')}\n- 저장 승인 메타 유지 {M_.get('stored')}/{M_.get('total')} (저장소 {M_.get('store_built_kst')}), 사이트 기준본 재사용 {M_.get('site_baseline_only')}, 유실/변경 {M_.get('lost_or_changed')}, 새 공란 {len(M_.get('core_new_blank') or [])}, 기존 공란(유지) {M_.get('baseline_gap_preexisting')}\n- FunETF 메타 검증 {M_.get('funetf_meta_verified')}/{M_.get('total')} (기준일 {M_.get('funetf_meta_as_of') or '-'}), 미확인 {M_.get('funetf_meta_unconfirmed')}\n\n")
+        r=LOG['result'];head={'PASS_PROMOTED':'✅ 정상'+(' (원천 미변경·휴장 가능: 새 행 0)' if LOG.get('source_state')=='unchanged_all' else ''),'PASS_PROMOTED_WITH_REUSE':'⚠️ 승격됨(경고: 일부 종목 메타 저장소 미포함 → 사이트 기준본 재사용)'}.get(r,'❌ 승격 차단/실패')
+        open(os.environ['GITHUB_STEP_SUMMARY'],'a').write(f"## oneclick: {r} — {head}\n\n- release: `{RID}`\n- 메타: **metadata={M_.get('metadata')}**, metadata_refresh={M_.get('metadata_refresh')} (일일 재수집 안 함이 정상), ZeroIn 일일 호출={M_.get('zeroin_daily')}\n- 저장 승인 메타 유지 {M_.get('stored')}/{M_.get('total')} (저장소 {M_.get('store_built_kst')}), 사이트 기준본 재사용 {M_.get('site_baseline_only')}, 유실/변경 {M_.get('lost_or_changed')}, 새 공란 {len(M_.get('core_new_blank') or [])}, 기존 공란(유지) {M_.get('baseline_gap_preexisting')}\n- 원천 상태: {LOG.get('source_state')} (unchanged_all=휴장·원천 미변경 정상 / collection_error=수집 오류)\n- 지급일: 실제 {pc.get('out',{}).get('actual','-')} / 예상 {pc.get('out',{}).get('estimated','-')} (이번 신규 {pc.get('added','-')} {pc.get('added_kind','')})\n- 실패·차단 시 latest 포인터와 기존 release 는 변경되지 않음\n- FunETF 메타 검증 {M_.get('funetf_meta_verified')}/{M_.get('total')} (기준일 {M_.get('funetf_meta_as_of') or '-'}), 미확인 {M_.get('funetf_meta_unconfirmed')}\n\n")
     sys.exit(0 if LOG['result']=='PASS_PROMOTED' else 1)

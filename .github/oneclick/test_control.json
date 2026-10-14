@@ -1,1 +1,1 @@
-{"scenario":"none","_doc":"none=정상. meta_loss=승인 메타 유실 주입 시험(승격 차단 확인). 시험 후 반드시 none."}
+{"scenario":"meta_loss","only_run_number":4,"expires_kst":"2026-10-15T23:59:59+09:00","_doc":"대표 실서버 차단 시험 1회용: Actions 실행 #4 에서만 meta_loss(작업 사본 0000D0 issuer·fee 공란 주입→BLOCKED_META_LOSS, latest 불변). 다른 실행 번호/만료 후는 자동 none. 시험 확인 후 GrokBot 이 none 으로 되돌림."}
