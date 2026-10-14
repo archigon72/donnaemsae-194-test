@@ -2,7 +2,7 @@
  "source_commit": "96bd93f0fbef6f7c9925dc673be60e92d1190be4",
  "namespace": "dnmuat194.",
  "sw": "uat-sw.js",
- "cache": "dnmuat194-acct-uat-v53m-1",
+ "cache": "dnmuat194-acct-uat-v53n-1",
  "data": "메인 194-test data/ inputs/ references/ (v5.3f 승인본, 지급일 구분 actual 1,088 / estimated 3,416 — v5.3h 규칙 재계산과 동일) 을 경로 재지정으로 참조. auto-test latest 데이터는 사용 안 함",
  "changed_from_source": [
   "analysis-entry.js",
@@ -32,7 +32,9 @@
   "dividend.html",
   "uat-t138.css",
   "uat-t138.js",
-  "uat-sw.js"
+  "uat-sw.js",
+  "uat-t140.css",
+  "uat-t140-palette.css"
  ],
  "leftover_main_keys": [],
  "future_dividend": {
@@ -59,5 +61,13 @@
   "amount_rule": "won/exact floor to integer won + comma; man floor(a/1000)/10 1-decimal 만; <1000원 keep as won; display-only",
   "calendar_ex_fix": "ex events only when entitlement q>0",
   "holding_filter": "sell/add_buy/reinvest from holdings as of trade date; initial_buy full catalog"
+ },
+ "t140": {
+  "base": "v53m-t138-9d8261e",
+  "fixes": [
+   "asset-hub 계좌 주요 종목 top5 (현재 평가액, composition 평가액 도넛 동일 계산, 조회 범위 반영, 기타 #6B7280)",
+   "approved color-lock tokens on asset-hub + management (generated uat-t140-palette.css)",
+   "asset-hub + 거래 등록 FAB"
+  ]
  }
 }
