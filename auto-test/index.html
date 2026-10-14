@@ -1,0 +1,23 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>원클릭 격리 시험 상태</title><meta name="robots" content="noindex">
+<style>body{font-family:sans-serif;margin:12px;max-width:640px}td,th{border-bottom:1px solid #ddd;padding:4px;font-size:13px;text-align:left}table{border-collapse:collapse;width:100%}.ok{color:#0a7}.ng{color:#c22}code{word-break:break-all}</style></head>
+<body><h2>원클릭 격리 시험 (194-test/auto-test)</h2>
+<p>정식 사이트 데이터가 아닌 <b>격리 시험본</b>입니다. 실행: GitHub 앱/웹 → Actions → <i>oneclick-autotest</i> → Run workflow.</p>
+<div id="latest">불러오는 중…</div><h3>실행 이력</h3><table id="runs"><tr><th>release_id</th><th>결과</th><th>수집(갱신/무변화/실패)</th></tr></table>
+<script>
+const nc={cache:'no-store'};
+async function sha(b){const h=await crypto.subtle.digest('SHA-256',b);return [...new Uint8Array(h)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+(async()=>{
+ try{const L=await (await fetch('latest.json?t='+Date.now(),nc)).json();
+  const mb=await (await fetch(L.path+'manifest.json',nc)).arrayBuffer();const msha=await sha(mb);const M=JSON.parse(new TextDecoder().decode(mb));
+  const cb=await (await fetch(L.path+'data/catalog.json',nc)).arrayBuffer();const csha=await sha(cb);
+  const same=M.release_id===L.release_id&&msha===L.manifest_sha256&&csha===M.files['data/catalog.json'];
+  const cut=Object.values(M.cutoffs);
+  document.getElementById('latest').innerHTML=`<p>최신 격리본: <code>${L.release_id}</code> (${L.mode}) 승격 ${L.promoted_kst}<br>최대 기준일 ${L.max_cutoff} · 종목 ${cut.length} · QA ${L.qa}<br>
+  무결성(같은 release_id·manifest·catalog 해시): <b class="${same?'ok':'ng'}">${same?'일치':'불일치'}</b><br>이전본: ${L.previous||'-'}</p>`;
+ }catch(e){document.getElementById('latest').textContent='최신 격리본 없음 또는 읽기 실패: '+e}
+ try{const R=await (await fetch('runs/index.json?t='+Date.now(),nc)).json();const t=document.getElementById('runs');
+  for(const r of R.slice(0,30)){const c=r.collect||{};t.insertAdjacentHTML('beforeend',`<tr><td><code>${r.release_id}</code></td><td class="${r.result==='PASS_PROMOTED'?'ok':'ng'}">${r.result}</td><td>${c.updated||0}/${c.no_change_normal||0}/${c.fail||0}</td></tr>`)}
+ }catch(e){}
+})();
+</script></body></html>
