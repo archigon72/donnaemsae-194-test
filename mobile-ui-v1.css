@@ -347,3 +347,6 @@ body.mu .mu-val-none small{color:var(--mu-muted);font-size:12px}
 .mc-rec-sub.mc-rec-acct{display:flex;min-width:0;align-items:baseline}
 .mc-rec-acct .acct-lab{flex:0 1 auto;min-width:0;font-weight:inherit}.mc-rec-acct .acct-type{font-weight:600}
 .mc-rec-acct .mc-rec-code{flex:0 4 auto;min-width:2.5em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* v5.3c 구성 도넛 종목별/계좌별 탭 전용: 2칸 꽉 채움 + 텍스트 정중앙 (다른 .mu-tabs 영향 없음) */
+body.mu .mu-tabs:has(> button[data-comp]){grid-template-columns:1fr 1fr}
+body.mu .mu-tabs > button[data-comp]{display:flex;align-items:center;justify-content:center;text-align:center;padding:0 8px;white-space:nowrap}
