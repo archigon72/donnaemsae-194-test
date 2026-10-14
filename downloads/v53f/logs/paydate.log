@@ -1,0 +1,9 @@
+PASS 배당 기록 행에 예상 표기 존재(예상 지급일 행) {"est": 3, "rows": 6}
+PASS 실제 payDt 회차(0048J0 2026-10-02) 확정 행: 예상 미표기 ["26.10.02 +30,500원 [일반] 가상-329200 · KODEX 미국머니마켓액티브"]
+PASS payDt 없는 회차(329200 2026-09-29→10-02) 행: 예상 표기 ["26.10.02 예상 +3,300원 [일반] 가상-329200 · TIGER 리츠부동산인프라"]
+PASS [dividends] 저장 원장 재기록 없음(바이트 동일) null
+PASS [ledger] 저장 원장 재기록 없음(바이트 동일) null
+PASS [asset] 저장 원장 재기록 없음(바이트 동일) null
+PASS [performance] 저장 원장 재기록 없음(바이트 동일) null
+PASS console/pageerror 0 []
+TOTAL 8 / 8

@@ -1,0 +1,10 @@
+S0 latest_before 7f581eb085b76536 auto-20261014-143346-live
+S1 inject qa_fail exit=1 latest 7f581eb085b76536
+S2 inject bad_input exit=1 latest 7f581eb085b76536
+S3 interrupt exit=1 latest 7f581eb085b76536
+S4 retry exit=0 latest 357d03ff1c1a6bf4 auto-20261014-145117-replay
+S5 verify exit=0 {"release_id": "auto-20261014-145117-replay", "files": 195, "bad": [], "verdict": "PASS"}
+S6 tamper exit=1 {"release_id": "auto-20261014-145117-replay", "files": 195, "bad": ["sha mismatch data/329200.json"], "verdict": "FAIL"}
+S7 gap exit=0
+S7b gap recovered rows equal to originally removed: 27 / 27 bad [] nav_added {'329200': 5, '0048J0': 5, '0004G0': 8, '0000D0': 5, '0005A0': 8, '0008S0': 8, '0013P0': 8, '0018C0': 8, '0022T0': 8} result PASS_PROMOTED
+SCEN_DONE

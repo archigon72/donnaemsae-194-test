@@ -1,0 +1,4 @@
+PASS pre-seeded old v53e cache null
+PASS after v53f SW activate: old v53e cache purged, only v53f ["donnaemsae-asset-hub-20261013-mobileui-v53f"]
+PASS detail 329200 renders current data (no stale v53e response) null
+PASS data snapshot_id == catalog snapshot_id via SW ["release194-20261012-v1", "release194-20261012-v1"]

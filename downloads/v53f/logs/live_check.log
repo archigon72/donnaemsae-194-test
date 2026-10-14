@@ -1,0 +1,23 @@
+PASS runtime-manifest 210 files: HTTP sha256 match []
+PASS catalog 194 194
+PASS live SW cache v53f 
+PASS favicon 200 42129
+PASS 194 detail pages render without error {"ok": 194, "bad": []}
+FAIL SW: only v53f cache remains after activate (old v53e cache purged) {"caches": ["donnaemsae-asset-hub-20261013-mobileui-v53f", "donnaemsae-asset-hub-20261013-mobileui-v53e"], "controller": "https://archigon72.github.io/donnaemsae-194-test/management-sw.js"}
+PASS fetch through SW returns current catalog (no stale mix) ["snapshot", "items"]
+PASS w360 index.html no horizontal overflow 0
+PASS w360 detail.html?code=329200 no horizontal overflow 0
+PASS w360 compare.html no horizontal overflow 0
+PASS w360 management.html no horizontal overflow 0
+PASS w360 analysis-search.html no horizontal overflow 0
+PASS w390 index.html no horizontal overflow 0
+PASS w390 detail.html?code=329200 no horizontal overflow 0
+PASS w390 compare.html no horizontal overflow 0
+PASS w390 management.html no horizontal overflow 0
+PASS w390 analysis-search.html no horizontal overflow 0
+PASS w430 index.html no horizontal overflow 0
+PASS w430 detail.html?code=329200 no horizontal overflow 0
+PASS w430 compare.html no horizontal overflow 0
+PASS w430 management.html no horizontal overflow 0
+PASS w430 analysis-search.html no horizontal overflow 0
+PASS console/pageerror/requestfailed/HTTP>=400 = 0 (whole run) []

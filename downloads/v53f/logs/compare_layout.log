@@ -1,0 +1,22 @@
+PASS 비교페이지 0048J0+472150+참고시장 결과표 생성 {"rows": ["KODEX 미국머니마켓액티브 0048J0 0.22% 0.00%p", "TIGER 배당커버드콜액티브 472150 110.14% 109.92%p", "S&P500 379800 11.18% 10.96%p"], "err": null, "body": null}
+PASS 비교페이지 Bundle/Snapshot mismatch 문구 없음 null
+PASS 360px index.html 가로넘침 0 0
+PASS 360px analysis-search.html 가로넘침 0 0
+PASS 360px detail.html?code=0048J0 가로넘침 0 0
+PASS 360px detail.html?code=0004G0 가로넘침 0 0
+PASS 360px management.html?mode=ledger 가로넘침 0 0
+PASS 360px compare.html 가로넘침 0 0
+PASS 390px index.html 가로넘침 0 0
+PASS 390px analysis-search.html 가로넘침 0 0
+PASS 390px detail.html?code=0048J0 가로넘침 0 0
+PASS 390px detail.html?code=0004G0 가로넘침 0 0
+PASS 390px management.html?mode=ledger 가로넘침 0 0
+PASS 390px compare.html 가로넘침 0 0
+PASS 430px index.html 가로넘침 0 0
+PASS 430px analysis-search.html 가로넘침 0 0
+PASS 430px detail.html?code=0048J0 가로넘침 0 0
+PASS 430px detail.html?code=0004G0 가로넘침 0 0
+PASS 430px management.html?mode=ledger 가로넘침 0 0
+PASS 430px compare.html 가로넘침 0 0
+PASS console/pageerror 0 []
+TOTAL 21 / 21

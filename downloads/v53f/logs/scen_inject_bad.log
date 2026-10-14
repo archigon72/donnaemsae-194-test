@@ -1,0 +1,16 @@
+STEP start {"codes": 194, "site_tree_untouched_paths": ["inputs/", "data/", "*.html", "*.js"]}
+STEP collect {"ok": 194, "fail": 0, "states": {"updated": 194}}
+STEP core_build {"built": 194, "engine_hash": "11a8b025cc2fe4272d935a60eb8c2d4a8076f8c56ed058f9531e73fdb0d70678"}
+PASS 194/194 tickers built 194
+PASS collection: 0 failed tickers {}
+FAIL no new ERROR periods vs deployed ["0000D01년", "0000D06개월", "0000D0전체"]
+PASS info: CORE insufficient_period (legit, not failure) count {"n": 194, "sample": ["0000D01개월", "0004G01개월", "0005A01개월", "0008S01개월", "0013P01개월", "0013R01개월"]}
+PASS data_cutoff ISO []
+PASS per-ticker cutoff non-decreasing []
+PASS overlap NAV identical to preserved source (no silent rewrite) {}
+PASS raw gijunYmd kept YYYYMMDD 
+PASS 329200 override kept; 전체 not ERROR; raw rows >= 60 {"raw": 60, "calc": 59}
+PASS new distribution rows: no 0/negative amounts introduced []
+PASS pipeline/validate_json.py on release tree: 0 FAIL {"counts": {"PASS": 14089, "SKIP": 921}, "fail_by_check": {}}
+STEP qa {"passed": false, "nq": 11, "fails": ["no new ERROR periods vs deployed"]}
+RESULT FAIL_NOT_PROMOTED auto-20261014-145016-replay-inj-bad_input
