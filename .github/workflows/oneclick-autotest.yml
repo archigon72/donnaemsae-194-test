@@ -1,1 +1,61 @@
 
+name: oneclick-autotest (격리 원클릭 갱신 시험)
+# 수동 실행 전용(workflow_dispatch). cron 없음. auto-test/ 만 기록. raw 원천은 auto-test/raw/<release_id>/ 에 보존(대표 공개 허용, 덮어쓰기 금지).
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'live = FunETF/ZeroIn 실수집, replay = 저장소 기존 inputs 재생(모의/재생 시험)'
+        type: choice
+        options: [live, replay]
+        default: live
+      inject_error:
+        description: '시험용 오류 주입 (none 이 정상 실행)'
+        type: choice
+        options: [none, qa_fail, bad_input, collect_fail_all]
+        default: none
+      interrupt_after_build:
+        description: '시험: CORE 계산 후 중단(승격 없음)'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: oneclick-autotest
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: oneclick (collect -> CORE -> QA -> promote on PASS)
+        id: oc
+        run: |
+          set +e
+          ARGS="--site . --raw-dir $RUNNER_TEMP/raw --publish-raw --mode ${{ inputs.mode }}"
+          if [ "${{ inputs.mode }}" = "replay" ]; then python3 .github/oneclick/mk_replay.py . $RUNNER_TEMP/replay; ARGS="$ARGS --replay-dir $RUNNER_TEMP/replay"; fi
+          if [ "${{ inputs.inject_error }}" != "none" ]; then ARGS="$ARGS --inject-error ${{ inputs.inject_error }}"; fi
+          if [ "${{ inputs.interrupt_after_build }}" = "true" ]; then ARGS="$ARGS --interrupt-after-build"; fi
+          python3 .github/oneclick/oneclick.py $ARGS 2>&1 | tee $RUNNER_TEMP/oc.log
+          echo "result=$(grep '^RESULT' $RUNNER_TEMP/oc.log | awk '{print $2}')" >> $GITHUB_OUTPUT
+      - name: guard - only auto-test/ may change
+        run: |
+          git add -A auto-test
+          if git status --porcelain | grep -v '^.. auto-test/' | grep . ; then echo "non auto-test change detected"; exit 1; fi
+      - name: publish auto-test (runs log always; release+latest only if PASS)
+        run: |
+          git config user.name "oneclick-bot"; git config user.email "oneclick-bot@users.noreply.github.com"
+          git commit -m "auto-test: ${{ steps.oc.outputs.result }} (run ${{ github.run_id }})" || exit 0
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
+      - name: summary
+        run: |
+          echo "### 결과: ${{ steps.oc.outputs.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 상태 페이지: https://archigon72.github.io/donnaemsae-194-test/auto-test/ (Pages 반영 1~3분 지연 가능)" >> $GITHUB_STEP_SUMMARY
+          grep -E '^(STEP|PASS|FAIL|RESULT)' $RUNNER_TEMP/oc.log | cut -c1-200 >> $GITHUB_STEP_SUMMARY
+          test "${{ steps.oc.outputs.result }}" = "PASS_PROMOTED"
