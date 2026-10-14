@@ -1,0 +1,13 @@
+[복원 방법 · GrokBot]
+1) 같은 폴더에 part 파일을 모두 받습니다.
+2) 무결성: sha256sum -c PARTS_SHA256.txt  (Windows: certutil -hashfile 파일 SHA256)
+3) 합치기
+   Linux/Mac:  cat baseline_8f6b4f1_pre_t138.zip.part* > baseline_8f6b4f1_pre_t138.zip
+               cat completed_9d8261e_t138.zip.part* > completed_9d8261e_t138.zip
+   Windows:    copy /b baseline_8f6b4f1_pre_t138.zip.part00+baseline_8f6b4f1_pre_t138.zip.part01 baseline_8f6b4f1_pre_t138.zip
+               (completed도 part00+part01 순서로 동일)
+4) 전체 해시가 WHOLE_SHA256.txt와 같은지 확인 후 압축 해제.
+5) 수정 전 복구 = baseline zip의 account-uat/ 를 저장소에 덮어쓰기(태그 v53l-calendar-8f6b4f1와 동일).
+내용: 공개 저장소 파일만(개인 원장·토큰·CORE 원천 없음).
+
+※ part 파일은 공개 GitHub에 올리지 않습니다(대표 규칙). 대표가 채팅 첨부로 전달하며, 여기의 SHA-256로 검증합니다.

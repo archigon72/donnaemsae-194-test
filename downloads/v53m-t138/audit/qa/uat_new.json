@@ -1,0 +1,406 @@
+{
+ "root": "http://127.0.0.1:8796/donnaemsae-194-test/",
+ "checks": [
+  {
+   "check": "UAT 첫 진입: UAT 원장 비어 있음(메인 가짜 원장 미참조)",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "UAT 화면에 UAT 표식",
+   "pass": true,
+   "detail": "[계좌 UAT] 계좌·거래 관리 · 돈냄새연구소"
+  },
+  {
+   "check": "새 테스트 계좌 생성 + 10주 매수(0004G0)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "5주 추가 매수",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "3주 매도",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "잔고 12주",
+   "pass": true,
+   "detail": "12주"
+  },
+  {
+   "check": "거래내역 3건(10/5/3)·수량",
+   "pass": true,
+   "detail": [
+    [
+     "initial_buy",
+     "10"
+    ],
+    [
+     "add_buy",
+     "5"
+    ],
+    [
+     "sell",
+     "3"
+    ]
+   ]
+  },
+  {
+   "check": "자산(성과) 화면 금액·기준일 표시",
+   "pass": true,
+   "detail": "돈냄새연구소\n정밀하게 분석하고, 천천히 키운다.\n배당이 키운 자산\n\n배당이 키운 자산과 수량, 배당 흐름을 살펴봐요.\n\n← 홈으로\n전체\n계좌별\n종목별\n배당이 키운 내 자산\n10.08 종가 기준\n배당이 키운 자산\n4,"
+  },
+  {
+   "check": "두 번째 테스트 계좌 생성",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "계좌 2개",
+   "pass": true,
+   "detail": [
+    "UAT-테스트A",
+    "UAT-테스트B"
+   ]
+  },
+  {
+   "check": "계좌 전환 시 해당 계좌 보유만(B=497880)",
+   "pass": true,
+   "detail": [
+    "497880"
+   ]
+  },
+  {
+   "check": "입력 후 취소(Esc) → 원장 변화 없음",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "동일 거래 2회 입력 → 별도 2건(order_key 0,1)으로 기록, 오류 없음(앱 기존 동작)",
+   "pass": true,
+   "detail": {
+    "errors": [
+     [],
+     []
+    ],
+    "records": 2,
+    "order_keys": [
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "check": "중복분 1건 삭제",
+   "pass": true,
+   "detail": 5
+  },
+  {
+   "check": "새로고침 후 원장 유지",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "뒤로/앞으로 이동 후 원장 유지",
+   "pass": true,
+   "detail": [
+    "http://127.0.0.1:8796/donnaemsae-194-test/account-uat/management.html?mode=ledger",
+    "http://127.0.0.1:8796/donnaemsae-194-test/account-uat/asset-hub.html"
+   ]
+  },
+  {
+   "check": "새 탭 재접속 후 원장 유지",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "재접속 후 잔고 12주",
+   "pass": true,
+   "detail": "12주"
+  },
+  {
+   "check": "UAT가 194 승인 지급일 구분 참조(actual 1088 / estimated 3416)",
+   "pass": true,
+   "detail": {
+    "estimated": 3416,
+    "actual": 1088
+   }
+  },
+  {
+   "check": "배당 이벤트 실제/예상 구분 표시, 중복 0, 자동 실입금 확정 0",
+   "pass": true,
+   "detail": {
+    "n": 24,
+    "by": {
+     "estimated": 24
+    },
+    "dup": 0,
+    "conf": 0,
+    "kinds": {
+     "estimated": 3416,
+     "actual": 1088
+    },
+    "est_badges": 0,
+    "sample": [
+     {
+      "id": "0004G0-20250328",
+      "date": "2025-04-02",
+      "kind": "estimated",
+      "amt": "330"
+     },
+     {
+      "id": "0004G0-20250429",
+      "date": "2025-05-07",
+      "kind": "estimated",
+      "amt": "336"
+     },
+     {
+      "id": "0004G0-20250529",
+      "date": "2025-06-04",
+      "kind": "estimated",
+      "amt": "324"
+     }
+    ]
+   }
+  },
+  {
+   "check": "기준일 표시(시장가격·분배금 자료 기준일)",
+   "pass": true,
+   "detail": [
+    "시장가격: 10.08 종가 기준 ",
+    "분배금 자료 기준일: 2026-10-08"
+   ]
+  },
+  {
+   "check": "수집(시세) 실패 시 오류 상태 표시",
+   "pass": true,
+   "detail": [
+    "시장가격: 10.08 종가 기준 · 분배금 자료 기준일: 2026-10-08",
+    "오프라인/이전 시장가격을 사용 중입니다. 최신 시세가 아닐 수 있습니다."
+   ]
+  },
+  {
+   "check": "UAT 백업 = UAT 원장",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "UAT 원장만 초기화",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "복원 → 거래·계좌 동일",
+   "pass": true,
+   "detail": {
+    "acc": 2,
+    "tx": 5
+   }
+  },
+  {
+   "check": "복원 후 잔고 12주",
+   "pass": true,
+   "detail": "12주"
+  },
+  {
+   "check": "[격리] 메인/기존 localStorage 키·값 전부 불변",
+   "pass": true,
+   "detail": {
+    "pre": 8,
+    "post": 8
+   }
+  },
+  {
+   "check": "[격리] UAT가 메인 sessionStorage 키를 쓰지 않음(메인 페이지 자체 scroll 키 제외)",
+   "pass": true,
+   "detail": [
+    "dnmuat194.ui./donnaemsae-194-test/account-uat/scroll:/donnaemsae-194-test/account-uat/management.html?mode=ledger",
+    "donnaemsae.ui.SENTINEL",
+    "donnaemsae.ui./donnaemsae-194-test/scroll:/donnaemsae-194-test/management.html?mode=ledger",
+    "donnaemsae.ui./donnaemsae-194-test/management-scope",
+    "dnmuat194.ui./donnaemsae-194-test/account-uat/management-last-trade",
+    "dnmuat194.ui./donnaemsae-194-test/account-uat/scroll:/donnaemsae-194-test/account-uat/management.html?mode=performance",
+    "dnmuat194.ui./donnaemsae-194-test/account-uat/management-scope",
+    "dnmuat194.ui./donnaemsae-194-test/account-uat/scroll:/donnaemsae-194-test/account-uat/asset-hub.html"
+   ]
+  },
+  {
+   "check": "[격리] 메인 캐시(이름·항목수) 불변",
+   "pass": true,
+   "detail": {
+    "pre": {
+     "donnaemsae-asset-hub-20261013-mobileui-v53f": 365
+    },
+    "post": {
+     "donnaemsae-asset-hub-20261013-mobileui-v53f": 365
+    }
+   }
+  },
+  {
+   "check": "[격리] UAT 캐시는 dnmuat194-* 만 생성",
+   "pass": true,
+   "detail": [
+    "dnmuat194-acct-uat-v53m-1",
+    "donnaemsae-asset-hub-20261013-mobileui-v53f"
+   ]
+  },
+  {
+   "check": "[격리] SW 등록: 메인 scope 유지 + UAT scope=account-uat/ 별도",
+   "pass": true,
+   "detail": [
+    "http://127.0.0.1:8796/donnaemsae-194-test/",
+    "http://127.0.0.1:8796/donnaemsae-194-test/account-uat/"
+   ]
+  },
+  {
+   "check": "[격리] UAT 쓰기 키 = dnmuat194.* 만",
+   "pass": true,
+   "detail": [
+    "dnmuat194.catalog.cache.v1",
+    "dnmuat194.distributions.cache.v1",
+    "dnmuat194.management.facts.v1",
+    "dnmuat194.management.facts.v1.rollback.v1",
+    "dnmuat194.market.cache.v1",
+    "dnmuat194.tax.cache.v53"
+   ]
+  },
+  {
+   "check": "[격리] IndexedDB 신규 생성 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "[역방향] 메인 앱 가상 거래 기록",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "[역방향] 메인 사용 후 UAT 키·값 불변",
+   "pass": true,
+   "detail": {
+    "n": 6
+   }
+  },
+  {
+   "check": "[역방향] 메인 사용 후 UAT 캐시 불변",
+   "pass": true,
+   "detail": null
+  },
+  {
+   "check": "[역방향] 메인 쓰기 키는 donnaemsae.* 만",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "check": "콘솔/페이지/HTTP 오류 0 (의도적 시세 차단 제외)",
+   "pass": true,
+   "detail": []
+  }
+ ],
+ "errors": [],
+ "started": "2026-10-14T14:46:02Z",
+ "pre_main": {
+  "ls_keys": [
+   "donnaemsae.catalog.cache.v1",
+   "donnaemsae.distributions.cache.v1",
+   "donnaemsae.divbasis.v1",
+   "donnaemsae.lab.other.key",
+   "donnaemsae.management.facts.v1",
+   "donnaemsae.management.facts.v1.rollback.v1",
+   "donnaemsae.market.cache.v1",
+   "donnaemsae.tax.cache.v53"
+  ],
+  "caches": {
+   "donnaemsae-asset-hub-20261013-mobileui-v53f": 365
+  },
+  "regs": [
+   "http://127.0.0.1:8796/donnaemsae-194-test/"
+  ],
+  "idb": []
+ },
+ "perf_text": "돈냄새연구소\n정밀하게 분석하고, 천천히 키운다.\n배당이 키운 자산\n\n배당이 키운 자산과 수량, 배당 흐름을 살펴봐요.\n\n← 홈으로\n전체\n계좌별\n종목별\n배당이 키운 내 자산\n10.08 종가 기준\n배당이 키운 자산\n4,814원\n\n배당이 만든 수량 합계 0주\n\n여러 종목 수량의 단순 합산 · 비율 막대 없음\n\n직접매수 12주 / 재투자 0주\n\n세전\n세후\n배당은 이렇게 흘렀어요\n지금까지 받은 배당 세전\n5,670원\n다시 투자한 배당\n0원\n사용한 배당\n0원\n남아 있는 배당\n4,814원\n월별 직접투자 원가와 누적 수령 배당\n월말 직접투자 원가\n누적 수령 배당(세전)\n12만\n2,694\n12만\n3,378\n12만\n3,978\n12만\n4,638\n12만\n5,190\n12만\n5,670\n25.11\n26.02\n26.05\n26.10\n\n막대를 누르면 두 금액을 원 단위로 보여 줘요. 막대 아래 숫자: 위 원가 · 아래 누적 배당\n\n월말 직접투자 원가\n120,400원\n누적 수령 배당(세전)\n5,670원\n\n2026-10 현재일까지 기준\n\n월별 수치 보기\n\n두 값의 합은 총자산·평가액이 아닙니다.\n누적 배당은 사용·재투자분 포함 · 시장가 아님\n\n시장가격: 10.08 종가 기준 · 분배금 자료 ",
+ "duplicate_behavior": {
+  "errors": [
+   [],
+   []
+  ],
+  "records": 2,
+  "order_keys": [
+   0,
+   1
+  ]
+ },
+ "dividends": {
+  "n": 24,
+  "by": {
+   "estimated": 24
+  },
+  "dup": 0,
+  "conf": 0,
+  "kinds": {
+   "estimated": 3416,
+   "actual": 1088
+  },
+  "est_badges": 0,
+  "sample": [
+   {
+    "id": "0004G0-20250328",
+    "date": "2025-04-02",
+    "kind": "estimated",
+    "amt": "330"
+   },
+   {
+    "id": "0004G0-20250429",
+    "date": "2025-05-07",
+    "kind": "estimated",
+    "amt": "336"
+   },
+   {
+    "id": "0004G0-20250529",
+    "date": "2025-06-04",
+    "kind": "estimated",
+    "amt": "324"
+   }
+  ]
+ },
+ "basis_text": [
+  "시장가격: 10.08 종가 기준 ",
+  "분배금 자료 기준일: 2026-10-08"
+ ],
+ "fail_text": [
+  "시장가격: 10.08 종가 기준 · 분배금 자료 기준일: 2026-10-08",
+  "오프라인/이전 시장가격을 사용 중입니다. 최신 시세가 아닐 수 있습니다."
+ ],
+ "post_uat": {
+  "ls_keys": [
+   "dnmuat194.catalog.cache.v1",
+   "dnmuat194.distributions.cache.v1",
+   "dnmuat194.management.facts.v1",
+   "dnmuat194.management.facts.v1.rollback.v1",
+   "dnmuat194.market.cache.v1",
+   "dnmuat194.tax.cache.v53",
+   "donnaemsae.catalog.cache.v1",
+   "donnaemsae.distributions.cache.v1",
+   "donnaemsae.divbasis.v1",
+   "donnaemsae.lab.other.key",
+   "donnaemsae.management.facts.v1",
+   "donnaemsae.management.facts.v1.rollback.v1",
+   "donnaemsae.market.cache.v1",
+   "donnaemsae.tax.cache.v53"
+  ],
+  "caches": {
+   "donnaemsae-asset-hub-20261013-mobileui-v53f": 365,
+   "dnmuat194-acct-uat-v53m-1": 374
+  },
+  "regs": [
+   "http://127.0.0.1:8796/donnaemsae-194-test/",
+   "http://127.0.0.1:8796/donnaemsae-194-test/account-uat/"
+  ]
+ },
+ "errors_excl_intentional_price_abort": [],
+ "finished": "2026-10-14T14:47:02Z"
+}
