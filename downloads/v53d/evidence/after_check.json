@@ -1,0 +1,1987 @@
+{
+ "targets": 194,
+ "periods": 776,
+ "mismatch": {
+  "0000D0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0013R0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0015E0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0015F0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0040X0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0040Y0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0046A0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0048J0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0049K0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0057H0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0073X0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0080X0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0085N0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0085P0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0086B0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0086C0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0089B0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0091C0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0132K0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0153P0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0174J0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0177N0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0183V0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0192S0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0194N0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0194R0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0203D0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0216K0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0220A0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0224X0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0233A0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0233J0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "0238P0": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "136340": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "153130": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "181480": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "182480": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "214980": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "237370": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "251600": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "273140": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "284430": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "316300": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "329200": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "329650": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "329660": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "329670": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "332610": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "332620": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "341850": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "352540": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "352560": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "423160": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "429740": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "437070": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "437080": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "438330": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "440340": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "448330": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "453850": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "455030": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "458260": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "459580": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "464470": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "468370": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "468630": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "471460": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "472830": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "472870": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "473330": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "475080": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "476550": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "476750": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "476760": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "476800": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "480460": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "481060": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "481340": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "484790": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "490490": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "497880": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ],
+  "499660": [
+   "1개월",
+   "6개월",
+   "1년",
+   "전체"
+  ]
+ },
+ "history_gap": {},
+ "missing_keys": {
+  "0000D0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0013R0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0015E0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0015F0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0040X0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0040Y0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0046A0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0048J0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0049K0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0057H0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0073X0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0080X0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0085N0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0085P0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0086B0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0086C0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0089B0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0091C0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0132K0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0153P0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0174J0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0177N0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0183V0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0192S0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0194N0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0194R0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0203D0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0216K0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0220A0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0224X0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0233A0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0233J0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "0238P0": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "136340": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "153130": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "181480": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "182480": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "214980": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "237370": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "251600": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "273140": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "284430": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "316300": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "329200": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "329650": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "329660": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "329670": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "332610": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "332620": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "341850": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "352540": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "352560": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "423160": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "429740": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "437070": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "437080": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "438330": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "440340": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "448330": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "453850": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "455030": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "458260": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "459580": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "464470": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "468370": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "468630": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "471460": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "472830": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "472870": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "473330": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "475080": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "476550": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "476750": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "476760": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "476800": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "480460": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "481060": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "481340": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "484790": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "490490": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "497880": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  },
+  "499660": {
+   "1개월": [
+    "health_display",
+    "facts"
+   ],
+   "6개월": [
+    "health_display",
+    "facts"
+   ],
+   "1년": [
+    "health_display",
+    "facts"
+   ],
+   "전체": [
+    "health_display",
+    "facts"
+   ]
+  }
+ },
+ "dist_keys_mismatch": {},
+ "summary": {
+  "mismatch_codes": 82,
+  "mismatch_periods": 328,
+  "history_gap_codes": 0,
+  "history_gap_periods": 0,
+  "missing_keys_codes": 82,
+  "dist_keys_mismatch_codes": 0,
+  "dist_keys_mismatch_periods": 0
+ }
+}

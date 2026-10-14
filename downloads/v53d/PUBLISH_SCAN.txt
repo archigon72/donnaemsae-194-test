@@ -1,0 +1,5 @@
+공개 전 비밀정보 점검 (GrokBot 자체 검증)
+- 대상: downloads/v53d 전체
+- 자격증명 패턴(ghp_/github_pat_/AWS/PRIVATE KEY)·password/secret/token·이메일·전화번호: 0건
+- 배포 토큰 값 일치(값 미출력): 0건
+- 데이터: 가상 계좌·가상 거래만, 실제 원장 미사용

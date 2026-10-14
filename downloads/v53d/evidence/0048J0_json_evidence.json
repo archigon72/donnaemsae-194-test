@@ -1,0 +1,185 @@
+{
+ "deployed_json_path": "data/0048J0.json",
+ "core_rows_path": "periods.<기간>.distribution.history",
+ "core_rows_count": {
+  "1개월": 16,
+  "6개월": 16,
+  "1년": 16,
+  "전체": 16
+ },
+ "presentation_path": "presentations.<기간>.distribution_history (전체기간 모달) / distribution_recent12 (회차 막대)",
+ "before_presentation_keys": {
+  "1개월": [
+   "reinvestment_effect_pp"
+  ],
+  "6개월": [
+   "reinvestment_effect_pp"
+  ],
+  "1년": [
+   "reinvestment_effect_pp"
+  ],
+  "전체": [
+   "reinvestment_effect_pp"
+  ]
+ },
+ "after_presentation_keys": {
+  "1개월": [
+   "reinvestment_effect_pp",
+   "distribution_history",
+   "distribution_recent12"
+  ],
+  "6개월": [
+   "reinvestment_effect_pp",
+   "distribution_history",
+   "distribution_recent12"
+  ],
+  "1년": [
+   "reinvestment_effect_pp",
+   "distribution_history",
+   "distribution_recent12"
+  ],
+  "전체": [
+   "reinvestment_effect_pp",
+   "distribution_history",
+   "distribution_recent12"
+  ]
+ },
+ "input_bundle": "inputs/0048J0.json distribution_rows=16 nav_rows=346",
+ "core_source_path_note": "etf82_audit/ETF82_SOURCE_EVIDENCE/0048J0_div.json",
+ "sum_checks": {
+  "recent12_sum": 639.0,
+  "sum12": "639.0",
+  "history_sum": 898.0,
+  "distribution_sum_전체": "898.0"
+ },
+ "after_distribution_history_전체": [
+  {
+   "date": "2026-09-29",
+   "amount": "61.0",
+   "record_date": "2026-09-30",
+   "pay_date": "2026-10-02",
+   "nav": 13501.09,
+   "ratio": 0.449
+  },
+  {
+   "date": "2026-08-28",
+   "amount": "61.0",
+   "record_date": "2026-08-31",
+   "pay_date": "2026-09-02",
+   "nav": 13677.64,
+   "ratio": 0.4432
+  },
+  {
+   "date": "2026-07-30",
+   "amount": "60.0",
+   "record_date": "2026-07-31",
+   "pay_date": "2026-08-04",
+   "nav": 14339.22,
+   "ratio": 0.4157
+  },
+  {
+   "date": "2026-06-29",
+   "amount": "60.0",
+   "record_date": "2026-06-30",
+   "pay_date": "2026-07-02",
+   "nav": 15440.41,
+   "ratio": 0.3913
+  },
+  {
+   "date": "2026-05-28",
+   "amount": "43.0",
+   "record_date": "2026-05-29",
+   "pay_date": "2026-06-02",
+   "nav": 15018.61,
+   "ratio": 0.2866
+  },
+  {
+   "date": "2026-04-29",
+   "amount": "49.0",
+   "record_date": "2026-04-30",
+   "pay_date": "2026-05-06",
+   "nav": 14779.37,
+   "ratio": 0.3325
+  },
+  {
+   "date": "2026-03-30",
+   "amount": "31.0",
+   "record_date": "2026-03-31",
+   "pay_date": "2026-04-02",
+   "nav": 15143.73,
+   "ratio": 0.2056
+  },
+  {
+   "date": "2026-02-26",
+   "amount": "53.0",
+   "record_date": "2026-02-27",
+   "pay_date": "2026-03-04",
+   "nav": 14243.6,
+   "ratio": 0.3709
+  },
+  {
+   "date": "2026-01-29",
+   "amount": "54.0",
+   "record_date": "2026-01-30",
+   "pay_date": "2026-02-03",
+   "nav": 14259.9,
+   "ratio": 0.3797
+  },
+  {
+   "date": "2025-12-29",
+   "amount": "55.0",
+   "record_date": "2025-12-30",
+   "pay_date": "2026-01-05",
+   "nav": 14297.56,
+   "ratio": 0.3818
+  },
+  {
+   "date": "2025-11-27",
+   "amount": "60.0",
+   "record_date": "2025-11-28",
+   "pay_date": "2025-12-02",
+   "nav": 14646.16,
+   "ratio": 0.4094
+  },
+  {
+   "date": "2025-10-30",
+   "amount": "52.0",
+   "record_date": "2025-10-31",
+   "pay_date": "2025-11-04",
+   "nav": 14276.96,
+   "ratio": 0.3629
+  },
+  {
+   "date": "2025-09-29",
+   "amount": "56.0",
+   "record_date": "2025-09-30",
+   "pay_date": "2025-10-02",
+   "nav": 13995.67,
+   "ratio": 0.3966
+  },
+  {
+   "date": "2025-08-28",
+   "amount": "67.0",
+   "record_date": "2025-08-29",
+   "pay_date": "2025-09-02",
+   "nav": 13883.37,
+   "ratio": 0.4801
+  },
+  {
+   "date": "2025-07-30",
+   "amount": "62.0",
+   "record_date": "2025-07-31",
+   "pay_date": "2025-08-04",
+   "nav": 13849.26,
+   "ratio": 0.446
+  },
+  {
+   "date": "2025-06-27",
+   "amount": "74.0",
+   "record_date": "2025-06-30",
+   "pay_date": "2025-07-02",
+   "nav": 13583.48,
+   "ratio": 0.5455
+  }
+ ]
+}
