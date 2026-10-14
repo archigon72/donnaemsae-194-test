@@ -1,0 +1,261 @@
+[
+ {
+  "name": "이동 체인 홈→분석→관리→원장→상세→모바일상세#facts",
+  "pass": true,
+  "chain": [
+   {
+    "url": "index.html",
+    "status": 200,
+    "title": "[계좌 UAT] 돈냄새연구소",
+    "ribbon": 1
+   },
+   {
+    "url": "analysis.html",
+    "status": 200,
+    "title": "[계좌 UAT] 종목분석 · 돈냄새연구소",
+    "ribbon": 1
+   },
+   {
+    "url": "management.html",
+    "status": 200,
+    "title": "[계좌 UAT] 계좌·거래 관리 · 돈냄새연구소",
+    "ribbon": 1
+   },
+   {
+    "url": "management.html?mode=ledger",
+    "status": 200,
+    "title": "[계좌 UAT] 계좌·거래 관리 · 돈냄새연구소",
+    "ribbon": 1
+   },
+   {
+    "url": "detail.html?code=0004G0",
+    "status": 200,
+    "title": "[계좌 UAT] ETF 상세분석 · 월배당 ETF 바이블",
+    "ribbon": 1
+   },
+   {
+    "url": "mobile-detail.html?code=0004G0#facts",
+    "status": 200,
+    "title": "[계좌 UAT] ETF 상세분석 · 모바일 · 월배당 ETF 바이블",
+    "ribbon": 1
+   }
+  ],
+  "errors": []
+ },
+ {
+  "name": "1024px index.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1024px analysis.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1024px management.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1024px management.html?mode=ledger",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1024px detail.html?code=0004G0",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1024px mobile-detail.html?code=0004G0#facts",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1280px index.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1280px analysis.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1280px management.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1280px management.html?mode=ledger",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1280px detail.html?code=0004G0",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1280px mobile-detail.html?code=0004G0#facts",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1440px index.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1440px analysis.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1440px management.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1440px management.html?mode=ledger",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1440px detail.html?code=0004G0",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "1440px mobile-detail.html?code=0004G0#facts",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "360px index.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "360px analysis.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "360px management.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "360px management.html?mode=ledger",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "360px detail.html?code=0004G0",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "360px mobile-detail.html?code=0004G0#facts",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "390px index.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "390px analysis.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "390px management.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "390px management.html?mode=ledger",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "390px detail.html?code=0004G0",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "390px mobile-detail.html?code=0004G0#facts",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "430px index.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "430px analysis.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "430px management.html",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "430px management.html?mode=ledger",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "430px detail.html?code=0004G0",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ },
+ {
+  "name": "430px mobile-detail.html?code=0004G0#facts",
+  "pass": true,
+  "overflow": 0,
+  "errors": []
+ }
+]

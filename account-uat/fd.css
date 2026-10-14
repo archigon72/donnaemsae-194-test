@@ -88,3 +88,4 @@ body.fd-body{background:var(--fdbg,#0b111b)}
 .fd-bar.sel .v{color:var(--gold);font-weight:700}
 .fd-badge.forecast{background:#a77a12}.fd-cell .sm.forecast{color:var(--gold)}
 .fd-cell .sm{font-size:10px;white-space:normal;overflow-wrap:anywhere;text-overflow:clip;line-height:1.15}
+.fd-cell.est{border-style:dashed;border-color:#a77a12}.fd-est{font-size:10px;color:var(--gold);margin-left:2px}.fd-year button:disabled{opacity:.3;cursor:not-allowed}

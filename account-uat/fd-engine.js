@@ -24,7 +24,7 @@ function build(L,T,state,dists,opt){
  for(const code of codes){const f=FC[code];if(!f||!f.events)continue;const ps=f.per_share_sum!=null?L.D.of(f.per_share_sum).div(String(f.per_share_n)):null;
   for(const e of f.events){const did=code+'-F'+e.ex_date.replace(/-/g,'');
    for(const a of state.accounts){const id=a.account_id,r=reg.get(id+':'+code);if(!r)continue;const key=id+':'+did;if(seen.has(key))continue;seen.add(key);if(e.pay_date<r)continue;
-    const base={key,account_id:id,code,distribution_id:did,ex_date:e.ex_date,pay_date:e.pay_date,pay_date_kind:'forecast',per_share:ps?ps.str(6):null,acct_type:accTypes.get(id),cadence:f.cadence,forecast:true};
+    const base={key,account_id:id,code,distribution_id:did,ex_date:e.ex_date,pay_date:e.pay_date,pay_date_kind:'forecast',cal:e.cal||'estimated',per_share:ps?ps.str(6):null,acct_type:accTypes.get(id),cadence:f.cadence,forecast:true};
     const q=L.entitlement(state,id,code,e.ex_date);
     if(q.cmp('0')<=0){if(e.ex_date<=r&&heldNow(L,state,id,code))out.push({...base,state:'held',quantity:null,reason:'등록일('+r+') 이전·당일 예상 배당락 — 권리 확인 불가로 보류'});continue}
     if(!ps){out.push({...base,state:'forecast',quantity:q,pretax:null,tax:null,net:null,undecided:true,rule_label:f.cadence+' · 금액 미정(근거 없는 예측 금지)'});continue}
@@ -33,7 +33,7 @@ function build(L,T,state,dists,opt){
  /* 배당락 이벤트(보유 종목, 표시용) */
  const ex=[];for(const d of dists){if(!codes.has(d.code)||d.cashflow_included===false||!d.ex_date)continue;for(const a of state.accounts){const r=reg.get(a.account_id+':'+d.code);if(!r||d.ex_date<r)continue;const q=L.entitlement(state,a.account_id,d.code,d.ex_date);ex.push({account_id:a.account_id,code:d.code,distribution_id:d.distribution_id,date:d.ex_date,quantity:q,per_share:d.per_share})}}
  for(const code of codes){const f=FC[code];if(!f||!f.events)continue;for(const e of f.events)for(const a of state.accounts){const r=reg.get(a.account_id+':'+code);if(!r||e.ex_date<r)continue;const q=L.entitlement(state,a.account_id,code,e.ex_date);ex.push({account_id:a.account_id,code,distribution_id:code+'-F'+e.ex_date.replace(/-/g,''),date:e.ex_date,quantity:q,per_share:null,forecast:true})}}
- return {rows:out,ex,today,forecast:{approved:FORECAST_APPROVED,label:'월배당 최근 3회 평균 · 분기·비정기 금액 미정',range:opt.forecast?.calendar?.range||null}};
+ return {rows:out,ex,today,forecast:{approved:FORECAST_APPROVED,label:'월배당 최근 3회 평균 · 분기·비정기 금액 미정',status:opt.forecast?.calendar_status||{},yearMax:opt.forecast?.horizon?.ui_year_max||null}};
 }
 function amt(L,r,basis){if(r.state==='held'||r.undecided)return null;return basis==='pre'?r.pretax:r.net}
 function won(v){return v==null?null:Math.round(v.num())}
