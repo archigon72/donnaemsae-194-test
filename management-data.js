@@ -1,6 +1,6 @@
 /* Connect approved external data; delegate all rights/financial arithmetic to unchanged ledger. */
 (function(root){'use strict';
-function split(distributions){return {payable:distributions.filter(d=>d.status==='confirmed'),pending:distributions.filter(d=>d.status==='payment_date_unknown')}}
+function split(distributions){return {payable:distributions.filter(d=>d.status==='confirmed'||d.status==='estimated'),pending:distributions.filter(d=>d.status==='payment_date_unknown')}}
 function entitlements(state,distributions,L,asOf=L.today()){
  const rows=[];for(const d of split(distributions).pending){if(d.ex_date>asOf)continue;for(const a of state.accounts){const q=L.entitlement(state,a.account_id,d.code,d.ex_date);if(q.cmp('0')>0)rows.push({account_id:a.account_id,code:d.code,ex_date:d.ex_date,quantity:q,amount:q.mul(d.per_share),status:'payment_date_unknown',distribution_id:d.distribution_id})}}return rows;
 }

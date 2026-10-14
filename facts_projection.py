@@ -66,7 +66,8 @@ def monthly_stability(vm,bundle):
     begin=date.fromisoformat(months[0]+'-01');end_text=end.isoformat()
     rows=bundle.get('distribution_rows')or[];manifest=bundle.get('manifest')or{}
     totals={str(r.get('total')) for r in rows}
-    if not rows or totals!={str(len(rows))}:return unavailable('distribution response completeness unverified')
+    excluded=sum(1 for o in (bundle.get('normalization_overrides')or[]) if o.get('action')=='exclude_from_calculation')
+    if not rows or totals!={str(len(rows)+excluded)}:return unavailable('distribution response completeness unverified')
     if manifest.get('source')!='FunETF' or (manifest.get('data_cutoff')or'')<end_text:return unavailable('source cutoff or identity unverified')
     nav=bundle.get('nav_rows')or[]
     if manifest.get('observations')!=len(nav):return unavailable('NAV acquisition incomplete')

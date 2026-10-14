@@ -27,7 +27,10 @@ for c in codes:
     d=json.load(open(f'{ROOT}/data/{c}.json'));b=json.load(open(f'{ROOT}/inputs/{c}.json'))
     ctx={'code':c}
     chk('코드: 파일명=ticker=번들 ticker, 카탈로그 포함',d['ticker']==c==b['ticker'] and c in catcodes,ctx)
-    chk('기준점: snapshot=카탈로그 snapshot',d['snapshot']==cat['snapshot'],ctx)
+    # 2026-10-14 final: 카탈로그 snapshot.data_cutoff(묶음 봉인 기준점)와 종목별 기준일은 의미가 다르므로 분리 비교
+    chk('기준점: snapshot 식별(snapshot_id·engine/integration_hash·policy·schema)=카탈로그',all(d['snapshot'].get(k)==cat['snapshot'].get(k) for k in ('snapshot_id','engine_hash','integration_hash','input_policy_version','schema_version')),ctx)
+    _ci=next((i for i in cat['items'] if (i.get('code') or i.get('ticker'))==c),{});_end=(_ci.get('available_period') or {}).get('end')
+    chk('기준점: 종목 기준일 ISO·=카탈로그 종목 available_period.end·≥카탈로그 snapshot 기준일',iso(d['snapshot'].get('data_cutoff')) and d['snapshot'].get('data_cutoff')==_end and d['snapshot']['data_cutoff']>=cat['snapshot']['data_cutoff'],{**ctx,'value':d['snapshot'].get('data_cutoff'),'catalog_item_end':_end})
     chk('키: periods/presentations 4개 기간',sorted(d['periods'])==sorted(d['presentations'])==sorted(['1개월','6개월','1년','전체']),ctx)
     for k,v in d['periods'].items():
         p=d['presentations'][k];x={'code':c,'period':k};dist=v.get('distribution') or {};hist=dist.get('history') or []
