@@ -1,0 +1,2994 @@
+{
+ "hub": {
+  "360": {
+   "donut": [],
+   "top5": [
+    {
+     "c": "#FFC83D",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch uat-home-fab",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [],
+   "top5": [
+    {
+     "c": "#FFC83D",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch uat-home-fab",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [],
+   "top5": [
+    {
+     "c": "#FFC83D",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch uat-home-fab",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  }
+ },
+ "scan_hub": {
+  "360": [],
+  "390": [],
+  "430": []
+ },
+ "donut": {
+  "360": {
+   "donut": [
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#FFC83D",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#FFC83D",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#FFC83D",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  }
+ },
+ "scan_donut": {
+  "360": [],
+  "390": [],
+  "430": []
+ },
+ "acctshare": {
+  "360": {
+   "donut": [
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#FFC83D",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#FFC83D",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#FFC83D",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  }
+ },
+ "scan_acctshare": {
+  "360": [],
+  "390": [],
+  "430": []
+ },
+ "management": {
+  "360": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  }
+ },
+ "scan_management": {
+  "360": [],
+  "390": [],
+  "430": []
+ },
+ "bar": {
+  "360": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_sched": [
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_unconf": [
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_fore": [
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_done": [
+    {
+     "c": "#56B9FF",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#FF83AC",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [],
+   "dot_unconfirmed": [
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "fd-badge forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_sched": [
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_unconf": [
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_fore": [
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_done": [
+    {
+     "c": "#56B9FF",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#FF83AC",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [],
+   "dot_unconfirmed": [
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "fd-badge forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_sched": [
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_unconf": [
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_fore": [
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_done": [
+    {
+     "c": "#56B9FF",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#FF83AC",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [],
+   "dot_unconfirmed": [
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "fd-badge forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  }
+ },
+ "scan_bar": {
+  "360": [],
+  "390": [],
+  "430": []
+ },
+ "fdacct": {
+  "360": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": [
+    {
+     "c": "#FFC83D",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ]
+  },
+  "390": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": [
+    {
+     "c": "#FFC83D",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ]
+  },
+  "430": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": [
+    {
+     "c": "#FFC83D",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FF83AC",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ]
+  }
+ },
+ "scan_fdacct": {
+  "360": [],
+  "390": [],
+  "430": []
+ },
+ "calendar": {
+  "360": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [
+    {
+     "c": "#56B9FF",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#FF83AC",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_unconfirmed": [
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [
+    {
+     "c": "#56B9FF",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#FF83AC",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_unconfirmed": [
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [
+    {
+     "c": "#56B9FF",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#FFC83D",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#FF83AC",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#46E5AC",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_unconfirmed": [
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#B59AFF",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#56B9FF",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#56B9FF",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  }
+ },
+ "scan_calendar": {
+  "360": [],
+  "390": [],
+  "430": []
+ }
+}

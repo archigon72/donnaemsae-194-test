@@ -1,0 +1,2959 @@
+{
+ "hub": {
+  "360": {
+   "donut": [],
+   "top5": [
+    {
+     "c": "#9DCFF3",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch uat-home-fab",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [],
+   "top5": [
+    {
+     "c": "#9DCFF3",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch uat-home-fab",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [],
+   "top5": [
+    {
+     "c": "#9DCFF3",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "sw",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch uat-home-fab",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  }
+ },
+ "donut": {
+  "360": {
+   "donut": [
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#9DCFF3",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#9DCFF3",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#9DCFF3",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  }
+ },
+ "acctshare": {
+  "360": {
+   "donut": [
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#9DCFF3",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#9DCFF3",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "top5": [],
+   "legend": [
+    {
+     "c": "#9DCFF3",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "mu-dot2",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  }
+ },
+ "management": {
+  "360": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "mu-fab trade-launch",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "acctchart": []
+  }
+ },
+ "bar": {
+  "360": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_sched": [
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_unconf": [
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_fore": [
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_done": [
+    {
+     "c": "#9DCFF3",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#F0B9D0",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [],
+   "dot_unconfirmed": [
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "fd-badge forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_sched": [
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_unconf": [
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_fore": [
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_done": [
+    {
+     "c": "#9DCFF3",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#F0B9D0",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [],
+   "dot_unconfirmed": [
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "fd-badge forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_sched": [
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_unconf": [
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "bar_fore": [
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_done": [
+    {
+     "c": "#9DCFF3",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#9DCFF3",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#F0B9D0",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F0B9D0",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [],
+   "dot_unconfirmed": [
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "fd-badge unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "fd-badge forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  }
+ },
+ "fdacct": {
+  "360": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": [
+    {
+     "c": "#9DCFF3",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ]
+  },
+  "390": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": [
+    {
+     "c": "#9DCFF3",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ]
+  },
+  "430": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [],
+   "dot_forecast": [],
+   "dot_scheduled": [],
+   "dot_ex": [],
+   "dot_unconfirmed": [],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": [
+    {
+     "c": "#9DCFF3",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#D1B9EE",
+     "cls": "fd-ico",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ]
+  }
+ },
+ "calendar": {
+  "360": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [
+    {
+     "c": "#9DCFF3",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#F0B9D0",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 0.35,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_unconfirmed": [
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#EFF6F8",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#EFF6F8",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#EFF6F8",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "390": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [
+    {
+     "c": "#9DCFF3",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#F0B9D0",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 0.35,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_unconfirmed": [
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#EFF6F8",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#EFF6F8",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#EFF6F8",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  },
+  "430": {
+   "donut": [],
+   "top5": [],
+   "legend": [],
+   "bar_done": [],
+   "bar_sched": [],
+   "bar_unconf": [],
+   "bar_fore": [],
+   "dot_done": [
+    {
+     "c": "#9DCFF3",
+     "cls": "dot done",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_forecast": [
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#F5D39A",
+     "cls": "dot forecast",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_scheduled": [
+    {
+     "c": "#F0B9D0",
+     "cls": "dot scheduled",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_ex": [
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 0.35,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#97DFCA",
+     "cls": "dot ex",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "dot_unconfirmed": [
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#BBC9D5",
+     "cls": "dot unconfirmed",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "badge": [],
+   "seltab": [
+    {
+     "c": "#A7DEC9",
+     "cls": "on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "fd-chip on",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#EFF6F8",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#EFF6F8",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#EFF6F8",
+     "cls": "",
+     "op": 1,
+     "f": [],
+     "mb": []
+    },
+    {
+     "c": "#A7DEC9",
+     "cls": "active",
+     "op": 1,
+     "f": [],
+     "mb": []
+    }
+   ],
+   "fab": [],
+   "acctchart": []
+  }
+ }
+}

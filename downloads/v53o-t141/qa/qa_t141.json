@@ -1,0 +1,789 @@
+{
+ "total": 117,
+ "failed": 0,
+ "checks": [
+  {
+   "name": "360 hub 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 hub 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 hub top5 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "360 hub 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "360 donut 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 donut 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 donut donut 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "360 donut 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "360 acctshare 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 acctshare 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 acctshare donut 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "360 acctshare 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "360 management 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 management 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 management 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "360 bar 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 bar 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 월별 막대 bar_done = #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "360 월별 막대 bar_sched = #FF83AC",
+   "pass": true,
+   "detail": [
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "360 월별 막대 bar_unconf = #B59AFF",
+   "pass": true,
+   "detail": [
+    "#B59AFF"
+   ]
+  },
+  {
+   "name": "360 월별 막대 bar_fore = #FFC83D",
+   "pass": true,
+   "detail": [
+    "#FFC83D"
+   ]
+  },
+  {
+   "name": "360 bar 상태점 done = #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "360 bar 상태점 forecast = #FFC83D",
+   "pass": true,
+   "detail": [
+    "#FFC83D"
+   ]
+  },
+  {
+   "name": "360 bar 상태점 scheduled = #FF83AC",
+   "pass": true,
+   "detail": [
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "360 bar 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "360 fdacct 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 fdacct 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 계좌별 비중 차트 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "360 fdacct 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "360 calendar 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 calendar 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "360 calendar 상태점 done = #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "360 calendar 상태점 forecast = #FFC83D",
+   "pass": true,
+   "detail": [
+    "#FFC83D"
+   ]
+  },
+  {
+   "name": "360 calendar 상태점 scheduled = #FF83AC",
+   "pass": true,
+   "detail": [
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "360 calendar 상태점 ex = #46E5AC",
+   "pass": true,
+   "detail": [
+    "#46E5AC"
+   ]
+  },
+  {
+   "name": "360 calendar 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "360 FAB 불변(#A7DEC9 / #09251E, + 거래 등록)",
+   "pass": true,
+   "detail": [
+    "rgb(167, 222, 201)",
+    "rgb(9, 37, 30)",
+    "+ 거래 등록"
+   ]
+  },
+  {
+   "name": "360 강제 새로고침 후 SW dnmuat194-acct-uat-v53o-1·--fd-complete=#56B9FF",
+   "pass": true,
+   "detail": {
+    "keys": [
+     "dnmuat194-acct-uat-v53o-1"
+    ],
+    "ctl": true,
+    "v": "#56B9FF"
+   }
+  },
+  {
+   "name": "360 페이지 오류 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 hub 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 hub 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 hub top5 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "390 hub 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "390 donut 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 donut 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 donut donut 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "390 donut 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "390 acctshare 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 acctshare 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 acctshare donut 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "390 acctshare 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "390 management 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 management 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 management 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "390 bar 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 bar 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 월별 막대 bar_done = #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "390 월별 막대 bar_sched = #FF83AC",
+   "pass": true,
+   "detail": [
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "390 월별 막대 bar_unconf = #B59AFF",
+   "pass": true,
+   "detail": [
+    "#B59AFF"
+   ]
+  },
+  {
+   "name": "390 월별 막대 bar_fore = #FFC83D",
+   "pass": true,
+   "detail": [
+    "#FFC83D"
+   ]
+  },
+  {
+   "name": "390 bar 상태점 done = #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "390 bar 상태점 forecast = #FFC83D",
+   "pass": true,
+   "detail": [
+    "#FFC83D"
+   ]
+  },
+  {
+   "name": "390 bar 상태점 scheduled = #FF83AC",
+   "pass": true,
+   "detail": [
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "390 bar 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "390 fdacct 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 fdacct 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 계좌별 비중 차트 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "390 fdacct 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "390 calendar 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 calendar 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "390 calendar 상태점 done = #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "390 calendar 상태점 forecast = #FFC83D",
+   "pass": true,
+   "detail": [
+    "#FFC83D"
+   ]
+  },
+  {
+   "name": "390 calendar 상태점 scheduled = #FF83AC",
+   "pass": true,
+   "detail": [
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "390 calendar 상태점 ex = #46E5AC",
+   "pass": true,
+   "detail": [
+    "#46E5AC"
+   ]
+  },
+  {
+   "name": "390 calendar 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "390 FAB 불변(#A7DEC9 / #09251E, + 거래 등록)",
+   "pass": true,
+   "detail": [
+    "rgb(167, 222, 201)",
+    "rgb(9, 37, 30)",
+    "+ 거래 등록"
+   ]
+  },
+  {
+   "name": "390 강제 새로고침 후 SW dnmuat194-acct-uat-v53o-1·--fd-complete=#56B9FF",
+   "pass": true,
+   "detail": {
+    "keys": [
+     "dnmuat194-acct-uat-v53o-1"
+    ],
+    "ctl": true,
+    "v": "#56B9FF"
+   }
+  },
+  {
+   "name": "390 페이지 오류 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 hub 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 hub 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 hub top5 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "430 hub 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "430 donut 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 donut 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 donut donut 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "430 donut 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "430 acctshare 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 acctshare 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 acctshare donut 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "430 acctshare 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "430 management 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 management 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 management 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "430 bar 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 bar 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 월별 막대 bar_done = #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "430 월별 막대 bar_sched = #FF83AC",
+   "pass": true,
+   "detail": [
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "430 월별 막대 bar_unconf = #B59AFF",
+   "pass": true,
+   "detail": [
+    "#B59AFF"
+   ]
+  },
+  {
+   "name": "430 월별 막대 bar_fore = #FFC83D",
+   "pass": true,
+   "detail": [
+    "#FFC83D"
+   ]
+  },
+  {
+   "name": "430 bar 상태점 done = #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "430 bar 상태점 forecast = #FFC83D",
+   "pass": true,
+   "detail": [
+    "#FFC83D"
+   ]
+  },
+  {
+   "name": "430 bar 상태점 scheduled = #FF83AC",
+   "pass": true,
+   "detail": [
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "430 bar 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "430 fdacct 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 fdacct 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 계좌별 비중 차트 색 = 신규 8색 순서",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "430 fdacct 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "430 calendar 구 갈색·탁한 녹색·회색조·구 파스텔 강조색 잔존 0",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 calendar 차트 요소 opacity=1·filter none·mix-blend normal (조상 포함)",
+   "pass": true,
+   "detail": []
+  },
+  {
+   "name": "430 calendar 상태점 done = #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "430 calendar 상태점 forecast = #FFC83D",
+   "pass": true,
+   "detail": [
+    "#FFC83D"
+   ]
+  },
+  {
+   "name": "430 calendar 상태점 scheduled = #FF83AC",
+   "pass": true,
+   "detail": [
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "430 calendar 상태점 ex = #46E5AC",
+   "pass": true,
+   "detail": [
+    "#46E5AC"
+   ]
+  },
+  {
+   "name": "430 calendar 선택 버튼 글자 = 파랑 #56B9FF",
+   "pass": true,
+   "detail": [
+    "#56B9FF"
+   ]
+  },
+  {
+   "name": "430 FAB 불변(#A7DEC9 / #09251E, + 거래 등록)",
+   "pass": true,
+   "detail": [
+    "rgb(167, 222, 201)",
+    "rgb(9, 37, 30)",
+    "+ 거래 등록"
+   ]
+  },
+  {
+   "name": "430 강제 새로고침 후 SW dnmuat194-acct-uat-v53o-1·--fd-complete=#56B9FF",
+   "pass": true,
+   "detail": {
+    "keys": [
+     "dnmuat194-acct-uat-v53o-1"
+    ],
+    "ctl": true,
+    "v": "#56B9FF"
+   }
+  },
+  {
+   "name": "430 페이지 오류 0",
+   "pass": true,
+   "detail": []
+  }
+ ]
+}
