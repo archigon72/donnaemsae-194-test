@@ -1,0 +1,150 @@
+[
+ {
+  "name": "관리 홈에 배당 화면 진입 버튼",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "계좌 없음 → 빈 상태 안내·총액 0원",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "완료 = 실입금 확정 1건(329200 280원)만",
+  "pass_": true,
+  "detail": "280원"
+ },
+ {
+  "name": "입금 확인 필요는 완료와 분리 표시",
+  "pass_": true,
+  "detail": "2026년 배당금\n세후 · 완료+예정 합계\n280원\n예상 금액: 예상 미승인 · 산식 미정\n지급완료\n280원\n지급예정\n0원\n입금 확인 필요\n3.7만\n예상\n미승인\n세금(완료·예정)\n50원"
+ },
+ {
+  "name": "예상 칸 \"예상 미승인 · 산식 미정\" 표시·숫자 없음",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "통화 토글 없음(원화 고정·대표 지시)",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "연도 이동 → 2027",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "연도 이동 → 2025 (등록 전, 0원)",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "월 막대 클릭 → 3월 상세 연동",
+  "pass_": true,
+  "detail": "3월\n5,558원\n완료 0원 · 예정 0원 · 확인 필요 5,558원\n확인 필요\n1Q 미국배당TOP30\n0004G0 · 표본 일반 · 20주 ·"
+ },
+ {
+  "name": "세전/세후 토글 → 상세 금액 변경",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "계좌 선택(표본 ISA만) → 완료 0원",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "다중 선택(ISA+일반) → 280원",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "계좌별 카드 2개·유형 라벨(일반 / ISA · 과세이연)",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "계좌별 총액 = 배당금 탭 총액",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "계좌 카드 클릭 → 배당금 탭 + 해당 계좌 필터",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "오늘 → 2026. 10",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "날짜 선택 → 10월 2일 내역(완료·확인 필요)",
+  "pass_": true,
+  "detail": "10월 2일\n지급 2건 · 총 577원 (세후)\n완료\nTIGER 리츠부동산인프라\n329200 · 표본 일반 · 10주 · 주당 33원\n지급 10.02 (예상 지급일) · 배당락 09.29\n280원\n세금 50원 (실입"
+ },
+ {
+  "name": "9/29 배당락 점 표시",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "배당락 필터 끄기 → 점 사라짐",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "지급일 필터 끄기 → 10/2 금액 사라짐",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "빈 날짜는 빈 셀",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "주간 전환 → 7칸",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "월 이동 12월→1월 경계(2027. 01)",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "관심종목 일정 버튼 비활성(범위 외)",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "원장(facts) 읽기 전용: 화면 조작 전후 동일",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "메인 키(donnaemsae.*) 불변",
+  "pass_": true,
+  "detail": null
+ },
+ {
+  "name": "새로 생긴 localStorage 키 없음",
+  "pass_": true,
+  "detail": []
+ },
+ {
+  "name": "매도 입력 후 확인 필요 금액 변경·완료 280원 유지",
+  "pass_": true,
+  "detail": [
+   "2026년 배당금\n세후 · 완료+예정 합계\n280원\n예상 금액: 예상 미승인 · 산식 미정\n지급완료\n280원\n지급예정\n0원\n입금 확인 필요\n3.7만\n예상\n미승인\n세금(완료·예정)\n50원",
+   "2026년 배당금\n세후 · 완료+예정 합계\n280원\n예상 금액: 예상 미승인 · 산식 미정\n지급완료\n280원\n지급예정\n0원\n입금 확인 필요\n3.6만\n예상\n미승인\n세금(완료·예정)\n50원"
+  ]
+ },
+ {
+  "name": "콘솔/페이지 오류 0",
+  "pass_": true,
+  "detail": []
+ }
+]
