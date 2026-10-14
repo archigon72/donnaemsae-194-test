@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'live = FunETF/ZeroIn 실수집, replay = 저장소 기존 inputs 재생(모의/재생 시험)'
+        description: 'live = FunETF 가격·분배 실수집(ZeroIn 일일 호출 없음), replay = 저장소 기존 inputs 재생(모의/재생 시험)'
         type: choice
         options: [live, replay]
         default: live
@@ -58,4 +58,9 @@ jobs:
           echo "### 결과: ${{ steps.oc.outputs.result }}" >> $GITHUB_STEP_SUMMARY
           echo "- 상태 페이지: https://archigon72.github.io/donnaemsae-194-test/auto-test/ (Pages 반영 1~3분 지연 가능)" >> $GITHUB_STEP_SUMMARY
           grep -E '^(STEP|PASS|FAIL|RESULT)' $RUNNER_TEMP/oc.log | cut -c1-200 >> $GITHUB_STEP_SUMMARY
-          test "${{ steps.oc.outputs.result }}" = "PASS_PROMOTED"
+          R="${{ steps.oc.outputs.result }}"
+          case "$R" in
+            PASS_PROMOTED) echo "정상 승격" ;;
+            PASS_PROMOTED_WITH_REUSE) echo "::warning title=oneclick::QA 합격·승격됨 — 일부 종목 승인 메타 재사용(경고). 상태 페이지 확인"; echo "> ⚠️ 경고: $R (QA 합격, 승인 메타 재사용)" >> $GITHUB_STEP_SUMMARY ;;
+            *) echo "::error title=oneclick::$R — 승격 차단 또는 실패"; exit 1 ;;
+          esac
