@@ -21,3 +21,5 @@ cd donnaemsae-194-test_v5.2fix_c7d938d && sha256sum --quiet -c ../FILES_SHA256.t
 - 납품 시 복원 시험 로그: [RESTORE_TEST_LOG.txt](RESTORE_TEST_LOG.txt)
 - 게시본으로 다시 돌린 검증 로그: [VERIFY_LOG_REPUBLISHED.txt](VERIFY_LOG_REPUBLISHED.txt)
 - 앱 파일 대조: 게시 저장소 HEAD의 앱 파일 528개 SHA가 FILES_SHA256.txt와 같음(INDEX의 "앱 파일 불변 확인" 참조).
+
+※ 2026-10-14 대표 승인: 백업 ZIP part 파일은 공개 GitHub에서 삭제했습니다. part는 채팅 첨부로만 전달하며, 이 문서의 SHA-256로 검증합니다. (git 이력에는 남아 있음)
