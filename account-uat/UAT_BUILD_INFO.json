@@ -2,7 +2,7 @@
  "source_commit": "96bd93f0fbef6f7c9925dc673be60e92d1190be4",
  "namespace": "dnmuat194.",
  "sw": "uat-sw.js",
- "cache": "dnmuat194-acct-uat-v53l-1",
+ "cache": "dnmuat194-acct-uat-v53m-1",
  "data": "메인 194-test data/ inputs/ references/ (v5.3f 승인본, 지급일 구분 actual 1,088 / estimated 3,416 — v5.3h 규칙 재계산과 동일) 을 경로 재지정으로 참조. auto-test latest 데이터는 사용 안 함",
  "changed_from_source": [
   "analysis-entry.js",
@@ -25,7 +25,14 @@
   "weather.js",
   "phase-worker.js",
   "comparison-worker.js",
-  "uat-sw.js(from management-sw.js)"
+  "uat-sw.js(from management-sw.js)",
+  "fd-engine.js",
+  "fd-view.js",
+  "fd.css",
+  "dividend.html",
+  "uat-t138.css",
+  "uat-t138.js",
+  "uat-sw.js"
  ],
  "leftover_main_keys": [],
  "future_dividend": {
@@ -44,5 +51,13 @@
   "base_commit_forecast": "a6f74f2",
   "calendar": "fd-calendar.json 연도별 official/estimated · tools/fd_gen.py 재계산 · 2028+ python-holidays 0.106 XKRX 추정",
   "base_commit_calendar": "dc43c60"
+ },
+ "t138": {
+  "directive": "COLOR_LOCKED",
+  "base_tag": "v53l-calendar-8f6b4f1",
+  "account_label_rule": "display-only AL(a)=strip_type_token(name)+'('+type+')'; storage unchanged",
+  "amount_rule": "won/exact floor to integer won + comma; man floor(a/1000)/10 1-decimal 만; <1000원 keep as won; display-only",
+  "calendar_ex_fix": "ex events only when entitlement q>0",
+  "holding_filter": "sell/add_buy/reinvest from holdings as of trade date; initial_buy full catalog"
  }
 }

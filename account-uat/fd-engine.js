@@ -31,18 +31,19 @@ function build(L,T,state,dists,opt){
     const pre=q.mul(ps),tx=T&&T.ready()?T.compute(L,{amount:pre,code,distribution_id:did,quantity:q},accTypes.get(id),distMap):null;
     out.push({...base,state:'forecast',quantity:q,pretax:pre,tax:tx?tx.tax:null,net:tx?tx.net:null,rule_label:(tx?tx.rule_label:'세금 자료 미로딩')+' · 월배당 최근 3회 평균'})}}}
  /* 배당락 이벤트(보유 종목, 표시용) */
- const ex=[];for(const d of dists){if(!codes.has(d.code)||d.cashflow_included===false||!d.ex_date)continue;for(const a of state.accounts){const r=reg.get(a.account_id+':'+d.code);if(!r||d.ex_date<r)continue;const q=L.entitlement(state,a.account_id,d.code,d.ex_date);ex.push({account_id:a.account_id,code:d.code,distribution_id:d.distribution_id,date:d.ex_date,quantity:q,per_share:d.per_share})}}
- for(const code of codes){const f=FC[code];if(!f||!f.events)continue;for(const e of f.events)for(const a of state.accounts){const r=reg.get(a.account_id+':'+code);if(!r||e.ex_date<r)continue;const q=L.entitlement(state,a.account_id,code,e.ex_date);ex.push({account_id:a.account_id,code,distribution_id:code+'-F'+e.ex_date.replace(/-/g,''),date:e.ex_date,quantity:q,per_share:null,forecast:true})}}
+ const ex=[];for(const d of dists){if(!codes.has(d.code)||d.cashflow_included===false||!d.ex_date)continue;for(const a of state.accounts){const r=reg.get(a.account_id+':'+d.code);if(!r||d.ex_date<r)continue;const q=L.entitlement(state,a.account_id,d.code,d.ex_date);if(q.cmp('0')>0)ex.push({account_id:a.account_id,code:d.code,distribution_id:d.distribution_id,date:d.ex_date,quantity:q,per_share:d.per_share})}}
+ for(const code of codes){const f=FC[code];if(!f||!f.events)continue;for(const e of f.events)for(const a of state.accounts){const r=reg.get(a.account_id+':'+code);if(!r||e.ex_date<r)continue;const q=L.entitlement(state,a.account_id,code,e.ex_date);if(q.cmp('0')>0)ex.push({account_id:a.account_id,code,distribution_id:code+'-F'+e.ex_date.replace(/-/g,''),date:e.ex_date,quantity:q,per_share:null,forecast:true})}}
  return {rows:out,ex,today,forecast:{approved:FORECAST_APPROVED,label:'월배당 최근 3회 평균 · 분기·비정기 금액 미정',status:opt.forecast?.calendar_status||{},yearMax:opt.forecast?.horizon?.ui_year_max||null}};
 }
 function amt(L,r,basis){if(r.state==='held'||r.undecided)return null;return basis==='pre'?r.pretax:r.net}
-function won(v){return v==null?null:Math.round(v.num())}
-function man(w){if(w==null)return '—';const s=w<0?'-':'',a=Math.abs(w);if(a<10000)return s+a.toLocaleString('ko-KR')+'원';const t=Math.round(a/1000)/10;return s+t.toLocaleString('ko-KR',{minimumFractionDigits:1,maximumFractionDigits:1})+'만'}
-function exact(L,v){if(v==null)return '—';const s=v.str(2),[i,f]=s.split('.');return Number(i).toLocaleString('ko-KR')+(f?'.'+f:'')+'원'}
+function won(v){return v==null?null:Math.floor(Number(v.num()))}
+function man(w){if(w==null)return '—';const s=w<0?'-':'',a=Math.abs(w);if(a<1000)return s+Math.floor(a).toLocaleString('ko-KR')+'원';const t=Math.floor(a/1000)/10;return s+t.toLocaleString('ko-KR',{minimumFractionDigits:1,maximumFractionDigits:1})+'만'}
+function exact(L,v){if(v==null)return '—';const s=typeof v.str==='function'?v.str(6):String(v),neg=s.startsWith('-'),[i,f]=s.replace('-','').split('.'),fr=f&&/[1-9]/.test(f);const n=BigInt(i||'0')+(neg&&fr?1n:0n);return (neg&&n>0n?'-':'')+Number(n).toLocaleString('ko-KR')+'원'}
+function exactPS(L,v){if(v==null)return '—';const s=v.str(6),[i,f]=s.split('.');const ff=f?f.replace(/0+$/,''):'';return Number(i).toLocaleString('ko-KR')+(ff?'.'+ff:'')+'원'}
 function summarize(L,b,{year,accounts,basis}){const z=()=>L.D.of('0'),sel=r=>(!accounts||accounts.has(r.account_id))&&r.pay_date.slice(0,4)===String(year);
  const rows=b.rows.filter(sel),S={done:z(),scheduled:z(),unconfirmed:z(),forecast:z(),tax:z(),held:0,undecided:0,months:Array.from({length:12},()=>({done:z(),scheduled:z(),unconfirmed:z(),forecast:z(),n:0,undecided:0})),byAcc:new Map()};
  for(const r of rows){const m=+r.pay_date.slice(5,7)-1;S.months[m].n++;if(r.state==='held'){S.held++;S.months[m].held=(S.months[m].held||0)+1;continue}const v=amt(L,r,basis);if(v==null){if(r.undecided){S.undecided++;S.months[m].undecided++;const A=S.byAcc.get(r.account_id)||{done:z(),scheduled:z(),unconfirmed:z(),forecast:z(),n:0,undecided:0};A.undecided++;S.byAcc.set(r.account_id,A)}continue}S[r.state]=S[r.state].add(v);S.months[m][r.state]=S.months[m][r.state].add(v);if(r.state!=='unconfirmed'&&r.tax)S.tax=S.tax.add(r.tax);
   const A=S.byAcc.get(r.account_id)||{done:z(),scheduled:z(),unconfirmed:z(),forecast:z(),n:0,undecided:0};A[r.state]=A[r.state].add(v);A.n++;S.byAcc.set(r.account_id,A)}
  S.rows=rows;S.total=S.done.add(S.scheduled).add(S.forecast);return S}
-const api={build,summarize,man,exact,won,amt,FORECAST_APPROVED};root.FutureDividend=api;if(typeof module!=='undefined')module.exports=api;
+const api={build,summarize,man,exact,exactPS,won,amt,FORECAST_APPROVED};root.FutureDividend=api;if(typeof module!=='undefined')module.exports=api;
 })(typeof window==='undefined'?globalThis:window);
