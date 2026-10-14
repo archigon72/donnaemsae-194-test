@@ -1,0 +1,164 @@
+[
+ {
+  "w": 360,
+  "tab": "amount",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 360,
+  "tab": "account",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 360,
+  "tab": "calendar",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 390,
+  "tab": "amount",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 390,
+  "tab": "account",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 390,
+  "tab": "calendar",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 430,
+  "tab": "amount",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 430,
+  "tab": "account",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 430,
+  "tab": "calendar",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 1024,
+  "tab": "amount",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 1024,
+  "tab": "account",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 1024,
+  "tab": "calendar",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 1280,
+  "tab": "amount",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 1280,
+  "tab": "account",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 1280,
+  "tab": "calendar",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 1440,
+  "tab": "amount",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 1440,
+  "tab": "account",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ },
+ {
+  "w": 1440,
+  "tab": "calendar",
+  "status": 200,
+  "errors": [],
+  "ov": 0,
+  "overlap": [],
+  "offs": []
+ }
+]
