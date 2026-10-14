@@ -16,3 +16,8 @@ body.mu{background-color:var(--fd-bg)}
 .uat-top5 .ft a{color:var(--fd-primary)}
 .uat-top5 .miss{color:var(--fd-warning)}
 body[data-view=home] #app{padding-bottom:150px}
+/* t140b 3-B 부위별 역할 고정 */
+html body .mu-card{border-color:var(--fd-border)!important}
+html body .mu-tabs button[aria-pressed=true],html body .mc-scope button[aria-pressed=true]{background:var(--fd-surface-raised)!important;color:var(--fd-primary)!important;border-color:var(--fd-primary)!important}
+html body .mu-tabs button[aria-pressed=false],html body .mc-scope button[aria-pressed=false]{background:var(--fd-surface)!important;color:var(--fd-text-muted)!important}
+html body .mu-label,html body .mu-stat small,html body .record-note{color:var(--fd-text-muted)!important}
