@@ -1,0 +1,138 @@
+{
+ "total": 15,
+ "failed": 0,
+ "checks": [
+  {
+   "name": "360 저장 버튼 바탕 #56B9FF·그라데이션 없음",
+   "pass": true,
+   "detail": {
+    "bg": "rgb(86, 185, 255)",
+    "img": "none",
+    "c": "rgb(8, 21, 33)",
+    "b": "rgb(86, 185, 255)",
+    "t": "거래 저장"
+   }
+  },
+  {
+   "name": "360 저장 글자 #081521 대비 ≥4.5 (AA)",
+   "pass": true,
+   "detail": 8.58
+  },
+  {
+   "name": "360 FAB 불변",
+   "pass": true,
+   "detail": [
+    "rgb(167, 222, 201)",
+    "rgb(9, 37, 30)"
+   ]
+  },
+  {
+   "name": "360 상태 토큰 불변",
+   "pass": true,
+   "detail": [
+    "#56B9FF",
+    "#FFC83D",
+    "#FF83AC",
+    "#46E5AC",
+    "#B59AFF",
+    "#FFAA66",
+    "#A7DEC9"
+   ]
+  },
+  {
+   "name": "360 SW v53p-1",
+   "pass": true,
+   "detail": [
+    "dnmuat194-acct-uat-v53p-1"
+   ]
+  },
+  {
+   "name": "390 저장 버튼 바탕 #56B9FF·그라데이션 없음",
+   "pass": true,
+   "detail": {
+    "bg": "rgb(86, 185, 255)",
+    "img": "none",
+    "c": "rgb(8, 21, 33)",
+    "b": "rgb(86, 185, 255)",
+    "t": "거래 저장"
+   }
+  },
+  {
+   "name": "390 저장 글자 #081521 대비 ≥4.5 (AA)",
+   "pass": true,
+   "detail": 8.58
+  },
+  {
+   "name": "390 FAB 불변",
+   "pass": true,
+   "detail": [
+    "rgb(167, 222, 201)",
+    "rgb(9, 37, 30)"
+   ]
+  },
+  {
+   "name": "390 상태 토큰 불변",
+   "pass": true,
+   "detail": [
+    "#56B9FF",
+    "#FFC83D",
+    "#FF83AC",
+    "#46E5AC",
+    "#B59AFF",
+    "#FFAA66",
+    "#A7DEC9"
+   ]
+  },
+  {
+   "name": "390 SW v53p-1",
+   "pass": true,
+   "detail": [
+    "dnmuat194-acct-uat-v53p-1"
+   ]
+  },
+  {
+   "name": "430 저장 버튼 바탕 #56B9FF·그라데이션 없음",
+   "pass": true,
+   "detail": {
+    "bg": "rgb(86, 185, 255)",
+    "img": "none",
+    "c": "rgb(8, 21, 33)",
+    "b": "rgb(86, 185, 255)",
+    "t": "거래 저장"
+   }
+  },
+  {
+   "name": "430 저장 글자 #081521 대비 ≥4.5 (AA)",
+   "pass": true,
+   "detail": 8.58
+  },
+  {
+   "name": "430 FAB 불변",
+   "pass": true,
+   "detail": [
+    "rgb(167, 222, 201)",
+    "rgb(9, 37, 30)"
+   ]
+  },
+  {
+   "name": "430 상태 토큰 불변",
+   "pass": true,
+   "detail": [
+    "#56B9FF",
+    "#FFC83D",
+    "#FF83AC",
+    "#46E5AC",
+    "#B59AFF",
+    "#FFAA66",
+    "#A7DEC9"
+   ]
+  },
+  {
+   "name": "430 SW v53p-1",
+   "pass": true,
+   "detail": [
+    "dnmuat194-acct-uat-v53p-1"
+   ]
+  }
+ ]
+}

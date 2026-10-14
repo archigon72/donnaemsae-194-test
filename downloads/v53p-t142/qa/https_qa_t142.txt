@@ -1,0 +1,16 @@
+PASS 360 저장 버튼 바탕 #56B9FF·그라데이션 없음 {"bg": "rgb(86, 185, 255)", "img": "none", "c": "rgb(8, 21, 33)", "b": "rgb(86, 185, 255)", "t": "거래 저장"}
+PASS 360 저장 글자 #081521 대비 ≥4.5 (AA) 8.58
+PASS 360 FAB 불변 ["rgb(167, 222, 201)", "rgb(9, 37, 30)"]
+PASS 360 상태 토큰 불변 ["#56B9FF", "#FFC83D", "#FF83AC", "#46E5AC", "#B59AFF", "#FFAA66", "#A7DEC9"]
+PASS 360 SW v53p-1 ["dnmuat194-acct-uat-v53p-1"]
+PASS 390 저장 버튼 바탕 #56B9FF·그라데이션 없음 {"bg": "rgb(86, 185, 255)", "img": "none", "c": "rgb(8, 21, 33)", "b": "rgb(86, 185, 255)", "t": "거래 저장"}
+PASS 390 저장 글자 #081521 대비 ≥4.5 (AA) 8.58
+PASS 390 FAB 불변 ["rgb(167, 222, 201)", "rgb(9, 37, 30)"]
+PASS 390 상태 토큰 불변 ["#56B9FF", "#FFC83D", "#FF83AC", "#46E5AC", "#B59AFF", "#FFAA66", "#A7DEC9"]
+PASS 390 SW v53p-1 ["dnmuat194-acct-uat-v53p-1"]
+PASS 430 저장 버튼 바탕 #56B9FF·그라데이션 없음 {"bg": "rgb(86, 185, 255)", "img": "none", "c": "rgb(8, 21, 33)", "b": "rgb(86, 185, 255)", "t": "거래 저장"}
+PASS 430 저장 글자 #081521 대비 ≥4.5 (AA) 8.58
+PASS 430 FAB 불변 ["rgb(167, 222, 201)", "rgb(9, 37, 30)"]
+PASS 430 상태 토큰 불변 ["#56B9FF", "#FFC83D", "#FF83AC", "#46E5AC", "#B59AFF", "#FFAA66", "#A7DEC9"]
+PASS 430 SW v53p-1 ["dnmuat194-acct-uat-v53p-1"]
+SUMMARY 15/15 PASS

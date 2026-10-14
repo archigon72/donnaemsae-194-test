@@ -1,0 +1,38 @@
+PASS UAT 첫 진입: UAT 원장 비어 있음(메인 가짜 원장 미참조) 
+PASS UAT 화면에 UAT 표식 "[계좌 UAT] 계좌·거래 관리 · 돈냄새연구소"
+PASS 새 테스트 계좌 생성 + 10주 매수(0004G0) []
+PASS 5주 추가 매수 []
+PASS 3주 매도 []
+PASS 잔고 12주 "12주"
+PASS 거래내역 3건(10/5/3)·수량 [["initial_buy", "10"], ["add_buy", "5"], ["sell", "3"]]
+PASS 자산(성과) 화면 금액·기준일 표시 "돈냄새연구소\n정밀하게 분석하고, 천천히 키운다.\n배당이 키운 자산\n\n배당이 키운 자산과 수량, 배당 흐름을 살펴봐요.\n\n← 홈으로\n전체\n계좌별\n종목별\n배당이 키운 내 자산\n10.08 종가 기준\n배당이 키운 자산\n4,"
+PASS 두 번째 테스트 계좌 생성 []
+PASS 계좌 2개 ["UAT-테스트A", "UAT-테스트B"]
+PASS 계좌 전환 시 해당 계좌 보유만(B=497880) ["497880"]
+PASS 입력 후 취소(Esc) → 원장 변화 없음 
+PASS 동일 거래 2회 입력 → 별도 2건(order_key 0,1)으로 기록, 오류 없음(앱 기존 동작) {"errors": [[], []], "records": 2, "order_keys": [0, 1]}
+PASS 중복분 1건 삭제 5
+PASS 새로고침 후 원장 유지 
+PASS 뒤로/앞으로 이동 후 원장 유지 ["https://archigon72.github.io/donnaemsae-194-test/account-uat/management.html?mode=ledger", "https://archigon72.github.io/donnaemsae-194-test/account-uat/asset-hub.html"]
+PASS 새 탭 재접속 후 원장 유지 
+PASS 재접속 후 잔고 12주 "12주"
+PASS UAT가 194 승인 지급일 구분 참조(actual 1088 / estimated 3416) {"estimated": 3416, "actual": 1088}
+PASS 배당 이벤트 실제/예상 구분 표시, 중복 0, 자동 실입금 확정 0 {"n": 24, "by": {"estimated": 24}, "dup": 0, "conf": 0, "kinds": {"estimated": 3416, "actual": 1088}, "est_badges": 0, "sample": [{"id": "0004G0-20250328", "date": "2025-04-02", "kind": "estimated", "amt": "330"}, {"id": "0004G0-20250429", "date": "2025-05-07"
+PASS 기준일 표시(시장가격·분배금 자료 기준일) ["시장가격: 10.08 종가 기준 ", "분배금 자료 기준일: 2026-10-08"]
+PASS 수집(시세) 실패 시 오류 상태 표시 ["시장가격: 10.08 종가 기준 · 분배금 자료 기준일: 2026-10-08", "오프라인/이전 시장가격을 사용 중입니다. 최신 시세가 아닐 수 있습니다."]
+PASS UAT 백업 = UAT 원장 
+PASS UAT 원장만 초기화 
+PASS 복원 → 거래·계좌 동일 {"acc": 2, "tx": 5}
+PASS 복원 후 잔고 12주 "12주"
+PASS [격리] 메인/기존 localStorage 키·값 전부 불변 {"pre": 8, "post": 8}
+PASS [격리] UAT가 메인 sessionStorage 키를 쓰지 않음(메인 페이지 자체 scroll 키 제외) ["dnmuat194.ui./donnaemsae-194-test/account-uat/scroll:/donnaemsae-194-test/account-uat/management.html?mode=ledger", "donnaemsae.ui.SENTINEL", "donnaemsae.ui./donnaemsae-194-test/scroll:/donnaemsae-194-test/management.html?mode=ledger", "donnaemsae.ui./donnae
+PASS [격리] 메인 캐시(이름·항목수) 불변 {"pre": {"donnaemsae-asset-hub-20261013-mobileui-v53f": 365}, "post": {"donnaemsae-asset-hub-20261013-mobileui-v53f": 365}}
+PASS [격리] UAT 캐시는 dnmuat194-* 만 생성 ["dnmuat194-acct-uat-v53p-1", "donnaemsae-asset-hub-20261013-mobileui-v53f"]
+PASS [격리] SW 등록: 메인 scope 유지 + UAT scope=account-uat/ 별도 ["https://archigon72.github.io/donnaemsae-194-test/", "https://archigon72.github.io/donnaemsae-194-test/account-uat/"]
+PASS [격리] UAT 쓰기 키 = dnmuat194.* 만 ["dnmuat194.catalog.cache.v1", "dnmuat194.distributions.cache.v1", "dnmuat194.management.facts.v1", "dnmuat194.management.facts.v1.rollback.v1", "dnmuat194.market.cache.v1", "dnmuat194.tax.cache.v53"]
+PASS [격리] IndexedDB 신규 생성 0 []
+PASS [역방향] 메인 앱 가상 거래 기록 []
+PASS [역방향] 메인 사용 후 UAT 키·값 불변 {"n": 6}
+PASS [역방향] 메인 사용 후 UAT 캐시 불변 
+PASS [역방향] 메인 쓰기 키는 donnaemsae.* 만 []
+PASS 콘솔/페이지/HTTP 오류 0 (의도적 시세 차단 제외) []
