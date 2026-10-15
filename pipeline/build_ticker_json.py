@@ -25,7 +25,7 @@ def window(b,k):
     return s,dates[-1]
 def build(code):
     b=json.load(open(f'{ROOT}/inputs/{code}.json'))
-    out={'snapshot':CAT['snapshot'],'ticker':code,'periods':{},'presentations':{}}
+    out={'snapshot':{**CAT['snapshot'],**({'data_cutoff':b['meta']['data_cutoff']} if b['meta'].get('data_cutoff') else {})},'ticker':code,'periods':{},'presentations':{}}
     for k in PERIODS:
         bb=dict(b);bb['period']=k;s,e=window(b,k)
         v=json.loads(json.dumps(PB.run_period(bb,s,e)))
