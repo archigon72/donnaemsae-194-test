@@ -3,6 +3,7 @@
 누락값은 0으로 대체하지 않음(행 자체 미추가 + 사유 기록). 원천 raw 는 --raw-dir(비공개/임시)에만 저장, 공개 트리에는 해시만.
 사용: python3 oneclick.py --site <pages_root> --raw-dir <private_dir> [--mode live|replay] [--replay-dir D] [--asof YYYYMMDD]
       [--inject-error KIND] [--interrupt-after-build] [--codes a,b]"""
+import sys as _s,os as _o;_s.path.insert(0,_o.path.dirname(_o.path.abspath(__file__)));import meta_fill
 import argparse,json,os,sys,hashlib,time,datetime,urllib.request,zipfile,tempfile,shutil,copy,re,traceback
 ap=argparse.ArgumentParser();ap.add_argument('--site',required=True);ap.add_argument('--raw-dir',required=True)
 ap.add_argument('--mode',default='live');ap.add_argument('--replay-dir');ap.add_argument('--asof')
@@ -134,7 +135,7 @@ try:
         it=(STORE or {}).get('items',{}).get(c) if store_ok else None
         if it:
             am=it['approved']['zeroin_metadata'];lost=[k for k,v in am.items() if v not in (None,'',{},[]) and wm.get(k) in (None,'',{},[])]
-            chg=sha(cj(wm).encode())!=it['approved']['sha256']
+            chg=sha(cj(wm).encode())!=it['approved']['sha256'] and cj(wm)!=cj(meta_fill.fill(am,it)[0])   # FunETF 공란보완 결과와 같으면 정상
             st_='stored' if not chg else ('lost' if lost else 'changed')
             fu=it.get('funetf') or {}
             MS[c]={'state':st_,'lost_fields':lost,'approved_sha256':it['approved']['sha256'],'funetf':fu.get('status'),'funetf_retrieved':fu.get('retrieved_kst')}
@@ -149,6 +150,17 @@ try:
     LOG['metadata']=MSUM;LOG['metadata_detail']=MS
     step('metadata',**{k:v for k,v in MSUM.items() if k!='loss_codes'})
     if A.inject_error=='collect_fail_all': fail=len(codes)
+    # ---------- 1c FunETF 우선 메타 공란 보완(기존 값 불변, 저장 메타 무결성 OK일 때만) ----------
+    FILLED={}
+    if store_ok:
+        for c in codes:
+            it=STORE['items'].get(c)
+            if not it: continue
+            p_=f'{WORK}/inputs/{c}.json';b_=json.load(open(p_));z0=b_.get('zeroin_metadata') or {}
+            z1,d1=meta_fill.fill(z0,it)
+            if d1: b_['zeroin_metadata']=z1;wjson(p_,b_);FILLED[c]=d1
+    MSUM['funetf_filled_codes']=len(FILLED);MSUM['funetf_filled_fields']={k:sum(k in v for v in FILLED.values()) for k in ('fee','index_name','listing_date')}
+    LOG['metadata_filled']=FILLED;step('metadata_fill',codes=len(FILLED),fields=MSUM['funetf_filled_fields'])
     # ---------- 3 CORE ----------
     RT=tempfile.mkdtemp(prefix='rt-');zipfile.ZipFile(f'{WORK}/runtime_source.zip').extractall(RT);sys.path[:0]=[RT,WORK];sys.dont_write_bytecode=True
     import period_bridge,presentation
@@ -243,6 +255,12 @@ try:
     man={'release_id':RID,'created_kst':datetime.datetime.now(KST).isoformat(),'mode':A.mode,'asof':ASOF,'engine_hash':cat['snapshot']['engine_hash'],
          'cutoffs':{c:json.loads(built[c])['snapshot']['data_cutoff'] for c in codes},'collect_summary':st,'files':files,
          'raw_sha256':{c:v.get('sha256') for c,v in LOG['collect'].items()},'source_state':SRC_STATE,'paydate':PCNT,'metadata':MSUM,'metadata_store_sha256':sha(open(STORE_P,'rb').read()) if os.path.exists(STORE_P) else None,'note':'raw sources are NOT published; hashes only'}
+    # 사이트 반영용 입력 번들(CORE 에 실제 투입된 것과 동일: meta.snapshot_id=RID)
+    os.makedirs(f'{TMP}/inputs')
+    for c in codes:
+        b_=json.load(open(f'{WORK}/inputs/{c}.json'));b_['meta']['snapshot_id']=RID;s_=json.dumps(b_,ensure_ascii=False)
+        open(f'{TMP}/inputs/{c}.json','w').write(s_);files[f'inputs/{c}.json']=sha(s_.encode())
+    man['files']=files
     wjson(f'{TMP}/manifest.json',man)
     # verify before exposing
     bad=[p for p,h in files.items() if sha(open(f'{TMP}/{p}','rb').read())!=h];assert not bad,bad
