@@ -1,0 +1,8 @@
+/* t145 투자 성적 배치 (승인 팔레트 값만 사용) */
+.pf-up{color:#46E5AC}.pf-dn{color:#56B9FF}.pf-na{color:#AEC0CB;font-size:.9em}
+.pf-tabs{margin-top:8px}.pf-grid{grid-template-columns:repeat(2,1fr)}
+.pf-total{display:flex;flex-direction:column;gap:2px;margin-top:8px;padding:12px}.pf-total b{font-size:20px}
+.pf-row .pf-head{display:flex;justify-content:space-between;gap:8px}.pf-sub{display:block;font-size:11.5px;color:#AEC0CB}
+.pf-row dl{display:grid;grid-template-columns:1fr auto;gap:2px 8px;margin:6px 0 0;font-size:13px}.pf-row dd{margin:0;text-align:right}
+.pf-home{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:10px;text-decoration:none;color:inherit}
+.pf-home span{display:flex;flex-direction:column}.pf-home small{font-size:11.5px;color:#AEC0CB}.pf-home b{font-size:14px}
