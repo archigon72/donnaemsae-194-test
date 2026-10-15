@@ -15,3 +15,7 @@ body.mu .mu-danger{border:2.5px solid #D9A53A!important;padding:0 16px}
 body.mu .mu-danger summary{min-height:84px;padding-top:16px;padding-bottom:16px;gap:8px;line-height:1.5}
 body.mu .mu-danger summary b{font-size:15px;line-height:1.4}
 body.mu .mu-danger summary small{font-size:13px;line-height:1.55;color:#EADBB4!important}
+/* t167: 선택 월 상세 카드 — 왼쪽 굵은 파란선 제거, 일반 카드와 같은 얇은 테두리. 종목명·종목별 금액 흰색 계열 */
+html body .fd .fd-msel{border:1.5px solid #3E5C70!important;border-left-width:1.5px!important;color:#F2F6F8!important}
+html body .fd .fd-msel .fd-item .nm,html body .fd .fd-msel .fd-item .amt{color:#F2F6F8!important}
+html body .fd .fd-msel .fd-row>b{color:#56B9FF}
