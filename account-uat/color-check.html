@@ -1,8 +1,28 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="color-scheme" content="dark"><meta name="viewport" content="width=device-width,initial-scale=1"><title>색 확인 (UAT)</title>
-<style>:root{color-scheme:dark}body{margin:0;padding:16px;background:#081521;color:#EFF6F8;font-family:sans-serif}.g{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.s{border-radius:10px;padding:14px 10px;color:#081521;font-weight:800}code{font-size:12px}#env{font-size:12px;color:#AEC0CB;word-break:break-all}</style></head><body>
-<h1 style="font-size:18px">승인 8색 확인 화면 (UAT)</h1><p style="font-size:13px;color:#AEC0CB">아래 칸이 표기 HEX와 같은 밝은 색으로 보여야 정상입니다. 어둡거나 갈색으로 보이면 브라우저 자동 어둡게(Force Dark)가 켜진 상태입니다.</p>
-<div class="g" id="g"></div><svg viewBox="0 0 120 120" width="180" height="180" style="display:block;margin:16px auto"><g transform="rotate(-90 60 60)" id="d"></g></svg><p id="env"></p>
-<script>const P=[['노랑','#FFC83D'],['파랑','#56B9FF'],['민트','#46E5AC'],['핑크','#FF83AC'],['라벤더','#B59AFF'],['오렌지','#FFAA66'],['아쿠아','#45DCE5'],['연파랑','#83A5FF'],['기타','#6B7280']];
-document.getElementById('g').innerHTML=P.map(([n,h])=>'<div class="s" style="background:'+h+'">'+n+'<br><code>'+h+'</code></div>').join('');
-const C=2*Math.PI*44;let off=0;document.getElementById('d').innerHTML=P.slice(0,8).map(([n,h],i)=>{const l=C/8;const r='<circle cx="60" cy="60" r="44" fill="none" stroke="'+h+'" stroke-width="18" stroke-dasharray="'+l+' '+(C-l)+'" stroke-dashoffset="'+(-off)+'"/>';off+=l;return r}).join('');
-document.getElementById('env').textContent='UA: '+navigator.userAgent+' | prefers-color-scheme: dark='+matchMedia('(prefers-color-scheme: dark)').matches+' | forced-colors='+matchMedia('(forced-colors: active)').matches;</script></body></html>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="color-scheme" content="only dark"><meta name="viewport" content="width=device-width,initial-scale=1"><title>색 자가진단 (UAT)</title>
+<style>:root{color-scheme:only dark}body{margin:0;padding:14px;background:#081521;color:#EFF6F8;font-family:sans-serif;line-height:1.5}h1{font-size:18px;margin:0 0 6px}h2{font-size:15px;margin:18px 0 6px}p,li{font-size:13px;color:#AEC0CB}
+.row{display:grid;grid-template-columns:62px repeat(9,1fr);gap:3px;align-items:center;margin:3px 0}.row b{font-size:12px;color:#EFF6F8}.cell{height:34px;border-radius:6px;position:relative;overflow:hidden}.cell svg,.cell canvas{display:block;width:100%;height:100%}
+.hd span{font-size:10px;text-align:center;color:#AEC0CB}.ans button{font-size:15px;padding:10px 14px;margin:4px 6px 4px 0;border-radius:10px;border:1px solid #385465;background:#102638;color:#EFF6F8}#res{font-size:14px;color:#EFF6F8;padding:10px;border:1px solid #385465;border-radius:10px;margin-top:8px}#env{font-size:11px;word-break:break-all}</style></head><body>
+<h1>그래프 색 자가진단 (대표 실기기용)</h1>
+<p>같은 색을 세 가지 방식으로 그렸습니다. 삼성 인터넷 다크 모드를 <b>켠 상태</b>에서 세 줄을 비교해 주세요.</p>
+<div class="row hd"><span></span><span>노랑</span><span>파랑</span><span>민트</span><span>핑크</span><span>라벤더</span><span>오렌지</span><span>아쿠아</span><span>연파랑</span><span>기타</span></div>
+<div class="row" id="r-css"><b>A. CSS 배경</b></div>
+<div class="row" id="r-svg"><b>B. SVG</b></div>
+<div class="row" id="r-cv"><b>C. canvas (t144 방식)</b></div>
+<h2>도넛 비교</h2><div style="display:flex;gap:10px;justify-content:center"><figure style="margin:0;text-align:center"><svg id="dsvg" viewBox="0 0 120 120" width="140" height="140"></svg><figcaption style="font-size:12px">SVG (이전 방식)</figcaption></figure><figure style="margin:0;text-align:center"><canvas id="dcv" width="280" height="280" style="width:140px;height:140px"></canvas><figcaption style="font-size:12px">canvas (t144 방식)</figcaption></figure></div>
+<h2>판정</h2><p>C줄과 오른쪽 도넛이 표기 색처럼 밝은가요? A·B줄은 다크 모드에서 어둡게 바뀔 수 있습니다(정상적인 비교 대상).</p>
+<div class="ans"><button data-a="c-bright">C줄·오른쪽 도넛 밝음</button><button data-a="c-dark">C줄도 어두움</button><button data-a="all-same">세 줄 모두 같음(다크 모드 꺼짐?)</button></div>
+<div id="fd" style="font-size:13px;color:#EFF6F8;padding:10px;border:1px solid #385465;border-radius:10px;margin:8px 0">자동 감지 중…</div><div id="res">아직 선택하지 않았습니다.</div>
+<p>선택 결과와 이 화면 캡처를 보내 주시면 됩니다. 이 화면은 저장·전송을 하지 않습니다.</p><p id="env"></p>
+<script>
+const P=['#FFC83D','#56B9FF','#46E5AC','#FF83AC','#B59AFF','#FFAA66','#45DCE5','#83A5FF','#6B7280'];
+const mk=(id,f)=>{const r=document.getElementById(id);P.forEach(h=>{const d=document.createElement('div');d.className='cell';f(d,h);r.appendChild(d)})};
+mk('r-css',(d,h)=>d.style.background=h);
+mk('r-svg',(d,h)=>d.innerHTML='<svg viewBox="0 0 10 10" preserveAspectRatio="none"><path d="M0 0H10V10H0Z" fill="'+h+'"/></svg>');
+mk('r-cv',(d,h)=>{const c=document.createElement('canvas');c.width=60;c.height=34;const x=c.getContext('2d');x.fillStyle=h;x.fillRect(0,0,60,34);d.appendChild(c)});
+const C=2*Math.PI*44;let off=0,s='';const sh=[.32,.24,.16,.1,.07,.05,.04,.02];sh.forEach((v,i)=>{const l=C*v;s+='<circle cx="60" cy="60" r="44" fill="none" stroke="'+P[i]+'" stroke-width="18" stroke-dasharray="'+l+' '+(C-l)+'" stroke-dashoffset="'+(-off)+'" transform="rotate(-90 60 60)"/>';off+=l});document.getElementById('dsvg').innerHTML=s;
+const x=document.getElementById('dcv').getContext('2d');let a=-Math.PI/2;sh.forEach((v,i)=>{x.beginPath();x.arc(140,140,88,a,a+v*2*Math.PI);x.lineWidth=36;x.strokeStyle=P[i];x.stroke();a+=v*2*Math.PI});
+const M={'c-bright':'C줄 밝음: 다크 모드에서도 canvas 방식이 유지됨. t144 앱 그래프도 같은 방식이므로 밝게 보여야 정상입니다.','c-dark':'C줄도 어두움: 이 기기의 삼성 인터넷은 canvas도 어둡게 바꿉니다. t144 방식으로는 막을 수 없으므로 이 결과를 알려 주세요.','all-same':'세 줄이 같음: 다크 모드가 꺼져 있거나 이 기기에서는 색 보정이 일어나지 않습니다. 다크 모드를 켠 뒤 다시 확인해 주세요.'};
+document.querySelectorAll('.ans button').forEach(b=>b.onclick=()=>{document.getElementById('res').textContent='선택: '+b.textContent+' → '+M[b.dataset.a]});
+(function(){const out=document.getElementById('fd');const img=new Image();img.onload=()=>{const c=document.createElement('canvas');c.width=c.height=1;const x=c.getContext('2d');x.drawImage(img,0,0);const d=x.getImageData(0,0,1,1).data;const forced=(d[0]&d[1]&d[2])<255;out.textContent=forced?'자동 감지: 강제 다크 변환 켜짐 (흰 SVG 측정값 rgb('+d[0]+','+d[1]+','+d[2]+')). 이 상태에서 C줄이 표기 색과 같으면 PASS입니다.':'자동 감지: 강제 다크 변환 감지 안 됨 (흰 SVG = rgb(255,255,255)). 다크 모드를 켠 상태라면 이 기기에선 변환이 없거나 감지 방식이 통하지 않는 것입니다.';out.style.borderColor=forced?'#FFC83D':'#46E5AC'};img.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IndoaXRlIi8+PC9zdmc+'})();
+document.getElementById('env').textContent='UA: '+navigator.userAgent+' | prefers-color-scheme:dark='+matchMedia('(prefers-color-scheme: dark)').matches+' | 화면 '+innerWidth+'×'+innerHeight+' @'+devicePixelRatio;
+</script></body></html>
