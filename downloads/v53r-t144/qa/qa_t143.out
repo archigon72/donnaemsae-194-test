@@ -1,0 +1,83 @@
+PASS 360 [normal] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 360 [normal] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 360 [normal] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 360 [normal] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 360 [normal] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 360 [samsung_ua_dark] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 360 [samsung_ua_dark] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 360 [samsung_ua_dark] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 360 [samsung_ua_dark] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 360 [samsung_ua_dark] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 360 [samsung_ua_light] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 360 [samsung_ua_light] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 360 [samsung_ua_light] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 360 [samsung_ua_light] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 360 [samsung_ua_light] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 360 [forcedark] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 360 [forcedark] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 360 [forcedark] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 360 [forcedark] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 360 [forcedark] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 360 검색 1 열림: 입력 비어 있음·placeholder·선택 없음 {"v": "", "ph": "종목명 또는 종목코드 검색", "sel": "", "pk": "종목을 검색해 선택하세요."}
+PASS 360 검색 2 입력 즉시 후보 표시 ["TIGER 엔비디아미국채커버드콜밸런스(합성) · 0000D0", "TIGER 미국배당다우존스타겟데일리커버드콜 · 0008S0", "TIGER 미국초단기(3개월이하)국채 · 0046A0", "TIGER 코리아배당다우존스 · 0052D0"]
+PASS 360 검색 3 선택: 입력 밖에 종목 정보 표시·입력은 비움 {"v": "", "sel": "0000D0", "pk": "선택한 종목\nTIGER 엔비디아미국채커버드콜밸런스(합성)\n0000D0", "pkc": "uat-picked", "res": true}
+PASS 360 검색 4 다시 탭: 지우기 없이 새 검색 (기존 선택 유지) {"st3": {"v": "", "res": true, "sel": "0000D0"}, "hits": ["0004G0"]}
+PASS 360 최초매수 = 전체 194종 {"initial_buy": 194, "add_buy": 1, "reinvest": 1, "sell": 1}
+PASS 360 추가매수/재투자/매도 = 이 계좌(k1) 보유종목만 {"held": ["329200"], "opts": {"add_buy": ["329200"], "reinvest": ["329200"], "sell": ["329200"]}}
+PASS 360 종목 미선택 저장 차단 (원장 불변) {"before": 8, "after": 8}
+PASS 390 [normal] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 390 [normal] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 390 [normal] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 390 [normal] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 390 [normal] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 390 [samsung_ua_dark] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 390 [samsung_ua_dark] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 390 [samsung_ua_dark] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 390 [samsung_ua_dark] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 390 [samsung_ua_dark] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 390 [samsung_ua_light] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 390 [samsung_ua_light] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 390 [samsung_ua_light] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 390 [samsung_ua_light] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 390 [samsung_ua_light] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 390 [forcedark] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 390 [forcedark] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 390 [forcedark] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 390 [forcedark] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 390 [forcedark] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 390 검색 1 열림: 입력 비어 있음·placeholder·선택 없음 {"v": "", "ph": "종목명 또는 종목코드 검색", "sel": "", "pk": "종목을 검색해 선택하세요."}
+PASS 390 검색 2 입력 즉시 후보 표시 ["TIGER 엔비디아미국채커버드콜밸런스(합성) · 0000D0", "TIGER 미국배당다우존스타겟데일리커버드콜 · 0008S0", "TIGER 미국초단기(3개월이하)국채 · 0046A0", "TIGER 코리아배당다우존스 · 0052D0"]
+PASS 390 검색 3 선택: 입력 밖에 종목 정보 표시·입력은 비움 {"v": "", "sel": "0000D0", "pk": "선택한 종목\nTIGER 엔비디아미국채커버드콜밸런스(합성)\n0000D0", "pkc": "uat-picked", "res": true}
+PASS 390 검색 4 다시 탭: 지우기 없이 새 검색 (기존 선택 유지) {"st3": {"v": "", "res": true, "sel": "0000D0"}, "hits": ["0004G0"]}
+PASS 390 최초매수 = 전체 194종 {"initial_buy": 194, "add_buy": 1, "reinvest": 1, "sell": 1}
+PASS 390 추가매수/재투자/매도 = 이 계좌(k1) 보유종목만 {"held": ["329200"], "opts": {"add_buy": ["329200"], "reinvest": ["329200"], "sell": ["329200"]}}
+PASS 390 종목 미선택 저장 차단 (원장 불변) {"before": 8, "after": 8}
+PASS 430 [normal] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 430 [normal] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 430 [normal] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 430 [normal] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 430 [normal] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 430 [samsung_ua_dark] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 430 [samsung_ua_dark] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 430 [samsung_ua_dark] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 430 [samsung_ua_dark] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 430 [samsung_ua_dark] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 430 [samsung_ua_light] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 430 [samsung_ua_light] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 430 [samsung_ua_light] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 430 [samsung_ua_light] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 430 [samsung_ua_light] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 430 [forcedark] 도넛 조각 화소 = 승인 HEX (허용 ±8) [["#FFC83D", "#FFC83D"], ["#56B9FF", "#56B9FF"], ["#46E5AC", "#46E5AC"], ["#FF83AC", "#FF83AC"]]
+PASS 430 [forcedark] 도넛 색 순서 = 승인 8색 ["#FFC83D", "#56B9FF", "#46E5AC", "#FF83AC"]
+PASS 430 [forcedark] 가장 큰 조각 밝음 (휘도≥0.45) {"big": {"hex": "#FFC83D", "pixel": "#FFC83D", "diff": 0, "share": 0.392}, "lum": 0.629}
+PASS 430 [forcedark] 월별 막대 화소 = 계산 HEX (허용 ±8) 12
+FAIL 430 [forcedark] color-scheme dark 선언 (meta+CSS) {"cs": "dark only", "meta": "only dark"}
+PASS 430 검색 1 열림: 입력 비어 있음·placeholder·선택 없음 {"v": "", "ph": "종목명 또는 종목코드 검색", "sel": "", "pk": "종목을 검색해 선택하세요."}
+PASS 430 검색 2 입력 즉시 후보 표시 ["TIGER 엔비디아미국채커버드콜밸런스(합성) · 0000D0", "TIGER 미국배당다우존스타겟데일리커버드콜 · 0008S0", "TIGER 미국초단기(3개월이하)국채 · 0046A0", "TIGER 코리아배당다우존스 · 0052D0"]
+PASS 430 검색 3 선택: 입력 밖에 종목 정보 표시·입력은 비움 {"v": "", "sel": "0000D0", "pk": "선택한 종목\nTIGER 엔비디아미국채커버드콜밸런스(합성)\n0000D0", "pkc": "uat-picked", "res": true}
+PASS 430 검색 4 다시 탭: 지우기 없이 새 검색 (기존 선택 유지) {"st3": {"v": "", "res": true, "sel": "0000D0"}, "hits": ["0004G0"]}
+PASS 430 최초매수 = 전체 194종 {"initial_buy": 194, "add_buy": 1, "reinvest": 1, "sell": 1}
+PASS 430 추가매수/재투자/매도 = 이 계좌(k1) 보유종목만 {"held": ["329200"], "opts": {"add_buy": ["329200"], "reinvest": ["329200"], "sell": ["329200"]}}
+PASS 430 종목 미선택 저장 차단 (원장 불변) {"before": 8, "after": 8}
+PASS 강제 새로고침 후 SW 캐시 dnmuat194-acct-uat-v53r-1 ["dnmuat194-acct-uat-v53r-1"]
+SUMMARY 70/82 PASS, 12 FAIL

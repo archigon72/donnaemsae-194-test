@@ -1,0 +1,1447 @@
+{
+ "total": 121,
+ "failed": 0,
+ "checks": [
+  {
+   "name": "360 [normal] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "360 [normal] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "360 [normal] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "360 [normal] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "360 [normal] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "360 [normal] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "360 [autodark_proxy] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "360 [autodark_proxy] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "360 [autodark_proxy] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "360 [autodark_proxy] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "360 [autodark_proxy] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "360 [autodark_proxy] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "360 저장 버튼 #56B9FF·글자 #081521·canvas 덧칠·화소 일치",
+   "pass": true,
+   "detail": {
+    "c": "rgb(86, 185, 255)",
+    "t": "rgb(8, 21, 33)",
+    "cv": true,
+    "pixel": "#56B9FF"
+   }
+  },
+  {
+   "name": "360 검색 1 열림: 입력 비어 있음·placeholder·선택 없음",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "ph": "종목명 또는 종목코드 검색",
+    "sel": "",
+    "pk": "종목을 검색해 선택하세요."
+   }
+  },
+  {
+   "name": "360 검색 2 입력 즉시 후보 표시",
+   "pass": true,
+   "detail": [
+    "TIGER 엔비디아미국채커버드콜밸런스(합성) · 0000D0",
+    "TIGER 미국배당다우존스타겟데일리커버드콜 · 0008S0",
+    "TIGER 미국초단기(3개월이하)국채 · 0046A0",
+    "TIGER 코리아배당다우존스 · 0052D0"
+   ]
+  },
+  {
+   "name": "360 검색 3 선택: 입력 밖에 종목 정보 표시·입력은 비움",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "sel": "0000D0",
+    "pk": "선택한 종목\nTIGER 엔비디아미국채커버드콜밸런스(합성)\n0000D0",
+    "pkc": "uat-picked",
+    "res": true
+   }
+  },
+  {
+   "name": "360 검색 4 다시 탭: 지우기 없이 새 검색 (기존 선택 유지)",
+   "pass": true,
+   "detail": {
+    "st3": {
+     "v": "",
+     "res": true,
+     "sel": "0000D0"
+    },
+    "hits": [
+     "0004G0"
+    ]
+   }
+  },
+  {
+   "name": "360 최초매수 = 전체 194종",
+   "pass": true,
+   "detail": {
+    "initial_buy": 194,
+    "add_buy": 1,
+    "reinvest": 1,
+    "sell": 1
+   }
+  },
+  {
+   "name": "360 추가매수/재투자/매도 = 이 계좌(k1) 보유종목만",
+   "pass": true,
+   "detail": {
+    "held": [
+     "329200"
+    ],
+    "opts": {
+     "add_buy": [
+      "329200"
+     ],
+     "reinvest": [
+      "329200"
+     ],
+     "sell": [
+      "329200"
+     ]
+    }
+   }
+  },
+  {
+   "name": "360 종목 미선택 저장 차단 (원장 불변)",
+   "pass": true,
+   "detail": {
+    "before": 8,
+    "after": 8
+   }
+  },
+  {
+   "name": "390 [normal] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "390 [normal] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "390 [normal] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "390 [normal] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "390 [normal] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "390 [normal] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "390 [autodark_proxy] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "390 [autodark_proxy] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "390 [autodark_proxy] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "390 [autodark_proxy] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "390 [autodark_proxy] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "390 [autodark_proxy] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "390 저장 버튼 #56B9FF·글자 #081521·canvas 덧칠·화소 일치",
+   "pass": true,
+   "detail": {
+    "c": "rgb(86, 185, 255)",
+    "t": "rgb(8, 21, 33)",
+    "cv": true,
+    "pixel": "#56B9FF"
+   }
+  },
+  {
+   "name": "390 검색 1 열림: 입력 비어 있음·placeholder·선택 없음",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "ph": "종목명 또는 종목코드 검색",
+    "sel": "",
+    "pk": "종목을 검색해 선택하세요."
+   }
+  },
+  {
+   "name": "390 검색 2 입력 즉시 후보 표시",
+   "pass": true,
+   "detail": [
+    "TIGER 엔비디아미국채커버드콜밸런스(합성) · 0000D0",
+    "TIGER 미국배당다우존스타겟데일리커버드콜 · 0008S0",
+    "TIGER 미국초단기(3개월이하)국채 · 0046A0",
+    "TIGER 코리아배당다우존스 · 0052D0"
+   ]
+  },
+  {
+   "name": "390 검색 3 선택: 입력 밖에 종목 정보 표시·입력은 비움",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "sel": "0000D0",
+    "pk": "선택한 종목\nTIGER 엔비디아미국채커버드콜밸런스(합성)\n0000D0",
+    "pkc": "uat-picked",
+    "res": true
+   }
+  },
+  {
+   "name": "390 검색 4 다시 탭: 지우기 없이 새 검색 (기존 선택 유지)",
+   "pass": true,
+   "detail": {
+    "st3": {
+     "v": "",
+     "res": true,
+     "sel": "0000D0"
+    },
+    "hits": [
+     "0004G0"
+    ]
+   }
+  },
+  {
+   "name": "390 최초매수 = 전체 194종",
+   "pass": true,
+   "detail": {
+    "initial_buy": 194,
+    "add_buy": 1,
+    "reinvest": 1,
+    "sell": 1
+   }
+  },
+  {
+   "name": "390 추가매수/재투자/매도 = 이 계좌(k1) 보유종목만",
+   "pass": true,
+   "detail": {
+    "held": [
+     "329200"
+    ],
+    "opts": {
+     "add_buy": [
+      "329200"
+     ],
+     "reinvest": [
+      "329200"
+     ],
+     "sell": [
+      "329200"
+     ]
+    }
+   }
+  },
+  {
+   "name": "390 종목 미선택 저장 차단 (원장 불변)",
+   "pass": true,
+   "detail": {
+    "before": 8,
+    "after": 8
+   }
+  },
+  {
+   "name": "430 [normal] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "430 [normal] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "430 [normal] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "430 [normal] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "430 [normal] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "430 [normal] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "430 [autodark_proxy] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "430 [autodark_proxy] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "430 [autodark_proxy] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "430 [autodark_proxy] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "430 [autodark_proxy] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "430 [autodark_proxy] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "430 저장 버튼 #56B9FF·글자 #081521·canvas 덧칠·화소 일치",
+   "pass": true,
+   "detail": {
+    "c": "rgb(86, 185, 255)",
+    "t": "rgb(8, 21, 33)",
+    "cv": true,
+    "pixel": "#56B9FF"
+   }
+  },
+  {
+   "name": "430 검색 1 열림: 입력 비어 있음·placeholder·선택 없음",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "ph": "종목명 또는 종목코드 검색",
+    "sel": "",
+    "pk": "종목을 검색해 선택하세요."
+   }
+  },
+  {
+   "name": "430 검색 2 입력 즉시 후보 표시",
+   "pass": true,
+   "detail": [
+    "TIGER 엔비디아미국채커버드콜밸런스(합성) · 0000D0",
+    "TIGER 미국배당다우존스타겟데일리커버드콜 · 0008S0",
+    "TIGER 미국초단기(3개월이하)국채 · 0046A0",
+    "TIGER 코리아배당다우존스 · 0052D0"
+   ]
+  },
+  {
+   "name": "430 검색 3 선택: 입력 밖에 종목 정보 표시·입력은 비움",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "sel": "0000D0",
+    "pk": "선택한 종목\nTIGER 엔비디아미국채커버드콜밸런스(합성)\n0000D0",
+    "pkc": "uat-picked",
+    "res": true
+   }
+  },
+  {
+   "name": "430 검색 4 다시 탭: 지우기 없이 새 검색 (기존 선택 유지)",
+   "pass": true,
+   "detail": {
+    "st3": {
+     "v": "",
+     "res": true,
+     "sel": "0000D0"
+    },
+    "hits": [
+     "0004G0"
+    ]
+   }
+  },
+  {
+   "name": "430 최초매수 = 전체 194종",
+   "pass": true,
+   "detail": {
+    "initial_buy": 194,
+    "add_buy": 1,
+    "reinvest": 1,
+    "sell": 1
+   }
+  },
+  {
+   "name": "430 추가매수/재투자/매도 = 이 계좌(k1) 보유종목만",
+   "pass": true,
+   "detail": {
+    "held": [
+     "329200"
+    ],
+    "opts": {
+     "add_buy": [
+      "329200"
+     ],
+     "reinvest": [
+      "329200"
+     ],
+     "sell": [
+      "329200"
+     ]
+    }
+   }
+  },
+  {
+   "name": "430 종목 미선택 저장 차단 (원장 불변)",
+   "pass": true,
+   "detail": {
+    "before": 8,
+    "after": 8
+   }
+  },
+  {
+   "name": "1024 [normal] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "1024 [normal] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "1024 [normal] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "1024 [normal] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "1024 [normal] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "1024 [normal] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "1024 [autodark_proxy] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "1024 [autodark_proxy] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "1024 [autodark_proxy] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "1024 [autodark_proxy] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "1024 [autodark_proxy] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "1024 [autodark_proxy] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "1024 저장 버튼 #56B9FF·글자 #081521·canvas 덧칠·화소 일치",
+   "pass": true,
+   "detail": {
+    "c": "rgb(86, 185, 255)",
+    "t": "rgb(8, 21, 33)",
+    "cv": true,
+    "pixel": "#56B9FF"
+   }
+  },
+  {
+   "name": "1024 검색 1 열림: 입력 비어 있음·placeholder·선택 없음",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "ph": "종목명 또는 종목코드 검색",
+    "sel": "",
+    "pk": "종목을 검색해 선택하세요."
+   }
+  },
+  {
+   "name": "1024 검색 2 입력 즉시 후보 표시",
+   "pass": true,
+   "detail": [
+    "TIGER 엔비디아미국채커버드콜밸런스(합성) · 0000D0",
+    "TIGER 미국배당다우존스타겟데일리커버드콜 · 0008S0",
+    "TIGER 미국초단기(3개월이하)국채 · 0046A0",
+    "TIGER 코리아배당다우존스 · 0052D0"
+   ]
+  },
+  {
+   "name": "1024 검색 3 선택: 입력 밖에 종목 정보 표시·입력은 비움",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "sel": "0000D0",
+    "pk": "선택한 종목\nTIGER 엔비디아미국채커버드콜밸런스(합성)\n0000D0",
+    "pkc": "uat-picked",
+    "res": true
+   }
+  },
+  {
+   "name": "1024 검색 4 다시 탭: 지우기 없이 새 검색 (기존 선택 유지)",
+   "pass": true,
+   "detail": {
+    "st3": {
+     "v": "",
+     "res": true,
+     "sel": "0000D0"
+    },
+    "hits": [
+     "0004G0"
+    ]
+   }
+  },
+  {
+   "name": "1024 최초매수 = 전체 194종",
+   "pass": true,
+   "detail": {
+    "initial_buy": 194,
+    "add_buy": 1,
+    "reinvest": 1,
+    "sell": 1
+   }
+  },
+  {
+   "name": "1024 추가매수/재투자/매도 = 이 계좌(k1) 보유종목만",
+   "pass": true,
+   "detail": {
+    "held": [
+     "329200"
+    ],
+    "opts": {
+     "add_buy": [
+      "329200"
+     ],
+     "reinvest": [
+      "329200"
+     ],
+     "sell": [
+      "329200"
+     ]
+    }
+   }
+  },
+  {
+   "name": "1024 종목 미선택 저장 차단 (원장 불변)",
+   "pass": true,
+   "detail": {
+    "before": 8,
+    "after": 8
+   }
+  },
+  {
+   "name": "1280 [normal] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "1280 [normal] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "1280 [normal] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "1280 [normal] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "1280 [normal] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "1280 [normal] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "1280 [autodark_proxy] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "1280 [autodark_proxy] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "1280 [autodark_proxy] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "1280 [autodark_proxy] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "1280 [autodark_proxy] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "1280 [autodark_proxy] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "1280 저장 버튼 #56B9FF·글자 #081521·canvas 덧칠·화소 일치",
+   "pass": true,
+   "detail": {
+    "c": "rgb(86, 185, 255)",
+    "t": "rgb(8, 21, 33)",
+    "cv": true,
+    "pixel": "#56B9FF"
+   }
+  },
+  {
+   "name": "1280 검색 1 열림: 입력 비어 있음·placeholder·선택 없음",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "ph": "종목명 또는 종목코드 검색",
+    "sel": "",
+    "pk": "종목을 검색해 선택하세요."
+   }
+  },
+  {
+   "name": "1280 검색 2 입력 즉시 후보 표시",
+   "pass": true,
+   "detail": [
+    "TIGER 엔비디아미국채커버드콜밸런스(합성) · 0000D0",
+    "TIGER 미국배당다우존스타겟데일리커버드콜 · 0008S0",
+    "TIGER 미국초단기(3개월이하)국채 · 0046A0",
+    "TIGER 코리아배당다우존스 · 0052D0"
+   ]
+  },
+  {
+   "name": "1280 검색 3 선택: 입력 밖에 종목 정보 표시·입력은 비움",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "sel": "0000D0",
+    "pk": "선택한 종목\nTIGER 엔비디아미국채커버드콜밸런스(합성)\n0000D0",
+    "pkc": "uat-picked",
+    "res": true
+   }
+  },
+  {
+   "name": "1280 검색 4 다시 탭: 지우기 없이 새 검색 (기존 선택 유지)",
+   "pass": true,
+   "detail": {
+    "st3": {
+     "v": "",
+     "res": true,
+     "sel": "0000D0"
+    },
+    "hits": [
+     "0004G0"
+    ]
+   }
+  },
+  {
+   "name": "1280 최초매수 = 전체 194종",
+   "pass": true,
+   "detail": {
+    "initial_buy": 194,
+    "add_buy": 1,
+    "reinvest": 1,
+    "sell": 1
+   }
+  },
+  {
+   "name": "1280 추가매수/재투자/매도 = 이 계좌(k1) 보유종목만",
+   "pass": true,
+   "detail": {
+    "held": [
+     "329200"
+    ],
+    "opts": {
+     "add_buy": [
+      "329200"
+     ],
+     "reinvest": [
+      "329200"
+     ],
+     "sell": [
+      "329200"
+     ]
+    }
+   }
+  },
+  {
+   "name": "1280 종목 미선택 저장 차단 (원장 불변)",
+   "pass": true,
+   "detail": {
+    "before": 8,
+    "after": 8
+   }
+  },
+  {
+   "name": "1440 [normal] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "1440 [normal] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "1440 [normal] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "1440 [normal] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "1440 [normal] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "1440 [normal] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "1440 [autodark_proxy] 도넛 조각 화소 = 승인 HEX (허용 ±8)",
+   "pass": true,
+   "detail": [
+    [
+     "#FFC83D",
+     "#FFC83D"
+    ],
+    [
+     "#56B9FF",
+     "#56B9FF"
+    ],
+    [
+     "#46E5AC",
+     "#46E5AC"
+    ],
+    [
+     "#FF83AC",
+     "#FF83AC"
+    ]
+   ]
+  },
+  {
+   "name": "1440 [autodark_proxy] 도넛 색 순서 = 승인 8색",
+   "pass": true,
+   "detail": [
+    "#FFC83D",
+    "#56B9FF",
+    "#46E5AC",
+    "#FF83AC"
+   ]
+  },
+  {
+   "name": "1440 [autodark_proxy] 가장 큰 조각 밝음 (휘도≥0.45)",
+   "pass": true,
+   "detail": {
+    "big": {
+     "hex": "#FFC83D",
+     "pixel": "#FFC83D",
+     "diff": 0,
+     "share": 0.392
+    },
+    "lum": 0.629
+   }
+  },
+  {
+   "name": "1440 [autodark_proxy] 월별 막대 화소 = 계산 HEX (허용 ±8)",
+   "pass": true,
+   "detail": 12
+  },
+  {
+   "name": "1440 [autodark_proxy] color-scheme only dark 선언 (meta+CSS)",
+   "pass": true,
+   "detail": {
+    "meta": "only dark",
+    "cs": "dark only"
+   }
+  },
+  {
+   "name": "1440 [autodark_proxy] canvas 덧칠: 막대·상태점·계좌 아이콘 전부, 도넛 1:1",
+   "pass": true,
+   "detail": {
+    "bar_page": {
+     "targets": 22,
+     "painted": 22
+    },
+    "donut": {
+     "donut": 1,
+     "svg": 1,
+     "on": 1
+    }
+   }
+  },
+  {
+   "name": "1440 저장 버튼 #56B9FF·글자 #081521·canvas 덧칠·화소 일치",
+   "pass": true,
+   "detail": {
+    "c": "rgb(86, 185, 255)",
+    "t": "rgb(8, 21, 33)",
+    "cv": true,
+    "pixel": "#56B9FF"
+   }
+  },
+  {
+   "name": "1440 검색 1 열림: 입력 비어 있음·placeholder·선택 없음",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "ph": "종목명 또는 종목코드 검색",
+    "sel": "",
+    "pk": "종목을 검색해 선택하세요."
+   }
+  },
+  {
+   "name": "1440 검색 2 입력 즉시 후보 표시",
+   "pass": true,
+   "detail": [
+    "TIGER 엔비디아미국채커버드콜밸런스(합성) · 0000D0",
+    "TIGER 미국배당다우존스타겟데일리커버드콜 · 0008S0",
+    "TIGER 미국초단기(3개월이하)국채 · 0046A0",
+    "TIGER 코리아배당다우존스 · 0052D0"
+   ]
+  },
+  {
+   "name": "1440 검색 3 선택: 입력 밖에 종목 정보 표시·입력은 비움",
+   "pass": true,
+   "detail": {
+    "v": "",
+    "sel": "0000D0",
+    "pk": "선택한 종목\nTIGER 엔비디아미국채커버드콜밸런스(합성)\n0000D0",
+    "pkc": "uat-picked",
+    "res": true
+   }
+  },
+  {
+   "name": "1440 검색 4 다시 탭: 지우기 없이 새 검색 (기존 선택 유지)",
+   "pass": true,
+   "detail": {
+    "st3": {
+     "v": "",
+     "res": true,
+     "sel": "0000D0"
+    },
+    "hits": [
+     "0004G0"
+    ]
+   }
+  },
+  {
+   "name": "1440 최초매수 = 전체 194종",
+   "pass": true,
+   "detail": {
+    "initial_buy": 194,
+    "add_buy": 1,
+    "reinvest": 1,
+    "sell": 1
+   }
+  },
+  {
+   "name": "1440 추가매수/재투자/매도 = 이 계좌(k1) 보유종목만",
+   "pass": true,
+   "detail": {
+    "held": [
+     "329200"
+    ],
+    "opts": {
+     "add_buy": [
+      "329200"
+     ],
+     "reinvest": [
+      "329200"
+     ],
+     "sell": [
+      "329200"
+     ]
+    }
+   }
+  },
+  {
+   "name": "1440 종목 미선택 저장 차단 (원장 불변)",
+   "pass": true,
+   "detail": {
+    "before": 8,
+    "after": 8
+   }
+  },
+  {
+   "name": "강제 새로고침 후 SW 캐시 dnmuat194-acct-uat-v53r-1",
+   "pass": true,
+   "detail": [
+    "dnmuat194-acct-uat-v53r-1"
+   ]
+  }
+ ]
+}

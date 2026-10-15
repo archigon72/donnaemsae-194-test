@@ -1,0 +1,22 @@
+PASS man 7000→0.7만 "0.7만"
+PASS man 35978→3.5만 floor "3.5만"
+PASS man 999→999원
+PASS man 1000→0.1만
+PASS won floor 35978.67
+PASS exact floor "35,978원"
+PASS exactPS keeps decimals
+PASS AL 카카오(일반)
+PASS AL 카카오(ISA)
+PASS AL 카카오(연금저축)
+PASS AL 키움(IRP)
+PASS AL dedupe 키움 IRP "키움(IRP)"
+PASS AL dedupe 카카오 ISA
+PASS AL dedupe [ISA]카카오 "카카오(ISA)"
+PASS AL already paren
+PASS AL missing type
+PASS AL name==type
+PASS calendar sold-out k1: no ex after sell date (q=0) {"after":[],"before":5}
+PASS calendar k1 kept ex while held
+PASS calendar holding k2 has ex for 0004G0 {"n":35}
+PASS all ex qty>0 {"bad":0}
+ALL PASS 21
