@@ -11,7 +11,7 @@ ap=argparse.ArgumentParser();ap.add_argument('--site',required=True);ap.add_argu
 A=ap.parse_args();S=os.path.abspath(A.site);R=os.path.abspath(A.release);KST=datetime.timezone(datetime.timedelta(hours=9))
 sha=lambda b:hashlib.sha256(b).hexdigest();J=lambda p:json.load(open(p));OUT={'release':os.path.basename(R),'site':S}
 def stop(code,msg,**k):OUT.update(result=code,reason=msg,**k);print(json.dumps(OUT,ensure_ascii=False,indent=1));sys.exit(0 if code in('APPLIED','NO_CHANGE','DRY_RUN_OK') else 2)
-man=J(f'{R}/manifest.json');bad=[p for p,h in man['files'].items() if sha(open(f'{R}/{p}','rb').read())!=h]
+man=J(f'{R}/manifest.json');bad=[p for p,h in man['files'].items() if not os.path.isfile(f'{R}/{p}') or sha(open(f'{R}/{p}','rb').read())!=h]   # t174: 누락 파일도 차단(예외 종료 대신 BLOCKED)
 if bad:stop('BLOCKED','release 해시 불일치',files=bad[:5])
 if man.get('source_state')=='collection_error':stop('BLOCKED','수집 오류 release')
 codes=sorted(f[:-5] for f in os.listdir(f'{S}/inputs') if f.endswith('.json'))
