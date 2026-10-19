@@ -20,7 +20,7 @@ window.ComparisonRender = (result, items, basis = 'tr') => {
   $('comparison-chart').replaceChildren(svg);
   $('comparison-legend').replaceChildren();$('comparison-table').replaceChildren();
   items.forEach((item,i)=>{
-    const li=document.createElement('li'),mark=document.createElement('i'),name=document.createElement('span');mark.style.background=colors[i];name.textContent=item.name+' · '+item.code+(item.kind==='reference'?' (참고시장 대표 ETF)':'');li.append(mark,name);$('comparison-legend').append(li);
+    const li=document.createElement('li'),mark=document.createElementNS(ns,'svg'),name=document.createElement('span');mark.setAttribute('class','lg-sw');mark.setAttribute('viewBox','0 0 22 8');mark.setAttribute('width','22');mark.setAttribute('height','8');mark.setAttribute('aria-hidden','true');{const ln=document.createElementNS(ns,'line');for(const [k,v] of Object.entries({x1:2,y1:4,x2:20,y2:4,stroke:colors[i],'stroke-width':3.2,'stroke-linecap':'round'}))ln.setAttribute(k,String(v));mark.append(ln);}/* U23: 선과 같은 colors[i]를 같은 SVG stroke로 */name.textContent=item.name+' · '+item.code+(item.kind==='reference'?' (참고시장 대표 ETF)':'');li.append(mark,name);$('comparison-legend').append(li);
     const row=document.createElement('tr'),label=document.createElement('th');label.scope='row';label.textContent=item.name;const code=document.createElement('small');code.textContent=item.code;label.append(code);row.append(label);
     for(const [key,suffix] of [['tr_return','%'],['difference_pp','%p']]){const td=document.createElement('td');td.textContent=Number(result.returns[i][key]).toFixed(2)+suffix;row.append(td);}$('comparison-table').append(row);
   });

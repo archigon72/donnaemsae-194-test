@@ -65,9 +65,15 @@ def monthly_stability(vm,bundle):
     months=[f'{i//12:04}-{i%12+1:02}' for i in range(ordinal-11,ordinal+1)]
     begin=date.fromisoformat(months[0]+'-01');end_text=end.isoformat()
     rows=bundle.get('distribution_rows')or[];manifest=bundle.get('manifest')or{}
-    totals={str(r.get('total')) for r in rows}
     excluded=sum(1 for o in (bundle.get('normalization_overrides')or[]) if o.get('action')=='exclude_from_calculation')
-    if not rows or totals!={str(len(rows)+excluded)}:return unavailable('distribution response completeness unverified')
+    # T06(2026-10-19): 원클릭 증분 병합본은 기존 행이 이전 응답의 total(예: 15)을, 새 행이 최신 응답 total(예: 16)을 가진다.
+    # 완전성 기준은 그대로(최신 FunETF 응답 total = 보유 행 수 + 제외 행). 최신 회차의 total로 확인하고, 이전 응답 total은 그 이하·정수여야 한다.
+    def _int(x):
+        try:return int(str(x))
+        except Exception:return None
+    tot=[_int(r.get('total')) for r in rows]
+    latest=_int(max(rows,key=lambda r:str(r.get('gijunYmd') or '')).get('total')) if rows else None
+    if not rows or latest is None or None in tot or latest!=len(rows)+excluded or max(tot)!=latest:return unavailable('distribution response completeness unverified')
     if manifest.get('source')!='FunETF' or (manifest.get('data_cutoff')or'')<end_text:return unavailable('source cutoff or identity unverified')
     nav=bundle.get('nav_rows')or[]
     if manifest.get('observations')!=len(nav):return unavailable('NAV acquisition incomplete')

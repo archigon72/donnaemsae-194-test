@@ -23,7 +23,7 @@ function distributionSection(v){
 function capitalSection(v,effectText){
  const available=Phase1.presentation(v).reinvestment_effect_pp;
  const interpretation=available===null||available===undefined?'선택기간 성과 비교 자료가 없습니다.':Number(available)<0?`분배금을 전액 재투자했다면, 전액 소진한 경우보다 선택기간 성과가 ${format(String(available).replace(/^-/,''),'%p')} 낮았습니다.`:`분배금을 전액 재투자했다면, 전액 소진한 경우보다 선택기간 성과가 ${effectText} 높았습니다.`;
- return `<div class="legend"><span class="nav-dot">Raw NAV · 분배금 전액 소진 가정</span><span class="tr-dot">NAV-TR · 세전 분배금 전액 재투자 가정</span></div>${detailInteractiveChart(v?.series,'lines')}<p class="definition capital-interpretation">${escapeHTML(interpretation)}</p>${v?.actual_period?`<p class="period-caption">${escapeHTML(v.actual_period.start+' ~ '+v.actual_period.end)}</p>`:''}`;
+ return `<div class="legend uat-sw-legend"><span class="nav-dot"><svg class="lg-sw" viewBox="0 0 22 8" width="22" height="8" aria-hidden="true"><line x1="2" y1="4" x2="20" y2="4" stroke="#60a5fa" stroke-width="3.2" stroke-linecap="round"/></svg>Raw NAV · 분배금 전액 소진 가정</span><span class="tr-dot"><svg class="lg-sw" viewBox="0 0 22 8" width="22" height="8" aria-hidden="true"><line x1="2" y1="4" x2="20" y2="4" stroke="#10b981" stroke-width="3.2" stroke-linecap="round"/></svg>NAV-TR · 세전 분배금 전액 재투자 가정</span></div>${detailInteractiveChart(v?.series,'lines')}<p class="definition capital-interpretation">${escapeHTML(interpretation)}</p>${v?.actual_period?`<p class="period-caption">${escapeHTML(v.actual_period.start+' ~ '+v.actual_period.end)}</p>`:''}`;
 }
 function detailInteractiveChart(rows,kind){
  if(!rows?.length)return '<p class="definition">데이터 없음</p>';
@@ -57,6 +57,10 @@ function showDetailTooltip(event){
  tip.textContent=container.dataset.chartKind==='bars'?`${r.date_label?r.date_label+' · ':''}1주당 분배금 ${format(r.amount,'원')}`:`${r.date} · Raw NAV 지수 ${format(r.raw_index)} · NAV-TR 지수 ${format(r.tr_index)}`;
  tip.hidden=false;tip.dataset.index=String(index);
  const line=svg.querySelector('.chart-crosshair'),L=Number(container.dataset.plotLeft),R=Number(container.dataset.plotRight),px=rows.length===1?(L+R)/2:L+(R-L)*index/(rows.length-1);line.setAttribute('x1',px);line.setAttribute('x2',px);line.setAttribute('visibility','visible');
+ // U24: 선택 막대만 굵은 어두운 윤곽(3px) + 바깥 얇은 밝은 테. 다른 막대 선택 시 이전 표시 제거(잔상 없음). 막대 높이·색·값 불변.
+ if(container.dataset.chartKind==='bars'){svg.querySelectorAll('.chart-bar.is-selected').forEach(b=>{b.classList.remove('is-selected');b.removeAttribute('aria-pressed')});svg.querySelector('.chart-bar-ring')?.remove();
+  const bar=svg.querySelector('.chart-bar[data-chart-index="'+index+'"]');if(bar){bar.classList.add('is-selected');bar.setAttribute('aria-pressed','true');const x=+bar.getAttribute('x'),y=+bar.getAttribute('y'),w=+bar.getAttribute('width'),h=+bar.getAttribute('height'),ring=document.createElementNS('http://www.w3.org/2000/svg','rect');
+   for(const [k,v] of Object.entries({class:'chart-bar-ring',x:x-3.5,y:y-3.5,width:w+7,height:h+7,rx:5,fill:'none',stroke:'#e5edf7','stroke-width':1.5,'pointer-events':'none'}))ring.setAttribute(k,String(v));bar.after(ring);}}
 }
 let historyOpener=null;
 // U20: 원천 payDt 미제공 회차는 승인 정책(기준일 +3 KRX 영업일)으로 이미 계산·보관된 data/management-distributions.json의 추정 지급일만 '(추정)'으로 표시. 원천 없는 날짜를 새로 만들지 않음.
