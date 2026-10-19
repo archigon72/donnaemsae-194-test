@@ -7,7 +7,7 @@ const read=(key,fallback)=>{try{return JSON.parse(sessionStorage.getItem(prefix+
 const write=(key,value)=>{try{sessionStorage.setItem(prefix+key,JSON.stringify(value))}catch{}};
 const code=v=>/^[0-9A-Z]{6}$/.test(v||'')?v:null;
 const brand='<a href="index.html" class="lab-brand"><b>돈냄새연구소</b><small>정밀하게 분석하고, 천천히 키운다.</small></a>';
-function nav(active,cls){const home=document.body.dataset.portalService==='management'?'asset-hub.html':'analysis.html';return '<nav class="'+cls+'" aria-label="공통 내비게이션">'+[['home',home,'홈'],['analysis','analysis.html','분석'],['management','asset-hub.html','관리']].map(([id,href,label])=>'<a href="'+href+'" '+(id===active?'class="active" aria-current="page"':'')+'>'+label+'</a>').join('')+'</nav>'}
+function nav(active,cls){const home=document.body.dataset.portalService==='management'?'asset-home.html':'analysis.html';return '<nav class="'+cls+'" aria-label="공통 내비게이션">'+[['home',home,'홈'],['analysis','analysis.html','분석'],['management','asset-hub.html','관리']].map(([id,href,label])=>'<a href="'+href+'" '+(id===active?'class="active" aria-current="page"':'')+'>'+label+'</a>').join('')+'</nav>'}
 window.ProductShell={read,write,code,brand,nav,detail:c=>'detail.html?code='+encodeURIComponent(code(c)||'498400')};
 window.addEventListener('pagehide',()=>write('scroll:'+location.pathname+location.search,scrollY));
 window.addEventListener('pageshow',e=>{if(e.persisted)return;const y=read('scroll:'+location.pathname+location.search,0);if(!y)return;let n=0;const t=setInterval(()=>{if(document.documentElement.scrollHeight>y+innerHeight||++n>30){clearInterval(t);scrollTo(0,y)}},100)});

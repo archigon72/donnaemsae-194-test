@@ -19,3 +19,12 @@ body.mu .mu-danger summary small{font-size:13px;line-height:1.55;color:#EADBB4!i
 html body .fd .fd-msel{border:1.5px solid #3E5C70!important;border-left-width:1.5px!important;color:#F2F6F8!important}
 html body .fd .fd-msel .fd-item .nm,html body .fd .fd-msel .fd-item .amt{color:#F2F6F8!important}
 html body .fd .fd-msel .fd-row>b{color:#56B9FF}
+/* t171 U02: 홈 투자성적 CTA 자리 → 같은 너비 카드 2개 / 배당이 키운 자산·내 투자금 하단 계좌·거래 관리 버튼 (링크만) */
+.mu-hero .mu-u02{margin-top:14px;position:relative;z-index:1}
+.mu-u02 .mu-next-btn{min-width:0;align-items:center;padding:10px 8px;border:1px solid #3E5C70;background:#132433}
+.mu-u02 .mu-next-btn b{font-size:13.5px;line-height:1.25;color:#F2F6F8}
+.mu-u02 .mu-next-btn small{font-size:11px}
+.mu-u02-sub{margin:12px 0}
+.mu-u02-ledgerbar{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;box-sizing:border-box;min-height:52px;margin:16px 0 8px;padding:12px 14px;border-radius:12px;border:1px solid #3E5C70;background:#132433;color:#F2F6F8;font-weight:700;font-size:15px;text-decoration:none}
+.mu-u02-ledgerbar img,.mu-u02-ledgerbar svg{width:22px;height:22px}
+.mu-u02-ledgerbar .mu-chev{margin-left:auto}

@@ -1,6 +1,6 @@
 """oneclick PASS release → 테스트 사이트 반영 (GrokBot, 1차 구축). 수동 실행 전용.
 대상(한 번에 전부 또는 전무): data/<194>.json, data/catalog.json, inputs/<194>.json, data/runtime-manifest.json(snapshot·inputs sha),
-data/management-distributions.json, data/prices.json(새 NAV 종가가 더 최신인 종목만), data/update-record.json(이전 커밋·release 기록).
+references/<4>.json(참고시장, 같은 snapshot), data/management-distributions.json, data/prices.json(새 NAV 종가가 더 최신인 종목만), data/update-record.json(이전 커밋·release 기록).
 auto-test/latest.json 등 auto-test/ 는 건드리지 않음. CORE·세금·원장·화면 파일 불변.
 게이트: ① release 해시 검증 ② source_state≠collection_error ③ 종목별 diff 게이트(기존 NAV·분배 행 불변, 새 행은 기존 최신일 이후만,
        승인 메타 값 불변, 기준일 역행 없음) ④ 스테이징 트리에서 pipeline/validate_json.py FAIL 0.
@@ -40,6 +40,20 @@ for c in codes:
     if v:viol.append({'code':c,'v':v})
     if newrows.get(c) or newrows.get(c+'#div') or added:chg[c]=1
 if viol:stop('BLOCKED','diff 게이트 위반',violations=viol[:10],n=len(viol))
+# T02(2026-10-19): 참고시장 4종도 같은 release(snapshot) 로 함께 반영. 없으면 화면 비교가 Snapshot mismatch → 차단
+REFC=sorted(f[:-5] for f in os.listdir(f'{S}/references') if f.endswith('.json'))
+if not os.path.isdir(f'{R}/references') or sorted(f[:-5] for f in os.listdir(f'{R}/references'))!=REFC:stop('BLOCKED','release 에 참고시장 4종 없음/구성 다름 → 비교 snapshot 불일치 발생')
+rviol=[]
+for c in REFC:
+    o=J(f'{S}/references/{c}.json');n=J(f'{R}/references/{c}.json');v=[]
+    if n['meta'].get('snapshot_id')!=RID:v.append('snapshot')
+    for key in('nav_rows','distribution_rows'):
+        on,nn=o.get(key,[]),n.get(key,[])
+        if len(nn)<len(on) or nn[len(nn)-len(on):]!=on:v.append(key+': 기존 행 변경/삭제')
+    if n['meta'].get('data_cutoff','')<o['meta'].get('data_cutoff',''):v.append('기준일 역행')
+    if n.get('reference_identity')!=o.get('reference_identity'):v.append('identity 변경')
+    if v:rviol.append({'code':c,'v':v})
+if rviol:stop('BLOCKED','참고시장 diff 게이트 위반',violations=rviol)
 OUT['changed_codes']=len(chg);OUT['nav_rows_added']=sum(x for k,x in newrows.items() if '#' not in k);OUT['div_rows_added']=sum(x for k,x in newrows.items() if '#' in k)
 OUT['meta_filled_codes']=len(metachg);OUT['cutoff_max']=max(J(f'{R}/inputs/{c}.json')['meta']['data_cutoff'] for c in codes)
 if not chg:stop('NO_CHANGE','새 행 0 · 메타 변경 0 — 반영할 내용 없음(업데이트 성공 아님)')
@@ -50,8 +64,10 @@ for c in codes:
     W[f'data/{c}.json']=open(f'{R}/data/{c}.json','rb').read();W[f'inputs/{c}.json']=open(f'{R}/inputs/{c}.json','rb').read()
 W['data/catalog.json']=open(f'{R}/data/catalog.json','rb').read()
 W['data/management-distributions.json']=open(f'{R}/aux/management-distributions.json','rb').read()
+for c in REFC:W[f'references/{c}.json']=open(f'{R}/references/{c}.json','rb').read()
 rm=J(f'{S}/data/runtime-manifest.json');rm['snapshot']=cat['snapshot']
 for c in codes:rm['files'][f'inputs/{c}.json']=sha(W[f'inputs/{c}.json'])
+for c in REFC:rm['files'][f'references/{c}.json']=sha(W[f'references/{c}.json'])
 W['data/runtime-manifest.json']=json.dumps(rm,indent=2).encode()
 pr=J(f'{S}/data/prices.json');pupd=[]
 for it in pr['items']:
@@ -59,8 +75,8 @@ for it in pr['items']:
     if r.get('clsp') not in EMPTY and td>(it.get('trade_date') or ''):
         it.update(price=str(int(round(float(r['clsp'])))),trade_date=td,as_of=None,market_status='closed',price_type='close',fetched_at=man.get('created_kst'),source='FUNETF_ETFNAV_CLSP_ONECLICK_'+RID);pupd.append(it['code'])
 W['data/prices.json']=json.dumps(pr,ensure_ascii=False,separators=(',',':')).encode();OUT['prices_updated']=len(pupd)
+os.makedirs(f'{ST}/references')
 for p,b in W.items():open(f'{ST}/{p}','wb').write(b)
-for f in('references',):shutil.copytree(f'{S}/{f}',f'{ST}/{f}')
 vp=subprocess.run([sys.executable,f'{ST}/pipeline/validate_json.py',ST],capture_output=True,text=True)
 try:vj=json.loads(vp.stdout);vf=vj['counts'].get('FAIL',0)
 except Exception:vf=-1;vj={'raw':vp.stdout[-300:]+vp.stderr[-300:]}

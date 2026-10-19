@@ -54,10 +54,25 @@ for i in D['items']:
   if i.get('cashflow_included')!=False and i['status'] in('confirmed','estimated'):by[i['code']].append(i)
 codes=[x['ticker'] for x in json.load(open(os.path.join(ROOT,'data/catalog.json')))['items']]
 y1=d(CUT).replace(year=d(CUT).year-1).isoformat();out={}
+# T03(2026-10-19 확정): 월배당 판정 1순위 = FunETF 상품 페이지 '월말배당'/'월중배당' 태그(fd_tags.py 수집본), 태그 없거나 불명확 → 최근 실제 배당락이 연속 월·간격 25~40일.
+# 충돌(태그 월배당인데 간격 불일치)은 태그 우선 + monthly_conflict 기록. 상장 후 90일 예외 없음. 예상 주당 = 최근 min(3, 양(+) 회차 수) 평균, 0원 회차 제외, 0회면 금액 미정.
+TAGP=os.path.join(UAT,'tools','fd-monthly-tags.json');TAGS=json.load(open(TAGP))['items'] if os.path.exists(TAGP) else {}
+def interval_monthly(ev):
+  e=[i for i in ev if Fraction(i['per_share'])>0][-3:]
+  if len(e)<2:return None
+  for a_,b_ in zip(e,e[1:]):
+    x,y=d(a_['ex_date']),d(b_['ex_date']);mg=(y.year-x.year)*12+y.month-x.month;gap=(y-x).days
+    if mg!=1 or not 25<=gap<=40:return False
+  return True
 for c in codes:
   ev=sorted(by.get(c,[]),key=lambda i:i['ex_date'])
   n=len([i for i in ev if y1<i['ex_date']<=CUT])
   cad='weekly' if n>=40 else 'monthly' if n>=10 else 'quarterly' if n>=3 else 'semi/annual' if n>=1 else 'none/irregular'
+  tg=TAGS.get(c) or {};tag=tg.get('monthly_tag') if tg.get('status')=='ok' else None;iv=interval_monthly(ev);basis_m=None
+  if cad not in('weekly','none/irregular'):
+    if tag:basis_m='funetf_tag:'+tag
+    elif iv:basis_m='interval_25_40d'
+    if basis_m:cad='monthly'
   if not ev or cad=='none/irregular':out[c]={'cadence':'none/irregular','n12':n,'events':[],'reason':'분배 이력 없음' if not ev else '직전 12개월 분배 없음 → 주기 추정 불가'};continue
   step=1 if cad=='monthly' else max(1,min(12,round(12/n)))
   offs=[mend_offset(i['ex_date']) for i in ev[-3:]];cnt=collections.Counter(offs);top=max(cnt.values());k=[o for o in reversed(offs) if cnt[o]==top][0]
@@ -69,12 +84,16 @@ for c in codes:
     ex=ex_in_month(y,m,k);p=plus3(ex);E.append({'ex_date':ex,'pay_date':p,'cal':span_status(ex,p)})
   r={'cadence':cad,'n12':n,'step_months':step,'month_end_offset_bd':k,'last_ex':ev[-1]['ex_date'],'events':E}
   if cad=='monthly':
-    s=sum(Fraction(i['per_share']) for i in ev[-3:]);r.update(per_share_sum=str(s) if s.denominator==1 else str(decimal.Decimal(s.numerator)/decimal.Decimal(s.denominator)),per_share_n=3,basis=[i['distribution_id'] for i in ev[-3:]])
+    r['monthly_basis']=basis_m or 'n12>=10'
+    if tag and iv is False:r['monthly_conflict']='태그 월배당 · 최근 간격 불일치 → 태그 우선, 점검 대상'
+    pos=[i for i in ev if Fraction(i['per_share'])>0][-3:]
+    if pos:
+      s=sum(Fraction(i['per_share']) for i in pos);r.update(per_share_sum=str(s) if s.denominator==1 else str(decimal.Decimal(s.numerator)/decimal.Decimal(s.denominator)),per_share_n=len(pos),basis=[i['distribution_id'] for i in pos])
   out[c]=r
 cal={'schema':'dnmuat194-fd-calendar-v1','generated_by':'account-uat/tools/fd_gen.py','years':{str(y):{'status':v['status'],'source':v['source'],'holiday_count':len(v['holidays']),'holidays':v['holidays']} for y,v in sorted(years.items()) if y>=2024}}
 doc={'schema':'dnmuat194-fd-forecast-v2','data_cutoff':CUT,'horizon':{'ex_end':HORIZON_EX_END,'calendar_end':LAST,'ui_year_max':int(HORIZON_EX_END[:4])},
  'calendar_status':{str(y):v['status'] for y,v in sorted(years.items()) if y>=2024},
- 'rule':{'cadence':'직전 12개월 배당락 횟수: ≥40 weekly, ≥10 monthly, ≥3 quarterly, ≥1 semi/annual, 0 none','amount':'monthly: 최근 3회 주당 평균(옵션 C). 기타 금액 미정','ex_date':'마지막 실제 배당락월+주기, 월말 영업일 오프셋 최빈값','pay_date':'예상 배당락 다음날부터 3번째 KRX 영업일','cal':'official=지급일 산정 구간 전체가 공식 달력 연도 / estimated=추정 휴일 연도 포함 → 화면 추정 표시'},
+ 'rule':{'cadence':'직전 12개월 배당락 횟수: ≥40 weekly, ≥10 monthly, ≥3 quarterly, ≥1 semi/annual, 0 none','monthly':'1순위 FunETF 월말배당/월중배당 태그(tools/fd-monthly-tags.json) · 태그 없으면 최근 실제 배당락 연속 월·간격 25~40일 · 충돌 시 태그 우선(monthly_conflict) · 그 외 직전 12개월 ≥10회','amount':'monthly: 최근 min(3, 양(+) 회차 수) 주당 평균, 0원 제외, 0회면 금액 미정. 기타 금액 미정','ex_date':'마지막 실제 배당락월+주기, 월말 영업일 오프셋 최빈값','pay_date':'예상 배당락 다음날부터 3번째 KRX 영업일','cal':'official=지급일 산정 구간 전체가 공식 달력 연도 / estimated=추정 휴일 연도 포함 → 화면 추정 표시'},
  'self_check':{'estimated_pay_date_reproduced':len(est)-len(mis),'estimated_total':len(est),'mismatch':mis[:10]},'items':out}
 o=sys.argv[1] if len(sys.argv)>1 else UAT
 json.dump(cal,open(os.path.join(o,'fd-calendar.json'),'w'),ensure_ascii=False,separators=(',',':'));json.dump(doc,open(os.path.join(o,'fd-forecast.json'),'w'),ensure_ascii=False,separators=(',',':'))

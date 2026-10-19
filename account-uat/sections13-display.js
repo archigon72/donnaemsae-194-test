@@ -4,7 +4,7 @@ function distributionDateLabel(r){
  if(r.pay_date)return {axis:r.pay_date,detail:'지급일 '+r.pay_date};
  if(r.record_date)return {axis:r.record_date+' (기준)',detail:'분배 기준일 '+r.record_date};
  const field=detailVM?.distribution_date_field||'미제공';
- return {axis:(r.date||'—')+' (자료)',detail:'원자료 날짜 ('+field+') '+(r.date||'—')};
+ return {axis:(r.date||'—')+' (자료)',detail:''};
 }
 // Calendar coverage labels only; amounts and Core statistics are unchanged.
 function distributionCoverage(v){
@@ -54,16 +54,20 @@ function showDetailTooltip(event){
  let index=event.target.dataset.chartIndex;
  if(index===undefined){const px=(event.clientX-box.left)/box.width*760,L=Number(container.dataset.plotLeft),R=Number(container.dataset.plotRight);index=Math.max(0,Math.min(rows.length-1,Math.round((px-L)/(R-L)*Math.max(1,rows.length-1))));}
  index=Number(index);const r=rows[index],tip=container.querySelector('.detail-chart-tooltip');
- tip.textContent=container.dataset.chartKind==='bars'?`${r.date_label} · 1주당 분배금 ${format(r.amount,'원')}`:`${r.date} · Raw NAV 지수 ${format(r.raw_index)} · NAV-TR 지수 ${format(r.tr_index)}`;
+ tip.textContent=container.dataset.chartKind==='bars'?`${r.date_label?r.date_label+' · ':''}1주당 분배금 ${format(r.amount,'원')}`:`${r.date} · Raw NAV 지수 ${format(r.raw_index)} · NAV-TR 지수 ${format(r.tr_index)}`;
  tip.hidden=false;tip.dataset.index=String(index);
  const line=svg.querySelector('.chart-crosshair'),L=Number(container.dataset.plotLeft),R=Number(container.dataset.plotRight),px=rows.length===1?(L+R)/2:L+(R-L)*index/(rows.length-1);line.setAttribute('x1',px);line.setAttribute('x2',px);line.setAttribute('visibility','visible');
 }
 let historyOpener=null;
-function openDistributionHistory(button){
- const rows=Phase1.presentation(detailVM).distribution_history||[];
+// U20: 원천 payDt 미제공 회차는 승인 정책(기준일 +3 KRX 영업일)으로 이미 계산·보관된 data/management-distributions.json의 추정 지급일만 '(추정)'으로 표시. 원천 없는 날짜를 새로 만들지 않음.
+let estPayCache=null;
+function estPayDates(){if(!estPayCache)estPayCache=fetch('data/management-distributions.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{const m=new Map();for(const i of d?.items||[])if(i.pay_date_kind==='estimated'&&i.pay_date)m.set(i.code+'|'+i.ex_date,i.pay_date);return m}).catch(()=>{estPayCache=null;return new Map()});return estPayCache}
+async function openDistributionHistory(button){
+ const rows=Phase1.presentation(detailVM).distribution_history||[];const code=detailVM?.ticker||detailVM?.code||new URLSearchParams(location.search).get('code')||'';const est=rows.some(r=>!r.pay_date)?await estPayDates():new Map();
+ const payCell=r=>{if(r.pay_date)return escapeHTML(r.pay_date);const e=est.get(code+'|'+r.date);return e?escapeHTML(e)+' <small class="est-pay">(추정)</small>':'—'};const anyEst=rows.some(r=>!r.pay_date&&est.get(code+'|'+r.date));
  const old=document.getElementById('distribution-history-dialog');if(old)old.remove();historyOpener=button;
  const dialog=document.createElement('dialog');dialog.id='distribution-history-dialog';dialog.className='distribution-history-dialog';
- dialog.innerHTML=`<div class="history-title"><h2>전체기간 분배 이력</h2><button type="button" data-close-distribution-history aria-label="전체기간 이력 닫기">닫기 ×</button></div><div class="history-scroll"><table><thead><tr><th>지급일</th><th>기준 NAV</th><th>1주당 분배금</th><th>분배율</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${escapeHTML(r.pay_date||'—')}</td><td>${escapeHTML(format(r.nav,'원'))}</td><td>${escapeHTML(format(r.amount,'원'))}</td><td>${escapeHTML(format(r.ratio,'%'))}</td></tr>`).join('')||'<tr><td colspan="4">지급 이력 없음</td></tr>'}</tbody></table></div><p class="definition">NAV는 기존 계산에 사용한 분배 이벤트 날짜의 값이며, 분배율은 지급 건별 원자료 값입니다. 미제공 값은 —로 표시합니다.</p>`;
+ dialog.innerHTML=`<div class="history-title"><h2>전체기간 분배 이력</h2><button type="button" data-close-distribution-history aria-label="전체기간 이력 닫기">닫기 ×</button></div><div class="history-scroll"><table><thead><tr><th>지급일</th><th>기준 NAV</th><th>1주당 분배금</th><th>분배율</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${payCell(r)}</td><td>${escapeHTML(format(r.nav,'원'))}</td><td>${escapeHTML(format(r.amount,'원'))}</td><td>${escapeHTML(format(r.ratio,'%'))}</td></tr>`).join('')||'<tr><td colspan="4">지급 이력 없음</td></tr>'}</tbody></table></div><p class="definition">NAV는 기존 계산에 사용한 분배 이벤트 날짜의 값이며, 분배율은 지급 건별 원자료 값입니다. 미제공 값은 —로 표시합니다.${anyEst?' (추정) 지급일은 원천에 실제 지급일이 없어 분배 기준일 +3영업일로 계산한 예상일입니다.':''}</p>`;
  document.body.append(dialog);dialog.addEventListener('close',()=>{document.body.classList.remove('history-open');historyOpener?.focus();});dialog.showModal();document.body.classList.add('history-open');
 }
 document.addEventListener('pointermove',e=>{if(e.pointerType==='mouse')showDetailTooltip(e);});

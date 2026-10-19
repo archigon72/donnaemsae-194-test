@@ -1,5 +1,5 @@
 {
- "data_cutoff": "2026-10-08",
+ "data_cutoff": "2026-10-16",
  "mapping_status": "gijunYmd_ex_date_confirmed_v3",
  "note": "gijunYmd=ex-date; payDt present -> payment date. Missing payDt -> rights known, no cash. Pretax. | 2026-10-12: payDt 있으면 원본, 없으면 gijunYmd+3영업일 예상일 적용. 예상일도 status=confirmed로 자산관리 현금/재투자 반영. 원본 source_dates 보존.",
  "calendar": {
@@ -10,6 +10,7 @@
   "calendar_sha256_used": "102201445cf9e769a79a5f12a351bf8aa3b6823161379fde33377e62ad164b6e"
  },
  "status_semantics": "pay_date_kind=actual(FunETF payDt)|estimated(분배락일 다음날부터 3 KRX 영업일); status confirmed|estimated 모두 cashflow_included=true. 2026-10-14 final candidate",
+ "oneclick_note": "v5.3f 항목 원본 복사 + 원클릭 신규 회차만 동일 규칙으로 추가 (oneclick_added=true)",
  "items": [
   {
    "code": "0000D0",
@@ -82016,6 +82017,5 @@
    "pay_date_kind": "estimated",
    "cashflow_included": true
   }
- ],
- "oneclick_note": "v5.3f 항목 원본 복사 + 원클릭 신규 회차만 동일 규칙으로 추가 (oneclick_added=true)"
+ ]
 }

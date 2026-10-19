@@ -115,6 +115,18 @@ try:
         if info['status']=='ok': nb=merge(c,b,N,D,info);ok+=1
         else: nb=b;fail+=1
         wjson(f'{WORK}/inputs/{c}.json',nb)
+    # ---------- 1a 참고시장 4종(T02, 2026-10-19): 같은 수집·병합 규칙으로 동시 갱신 → 같은 snapshot_id. ID 문자열만 바꾸는 처리 금지 ----------
+    REFC=sorted(f[:-5] for f in os.listdir(f'{SITE}/references') if f.endswith('.json'));os.makedirs(f'{WORK}/references');LOG['collect_refs']={};REF_FAIL=[]
+    def prev_ref(c):
+        p=A.base_release and f'{A.base_release}/references/{c}.json'
+        return json.load(open(p if p and os.path.exists(p) else f'{SITE}/references/{c}.json'))
+    for c in REFC:
+        assert c not in codes,c
+        b=prev_ref(c);info,N,D,Z=collect(c,b);LOG['collect_refs'][c]=info
+        if info['status']=='ok': nb=merge(c,b,N,D,info)
+        else: nb=b;REF_FAIL.append(c)
+        wjson(f'{WORK}/references/{c}.json',nb)
+    step('collect_refs',refs=REFC,fail=REF_FAIL,cutoffs={c:v.get('new_cutoff') for c,v in LOG['collect_refs'].items()})
     st={}
     for v in LOG['collect'].values(): st[v.get('state',v['status'])]=st.get(v.get('state',v['status']),0)+1
     SRC_STATE='collection_error' if fail else ('unchanged_all' if st.get('no_change_normal',0)==len(codes) else ('partly_unchanged' if st.get('no_change_normal') else 'updated'))
@@ -219,6 +231,21 @@ try:
         b=json.load(open(f'{WORK}/inputs/329200.json'));d=json.loads(built['329200'])
         ov=[o for o in b.get('normalization_overrides',[]) if o.get('rule_id')=='329200-20240628-same-round-v1']
         qa('329200 override kept; 전체 not ERROR; raw rows >= 60',bool(ov) and d['periods']['전체'].get('status')!='ERROR' and len(b.get('distribution_rows_raw',[]))>=60,{'raw':len(b.get('distribution_rows_raw',[])),'calc':len(b['distribution_rows'])})
+    # T02 참고시장 정합성: 4/4 수집, 기준일=ETF 최신 기준일, 기존 행 불변, 실제 비교 실행(market_projection) 성공
+    maxcut=max(json.loads(built[c])['snapshot']['data_cutoff'] for c in codes)
+    qa('references: 4/4 collected',not REF_FAIL and len(REFC)==4,{'fail':REF_FAIL,'refs':REFC})
+    rcut={c:json.load(open(f'{WORK}/references/{c}.json'))['meta']['data_cutoff'] for c in REFC}
+    qa('references: cutoff == ETF max cutoff',all(v==maxcut for v in rcut.values()),{'refs':rcut,'etf_max':maxcut})
+    rmm={c:v['overlap_mismatch'] for c,v in LOG['collect_refs'].items() if v.get('overlap_mismatch')}
+    qa('references: overlap NAV identical (no silent rewrite)',not rmm,rmm)
+    try:
+        import market_projection as MP
+        ec='441640' if '441640' in codes else codes[0];eb=json.load(open(f'{WORK}/inputs/{ec}.json'));eb['meta']['snapshot_id']=RID;rb=[]
+        for c in REFC:
+            x=json.load(open(f'{WORK}/references/{c}.json'));x['meta']['snapshot_id']=RID;rb.append(x)
+        st_=f'{int(maxcut[:4])-1}{maxcut[4:]}';res=[MP.compare_market(eb,[r],st_,maxcut).get('status') for r in rb];mpok=all(x=='OK' for x in res)
+        qa('references: market_projection.compare_market runs (no Snapshot mismatch)',mpok,{'etf':ec,'status':res})
+    except Exception as e: qa('references: market_projection.compare_market runs (no Snapshot mismatch)',False,str(e)[:200])
     zero=[(c,r['gijunYmd']) for c,v in LOG['collect'].items() for r in json.load(open(f'{WORK}/inputs/{c}.json'))['distribution_rows'][:v.get('div_added',0)] if float(r.get('divAmt') or 0)<=0]
     qa('new distribution rows: no 0/negative amounts introduced',not zero,zero[:5])
     # existing approved validator (pipeline/validate_json.py) on the candidate release tree
@@ -251,6 +278,11 @@ try:
     files={}
     for c,s in built.items(): open(f'{TMP}/data/{c}.json','w').write(s);files[f'data/{c}.json']=sha(s.encode())
     cs=json.dumps(cat,ensure_ascii=False,separators=(',',':'));open(f'{TMP}/data/catalog.json','w').write(cs);files['data/catalog.json']=sha(cs.encode())
+    PDOC['data_cutoff']=max(man_c for man_c in (json.loads(built[c])['snapshot']['data_cutoff'] for c in codes))   # U18/T02: 분배금 원천도 같은 날 수집 → 자료 기준일 갱신(이전엔 고정)
+    os.makedirs(f'{TMP}/references')
+    for c in REFC:
+        b_=json.load(open(f'{WORK}/references/{c}.json'));b_['meta']['snapshot_id']=RID;s_=json.dumps(b_,ensure_ascii=False)
+        open(f'{TMP}/references/{c}.json','w').write(s_);files[f'references/{c}.json']=sha(s_.encode())
     os.makedirs(f'{TMP}/aux');ps_=json.dumps(PDOC,ensure_ascii=False,indent=1);open(f'{TMP}/aux/management-distributions.json','w').write(ps_);files['aux/management-distributions.json']=sha(ps_.encode())
     man={'release_id':RID,'created_kst':datetime.datetime.now(KST).isoformat(),'mode':A.mode,'asof':ASOF,'engine_hash':cat['snapshot']['engine_hash'],
          'cutoffs':{c:json.loads(built[c])['snapshot']['data_cutoff'] for c in codes},'collect_summary':st,'files':files,
