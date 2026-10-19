@@ -1,0 +1,150 @@
+name: test-site-daily-update (TEST 사이트 자동 갱신)
+# t176 · 대표 승인(t174ua4): archigon72/donnaemsae-194-test 전용. 기존 oneclick.py(수집→CORE→QA) + apply_release.py(게이트·원자 반영) 재사용.
+# 예약: 매일 01:17 UTC = 10:17 KST. 근거: FunETF T일 NAV 는 T일 21:33 KST 에도 미게시, T+1일 08:31 KST 에는 게시 확인(실측) → 1시간 46분 여유, 정각 회피.
+# 권한: 기본 contents:read. 쓰기(contents:write)는 apply job 에만. raw 원천은 러너 임시폴더에만(공개 안 함). auto-test/ 는 커밋하지 않음.
+# 새 행 0 이면 커밋 없음(NO_CHANGE). 게이트 위반·검증 실패는 반영 없이 실패 종료.
+on:
+  schedule:
+    - cron: '17 1 * * *'
+  workflow_dispatch:
+    inputs:
+      inject_error:
+        description: '시험용 수집/QA 오류 주입 (none = 정상)'
+        type: choice
+        options: [none, collect_fail_all, qa_fail, bad_input]
+        default: none
+      apply_block_test:
+        description: '시험: apply 직전 release 기존 NAV 행 변조(해시 재계산) → diff 게이트 차단 확인 (none = 정상)'
+        type: choice
+        options: [none, tamper_old_row_rehash]
+        default: none
+permissions:
+  contents: read
+concurrency:
+  group: test-site-data-update
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.repository == 'archigon72/donnaemsae-194-test' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+    outputs:
+      result: ${{ steps.oc.outputs.result }}
+      rid: ${{ steps.oc.outputs.rid }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: oneclick (FunETF 수집 → CORE → QA, 러너 안에서만 release 생성)
+        id: oc
+        run: |
+          set +e
+          SCN=$(python3 -c "import json;print(json.load(open('.github/oneclick/test_control.json')).get('scenario','none'))")
+          if [ "$SCN" != "none" ]; then echo "::error::test_control.json scenario=$SCN (none 이어야 함)"; echo "result=BLOCKED_TEST_CONTROL" >> $GITHUB_OUTPUT; exit 1; fi
+          INJ="${{ inputs.inject_error }}"; [ -z "$INJ" ] && INJ=none
+          ARGS="--site . --raw-dir $RUNNER_TEMP/raw --mode live"
+          [ "$INJ" != "none" ] && ARGS="$ARGS --inject-error $INJ"
+          python3 .github/oneclick/oneclick.py $ARGS > $RUNNER_TEMP/oc.log 2>&1; echo "oneclick exit=$?"
+          grep -E '^(STEP|PASS|FAIL|RESULT)' $RUNNER_TEMP/oc.log | cut -c1-240
+          R=$(grep '^RESULT' $RUNNER_TEMP/oc.log | awk '{print $2}'); RID=$(grep '^RESULT' $RUNNER_TEMP/oc.log | awk '{print $3}')
+          echo "result=${R:-NO_RESULT}" >> $GITHUB_OUTPUT; echo "rid=$RID" >> $GITHUB_OUTPUT
+          echo "build result=${R:-NO_RESULT} rid=$RID"
+      - name: package release (PASS 일 때만)
+        if: startsWith(steps.oc.outputs.result, 'PASS_PROMOTED')
+        run: |
+          RID="${{ steps.oc.outputs.rid }}"
+          test -f "auto-test/releases/$RID/manifest.json"
+          tar -C auto-test/releases -czf $RUNNER_TEMP/release.tgz "$RID"
+          ls -l $RUNNER_TEMP/release.tgz
+      - uses: actions/upload-artifact@v4
+        if: startsWith(steps.oc.outputs.result, 'PASS_PROMOTED')
+        with:
+          name: release
+          path: ${{ runner.temp }}/release.tgz
+          retention-days: 2
+      - name: build gate
+        run: |
+          R="${{ steps.oc.outputs.result }}"
+          case "$R" in PASS_PROMOTED|PASS_PROMOTED_WITH_REUSE) echo "build PASS: $R";; *) echo "::error title=build::$R — 반영 안 함"; exit 1;; esac
+  apply:
+    needs: build
+    if: startsWith(needs.build.outputs.result, 'PASS_PROMOTED')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q holidays==0.106
+      - uses: actions/download-artifact@v4
+        with:
+          name: release
+          path: ${{ runner.temp }}/dl
+      - name: extract release
+        run: |
+          mkdir -p $RUNNER_TEMP/rel && tar -C $RUNNER_TEMP/rel -xzf $RUNNER_TEMP/dl/release.tgz
+          test -f "$RUNNER_TEMP/rel/${{ needs.build.outputs.rid }}/manifest.json"
+      - name: 시험 변조 (apply_block_test 지정 시에만)
+        if: inputs.apply_block_test == 'tamper_old_row_rehash'
+        run: |
+          python3 - "$RUNNER_TEMP/rel/${{ needs.build.outputs.rid }}" <<'PY'
+          import json,sys,hashlib
+          R=sys.argv[1];p='inputs/441640.json';d=json.load(open(f'{R}/{p}'))
+          d['nav_rows'][-1]['fp']=str(float(d['nav_rows'][-1]['fp'])+1)   # 가장 오래된 기존 NAV 행 변조
+          b=json.dumps(d,ensure_ascii=False).encode();open(f'{R}/{p}','wb').write(b)
+          m=json.load(open(f'{R}/manifest.json'));m['files'][p]=hashlib.sha256(b).hexdigest();json.dump(m,open(f'{R}/manifest.json','w'),ensure_ascii=False,indent=1)
+          print('tampered',p,'(hash recomputed)')
+          PY
+      - name: apply_release (게이트 → 원자 반영)
+        id: ap
+        run: |
+          set +e
+          sha256sum auto-test/latest.json
+          python3 .github/oneclick/apply_release.py --site . --release "$RUNNER_TEMP/rel/${{ needs.build.outputs.rid }}" > $RUNNER_TEMP/apply.json; RC=$?
+          cat $RUNNER_TEMP/apply.json
+          AR=$(python3 -c "import json;print(json.load(open('$RUNNER_TEMP/apply.json'))['result'])" 2>/dev/null)
+          echo "apply exit=$RC result=$AR"
+          echo "result=${AR:-ERROR}" >> $GITHUB_OUTPUT
+          echo "### apply: ${AR:-ERROR} (exit $RC)" >> $GITHUB_STEP_SUMMARY
+          if [ "$AR" = "APPLIED" ] || [ "$AR" = "NO_CHANGE" ]; then exit 0; fi
+          git checkout -- . ; echo "::error title=apply::${AR:-ERROR} — 반영 차단, 사이트 변경 없음"; exit 1
+      - name: 미래배당 예상 재계산 + 반영 범위/검증 가드
+        if: steps.ap.outputs.result == 'APPLIED'
+        run: |
+          python3 account-uat/tools/fd_gen.py
+          python3 - <<'PY'
+          import json
+          f=json.load(open('account-uat/fd-forecast.json'));d=json.load(open('data/management-distributions.json'))
+          assert f['data_cutoff']==d['data_cutoff'],(f['data_cutoff'],d['data_cutoff'])
+          print('fd-forecast cutoff OK',f['data_cutoff'])
+          PY
+          V=$(python3 pipeline/validate_json.py . | python3 -c "import json,sys;c=json.load(sys.stdin)['counts'];print(c.get('FAIL',0))")
+          echo "site validate FAIL=$V"; [ "$V" = "0" ] || { echo "::error::site validate FAIL=$V"; exit 1; }
+          git add -A
+          BAD=$(git diff --cached --name-only | grep -vE '^(data/[0-9A-Z]{6}\.json|inputs/[0-9A-Z]{6}\.json|references/[0-9A-Z]{6}\.json|data/(catalog|runtime-manifest|prices|management-distributions|update-record)\.json|account-uat/fd-(forecast|calendar)\.json)$' || true)
+          if [ -n "$BAD" ]; then echo "::error::허용 범위 밖 변경: $BAD"; exit 1; fi
+          git diff --cached --stat | tail -1
+      - name: commit & push (APPLIED 일 때만, 일반 push)
+        if: steps.ap.outputs.result == 'APPLIED'
+        run: |
+          git config user.name "test-site-bot"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          RID="${{ needs.build.outputs.rid }}"
+          git commit -q -m "test-data: ${RID} 자동 반영 (run ${{ github.run_id }}, ${{ github.event_name }})"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && { echo "pushed $(git rev-parse --short HEAD)"; echo "- commit: $(git rev-parse HEAD)" >> $GITHUB_STEP_SUMMARY; exit 0; }; sleep 7; done
+          echo "::error::push 실패"; exit 1
+      - name: no-change
+        if: steps.ap.outputs.result == 'NO_CHANGE'
+        run: |
+          test -z "$(git status --porcelain)" && echo "NO_CHANGE — 커밋 없음" && echo "- NO_CHANGE: 커밋 없음" >> $GITHUB_STEP_SUMMARY
