@@ -5,7 +5,7 @@
     const service = document.body.dataset.portalService;
     const analysisFlow = service === 'analysis' || service === 'terms';
     const home = service === 'management'
-      ? 'asset-home.html'
+      ? 'asset-hub.html'
       : service === 'terms' ? 'terms.html'
       : service === 'output' ? 'output.html' : 'analysis.html';
     const bar = document.createElement('div');
