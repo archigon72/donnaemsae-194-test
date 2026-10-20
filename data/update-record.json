@@ -1,13 +1,13 @@
 {
- "release_id": "auto-20261019-182622-live",
- "applied_kst": "2026-10-19T18:27:54.857626+09:00",
- "previous_commit": "c0b7f4774ff40de869f92150d81bc718bb2f4a4a",
+ "release_id": "auto-20261020-104939-live",
+ "applied_kst": "2026-10-20T10:51:37.737686+09:00",
+ "previous_commit": "8dc1df02a7efe616cf8528c4e776b9baa1c4cf93",
  "revert_hint": "git revert <이 반영 커밋> (force push 금지)",
  "changed_codes": 194,
  "nav_rows_added": 194,
  "div_rows_added": 0,
  "meta_filled_codes": 0,
  "prices_updated": 194,
- "cutoff_max": "2026-10-16",
+ "cutoff_max": "2026-10-19",
  "source_state": "updated"
 }
