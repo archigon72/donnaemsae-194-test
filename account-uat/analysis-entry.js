@@ -42,7 +42,7 @@
   reset();
   fetch('data/catalog.json').then(response => { if (!response.ok) throw Error('catalog'); return response.json(); }).then(data => {
     if (!Array.isArray(data.items) || !data.items.every(row => typeof row.ticker === 'string' && typeof row.name === 'string')) throw Error('catalog format');
-    catalog = data.items; update();
+    catalog = data.items; document.querySelectorAll('[data-etf-count]').forEach(el => { el.textContent = String(catalog.length); }); update();
   }).catch(() => { failed = true; update(); });
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('uat-sw.js').catch(() => {});
 })();
