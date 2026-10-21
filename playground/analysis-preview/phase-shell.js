@@ -1,7 +1,7 @@
 'use strict';
 // Navigation/selector wiring for approved Shell. Deferred modules stay placeholders.
 document.addEventListener('DOMContentLoaded',()=>{
- const deferred=new Set(['holdings.html','compare.html','mobile-holdings.html']);
+ const deferred=new Set(['holdings.html','mobile-holdings.html']) /* t251: compare.html 실제 운영 중 → 비활성 해제 */;
  document.querySelectorAll('a[href]').forEach(a=>{
   const href=a.getAttribute('href'),file=href?.split('?')[0];
   if(!deferred.has(file))return;
