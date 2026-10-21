@@ -20,14 +20,26 @@
       const nav = document.createElement('nav');
       nav.className = 'service-bottom';
       nav.setAttribute('aria-label', '공통 내비게이션');
-      [['home', 'analysis.html', '홈'], ['analysis', 'analysis.html', '분석'], ['management', 'asset-hub.html', '관리']].forEach(function ([id, href, label]) {
+      [['home', 'analysis.html', '홈'], ['analysis', 'analysis.html', '분석'], ['management', 'asset-hub.html', '관리'], ['playground', 'playground/', '놀이터']].forEach(function ([id, href, label]) {
         const a = document.createElement('a'); a.href = href; a.textContent = label;
+        if (id === 'playground') a.className = 'nav-pg';
         if (id === 'analysis') { a.className = 'active'; a.setAttribute('aria-current', 'page'); }
         nav.append(a);
       });
       document.body.append(nav);
       document.body.classList.add('has-service-bottom');
     }
+    /* t241: 4번째 탭(놀이터) — 공통 하단 내비(.service-bottom, .lab-bottom/.mc-nav)에만 추가. 상단 lab-topnav 제외. */
+    if (!document.querySelector('link[data-nav4]')) { const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'nav4.css?v=n4-2'; l.setAttribute('data-nav4', '1'); document.head.append(l); }
+    function addPlayground() {
+      document.querySelectorAll('nav.service-bottom, nav.lab-bottom').forEach(function (nav) {
+        nav.querySelectorAll('a').forEach(function (a) { if (a.getAttribute('href') === 'playground/' && !a.classList.contains('nav-pg')) a.classList.add('nav-pg'); });
+        if (nav.querySelector('a.nav-pg')) return;
+        const a = document.createElement('a'); a.href = 'playground/'; a.className = 'nav-pg'; a.textContent = '놀이터'; nav.append(a);
+      });
+    }
+    addPlayground();
+    new MutationObserver(addPlayground).observe(document.body, {childList: true, subtree: true});
     function connect() {
       document.querySelectorAll('a[href]').forEach(function (a) {
         if (a.closest('.portal-return-bar')) return;

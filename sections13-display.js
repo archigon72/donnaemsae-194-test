@@ -4,7 +4,7 @@ function distributionDateLabel(r){
  if(r.pay_date)return {axis:r.pay_date,detail:'지급일 '+r.pay_date};
  if(r.record_date)return {axis:r.record_date+' (기준)',detail:'분배 기준일 '+r.record_date};
  const field=detailVM?.distribution_date_field||'미제공';
- return {axis:(r.date||'—')+' (자료)',detail:'원자료 날짜 ('+field+') '+(r.date||'—')};
+ return {axis:(r.date||'—')+' (자료)',detail:''};
 }
 // Calendar coverage labels only; amounts and Core statistics are unchanged.
 function distributionCoverage(v){
@@ -23,7 +23,7 @@ function distributionSection(v){
 function capitalSection(v,effectText){
  const available=Phase1.presentation(v).reinvestment_effect_pp;
  const interpretation=available===null||available===undefined?'선택기간 성과 비교 자료가 없습니다.':Number(available)<0?`분배금을 전액 재투자했다면, 전액 소진한 경우보다 선택기간 성과가 ${format(String(available).replace(/^-/,''),'%p')} 낮았습니다.`:`분배금을 전액 재투자했다면, 전액 소진한 경우보다 선택기간 성과가 ${effectText} 높았습니다.`;
- return `<div class="legend"><span class="nav-dot">Raw NAV · 분배금 전액 소진 가정</span><span class="tr-dot">NAV-TR · 세전 분배금 전액 재투자 가정</span></div>${detailInteractiveChart(v?.series,'lines')}<p class="definition capital-interpretation">${escapeHTML(interpretation)}</p>${v?.actual_period?`<p class="period-caption">${escapeHTML(v.actual_period.start+' ~ '+v.actual_period.end)}</p>`:''}`;
+ return `<div class="legend uat-sw-legend"><span class="nav-dot"><svg class="lg-sw" viewBox="0 0 22 8" width="22" height="8" aria-hidden="true"><line x1="2" y1="4" x2="20" y2="4" stroke="#60a5fa" stroke-width="3.2" stroke-linecap="round"/></svg>Raw NAV · 분배금 전액 소진 가정</span><span class="tr-dot"><svg class="lg-sw" viewBox="0 0 22 8" width="22" height="8" aria-hidden="true"><line x1="2" y1="4" x2="20" y2="4" stroke="#10b981" stroke-width="3.2" stroke-linecap="round"/></svg>NAV-TR · 세전 분배금 전액 재투자 가정</span></div>${detailInteractiveChart(v?.series,'lines')}<p class="definition capital-interpretation">${escapeHTML(interpretation)}</p>${v?.actual_period?`<p class="period-caption">${escapeHTML(v.actual_period.start+' ~ '+v.actual_period.end)}</p>`:''}`;
 }
 function detailInteractiveChart(rows,kind){
  if(!rows?.length)return '<p class="definition">데이터 없음</p>';
@@ -54,16 +54,24 @@ function showDetailTooltip(event){
  let index=event.target.dataset.chartIndex;
  if(index===undefined){const px=(event.clientX-box.left)/box.width*760,L=Number(container.dataset.plotLeft),R=Number(container.dataset.plotRight);index=Math.max(0,Math.min(rows.length-1,Math.round((px-L)/(R-L)*Math.max(1,rows.length-1))));}
  index=Number(index);const r=rows[index],tip=container.querySelector('.detail-chart-tooltip');
- tip.textContent=container.dataset.chartKind==='bars'?`${r.date_label} · 1주당 분배금 ${format(r.amount,'원')}`:`${r.date} · Raw NAV 지수 ${format(r.raw_index)} · NAV-TR 지수 ${format(r.tr_index)}`;
+ tip.textContent=container.dataset.chartKind==='bars'?`${r.date_label?r.date_label+' · ':''}1주당 분배금 ${format(r.amount,'원')}`:`${r.date} · Raw NAV 지수 ${format(r.raw_index)} · NAV-TR 지수 ${format(r.tr_index)}`;
  tip.hidden=false;tip.dataset.index=String(index);
  const line=svg.querySelector('.chart-crosshair'),L=Number(container.dataset.plotLeft),R=Number(container.dataset.plotRight),px=rows.length===1?(L+R)/2:L+(R-L)*index/(rows.length-1);line.setAttribute('x1',px);line.setAttribute('x2',px);line.setAttribute('visibility','visible');
+ // U24: 선택 막대만 굵은 어두운 윤곽(3px) + 바깥 얇은 밝은 테. 다른 막대 선택 시 이전 표시 제거(잔상 없음). 막대 높이·색·값 불변.
+ if(container.dataset.chartKind==='bars'){svg.querySelectorAll('.chart-bar.is-selected').forEach(b=>{b.classList.remove('is-selected');b.removeAttribute('aria-pressed')});svg.querySelector('.chart-bar-ring')?.remove();
+  const bar=svg.querySelector('.chart-bar[data-chart-index="'+index+'"]');if(bar){bar.classList.add('is-selected');bar.setAttribute('aria-pressed','true');const x=+bar.getAttribute('x'),y=+bar.getAttribute('y'),w=+bar.getAttribute('width'),h=+bar.getAttribute('height'),ring=document.createElementNS('http://www.w3.org/2000/svg','rect');
+   for(const [k,v] of Object.entries({class:'chart-bar-ring',x:x-3.5,y:y-3.5,width:w+7,height:h+7,rx:5,fill:'none',stroke:'#e5edf7','stroke-width':1.5,'pointer-events':'none'}))ring.setAttribute(k,String(v));bar.after(ring);}}
 }
 let historyOpener=null;
-function openDistributionHistory(button){
- const rows=Phase1.presentation(detailVM).distribution_history||[];
+// U20: 원천 payDt 미제공 회차는 승인 정책(기준일 +3 KRX 영업일)으로 이미 계산·보관된 data/management-distributions.json의 추정 지급일만 '(추정)'으로 표시. 원천 없는 날짜를 새로 만들지 않음.
+let estPayCache=null;
+function estPayDates(){if(!estPayCache)estPayCache=fetch('data/management-distributions.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{const m=new Map();for(const i of d?.items||[])if(i.pay_date_kind==='estimated'&&i.pay_date)m.set(i.code+'|'+i.ex_date,i.pay_date);return m}).catch(()=>{estPayCache=null;return new Map()});return estPayCache}
+async function openDistributionHistory(button){
+ const rows=Phase1.presentation(detailVM).distribution_history||[];const code=detailVM?.ticker||detailVM?.code||new URLSearchParams(location.search).get('code')||'';const est=rows.some(r=>!r.pay_date)?await estPayDates():new Map();
+ const payCell=r=>{if(r.pay_date)return escapeHTML(r.pay_date);const e=est.get(code+'|'+r.date);return e?escapeHTML(e)+' <small class="est-pay">(추정)</small>':'—'};const anyEst=rows.some(r=>!r.pay_date&&est.get(code+'|'+r.date));
  const old=document.getElementById('distribution-history-dialog');if(old)old.remove();historyOpener=button;
  const dialog=document.createElement('dialog');dialog.id='distribution-history-dialog';dialog.className='distribution-history-dialog';
- dialog.innerHTML=`<div class="history-title"><h2>전체기간 분배 이력</h2><button type="button" data-close-distribution-history aria-label="전체기간 이력 닫기">닫기 ×</button></div><div class="history-scroll"><table><thead><tr><th>지급일</th><th>기준 NAV</th><th>1주당 분배금</th><th>분배율</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${escapeHTML(r.pay_date||'—')}</td><td>${escapeHTML(format(r.nav,'원'))}</td><td>${escapeHTML(format(r.amount,'원'))}</td><td>${escapeHTML(format(r.ratio,'%'))}</td></tr>`).join('')||'<tr><td colspan="4">지급 이력 없음</td></tr>'}</tbody></table></div><p class="definition">NAV는 기존 계산에 사용한 분배 이벤트 날짜의 값이며, 분배율은 지급 건별 원자료 값입니다. 미제공 값은 —로 표시합니다.</p>`;
+ dialog.innerHTML=`<div class="history-title"><h2>전체기간 분배 이력</h2><button type="button" data-close-distribution-history aria-label="전체기간 이력 닫기">닫기 ×</button></div><div class="history-scroll"><table><thead><tr><th>지급일</th><th>기준 NAV</th><th>1주당 분배금</th><th>분배율</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${payCell(r)}</td><td>${escapeHTML(format(r.nav,'원'))}</td><td>${escapeHTML(format(r.amount,'원'))}</td><td>${escapeHTML(format(r.ratio,'%'))}</td></tr>`).join('')||'<tr><td colspan="4">지급 이력 없음</td></tr>'}</tbody></table></div><p class="definition">NAV는 기존 계산에 사용한 분배 이벤트 날짜의 값이며, 분배율은 지급 건별 원자료 값입니다. 미제공 값은 —로 표시합니다.${anyEst?' (추정) 지급일은 원천에 실제 지급일이 없어 분배 기준일 +3영업일로 계산한 예상일입니다.':''}</p>`;
  document.body.append(dialog);dialog.addEventListener('close',()=>{document.body.classList.remove('history-open');historyOpener?.focus();});dialog.showModal();document.body.classList.add('history-open');
 }
 document.addEventListener('pointermove',e=>{if(e.pointerType==='mouse')showDetailTooltip(e);});

@@ -61,5 +61,5 @@
   });
   window.addEventListener('popstate',()=>{readURL();render();});
   try {readURL();render();} catch(error) {$('weather-status').classList.remove('sr-only');$('weather-status').textContent='가상 결과를 표시하지 못했습니다. 새로고침해 주세요.';$('weather-cards').replaceChildren();}
-  if('serviceWorker' in navigator)navigator.serviceWorker.register('management-sw.js').catch(()=>{});
+  if('serviceWorker' in navigator)navigator.serviceWorker.register('uat-sw.js').catch(()=>{});
 })();

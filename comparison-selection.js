@@ -84,5 +84,5 @@
     if (!Array.isArray(data.items) || !data.items.every(r=>typeof r.ticker==='string' && typeof r.name==='string')) throw Error('catalog format'); catalog=data.items; update();
   }).catch(() => { failed=true; update(); });
   update();
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('management-sw.js').catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('uat-sw.js').catch(() => {});
 })();
