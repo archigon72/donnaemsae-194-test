@@ -24,3 +24,11 @@
 .pf-hv b{font-size:clamp(16px,5vw,21px);font-weight:800;white-space:nowrap;color:#EFF6F8}.pf-hv b.pf-up,.pf-hv em.pf-up{color:#46E5AC}.pf-hv b.pf-dn,.pf-hv em.pf-dn{color:#56B9FF}
 .pf-hv em{font-style:normal;font-weight:800;font-size:15px}.pf-hv small{font-size:11.5px;color:#AEC0CB}
 @media(max-width:340px){.pf-hc{grid-template-columns:40px minmax(0,1fr)}.pf-hi{width:40px;height:40px}.pf-hv{grid-column:1/-1;align-items:flex-end}}
+/* t254 홈 요약 카드: 계산 기준 펼침 */
+.pf-home{padding:12px;border:1px solid rgba(174,192,203,.22);border-radius:14px;background:rgba(12,21,33,.45);gap:12px 10px}.pf-home b{font-size:16px}
+.mu-unc{color:#F2C46D!important;margin-top:8px}
+.mu-calc{margin:8px 0 10px;border:1px solid rgba(174,192,203,.22);border-radius:12px;background:rgba(12,21,33,.45)}
+.mu-calc-toggle{all:unset;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;width:100%;min-height:44px;padding:10px 12px;font-size:13.5px;color:#E6EEF2;cursor:pointer}
+.mu-calc-toggle:focus-visible{outline:2px solid #7FD6A8;outline-offset:2px;border-radius:12px}
+.mu-calc-toggle[aria-expanded=true] .mu-chev{transform:rotate(90deg)}
+.mu-calc-body{padding:0 12px 10px}.mu-calc-sec h3{font-size:12.5px;margin:10px 0 4px;color:#AEC0CB}.mu-calc-sec p{font-size:12px;line-height:1.55;margin:0}
