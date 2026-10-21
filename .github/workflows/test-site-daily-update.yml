@@ -130,10 +130,13 @@ jobs:
           assert f['data_cutoff']==d['data_cutoff'],(f['data_cutoff'],d['data_cutoff'])
           print('fd-forecast cutoff OK',f['data_cutoff'])
           PY
+          # 운영 화면(루트 dividend.html → fd-view.js)이 읽는 루트 사본에 같은 검증 산출물 반영(임시파일→mv 원자 교체, 불일치 시 실패=커밋 없음)
+          cp account-uat/fd-forecast.json fd-forecast.json.new && cp account-uat/fd-calendar.json fd-calendar.json.new && mv -f fd-forecast.json.new fd-forecast.json && mv -f fd-calendar.json.new fd-calendar.json
+          cmp -s account-uat/fd-forecast.json fd-forecast.json && cmp -s account-uat/fd-calendar.json fd-calendar.json || { echo "::error::운영 fd 사본 불일치"; exit 1; }
           V=$(python3 pipeline/validate_json.py . | python3 -c "import json,sys;c=json.load(sys.stdin)['counts'];print(c.get('FAIL',0))")
           echo "site validate FAIL=$V"; [ "$V" = "0" ] || { echo "::error::site validate FAIL=$V"; exit 1; }
           git add -A
-          BAD=$(git diff --cached --name-only | grep -vE '^(data/[0-9A-Z]{6}\.json|inputs/[0-9A-Z]{6}\.json|references/[0-9A-Z]{6}\.json|data/(catalog|runtime-manifest|prices|management-distributions|update-record)\.json|account-uat/fd-(forecast|calendar)\.json)$' || true)
+          BAD=$(git diff --cached --name-only | grep -vE '^(data/[0-9A-Z]{6}\.json|inputs/[0-9A-Z]{6}\.json|references/[0-9A-Z]{6}\.json|data/(catalog|runtime-manifest|prices|management-distributions|update-record)\.json|account-uat/fd-(forecast|calendar)\.json|fd-(forecast|calendar)\.json)$' || true)
           if [ -n "$BAD" ]; then echo "::error::허용 범위 밖 변경: $BAD"; exit 1; fi
           git diff --cached --stat | tail -1
       - name: commit & push (APPLIED 일 때만, 일반 push)
