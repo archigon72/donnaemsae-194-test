@@ -32,3 +32,5 @@
 .mu-calc-toggle:focus-visible{outline:2px solid #7FD6A8;outline-offset:2px;border-radius:12px}
 .mu-calc-toggle[aria-expanded=true] .mu-chev{transform:rotate(90deg)}
 .mu-calc-body{padding:0 12px 10px}.mu-calc-sec h3{font-size:12.5px;margin:10px 0 4px;color:#AEC0CB}.mu-calc-sec p{font-size:12px;line-height:1.55;margin:0}
+/* t257 검증용 가상 이월재원 경고 */
+.mu-syn-warn{display:flex;flex-direction:column;gap:4px;margin:8px 0 10px;padding:10px 12px;border:1px solid #F2C46D;border-radius:12px;background:rgba(242,196,109,.12);color:#F2C46D}.mu-syn-warn small{color:#E6D3A8;font-size:12px;line-height:1.5}
