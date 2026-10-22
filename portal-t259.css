@@ -11,4 +11,4 @@
 html,body{background:#0c1521}
 .portal{display:flex;flex-direction:column;min-height:100vh;min-height:100svh;min-height:100dvh}
 .portal>header,.portal>nav,.portal>div,.portal>img,.portal>footer{flex:none}
-.portal>.gate-ext{flex:1 1 auto;min-height:0;margin-top:-1px;background:url(assets/portal/t259/footer-ext.webp) center top/100% auto no-repeat,rgb(53,49,27)}
+.portal>.gate-ext{flex:1 1 auto;min-height:0;margin-top:-1px;background:url(assets/portal/t259/footer-ext.webp?v=t261) center top/100% auto no-repeat,rgb(18,24,14)}
