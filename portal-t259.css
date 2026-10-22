@@ -7,3 +7,8 @@
 .gate-card:active{filter:brightness(1.06)}
 .gate-card.noimg{display:flex;align-items:center;justify-content:center;min-height:96px;background:#102638;border:1.5px solid #46E5AC}
 .gate-card.noimg .portal-copy{position:static;width:auto;height:auto;margin:0;clip-path:none;white-space:normal;color:#EFF6F8;padding:12px;font:700 16px/1.4 system-ui,sans-serif;text-align:center}
+/* t260: 계곡 하단을 화면 끝까지 자연스럽게 연장(전체 이미지 늘림·카드 이동 없음) */
+html,body{background:#0c1521}
+.portal{display:flex;flex-direction:column;min-height:100vh;min-height:100svh;min-height:100dvh}
+.portal>header,.portal>nav,.portal>div,.portal>img,.portal>footer{flex:none}
+.portal>.gate-ext{flex:1 1 auto;min-height:0;margin-top:-1px;background:url(assets/portal/t259/footer-ext.webp) center top/100% auto no-repeat,rgb(53,49,27)}
