@@ -1,5 +1,5 @@
 {
- "data_cutoff": "2026-10-21",
+ "data_cutoff": "2026-10-22",
  "mapping_status": "gijunYmd_ex_date_confirmed_v3",
  "note": "gijunYmd=ex-date; payDt present -> payment date. Missing payDt -> rights known, no cash. Pretax. | 2026-10-12: payDt 있으면 원본, 없으면 gijunYmd+3영업일 예상일 적용. 예상일도 status=confirmed로 자산관리 현금/재투자 반영. 원본 source_dates 보존.",
  "calendar": {
