@@ -1,5 +1,5 @@
 {
- "data_cutoff": "2026-10-27",
+ "data_cutoff": "2026-10-28",
  "mapping_status": "gijunYmd_ex_date_confirmed_v3",
  "note": "gijunYmd=ex-date; payDt present -> payment date. Missing payDt -> rights known, no cash. Pretax. | 2026-10-12: payDt 있으면 원본, 없으면 gijunYmd+3영업일 예상일 적용. 예상일도 status=confirmed로 자산관리 현금/재투자 반영. 원본 source_dates 보존.",
  "calendar": {
@@ -409,6 +409,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0000D0",
+   "distribution_id": "0000D0-20261029",
+   "per_share": "85.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0004G0",
    "distribution_id": "0004G0-20250328",
    "per_share": "22.0",
@@ -749,6 +768,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0004G0",
+   "distribution_id": "0004G0-20261029",
+   "per_share": "25.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0005A0",
@@ -1127,6 +1165,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "0005A0",
+   "distribution_id": "0005A0-20261029",
+   "per_share": "112.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0008S0",
@@ -1832,6 +1888,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0013P0",
+   "distribution_id": "0013P0-20261029",
+   "per_share": "17.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0013R0",
    "distribution_id": "0013R0-20250328",
    "per_share": "170.0",
@@ -2172,6 +2247,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0013R0",
+   "distribution_id": "0013R0-20261029",
+   "per_share": "93.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0015E0",
@@ -2516,6 +2610,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0015E0",
+   "distribution_id": "0015E0-20261029",
+   "per_share": "20.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0015F0",
    "distribution_id": "0015F0-20250328",
    "per_share": "25.0",
@@ -2856,6 +2969,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0015F0",
+   "distribution_id": "0015F0-20261029",
+   "per_share": "20.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0018C0",
@@ -3543,6 +3675,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0022T0",
+   "distribution_id": "0022T0-20261029",
+   "per_share": "39.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0040X0",
    "distribution_id": "0040X0-20250529",
    "per_share": "150.0",
@@ -3847,6 +3998,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0040X0",
+   "distribution_id": "0040X0-20261029",
+   "per_share": "139.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0040Y0",
@@ -4155,6 +4325,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0040Y0",
+   "distribution_id": "0040Y0-20261029",
+   "per_share": "159.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0046A0",
    "distribution_id": "0046A0-20250529",
    "per_share": "35.0",
@@ -4461,6 +4650,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0046A0",
+   "distribution_id": "0046A0-20261029",
+   "per_share": "25.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0046Y0",
    "distribution_id": "0046Y0-20250627",
    "per_share": "29.0",
@@ -4747,6 +4955,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0046Y0",
+   "distribution_id": "0046Y0-20261029",
+   "per_share": "9.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0048J0",
@@ -5037,6 +5264,24 @@
    "cashflow_included": true
   },
   {
+   "code": "0048J0",
+   "distribution_id": "0048J0-20261029",
+   "per_share": "60.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0049K0",
    "distribution_id": "0049K0-20250627",
    "per_share": "34.0",
@@ -5325,6 +5570,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0049K0",
+   "distribution_id": "0049K0-20261029",
+   "per_share": "18.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0049M0",
    "distribution_id": "0049M0-20250627",
    "per_share": "101.0",
@@ -5611,6 +5875,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0049M0",
+   "distribution_id": "0049M0-20261029",
+   "per_share": "64.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0052D0",
@@ -6100,6 +6383,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0057H0",
+   "distribution_id": "0057H0-20261029",
+   "per_share": "12.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0073X0",
    "distribution_id": "0073X0-20250730",
    "per_share": "95.0",
@@ -6368,6 +6670,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0073X0",
+   "distribution_id": "0073X0-20261029",
+   "per_share": "75.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0080X0",
@@ -6875,6 +7196,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0084D0",
+   "distribution_id": "0084D0-20261029",
+   "per_share": "13.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0084E0",
    "distribution_id": "0084E0-20251127",
    "per_share": "20.0",
@@ -7071,6 +7411,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0084E0",
+   "distribution_id": "0084E0-20261029",
+   "per_share": "15.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0085N0",
@@ -7325,6 +7684,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0085N0",
+   "distribution_id": "0085N0-20261029",
+   "per_share": "30.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0085P0",
    "distribution_id": "0085P0-20250828",
    "per_share": "32.0",
@@ -7575,6 +7953,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0085P0",
+   "distribution_id": "0085P0-20261029",
+   "per_share": "29.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0086B0",
@@ -8263,6 +8660,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0089B0",
+   "distribution_id": "0089B0-20261029",
+   "per_share": "9.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0089C0",
    "distribution_id": "0089C0-20250929",
    "per_share": "15.0",
@@ -8495,6 +8911,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "0089C0",
+   "distribution_id": "0089C0-20261029",
+   "per_share": "8.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0089D0",
@@ -9163,6 +9597,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0094L0",
+   "distribution_id": "0094L0-20261029",
+   "per_share": "64.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0094M0",
    "distribution_id": "0094M0-20251014",
    "per_share": "105.0",
@@ -9630,6 +10083,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0097L0",
+   "distribution_id": "0097L0-20261029",
+   "per_share": "55.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0098N0",
@@ -10318,6 +10790,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0104P0",
+   "distribution_id": "0104P0-20261029",
+   "per_share": "105.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0105E0",
    "distribution_id": "0105E0-20251113",
    "per_share": "95.0",
@@ -10751,6 +11242,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0107F0",
+   "distribution_id": "0107F0-20261029",
+   "per_share": "34.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0111J0",
    "distribution_id": "0111J0-20260129",
    "per_share": "10.0",
@@ -10911,6 +11421,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0111J0",
+   "distribution_id": "0111J0-20261029",
+   "per_share": "40.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0115C0",
@@ -11292,6 +11821,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0127T0",
+   "distribution_id": "0127T0-20261029",
+   "per_share": "15.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0127V0",
    "distribution_id": "0127V0-20251229",
    "per_share": "18.0",
@@ -11472,6 +12020,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0127V0",
+   "distribution_id": "0127V0-20261029",
+   "per_share": "9.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0128D0",
    "distribution_id": "0128D0-20251229",
    "per_share": "117.0",
@@ -11650,6 +12217,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0128D0",
+   "distribution_id": "0128D0-20261029",
+   "per_share": "69.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0132K0",
@@ -12230,6 +12816,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0139P0",
+   "distribution_id": "0139P0-20261029",
+   "per_share": "52.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0144L0",
    "distribution_id": "0144L0-20260129",
    "per_share": "97.0",
@@ -12392,6 +12997,24 @@
    "cashflow_included": true
   },
   {
+   "code": "0144L0",
+   "distribution_id": "0144L0-20261029",
+   "per_share": "90.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0152E0",
    "distribution_id": "0152E0-20260226",
    "per_share": "70.0",
@@ -12534,6 +13157,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0152E0",
+   "distribution_id": "0152E0-20261029",
+   "per_share": "50.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0153K0",
@@ -12824,6 +13466,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0153P0",
+   "distribution_id": "0153P0-20261029",
+   "per_share": "54.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0153X0",
    "distribution_id": "0153X0-20260226",
    "per_share": "45.0",
@@ -12968,6 +13629,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0153X0",
+   "distribution_id": "0153X0-20261029",
+   "per_share": "43.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0167B0",
    "distribution_id": "0167B0-20260429",
    "per_share": "250.0",
@@ -13074,6 +13754,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0167B0",
+   "distribution_id": "0167B0-20261029",
+   "per_share": "140.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0174J0",
@@ -13184,6 +13883,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0174J0",
+   "distribution_id": "0174J0-20261029",
+   "per_share": "50.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0176P0",
    "distribution_id": "0176P0-20260429",
    "per_share": "195.0",
@@ -13290,6 +14008,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0176P0",
+   "distribution_id": "0176P0-20261029",
+   "per_share": "170.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0177N0",
@@ -13672,6 +14409,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0189Z0",
+   "distribution_id": "0189Z0-20261029",
+   "per_share": "10.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0190G0",
    "distribution_id": "0190G0-20260528",
    "per_share": "83.0",
@@ -13762,6 +14518,24 @@
    "cashflow_included": true
   },
   {
+   "code": "0190G0",
+   "distribution_id": "0190G0-20261029",
+   "per_share": "58.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0192S0",
    "distribution_id": "0192S0-20260629",
    "per_share": "14.0",
@@ -13834,6 +14608,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0192S0",
+   "distribution_id": "0192S0-20261029",
+   "per_share": "10.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0194N0",
    "distribution_id": "0194N0-20260629",
    "per_share": "28.0",
@@ -13904,6 +14697,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0194N0",
+   "distribution_id": "0194N0-20261029",
+   "per_share": "5.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0194R0",
@@ -14033,6 +14845,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0198A0",
+   "distribution_id": "0198A0-20261029",
+   "per_share": "180.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0199C0",
    "distribution_id": "0199C0-20260629",
    "per_share": "168.0",
@@ -14103,6 +14934,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0199C0",
+   "distribution_id": "0199C0-20261029",
+   "per_share": "183.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0203D0",
@@ -14177,6 +15027,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0203D0",
+   "distribution_id": "0203D0-20261029",
+   "per_share": "57.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0210E0",
    "distribution_id": "0210E0-20260730",
    "per_share": "139.0",
@@ -14231,6 +15100,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0210E0",
+   "distribution_id": "0210E0-20261029",
+   "per_share": "114.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0216K0",
    "distribution_id": "0216K0-20260828",
    "per_share": "10.0",
@@ -14265,6 +15153,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0216K0",
+   "distribution_id": "0216K0-20261029",
+   "per_share": "10.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0219E0",
@@ -14321,6 +15228,24 @@
    "cashflow_included": true
   },
   {
+   "code": "0219E0",
+   "distribution_id": "0219E0-20261029",
+   "per_share": "136.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0220A0",
    "distribution_id": "0220A0-20260828",
    "per_share": "21.0",
@@ -14355,6 +15280,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0220A0",
+   "distribution_id": "0220A0-20261029",
+   "per_share": "10.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0222D0",
@@ -14393,6 +15337,24 @@
    "cashflow_included": true
   },
   {
+   "code": "0222D0",
+   "distribution_id": "0222D0-20261029",
+   "per_share": "72.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0223A0",
    "distribution_id": "0223A0-20260828",
    "per_share": "219.0",
@@ -14427,6 +15389,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0223A0",
+   "distribution_id": "0223A0-20261029",
+   "per_share": "260.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "0224X0",
@@ -14465,6 +15446,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0224X0",
+   "distribution_id": "0224X0-20261029",
+   "per_share": "10.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0233A0",
    "distribution_id": "0233A0-20260929",
    "per_share": "13.0",
@@ -14483,6 +15483,25 @@
    "cashflow_included": true
   },
   {
+   "code": "0233A0",
+   "distribution_id": "0233A0-20261029",
+   "per_share": "16.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "0233J0",
    "distribution_id": "0233J0-20260929",
    "per_share": "7.0",
@@ -14499,6 +15518,44 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "0233J0",
+   "distribution_id": "0233J0-20261029",
+   "per_share": "46.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
+   "code": "0238P0",
+   "distribution_id": "0238P0-20261029",
+   "per_share": "13.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "091170",
@@ -15309,6 +16366,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "091170",
+   "distribution_id": "091170-20261029",
+   "per_share": "53.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "104530",
@@ -17436,6 +18511,25 @@
    "cashflow_included": true
   },
   {
+   "code": "136340",
+   "distribution_id": "136340-20261029",
+   "per_share": "292.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "153130",
    "distribution_id": "153130-20121227",
    "per_share": "2671.0",
@@ -18606,6 +19700,25 @@
    "cashflow_included": true
   },
   {
+   "code": "161510",
+   "distribution_id": "161510-20261029",
+   "per_share": "103.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "166400",
    "distribution_id": "166400-20220428",
    "per_share": "135.0",
@@ -19542,6 +20655,25 @@
    "cashflow_included": true
   },
   {
+   "code": "166400",
+   "distribution_id": "166400-20261029",
+   "per_share": "83.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "181480",
    "distribution_id": "181480-20240829",
    "per_share": "300.0",
@@ -20008,6 +21140,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "181480",
+   "distribution_id": "181480-20261029",
+   "per_share": "206.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "182480",
@@ -21540,6 +22691,25 @@
    "cashflow_included": true
   },
   {
+   "code": "182480",
+   "distribution_id": "182480-20261029",
+   "per_share": "41.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "211900",
    "distribution_id": "211900-20150429",
    "per_share": "148.0",
@@ -21970,6 +23140,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "211900",
+   "distribution_id": "211900-20261029",
+   "per_share": "28.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "214980",
@@ -23826,6 +25014,25 @@
    "cashflow_included": true
   },
   {
+   "code": "245340",
+   "distribution_id": "245340-20261029",
+   "per_share": "19.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "251600",
    "distribution_id": "251600-20170427",
    "per_share": "130.0",
@@ -24526,6 +25733,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "251600",
+   "distribution_id": "251600-20261029",
+   "per_share": "50.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "273140",
@@ -25570,6 +26796,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "279530",
+   "distribution_id": "279530-20261029",
+   "per_share": "76.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "284430",
@@ -26778,6 +28022,25 @@
    "cashflow_included": true
   },
   {
+   "code": "289480",
+   "distribution_id": "289480-20261029",
+   "per_share": "79.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "290080",
    "distribution_id": "290080-20181227",
    "per_share": "18.0",
@@ -27732,6 +28995,25 @@
    "cashflow_included": true
   },
   {
+   "code": "290080",
+   "distribution_id": "290080-20261029",
+   "per_share": "50.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "316300",
    "distribution_id": "316300-20240829",
    "per_share": "55.0",
@@ -28198,6 +29480,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "316300",
+   "distribution_id": "316300-20261029",
+   "per_share": "41.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "322410",
@@ -28828,6 +30129,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "322410",
+   "distribution_id": "322410-20261029",
+   "per_share": "70.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "329200",
@@ -29909,6 +31229,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "329200",
+   "distribution_id": "329200-20261029",
+   "per_share": "33.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "329650",
@@ -31063,6 +32402,25 @@
    "cashflow_included": true
   },
   {
+   "code": "332610",
+   "distribution_id": "332610-20261029",
+   "per_share": "354.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "332620",
    "distribution_id": "332620-20250328",
    "per_share": "347.0",
@@ -31403,6 +32761,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "332620",
+   "distribution_id": "332620-20261029",
+   "per_share": "289.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "336160",
@@ -32213,6 +33590,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "336160",
+   "distribution_id": "336160-20261029",
+   "per_share": "204.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "341850",
@@ -33223,6 +34619,25 @@
    "cashflow_included": true
   },
   {
+   "code": "341850",
+   "distribution_id": "341850-20261029",
+   "per_share": "24.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "352540",
    "distribution_id": "352540-20220929",
    "per_share": "67.0",
@@ -34085,6 +35500,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "352540",
+   "distribution_id": "352540-20261029",
+   "per_share": "43.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "352560",
@@ -34951,6 +36384,24 @@
    "cashflow_included": true
   },
   {
+   "code": "352560",
+   "distribution_id": "352560-20261029",
+   "per_share": "37.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "373790",
    "distribution_id": "373790-20210429",
    "per_share": "50.0",
@@ -35579,6 +37030,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "373790",
+   "distribution_id": "373790-20261029",
+   "per_share": "21.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "402970",
@@ -36662,6 +38132,24 @@
    "cashflow_included": true
   },
   {
+   "code": "423160",
+   "distribution_id": "423160-20261029",
+   "per_share": "291.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "429000",
    "distribution_id": "429000-20220728",
    "per_share": "60.0",
@@ -37544,6 +39032,25 @@
    "cashflow_included": true
   },
   {
+   "code": "429000",
+   "distribution_id": "429000-20261029",
+   "per_share": "21.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "429740",
    "distribution_id": "429740-20230427",
    "per_share": "400.0",
@@ -38190,6 +39697,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "429740",
+   "distribution_id": "429740-20261029",
+   "per_share": "122.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "432840",
@@ -38928,6 +40454,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "432840",
+   "distribution_id": "432840-20261029",
+   "per_share": "13.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "433330",
@@ -39848,6 +41393,25 @@
    "cashflow_included": true
   },
   {
+   "code": "433330",
+   "distribution_id": "433330-20261029",
+   "per_share": "9.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "437070",
    "distribution_id": "437070-20250730",
    "per_share": "225.0",
@@ -40116,6 +41680,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "437070",
+   "distribution_id": "437070-20261029",
+   "per_share": "252.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "437080",
@@ -40476,6 +42058,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "437080",
+   "distribution_id": "437080-20261029",
+   "per_share": "423.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "438330",
@@ -41502,6 +43102,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "440340",
+   "distribution_id": "440340-20261029",
+   "per_share": "45.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "441640",
@@ -43250,6 +44869,25 @@
    "cashflow_included": true
   },
   {
+   "code": "441680",
+   "distribution_id": "441680-20261029",
+   "per_share": "104.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "441800",
    "distribution_id": "441800-20221028",
    "per_share": "50.0",
@@ -44114,6 +45752,25 @@
    "cashflow_included": true
   },
   {
+   "code": "441800",
+   "distribution_id": "441800-20261029",
+   "per_share": "118.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "446720",
    "distribution_id": "446720-20221228",
    "per_share": "36.0",
@@ -44942,6 +46599,25 @@
    "cashflow_included": true
   },
   {
+   "code": "446720",
+   "distribution_id": "446720-20261029",
+   "per_share": "32.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "448100",
    "distribution_id": "448100-20230530",
    "per_share": "40.0",
@@ -45678,6 +47354,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "448100",
+   "distribution_id": "448100-20261029",
+   "per_share": "70.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "448330",
@@ -46886,6 +48581,25 @@
    "cashflow_included": true
   },
   {
+   "code": "452360",
+   "distribution_id": "452360-20261029",
+   "per_share": "33.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "453330",
    "distribution_id": "453330-20230427",
    "per_share": "10.0",
@@ -47640,6 +49354,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "453330",
+   "distribution_id": "453330-20261029",
+   "per_share": "15.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "453850",
@@ -48398,6 +50131,25 @@
    "cashflow_included": true
   },
   {
+   "code": "453850",
+   "distribution_id": "453850-20261029",
+   "per_share": "25.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "455030",
    "distribution_id": "455030-20250730",
    "per_share": "40.0",
@@ -48666,6 +50418,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "455030",
+   "distribution_id": "455030-20261029",
+   "per_share": "43.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "455660",
@@ -49406,6 +51176,25 @@
    "cashflow_included": true
   },
   {
+   "code": "455660",
+   "distribution_id": "455660-20261029",
+   "per_share": "50.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "458260",
    "distribution_id": "458260-20230629",
    "per_share": "69.0",
@@ -50126,6 +51915,25 @@
    "cashflow_included": true
   },
   {
+   "code": "458260",
+   "distribution_id": "458260-20261029",
+   "per_share": "240.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "458730",
    "distribution_id": "458730-20230728",
    "per_share": "30.0",
@@ -50826,6 +52634,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "458730",
+   "distribution_id": "458730-20261029",
+   "per_share": "35.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "458750",
@@ -52251,6 +54078,25 @@
    "cashflow_included": true
   },
   {
+   "code": "458760",
+   "distribution_id": "458760-20261029",
+   "per_share": "86.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "459580",
    "distribution_id": "459580-20250730",
    "per_share": "2185.0",
@@ -52519,6 +54365,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "459580",
+   "distribution_id": "459580-20261029",
+   "per_share": "2865.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "460660",
@@ -53223,6 +55087,25 @@
    "cashflow_included": true
   },
   {
+   "code": "460660",
+   "distribution_id": "460660-20261029",
+   "per_share": "29.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "460960",
    "distribution_id": "460960-20230830",
    "per_share": "90.0",
@@ -53907,6 +55790,25 @@
    "cashflow_included": true
   },
   {
+   "code": "460960",
+   "distribution_id": "460960-20261029",
+   "per_share": "60.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "464470",
    "distribution_id": "464470-20250328",
    "per_share": "110.0",
@@ -54247,6 +56149,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "464470",
+   "distribution_id": "464470-20261029",
+   "per_share": "89.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "465670",
@@ -54897,6 +56818,25 @@
    "cashflow_included": true
   },
   {
+   "code": "465670",
+   "distribution_id": "465670-20261029",
+   "per_share": "18.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "466940",
    "distribution_id": "466940-20240130",
    "per_share": "61.0",
@@ -55489,6 +57429,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "466940",
+   "distribution_id": "466940-20261029",
+   "per_share": "104.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "468370",
@@ -56589,6 +58548,24 @@
    "cashflow_included": true
   },
   {
+   "code": "468380",
+   "distribution_id": "468380-20261029",
+   "per_share": "61.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "468630",
    "distribution_id": "468630-20231129",
    "per_share": "34.0",
@@ -57219,6 +59196,24 @@
    "cashflow_included": true
   },
   {
+   "code": "468630",
+   "distribution_id": "468630-20261029",
+   "per_share": "40.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "471460",
    "distribution_id": "471460-20240829",
    "per_share": "141.0",
@@ -57685,6 +59680,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "471460",
+   "distribution_id": "471460-20261029",
+   "per_share": "163.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "472150",
@@ -58299,6 +60313,25 @@
    "cashflow_included": true
   },
   {
+   "code": "472150",
+   "distribution_id": "472150-20261029",
+   "per_share": "325.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "472830",
    "distribution_id": "472830-20240130",
    "per_share": "97.0",
@@ -58893,6 +60926,25 @@
    "cashflow_included": true
   },
   {
+   "code": "472830",
+   "distribution_id": "472830-20261029",
+   "per_share": "51.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "472870",
    "distribution_id": "472870-20240429",
    "per_share": "21.0",
@@ -59431,6 +61483,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "472870",
+   "distribution_id": "472870-20261029",
+   "per_share": "16.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "473330",
@@ -60025,6 +62096,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "473330",
+   "distribution_id": "473330-20261029",
+   "per_share": "123.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "474220",
@@ -61198,6 +63288,24 @@
    "cashflow_included": true
   },
   {
+   "code": "475080",
+   "distribution_id": "475080-20261029",
+   "per_share": "97.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "475380",
    "distribution_id": "475380-20240328",
    "per_share": "38.0",
@@ -61754,6 +63862,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "475380",
+   "distribution_id": "475380-20261029",
+   "per_share": "32.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "475720",
@@ -62314,6 +64441,25 @@
    "cashflow_included": true
   },
   {
+   "code": "475720",
+   "distribution_id": "475720-20261029",
+   "per_share": "200.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "476550",
    "distribution_id": "476550-20240328",
    "per_share": "112.0",
@@ -62870,6 +65016,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "476550",
+   "distribution_id": "476550-20261029",
+   "per_share": "67.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "476690",
@@ -63430,6 +65595,25 @@
    "cashflow_included": true
   },
   {
+   "code": "476690",
+   "distribution_id": "476690-20261029",
+   "per_share": "10.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "476750",
    "distribution_id": "476750-20240429",
    "per_share": "32.0",
@@ -63970,6 +66154,25 @@
    "cashflow_included": true
   },
   {
+   "code": "476750",
+   "distribution_id": "476750-20261029",
+   "per_share": "22.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "476760",
    "distribution_id": "476760-20240429",
    "per_share": "36.0",
@@ -64508,6 +66711,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "476760",
+   "distribution_id": "476760-20261029",
+   "per_share": "31.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "476800",
@@ -65336,6 +67558,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "476850",
+   "distribution_id": "476850-20261029",
+   "per_share": "90.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "480020",
@@ -67465,6 +69705,25 @@
    "cashflow_included": true
   },
   {
+   "code": "480460",
+   "distribution_id": "480460-20261029",
+   "per_share": "50.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "481050",
    "distribution_id": "481050-20241227",
    "per_share": "2810.0",
@@ -67859,6 +70118,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "481050",
+   "distribution_id": "481050-20261029",
+   "per_share": "2920.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "481060",
@@ -68905,6 +71182,25 @@
    "cashflow_included": true
   },
   {
+   "code": "481340",
+   "distribution_id": "481340-20261029",
+   "per_share": "31.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "482730",
    "distribution_id": "482730-20240627",
    "per_share": "95.0",
@@ -69932,6 +72228,24 @@
    "cashflow_included": true
   },
   {
+   "code": "483280",
+   "distribution_id": "483280-20261029",
+   "per_share": "134.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "483290",
    "distribution_id": "483290-20240627",
    "per_share": "101.0",
@@ -70436,6 +72750,24 @@
    "cashflow_included": true
   },
   {
+   "code": "483290",
+   "distribution_id": "483290-20261029",
+   "per_share": "96.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "484790",
    "distribution_id": "484790-20240730",
    "per_share": "58.0",
@@ -70920,6 +73252,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "484790",
+   "distribution_id": "484790-20261029",
+   "per_share": "34.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "484880",
@@ -71408,6 +73758,25 @@
    "cashflow_included": true
   },
   {
+   "code": "484880",
+   "distribution_id": "484880-20261029",
+   "per_share": "78.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "486290",
    "distribution_id": "486290-20240730",
    "per_share": "120.0",
@@ -71894,6 +74263,25 @@
    "cashflow_included": true
   },
   {
+   "code": "486290",
+   "distribution_id": "486290-20261029",
+   "per_share": "124.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "487950",
    "distribution_id": "487950-20240829",
    "per_share": "65.0",
@@ -72362,6 +74750,24 @@
    "cashflow_included": true
   },
   {
+   "code": "487950",
+   "distribution_id": "487950-20261029",
+   "per_share": "73.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "489030",
    "distribution_id": "489030-20240829",
    "per_share": "130.0",
@@ -72828,6 +75234,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "489030",
+   "distribution_id": "489030-20261029",
+   "per_share": "88.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "489250",
@@ -74163,6 +76588,25 @@
    "cashflow_included": true
   },
   {
+   "code": "490590",
+   "distribution_id": "490590-20261029",
+   "per_share": "158.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "490600",
    "distribution_id": "490600-20241030",
    "per_share": "135.0",
@@ -75044,6 +77488,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "491620",
+   "distribution_id": "491620-20261029",
+   "per_share": "118.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "493420",
@@ -76200,6 +78663,25 @@
    "cashflow_included": true
   },
   {
+   "code": "494210",
+   "distribution_id": "494210-20261029",
+   "per_share": "103.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "494300",
    "distribution_id": "494300-20241128",
    "per_share": "259.0",
@@ -76612,6 +79094,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "494300",
+   "distribution_id": "494300-20261029",
+   "per_share": "146.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "494420",
@@ -78201,6 +80701,24 @@
    "cashflow_included": true
   },
   {
+   "code": "495230",
+   "distribution_id": "495230-20261029",
+   "per_share": "51.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "495330",
    "distribution_id": "495330-20250328",
    "per_share": "23.0",
@@ -78523,6 +81041,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "495330",
+   "distribution_id": "495330-20261029",
+   "per_share": "61.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "495850",
@@ -78921,6 +81458,24 @@
    "cashflow_included": true
   },
   {
+   "code": "495850",
+   "distribution_id": "495850-20261029",
+   "per_share": "40.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "496080",
    "distribution_id": "496080-20250124",
    "per_share": "20.0",
@@ -79299,6 +81854,25 @@
    "cashflow_included": true
   },
   {
+   "code": "496080",
+   "distribution_id": "496080-20261029",
+   "per_share": "44.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "497780",
    "distribution_id": "497780-20250124",
    "per_share": "43.0",
@@ -79675,6 +82249,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "497780",
+   "distribution_id": "497780-20261029",
+   "per_share": "41.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "497880",
@@ -80071,6 +82663,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "497880",
+   "distribution_id": "497880-20261029",
+   "per_share": "160.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "498400",
@@ -80845,6 +83456,24 @@
    "pay_date_note": "원본 실지급일",
    "pay_date_kind": "actual",
    "cashflow_included": true
+  },
+  {
+   "code": "498410",
+   "distribution_id": "498410-20261029",
+   "per_share": "132.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": "20261030",
+    "gijunYmd": "20261029",
+    "procDt": "20261029",
+    "payDt": "20261103"
+   },
+   "pay_date": "2026-11-03",
+   "status": "confirmed",
+   "pay_date_source": "original",
+   "pay_date_kind": "actual",
+   "cashflow_included": true,
+   "oneclick_added": true
   },
   {
    "code": "498860",
@@ -81622,6 +84251,25 @@
    "cashflow_included": true
   },
   {
+   "code": "499150",
+   "distribution_id": "499150-20261029",
+   "per_share": "10.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
+  },
+  {
    "code": "499660",
    "distribution_id": "499660-20241227",
    "per_share": "1280.0",
@@ -82016,6 +84664,25 @@
    "pay_date_note": "예상 지급일 (기준일 2026-09-29 +3영업일)",
    "pay_date_kind": "estimated",
    "cashflow_included": true
+  },
+  {
+   "code": "499660",
+   "distribution_id": "499660-20261029",
+   "per_share": "2570.0",
+   "ex_date": "2026-10-29",
+   "source_dates": {
+    "basicDt": null,
+    "gijunYmd": "20261029",
+    "procDt": null,
+    "payDt": null
+   },
+   "pay_date": "2026-11-03",
+   "status": "estimated",
+   "pay_date_source": "estimated_+3bd",
+   "pay_date_note": "예상 지급일 (기준일 2026-10-29 +3영업일)",
+   "pay_date_kind": "estimated",
+   "cashflow_included": true,
+   "oneclick_added": true
   }
  ]
 }
