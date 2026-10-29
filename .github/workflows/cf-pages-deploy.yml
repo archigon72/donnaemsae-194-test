@@ -1,0 +1,80 @@
+name: cf-pages-deploy (Cloudflare Pages 보호 사이트 배포)
+# T339 설계안 · 기존 test-site-daily-update 성공 후(또는 main 수동 커밋 후) Cloudflare Pages 에 직접 업로드.
+# wrangler pages deploy 는 내용 해시로 중복을 제거하므로 바뀐 파일만 업로드된다. KV·Worker 미사용.
+# 권한: contents:read 만. 배포 토큰은 Secrets 의 CF(Account · Cloudflare Pages · Edit 전용)만 사용, 출력 금지.
+on:
+  workflow_run:
+    workflows: ["test-site-daily-update (TEST 사이트 자동 갱신)"]
+    types: [completed]
+    branches: [main]
+  push:
+    branches: [main]
+    paths-ignore: ['auto-test/**', 'downloads/**', 'pipeline/**', '.github/oneclick/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cf-pages-deploy
+  cancel-in-progress: false
+env:
+  REPO_GUARD: archigon72/donnaemsae-194-test
+  CF_PROJECT: donnaemsae-access-test
+  CF_BRANCH: main                                   # main = 운영(production) 배포
+  CF_HOST: donnaemsae-access-test.pages.dev         # 배포 후 비인증 302 확인 대상
+jobs:
+  deploy:
+    if: >-
+      github.repository == 'archigon72/donnaemsae-194-test' &&
+      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          persist-credentials: false
+      - name: 변경 여부 (일일 갱신이 커밋하지 않았으면 생략)
+        id: chk
+        run: |
+          HEAD=$(git rev-parse HEAD); echo "sha=$HEAD" >> $GITHUB_OUTPUT
+          if [ "${{ github.event_name }}" = "workflow_run" ] && [ "$HEAD" = "${{ github.event.workflow_run.head_sha }}" ]; then
+            echo "skip=1" >> $GITHUB_OUTPUT; echo "NO_CHANGE — 배포 생략" | tee -a $GITHUB_STEP_SUMMARY
+          else echo "skip=0" >> $GITHUB_OUTPUT; fi
+      - name: 배포본 조립 + 가드
+        if: steps.chk.outputs.skip == '0'
+        run: |
+          OUT=$RUNNER_TEMP/site; mkdir -p "$OUT"
+          tar --exclude=./.git --exclude=./.github --exclude=./auto-test --exclude=./downloads --exclude=./pipeline -cf - . | tar -C "$OUT" -xf -
+          cp .github/cloudflare/404.html "$OUT/404.html"        # 배포 전용 404 화면 (CORE 아님)
+          for f in index.html data/0183V0.json inputs/0183V0.json data/runtime-manifest.json uat-sw.js assets/pyodide/pyodide.asm.wasm 404.html; do
+            test -s "$OUT/$f" || { echo "::error::필수 파일 없음: $f"; exit 1; }; done
+          if [ -e "$OUT/functions" ] || [ -e "$OUT/_worker.js" ]; then echo "::error::functions/_worker.js 금지(정적 전용)"; exit 1; fi
+          N=$(find "$OUT" -type f | wc -l); BIG=$(find "$OUT" -type f -size +25M | wc -l)
+          [ "$N" -lt 20000 ] && [ "$BIG" -eq 0 ] || { echo "::error::Pages 한도 초과 N=$N BIG=$BIG"; exit 1; }
+          echo "배포본 files=$N size=$(du -sh "$OUT" | cut -f1)" | tee -a $GITHUB_STEP_SUMMARY
+      - name: 토큰 확인 (값 출력 없음)
+        if: steps.chk.outputs.skip == '0'
+        env:
+          T: ${{ secrets.CF }}
+          A: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          [ -n "$T" ] || { echo "::error::Secret CF 미등록"; exit 1; }
+          [ -n "$A" ] || { echo "::error::Variable CLOUDFLARE_ACCOUNT_ID 미등록"; exit 1; }
+      - name: wrangler pages deploy (바뀐 파일만 업로드)
+        if: steps.chk.outputs.skip == '0'
+        working-directory: ${{ runner.temp }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@4 pages deploy site --project-name="$CF_PROJECT" --branch="$CF_BRANCH" \
+            --commit-hash="${{ steps.chk.outputs.sha }}" --commit-message="auto ${{ github.event_name }} run ${{ github.run_id }}" --commit-dirty=true
+      - name: Access 보호 확인 (비인증 302)
+        if: steps.chk.outputs.skip == '0'
+        run: |
+          sleep 10
+          for p in / /index.html /data/0183V0.json /inputs/0183V0.json /market_projection.py /runtime_source.zip; do
+            C=$(curl -s -o /dev/null -w '%{http_code}' --max-redirs 0 "https://$CF_HOST$p"); echo "$p → $C"
+            [ "$C" = "302" ] || { echo "::error::Access 미보호 $p=$C"; exit 1; }
+          done
